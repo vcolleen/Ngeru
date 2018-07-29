@@ -6,7 +6,6 @@ public class ControllerPlayerScript : MonoBehaviour {
 
     private Rigidbody2D myRigidBody;
     public float movementSpeed;
-
    
     public Transform[] groundPoints;
 
@@ -14,6 +13,7 @@ public class ControllerPlayerScript : MonoBehaviour {
 
     private bool isGrounded;
     private bool jump;
+
     public float jumpForce;
 
     public LayerMask whatIsGround;
@@ -26,6 +26,11 @@ public class ControllerPlayerScript : MonoBehaviour {
         myRigidBody = GetComponent<Rigidbody2D>();
     }
 
+    void Update()
+    {
+        HandleInput();
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -34,7 +39,10 @@ public class ControllerPlayerScript : MonoBehaviour {
         isGrounded = IsGrounded();
 
         HandleMovement(horizontal);
+
+        ResetValues();
     }
+
 
     private void HandleMovement(float horizontal)
     {
@@ -78,6 +86,11 @@ public class ControllerPlayerScript : MonoBehaviour {
             
         }
         return false;
+    }
+
+    private void ResetValues()
+    {
+        jump = false;
     }
 
    
