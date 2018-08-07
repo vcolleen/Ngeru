@@ -6,7 +6,7 @@ public class ControllerPlayerScript : MonoBehaviour {
 
     private Rigidbody2D myRigidBody;
     public float movementSpeed;
-   
+
     public Transform[] groundPoints;
 
     public float groundRadius;
@@ -18,9 +18,11 @@ public class ControllerPlayerScript : MonoBehaviour {
 
     public LayerMask whatIsGround;
 
+
     //calling the animator
     Animator anim;
 
+    //bool isIdle;
 
 
     // Use this for initialization
@@ -28,21 +30,35 @@ public class ControllerPlayerScript : MonoBehaviour {
     {
         myRigidBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
     }
 
     void Update()
     {
         HandleInput();
 
-        if(Input.GetKey (KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
             anim.SetInteger("State", 2);
         }
 
-        if(Input.GetKey (KeyCode.A))
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            anim.SetInteger("State", 0);
+        }
+
+        if (Input.GetKey(KeyCode.A))
         {
             anim.SetInteger("State", 1);
         }
+
+
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            anim.SetInteger("State", 0);
+        }
+
+
     }
 
     // Update is called once per frame
@@ -57,6 +73,42 @@ public class ControllerPlayerScript : MonoBehaviour {
         ResetValues();
     }
 
+    /*
+    private void IdleAnimations() {
+        if (isIdle == true) {
+            anim.SetBool("IsIdle", true);
+            StartCoroutine(Idle());
+            StartCoroutine(IdleLie());
+            StartCoroutine(IdleReturn());
+        }
+
+        else
+        {
+            anim.SetBool("IsIdle", false);
+        }
+    }
+
+    IEnumerator IdleLie()
+    {
+        yield return new WaitForSeconds(5);
+        anim.SetInteger("State", 4);
+        StopCoroutine(IdleLie());
+    }
+
+    IEnumerator Idle()
+    {
+        yield return new WaitForSeconds(3);
+        anim.SetInteger("State", 3);
+        StopCoroutine(Idle());
+    }
+
+    IEnumerator IdleReturn()
+    {
+        yield return new WaitForSeconds(10);
+        anim.SetInteger("State", 5);
+        StopCoroutine(IdleReturn());
+    }
+    */
 
     private void HandleMovement(float horizontal)
     {
