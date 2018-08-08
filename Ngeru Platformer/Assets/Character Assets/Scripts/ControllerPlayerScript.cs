@@ -6,7 +6,7 @@ public class ControllerPlayerScript : MonoBehaviour {
 
     private Rigidbody2D myRigidBody;
     public float movementSpeed;
-   
+
     public Transform[] groundPoints;
 
     public float groundRadius;
@@ -63,6 +63,16 @@ public class ControllerPlayerScript : MonoBehaviour {
         {
             jump = true;
         }
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+          transform.eulerAngles = new Vector3(0, -180, 0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+          transform.eulerAngles = new Vector3(0, 0, 0);
+        }
     }
 
     private bool IsGrounded()
@@ -81,9 +91,9 @@ public class ControllerPlayerScript : MonoBehaviour {
                     }
 
                 }
-                
+
             }
-            
+
         }
         return false;
     }
@@ -93,5 +103,5 @@ public class ControllerPlayerScript : MonoBehaviour {
         jump = false;
     }
 
-   
+
 }
