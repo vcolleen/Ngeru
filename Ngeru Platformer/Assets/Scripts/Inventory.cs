@@ -12,13 +12,20 @@ public class Inventory : MonoBehaviour {
     public float slotPaddingLeft, slotPaddingTop;
     public float slotSize;
     public GameObject slotPrefab;
-    public int emptySlot;
+
 
     private List<GameObject> allSlots;
 
+    private static int emptySlot = 30;
 
-	// Use this for initialization
-	void Start () {
+    public static int EmptySlots
+    {
+        get { return emptySlot; }
+        set { emptySlot = value; }
+    }
+
+    // Use this for initialization
+    void Start () {
         CreateLayout();
 	}
 	
@@ -71,6 +78,30 @@ public class Inventory : MonoBehaviour {
             PlaceEmpty(item);
             return true;
         }
+
+        else
+        {
+            foreach(GameObject slot in allSlots)
+            {
+                Slot tmp = slot.GetComponent<Slot>();
+
+                if (!tmp.IsEmpty)
+                {
+                    if (tmp.CurrentItem.type == item.type && tmp.IsAvailable) //checks if the item is of the same type, and if it is at max stacks
+                    {
+                        tmp.AddItem(item);
+                        return true;
+
+                    }
+                }
+            }
+            if(emptySlot > 0)
+            {
+                PlaceEmpty(item);
+            }
+
+        }
+
         return false;
     }
 

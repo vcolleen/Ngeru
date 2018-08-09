@@ -2,14 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class Slot : MonoBehaviour {
+public class Slot : MonoBehaviour, IPointerClickHandler {
     private Stack<Item> items;
 
     public Text stackText;
 
     public Sprite slotEmpty;
     public Sprite slotHighlight;
+
+
+
+
+
+    public Item CurrentItem
+    {
+        get
+        {
+            return items.Peek();
+        }
+    }
+
+    public bool IsAvailable
+    {
+        get
+        {
+            return CurrentItem.maxSize > items.Count;
+        }
+    }
 
     public bool IsEmpty
     {
@@ -21,7 +42,7 @@ public class Slot : MonoBehaviour {
         items = new Stack<Item>();
 
         RectTransform slotRect = GetComponent<RectTransform>();
-        RectTransform txtRect = GetComponent<RectTransform>();
+        RectTransform txtRect = stackText.GetComponent<RectTransform>();
 
         int txtScaleFactor = (int)(slotRect.sizeDelta.x * 0.60);
         stackText.resizeTextMaxSize = txtScaleFactor;
@@ -58,5 +79,32 @@ public class Slot : MonoBehaviour {
 
         GetComponent<Button>().spriteState = st;
 
+    }
+
+    private void UseItem()
+    {
+        if (!IsEmpty)
+        {
+            items.Pop().Use();
+
+
+            stackText.text = items.Count > 1 ? items.Count.ToString() : string.Empty;
+            //this checks stackText, finds the number of items then routes the count to empty if quantity below 1.
+
+            if (IsEmpty)
+            {
+                ChangeSprite(slotEmpty, slotHighlight);
+                Inventory.EmptySlots++;
+            }
+        }
+
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if(eventData.button == PointerEventData.InputButton.Right)
+        {
+            UseItem();
+        }
     }
 }
