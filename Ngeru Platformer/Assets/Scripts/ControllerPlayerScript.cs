@@ -18,17 +18,31 @@ public class ControllerPlayerScript : MonoBehaviour {
 
     public LayerMask whatIsGround;
 
+    //calling the animator
+    Animator anim;
+
 
 
     // Use this for initialization
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
     {
         HandleInput();
+
+        if(Input.GetKey (KeyCode.D))
+        {
+            anim.SetInteger("State", 2);
+        }
+
+        if(Input.GetKey (KeyCode.A))
+        {
+            anim.SetInteger("State", 1);
+        }
     }
 
     // Update is called once per frame
