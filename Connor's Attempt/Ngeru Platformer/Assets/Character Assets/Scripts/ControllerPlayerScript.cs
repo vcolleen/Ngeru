@@ -26,8 +26,6 @@ public class ControllerPlayerScript : MonoBehaviour {
     //calling the animator
     Animator anim;
 
-    //bool isIdle;
-
 
     // Use this for initialization
     void Start()
