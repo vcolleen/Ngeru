@@ -26,7 +26,7 @@ public class PlatformCollisionTrigger : MonoBehaviour {
         }
     }
 
-    void OnTriggerExit(Collider2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if(other.gameObject.name == "Ngeru")
         {
