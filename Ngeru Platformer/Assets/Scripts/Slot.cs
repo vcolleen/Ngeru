@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,6 +12,13 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
 
     public Sprite slotEmpty;
     public Sprite slotHighlight;
+
+    public Stack<Item> Items
+    {
+        get { return items; }
+
+        set { items = value; }
+    }
 
 
 
@@ -37,9 +45,15 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
         get { return items.Count == 0; }
     }
 
-	// Use this for initialization
-	void Start () {
+    void Awake()
+    {
         items = new Stack<Item>();
+    }
+
+
+    // Use this for initialization
+    void Start () {
+        
 
         RectTransform slotRect = GetComponent<RectTransform>();
         RectTransform txtRect = stackText.GetComponent<RectTransform>();
@@ -68,6 +82,19 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
         ChangeSprite(item.spriteNeutral, item.spriteHighlighted);
 
     }
+
+
+
+    //Optional functionality, use it or don't but it exists here because I wanted to learn how to drag stacks anyway.
+    public void AddItems(Stack<Item> items)
+    {
+        this.items = new Stack<Item>(items);
+
+        stackText.text = items.Count > 1 ? items.Count.ToString() : string.Empty;
+
+        ChangeSprite(CurrentItem.spriteNeutral, CurrentItem.spriteHighlighted);
+    }
+
 
     private void ChangeSprite(Sprite neutral, Sprite highlight)
     {
@@ -100,11 +127,21 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
 
     }
 
+   
+
+
     public void OnPointerClick(PointerEventData eventData)
     {
-        if(eventData.button == PointerEventData.InputButton.Right)
+        if(eventData.button == PointerEventData.InputButton.Right && Inventory.CanvasGroup.alpha > 0)
         {
             UseItem();
         }
+    }
+
+    public void ClearSlot()
+    {
+        items.Clear();
+        ChangeSprite(slotEmpty, slotHighlight);
+        stackText.text = string.Empty;
     }
 }

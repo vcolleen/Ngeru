@@ -24,6 +24,8 @@ public class Item : MonoBehaviour {
                 Debug.Log("triple six blaze it");
                 //Tie into attributes once the framework exists.
                 break;
+
+                // YOU MUST GO TO INVENTORY SCRIPT, LINE 175 UNDER LOAD FUNCTION, IN ORDER TO ADD OTHER TYPES.
         }
     }
 
