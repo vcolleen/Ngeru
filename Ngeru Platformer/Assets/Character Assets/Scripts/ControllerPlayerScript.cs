@@ -18,8 +18,14 @@ public class ControllerPlayerScript : MonoBehaviour {
 
     public LayerMask whatIsGround;
 
-    bool movementKeyDown = false;
-    bool isJumping = false;
+    public bool movementKeyDown = false;
+    public bool isJumping = false;
+
+    public float startIdle;
+    public float waitTime;
+    public bool isIdle;
+
+    bool isLayingDown;
 
 
 
@@ -98,6 +104,36 @@ public class ControllerPlayerScript : MonoBehaviour {
         {
             anim.SetTrigger("Jump");
             isJumping = true;
+        }
+
+
+        
+        if (movementKeyDown == false) 
+        {
+            if (isJumping == false)
+            {
+                if (isIdle == false)
+                {
+                    startIdle = (Time.time + waitTime);
+                    Debug.Log("Start Idle");
+                    isIdle = true;
+                }
+
+
+            }
+        }
+
+        if (isLayingDown == false)
+        {
+            if (Time.time > startIdle)
+            {
+                if (isIdle == true)
+                {
+                    anim.SetTrigger("LayDown");
+                    Debug.Log("Lay Down");
+                }
+
+            }
         }
 
 
