@@ -18,11 +18,13 @@ public class ControllerPlayerScript : MonoBehaviour {
 
     public LayerMask whatIsGround;
 
+    bool movementKeyDown = false;
+    bool isJumping = false;
+
+
 
     //calling the animator
     Animator anim;
-
-    //bool isIdle;
 
 
     // Use this for initialization
@@ -33,30 +35,73 @@ public class ControllerPlayerScript : MonoBehaviour {
 
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (isJumping)
+        {
+            isJumping = false;
+            if (movementKeyDown)
+            {
+                anim.SetTrigger("LandAndMove");
+            }
+            else
+            {
+                anim.SetTrigger("Stop");
+            }
+        }
+    }
+
     void Update()
     {
         HandleInput();
 
         if (Input.GetKey(KeyCode.D))
         {
-            anim.SetInteger("State", 2);
+            if (movementKeyDown == false)
+            {
+                anim.SetTrigger("MoveRight");
+                movementKeyDown = true;
+            }
+
         }
 
         if (Input.GetKeyUp(KeyCode.D))
         {
-            anim.SetInteger("State", 0);
+            if (isJumping == false)
+            {
+                anim.SetTrigger("Stop");
+            }
+            movementKeyDown = false;
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            anim.SetInteger("State", 1);
+            if (movementKeyDown == false)
+            {
+                anim.SetTrigger("MoveLeft");
+                movementKeyDown = true;
+            }
+
         }
 
 
         if (Input.GetKeyUp(KeyCode.A))
         {
-            anim.SetInteger("State", 0);
+            if (isJumping == false)
+            {
+                anim.SetTrigger("Stop");
+            }
+            movementKeyDown = false;
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            anim.SetTrigger("Jump");
+            isJumping = true;
+        }
+
+
+       
 
 
     }
