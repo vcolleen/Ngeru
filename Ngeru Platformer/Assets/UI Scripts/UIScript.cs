@@ -17,7 +17,33 @@ public class UIScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (Input.GetKeyDown(KeyCode.H))
+        {
+            if (objective.activeSelf == false)
+            {
+                objective.SetActive(true);
+            }
+            else
+            {
+                objective.SetActive(false);
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            if (inv.activeSelf == false)
+            {
+                inv.SetActive(true);
+                close.SetActive(true);
+                shade.SetActive(true);
+            }
+            else
+            {
+                inv.SetActive(false);
+                close.SetActive(false);
+                shade.SetActive(false);
+            }
+        }
 	}
 
     public void PressHelp()
