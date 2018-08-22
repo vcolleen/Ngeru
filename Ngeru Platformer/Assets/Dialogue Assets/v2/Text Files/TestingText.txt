@@ -1,0 +1,1 @@
+Default text. Please assign a text file from the text file folder in the dialogue assets
