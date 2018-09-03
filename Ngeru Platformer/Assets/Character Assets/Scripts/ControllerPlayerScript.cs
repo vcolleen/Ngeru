@@ -4,36 +4,29 @@ using UnityEngine;
 
 public class ControllerPlayerScript : MonoBehaviour {
 
+    //Player Variables 
     private Rigidbody2D myRigidBody;
     public float movementSpeed;
-
     public Transform[] groundPoints;
-
     public float groundRadius;
 
+    //Jumping Variables
     private bool isGrounded;
     private bool jump;
-
     public float jumpForce;
-
     public LayerMask whatIsGround;
 
+    //Movement Variables 
     public bool movementKeyDown = false;
     public bool isJumping = false;
-
     public float startIdle;
     public float waitTime;
     public bool isIdle;
-
     bool isLayingDown;
-
-
 
     //calling the animator
     Animator anim;
 
-
-    // Use this for initialization
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
@@ -41,26 +34,14 @@ public class ControllerPlayerScript : MonoBehaviour {
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (isJumping)
-        {
-            isJumping = false;
-            if (movementKeyDown)
-            {
-                anim.SetTrigger("LandAndMove");
-            }
-            else
-            {
-                anim.SetTrigger("Stop");
-            }
-        }
-    }
+
 
     void Update()
     {
+        //Jump-Movement 
         HandleInput();
 
+        //Animations & Keyboard Triggers 
         if (Input.GetKey(KeyCode.D))
         {
             if (movementKeyDown == false)
@@ -106,43 +87,25 @@ public class ControllerPlayerScript : MonoBehaviour {
             isJumping = true;
         }
 
-
-        
-        if (movementKeyDown == false) 
-        {
-            if (isJumping == false)
-            {
-                if (isIdle == false)
-                {
-                    startIdle = (Time.time + waitTime);
-                    Debug.Log("Start Idle");
-                    isIdle = true;
-                }
-
-
-            }
-        }
-
-        if (isLayingDown == false)
-        {
-            if (Time.time > startIdle)
-            {
-                if (isIdle == true)
-                {
-                    anim.SetTrigger("LayDown");
-                    Debug.Log("Lay Down");
-                }
-
-            }
-        }
-
-
-       
-
-
     }
 
-    // Update is called once per frame
+    //What stops the animation playing once Ngeru lands
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (isJumping)
+        {
+            isJumping = false;
+            if (movementKeyDown)
+            {
+                anim.SetTrigger("LandAndMove");
+            }
+            else
+            {
+                anim.SetTrigger("Stop");
+            }
+        }
+    }
+
     void FixedUpdate()
     {
         float horizontal = Input.GetAxis("Horizontal");
@@ -152,45 +115,12 @@ public class ControllerPlayerScript : MonoBehaviour {
         HandleMovement(horizontal);
 
         ResetValues();
+
+        Debug.Log(Input.GetAxis("Horizontal"));
     }
 
-    /*
-    private void IdleAnimations() {
-        if (isIdle == true) {
-            anim.SetBool("IsIdle", true);
-            StartCoroutine(Idle());
-            StartCoroutine(IdleLie());
-            StartCoroutine(IdleReturn());
-        }
 
-        else
-        {
-            anim.SetBool("IsIdle", false);
-        }
-    }
-
-    IEnumerator IdleLie()
-    {
-        yield return new WaitForSeconds(5);
-        anim.SetInteger("State", 4);
-        StopCoroutine(IdleLie());
-    }
-
-    IEnumerator Idle()
-    {
-        yield return new WaitForSeconds(3);
-        anim.SetInteger("State", 3);
-        StopCoroutine(Idle());
-    }
-
-    IEnumerator IdleReturn()
-    {
-        yield return new WaitForSeconds(10);
-        anim.SetInteger("State", 5);
-        StopCoroutine(IdleReturn());
-    }
-    */
-
+    //Left to right movement
     private void HandleMovement(float horizontal)
     {
 
@@ -204,6 +134,9 @@ public class ControllerPlayerScript : MonoBehaviour {
         }
     }
 
+    
+
+    //Jump
     private void HandleInput()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -212,6 +145,7 @@ public class ControllerPlayerScript : MonoBehaviour {
         }
     }
 
+    //Indication that Ngeru is grounded
     private bool IsGrounded()
     {
         if (myRigidBody.velocity.y <= 0)
