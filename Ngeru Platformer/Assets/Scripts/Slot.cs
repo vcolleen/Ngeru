@@ -9,9 +9,11 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
     private Stack<Item> items;
 
     public Text stackText;
-
     public Sprite slotEmpty;
     public Sprite slotHighlight;
+
+    public PlayerHealth ItemTurn;
+    public Inventory GetInventory;
 
     public Stack<Item> Items
     {
@@ -48,12 +50,15 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
     void Awake()
     {
         items = new Stack<Item>();
+        ItemTurn = GameObject.FindObjectOfType(typeof(PlayerHealth)) as PlayerHealth;
+        GetInventory = GameObject.FindObjectOfType(typeof(Inventory)) as Inventory;
     }
 
 
     // Use this for initialization
     void Start () {
-        
+
+       
 
         RectTransform slotRect = GetComponent<RectTransform>();
         RectTransform txtRect = stackText.GetComponent<RectTransform>();
@@ -68,8 +73,8 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+       
+    }
 
     public void AddItem(Item item) {
         items.Push(item);
@@ -112,8 +117,9 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
     {
         if (!IsEmpty)
         {
-            items.Pop().Use();
 
+            items.Pop().Use();
+            
 
             stackText.text = items.Count > 1 ? items.Count.ToString() : string.Empty;
             //this checks stackText, finds the number of items then routes the count to empty if quantity below 1.
@@ -134,7 +140,13 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
     {
         if(eventData.button == PointerEventData.InputButton.Right && Inventory.CanvasGroup.alpha > 0)
         {
-            UseItem();
+
+                UseItem();
+            ItemTurn.SkipTurn();
+            GetInventory.TurnbaseLoad();
+
+
+            
         }
     }
 

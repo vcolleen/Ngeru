@@ -60,6 +60,7 @@ public class Inventory : MonoBehaviour {
     private static GameObject clicked;
     private static GameObject hoverObject;
 
+    public bool NotInCombat;
 
 
     public GameObject mana;
@@ -93,7 +94,7 @@ public class Inventory : MonoBehaviour {
             hoverObject.transform.position = canvas.transform.TransformPoint(position);
         }
 
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.I) && NotInCombat == true)
         {
             if(canvasGroup.alpha > 0)
             {
@@ -108,6 +109,23 @@ public class Inventory : MonoBehaviour {
 
 
 
+    }
+
+    public void TurnbaseLoad()
+    {
+            
+
+           if(canvasGroup.alpha > 0)
+            {
+                StartCoroutine("FadeOut");
+            SaveInventory();
+            }
+
+            else
+            {
+                StartCoroutine("FadeIn");
+            LoadInventory();
+        }
     }
 
 

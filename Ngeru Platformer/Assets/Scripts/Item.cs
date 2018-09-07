@@ -9,6 +9,13 @@ public class Item : MonoBehaviour {
     public Sprite spriteNeutral;
     public Sprite spriteHighlighted;
     public int maxSize;
+    public PlayerHealth heals;
+
+    void Awake()
+    {
+        heals = GameObject.FindObjectOfType(typeof(PlayerHealth)) as PlayerHealth;
+    }
+
     public void Use()
     {
         switch (type) {
@@ -19,6 +26,8 @@ public class Item : MonoBehaviour {
             case ItemType.HEALTH:
                 Debug.Log("Glug glug health");
                 //Tie into attributes once the framework exists.
+                heals.currentHealth += 20;
+                heals.HPReset();
                 break;
             case ItemType.ATTACK:
                 Debug.Log("triple six blaze it");
@@ -28,6 +37,8 @@ public class Item : MonoBehaviour {
                 // YOU MUST GO TO INVENTORY SCRIPT, LINE 175 UNDER LOAD FUNCTION, IN ORDER TO ADD OTHER TYPES.
         }
     }
+
+   
 
 	// Use this for initialization
 	void Start () {
