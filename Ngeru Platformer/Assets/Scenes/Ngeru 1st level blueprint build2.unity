@@ -11325,6 +11325,7 @@ GameObject:
   - component: {fileID: 1673354473}
   - component: {fileID: 1673354472}
   - component: {fileID: 1673354471}
+  - component: {fileID: 1673354474}
   m_Layer: 0
   m_Name: Ngeru
   m_TagString: Untagged
@@ -11446,20 +11447,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 1673354468}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 807f6a047d512844da3e74d3f4dd8bad, type: 3}
+  m_Script: {fileID: 11500000, guid: 769affade33283c47b36a02f499cd77a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 2
+  movementSpeed: 1
   groundPoints:
   - {fileID: 1441633770}
   - {fileID: 1840765632}
   - {fileID: 1431071405}
-  - {fileID: 1431071405}
-  - {fileID: 1431071405}
   groundRadius: 0.2
-  jumpForce: 200
+  jumpForce: 175
   whatIsGround:
+    serializedVersion: 2
     m_Bits: 4294967295
+--- !u!95 &1673354474
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1673354468}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0fd432435f535b3469b56fb7048440e1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1673789789
 GameObject:
   m_ObjectHideFlags: 0
