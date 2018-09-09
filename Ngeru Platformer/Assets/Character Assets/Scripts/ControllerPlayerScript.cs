@@ -116,7 +116,7 @@ public class ControllerPlayerScript : MonoBehaviour {
 
         ResetValues();
 
-        Debug.Log(Input.GetAxis("Horizontal"));
+        Debug.Log(Input.GetAxis("Jump"));
     }
 
 
