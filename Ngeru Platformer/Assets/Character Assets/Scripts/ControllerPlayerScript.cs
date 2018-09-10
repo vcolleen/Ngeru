@@ -17,12 +17,12 @@ public class ControllerPlayerScript : MonoBehaviour {
     public LayerMask whatIsGround;
 
     //Movement Variables 
-    public bool movementKeyDown = false;
-    public bool isJumping = false;
-    public float startIdle;
-    public float waitTime;
-    public bool isIdle;
-    bool isLayingDown;
+    bool isIdle;
+    bool isTurningRight;
+    bool isTurningLeft;
+    bool isLookingLeft;
+    bool isLookingRight;
+
 
     //calling the animator
     Animator anim;
@@ -30,7 +30,14 @@ public class ControllerPlayerScript : MonoBehaviour {
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
+
         anim = GetComponent<Animator>();
+
+        isIdle = true;
+        isTurningRight = false;
+        isTurningLeft = false;
+        isLookingLeft = false;
+        isLookingRight = true;
 
     }
 
@@ -41,70 +48,67 @@ public class ControllerPlayerScript : MonoBehaviour {
         //Jump-Movement 
         HandleInput();
 
+        Debug.Log(Input.GetAxis("Horizontal"));
+
         //Animations & Keyboard Triggers 
-        if (Input.GetKey(KeyCode.D))
-        {
-            if (movementKeyDown == false)
-            {
-                anim.SetTrigger("MoveRight");
-                movementKeyDown = true;
-            }
 
+        //Idle
+        if (Input.GetAxis("Horizontal") == 0)
+        {
+            anim.SetBool("isIdle", true);
         }
 
-        if (Input.GetKeyUp(KeyCode.D))
+        //MovingLeft
+        if (Input.GetAxis("Horizontal") < 0)
         {
-            if (isJumping == false)
-            {
-                anim.SetTrigger("Stop");
-            }
-            movementKeyDown = false;
+            anim.SetTrigger("MoveLeft");
+            anim.SetBool("isLookingLeft", true);
+        }
+        else
+        {
+            anim.SetBool("isIdle", false);
         }
 
-        if (Input.GetKey(KeyCode.A))
+        //MovingRight 
+        if (Input.GetAxis("Horizontal") > 0)
         {
-            if (movementKeyDown == false)
-            {
-                anim.SetTrigger("MoveLeft");
-                movementKeyDown = true;
-            }
-
+            anim.SetTrigger("MoveRight");
+            anim.SetBool("isLookingRight", true);
+        }
+        else
+        {
+            anim.SetBool("isIdle", true);
         }
 
 
-        if (Input.GetKeyUp(KeyCode.A))
+        //TurningRight
+        if (anim.GetBool("isLookingLeft") == true)
         {
-            if (isJumping == false)
+            if(Input.GetAxis("Horizontal") > 0)
             {
-                anim.SetTrigger("Stop");
-            }
-            movementKeyDown = false;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            anim.SetTrigger("Jump");
-            isJumping = true;
-        }
-
-    }
-
-    //What stops the animation playing once Ngeru lands
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (isJumping)
-        {
-            isJumping = false;
-            if (movementKeyDown)
-            {
-                anim.SetTrigger("LandAndMove");
+                anim.SetBool("isTurningRight", true);
             }
             else
             {
-                anim.SetTrigger("Stop");
+                anim.SetBool("isTurningRight", false);
             }
         }
+
+        //TurningLeft
+        if (anim.GetBool("isLookingRight") == true)
+        {
+            if (Input.GetAxis("Horizontal") < 0)
+            {
+                anim.SetBool("isTurningLeft", true);
+            }
+            else
+            {
+                anim.SetBool("isTurningLeft", false);
+            }
+        }
+
     }
+
 
     void FixedUpdate()
     {
@@ -139,7 +143,7 @@ public class ControllerPlayerScript : MonoBehaviour {
     //Jump
     private void HandleInput()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetAxis("Jump") == 1)
         {
             jump = true;
         }
