@@ -23,6 +23,7 @@ public class ControllerPlayerScript : MonoBehaviour {
     public bool isTurningRight;
     public bool isTurningLeft;
     public bool isJumping;
+    public bool isRunning;
 
 
     //calling the animator
@@ -42,6 +43,7 @@ public class ControllerPlayerScript : MonoBehaviour {
         isTurningRight = false;
         isTurningLeft = false;
         isJumping = false;
+        isRunning = false;
     }
 
 
@@ -66,9 +68,29 @@ public class ControllerPlayerScript : MonoBehaviour {
             anim.SetBool("isIdle", false);
         }
 
-        if(isIdle == true)
+        //Run
+        if(Input.GetAxis("Run") > 0)
         {
-            StartCoroutine(DelayedAnimation());
+            isRunning = true;
+        }
+
+        else
+        {
+            isRunning = false;
+        }
+
+        if(isRunning == true)
+        {
+            anim.SetBool("isRunning", true);
+            anim.SetBool("isWalkingLeft", false);
+            anim.SetBool("isWalkingRight", false);
+            movementSpeed = 2f;
+        }
+
+        if(isRunning == false)
+        {
+            anim.SetBool("isRunning", false);
+            movementSpeed = 0.8f;
         }
 
         //WalkingRight
@@ -191,10 +213,5 @@ public class ControllerPlayerScript : MonoBehaviour {
         jump = false;
     }
 
-    IEnumerator DelayedAnimation()
-    {
-        yield return new WaitForSeconds(10);
-        anim.SetTrigger("LieDown");
-    }
    
 }
