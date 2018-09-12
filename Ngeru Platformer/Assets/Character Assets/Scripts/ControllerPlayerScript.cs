@@ -17,11 +17,12 @@ public class ControllerPlayerScript : MonoBehaviour {
     public LayerMask whatIsGround;
 
     //Movement Variables 
-    bool isIdle;
-    bool isTurningRight;
-    bool isTurningLeft;
-    bool isLookingLeft;
-    bool isLookingRight;
+    public bool isIdle;
+    public bool isWalkingRight;
+    public bool isWalkingLeft;
+    public bool isTurningRight;
+    public bool isTurningLeft;
+    public bool isJumping;
 
 
     //calling the animator
@@ -33,12 +34,14 @@ public class ControllerPlayerScript : MonoBehaviour {
 
         anim = GetComponent<Animator>();
 
+        anim.SetTrigger("isLookingRight");
+
         isIdle = true;
+        isWalkingRight = false;
+        isWalkingLeft = false;
         isTurningRight = false;
         isTurningLeft = false;
-        isLookingLeft = false;
-        isLookingRight = true;
-
+        isJumping = false;
     }
 
 
@@ -48,64 +51,70 @@ public class ControllerPlayerScript : MonoBehaviour {
         //Jump-Movement 
         HandleInput();
 
-        Debug.Log(Input.GetAxis("Horizontal"));
+        Debug.Log(Input.GetAxis("Jump"));
+
 
         //Animations & Keyboard Triggers 
-
         //Idle
         if (Input.GetAxis("Horizontal") == 0)
         {
             anim.SetBool("isIdle", true);
         }
 
-        //MovingLeft
-        if (Input.GetAxis("Horizontal") < 0)
-        {
-            anim.SetTrigger("MoveLeft");
-            anim.SetBool("isLookingLeft", true);
-        }
         else
         {
             anim.SetBool("isIdle", false);
         }
 
-        //MovingRight 
-        if (Input.GetAxis("Horizontal") > 0)
+        if(isIdle == true)
         {
-            anim.SetTrigger("MoveRight");
-            anim.SetBool("isLookingRight", true);
+            StartCoroutine(DelayedAnimation());
+        }
+
+        //WalkingRight
+        if(Input.GetAxis("Horizontal") > 0)
+        {
+            isWalkingRight = true;
+            anim.SetTrigger("isLookingRight");
+        }
+
+        else
+        {
+            isWalkingRight = false;
+        }
+
+        if(isWalkingRight == true)
+        {
+            anim.SetBool("isWalkingRight", true);
+        }
+
+        if (isWalkingRight == false)
+        {
+            anim.SetBool("isWalkingRight", false);
+        }
+
+        //WalkingLeft 
+        if(Input.GetAxis("Horizontal") < 0)
+        {
+            isWalkingLeft = true;
+            anim.SetTrigger("isLookingLeft");
         }
         else
         {
-            anim.SetBool("isIdle", true);
+            isWalkingLeft = false;
         }
 
-
-        //TurningRight
-        if (anim.GetBool("isLookingLeft") == true)
+        if(isWalkingLeft == true)
         {
-            if(Input.GetAxis("Horizontal") > 0)
-            {
-                anim.SetBool("isTurningRight", true);
-            }
-            else
-            {
-                anim.SetBool("isTurningRight", false);
-            }
+            anim.SetBool("isWalkingLeft", true);
         }
 
-        //TurningLeft
-        if (anim.GetBool("isLookingRight") == true)
+        if (isWalkingLeft == false)
         {
-            if (Input.GetAxis("Horizontal") < 0)
-            {
-                anim.SetBool("isTurningLeft", true);
-            }
-            else
-            {
-                anim.SetBool("isTurningLeft", false);
-            }
+            anim.SetBool("isWalkingLeft", false);
+
         }
+
 
     }
 
@@ -119,8 +128,6 @@ public class ControllerPlayerScript : MonoBehaviour {
         HandleMovement(horizontal);
 
         ResetValues();
-
-        Debug.Log(Input.GetAxis("Jump"));
     }
 
 
@@ -134,7 +141,12 @@ public class ControllerPlayerScript : MonoBehaviour {
         {
             isGrounded = false;
             myRigidBody.AddForce(new Vector2(0, jumpForce));
+            anim.SetBool("isJumping", true);
+        }
 
+        if(isGrounded)
+        {
+            anim.SetBool("isJumping", false);
         }
     }
 
@@ -143,14 +155,15 @@ public class ControllerPlayerScript : MonoBehaviour {
     //Jump
     private void HandleInput()
     {
-        if (Input.GetAxis("Jump") == 1)
+        if (Input.GetAxis("Jump") >= 1)
         {
             jump = true;
+            anim.SetBool("isIdle", false);
         }
     }
 
     //Indication that Ngeru is grounded
-    private bool IsGrounded()
+    public bool IsGrounded()
     {
         if (myRigidBody.velocity.y <= 0)
         {
@@ -178,5 +191,10 @@ public class ControllerPlayerScript : MonoBehaviour {
         jump = false;
     }
 
+    IEnumerator DelayedAnimation()
+    {
+        yield return new WaitForSeconds(10);
+        anim.SetTrigger("LieDown");
+    }
    
 }
