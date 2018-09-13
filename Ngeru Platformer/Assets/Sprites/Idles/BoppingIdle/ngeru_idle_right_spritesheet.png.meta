@@ -4,6 +4,19 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: ngeru_idle_right_spritesheet_0
     21300002: ngeru_idle_right_spritesheet_1
+    21300004: ngeru_idle_right_spritesheet_2
+    21300006: ngeru_idle_right_spritesheet_3
+    21300008: ngeru_idle_right_spritesheet_4
+    21300010: ngeru_idle_right_spritesheet_5
+    21300012: ngeru_idle_right_spritesheet_6
+    21300014: ngeru_idle_right_spritesheet_7
+    21300016: ngeru_idle_right_spritesheet_8
+    21300018: ngeru_idle_right_spritesheet_9
+    21300020: ngeru_idle_right_spritesheet_10
+    21300022: ngeru_idle_right_spritesheet_11
+    21300024: ngeru_idle_right_spritesheet_12
+    21300026: ngeru_idle_right_spritesheet_13
+    21300028: ngeru_idle_right_spritesheet_14
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -87,8 +100,8 @@ TextureImporter:
       name: ngeru_idle_right_spritesheet_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 3
+        x: 18
+        y: 130
         width: 64
         height: 58
       alignment: 0
@@ -98,7 +111,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df5078e256798084db0350c07ee8d305
+      spriteID: 9172f65a85d9ef6458417a4fc6fc634a
       vertices: []
       indices: 
       edges: []
@@ -107,8 +120,68 @@ TextureImporter:
       name: ngeru_idle_right_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 104
-        y: 3
+        x: 135
+        y: 130
+        width: 66
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b6253cb7ca7fb4883ab8544593a8f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_right_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 130
+        width: 68
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e64167b69e1c14bbef8afc3ee379f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_right_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 130
+        width: 66
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d24c112c11cf545b917022ff2773a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_right_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 130
         width: 64
         height: 59
       alignment: 0
@@ -118,7 +191,207 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7f798d5c6ec62042a691fb87e3631cd
+      spriteID: 19fa16b2fb195694baf3ae43a2142ef8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_right_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 66
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573ddeed2c61b3144becc2d862f39900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_right_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 66
+        width: 66
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9127ae1aa5eabbd46b795ba4287f7375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_right_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 66
+        width: 68
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae56ee551e2823468a0dc690b65bd7b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_right_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 66
+        width: 66
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfad2a32aab9084bad553a25058e5af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_right_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 66
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dfda66b206b4164ea3327a447cde7ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_right_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 2
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010d27cbdb8f2a64c8a4f44df3812e95
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_right_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 2
+        width: 66
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d2944f00618d845a087d22a6f4b5c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_right_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 2
+        width: 68
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857d42799f312864e9ef0cc39de05660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_right_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 2
+        width: 66
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298417588b0f4ec41b8dc33d626ea806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_right_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 2
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c944881f34c164e859947cfbd00051
       vertices: []
       indices: 
       edges: []
@@ -126,7 +399,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 00e6c80050c912d4b8ffbb49171c4b8d
+    spriteID: 71b493c851e831a4ab8a25f70774edf9
     vertices: []
     indices: 
     edges: []
