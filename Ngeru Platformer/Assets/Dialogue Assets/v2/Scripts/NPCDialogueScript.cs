@@ -7,6 +7,7 @@ using System.IO;
 public class NPCDialogueScript : MonoBehaviour {
     //Variables
     public bool useOverlay;
+    public bool isCombatNPC;
     public bool playerInCollider;
 
     //Referenes
@@ -15,6 +16,7 @@ public class NPCDialogueScript : MonoBehaviour {
     public GameObject overlay;
     public GameObject bubble;
     public Transform dialogueAnchor;
+    public Button button;
 
     public Sprite portrait;
 
@@ -50,6 +52,10 @@ public class NPCDialogueScript : MonoBehaviour {
             Instantiate(overlay, gameObject.GetComponent<Transform>().position, new Quaternion(0,0,0,0) ,gameObject.GetComponent<Transform>());
             GetComponentInChildren<DialogueOverlayScript>().storedText = textFile1.text;
             GetComponentInChildren<DialogueOverlayScript>().storedPortrait = portrait;
+            if (isCombatNPC)
+            {
+                ButtonStateSwap();
+            }
         }
 
         else
@@ -63,6 +69,12 @@ public class NPCDialogueScript : MonoBehaviour {
     {
         Instantiate(promtPrefab, dialogueAnchor, false);
 
+    }
+
+    public void ButtonStateSwap()
+    {
+        Debug.Log("turn off button");
+        button.interactable = !button.interactable;
     }
 
 }

@@ -36,7 +36,7 @@ public class DialogueOverlayScript : MonoBehaviour {
                 catch (UnassignedReferenceException)
                 {
                     GetComponentInParent<NPCDialogueScript>().Prompt();
-                    Destroy(gameObject);
+                    DestroySelf();
                 }
             }
             else if (currentTextFile == 2)
@@ -51,7 +51,7 @@ public class DialogueOverlayScript : MonoBehaviour {
                 catch (UnassignedReferenceException)
                 {
                     GetComponentInParent<NPCDialogueScript>().Prompt();
-                    Destroy(gameObject);
+                    DestroySelf();
                 }
             }
             else if (currentTextFile == 3)
@@ -66,7 +66,7 @@ public class DialogueOverlayScript : MonoBehaviour {
                 catch (UnassignedReferenceException)
                 {
                     GetComponentInParent<NPCDialogueScript>().Prompt();
-                    Destroy(gameObject);
+                    DestroySelf();
                 }
             }
             else if (currentTextFile == 4)
@@ -81,13 +81,13 @@ public class DialogueOverlayScript : MonoBehaviour {
                 catch (UnassignedReferenceException)
                 {
                     GetComponentInParent<NPCDialogueScript>().Prompt();
-                    Destroy(gameObject);
+                    DestroySelf();
                 }
 
             }
             else
             {
-                Destroy(gameObject);
+                DestroySelf();
             }
             //DestroySelf();
         }
@@ -96,5 +96,78 @@ public class DialogueOverlayScript : MonoBehaviour {
     public void DestroySelf()
     {
         Destroy(gameObject);
+        if (GetComponentInParent<NPCDialogueScript>().isCombatNPC)
+        {
+            GetComponentInParent<NPCDialogueScript>().ButtonStateSwap();
+        }
+    }
+
+    public void ButtonInteract()
+    {
+        if (currentTextFile == 1)
+        {
+            try
+            {
+                storedText = GetComponentInParent<NPCDialogueScript>().textFile2.text;
+                currentTextFile = 2;
+                textboxText.text = storedText;
+            }
+
+            catch (UnassignedReferenceException)
+            {
+                GetComponentInParent<NPCDialogueScript>().Prompt();
+                DestroySelf();
+            }
+        }
+        else if (currentTextFile == 2)
+        {
+            try
+            {
+                storedText = GetComponentInParent<NPCDialogueScript>().textFile3.text;
+                currentTextFile = 3;
+                textboxText.text = storedText;
+            }
+
+            catch (UnassignedReferenceException)
+            {
+                GetComponentInParent<NPCDialogueScript>().Prompt();
+                DestroySelf();
+            }
+        }
+        else if (currentTextFile == 3)
+        {
+            try
+            {
+                storedText = GetComponentInParent<NPCDialogueScript>().textFile4.text;
+                currentTextFile = 4;
+                textboxText.text = storedText;
+            }
+
+            catch (UnassignedReferenceException)
+            {
+                GetComponentInParent<NPCDialogueScript>().Prompt();
+                DestroySelf();
+            }
+        }
+        else if (currentTextFile == 4)
+        {
+            try
+            {
+                storedText = GetComponentInParent<NPCDialogueScript>().textFile5.text;
+                currentTextFile = 5;
+                textboxText.text = storedText;
+            }
+
+            catch (UnassignedReferenceException)
+            {
+                GetComponentInParent<NPCDialogueScript>().Prompt();
+                DestroySelf();
+            }
+
+        }
+        else
+        {
+            DestroySelf();
+        }
     }
 }

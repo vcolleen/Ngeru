@@ -202,7 +202,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1780965799774064}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.73523784, y: -0.6633148, z: 0}
+  m_LocalPosition: {x: -325.9907, y: -74.36908, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224302952025686964}
@@ -520,7 +520,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114325715425105916}
-        m_MethodName: DestroySelf
+        m_MethodName: ButtonInteract
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
