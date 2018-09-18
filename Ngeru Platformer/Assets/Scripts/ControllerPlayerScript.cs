@@ -4,48 +4,145 @@ using UnityEngine;
 
 public class ControllerPlayerScript : MonoBehaviour {
 
+    //Player Variables 
     private Rigidbody2D myRigidBody;
     public float movementSpeed;
-   
     public Transform[] groundPoints;
-
     public float groundRadius;
 
+    //Jumping Variables
     private bool isGrounded;
     private bool jump;
-
     public float jumpForce;
-
     public LayerMask whatIsGround;
+
+    //Movement Variables 
+    public bool isIdle;
+    public bool isWalkingRight;
+    public bool isWalkingLeft;
+    public bool isTurningRight;
+    public bool isTurningLeft;
+    public bool isJumping;
+    public bool isRunning;
+
 
     //calling the animator
     Animator anim;
 
-
-
-    // Use this for initialization
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
+
         anim = GetComponent<Animator>();
+
+        anim.SetTrigger("isLookingRight");
+
+        isIdle = true;
+        isWalkingRight = false;
+        isWalkingLeft = false;
+        isTurningRight = false;
+        isTurningLeft = false;
+        isJumping = false;
+        isRunning = false;
     }
+
+
 
     void Update()
     {
+        //Jump-Movement 
         HandleInput();
 
-        if(Input.GetKey (KeyCode.D))
+        Debug.Log(Input.GetAxis("Jump"));
+
+
+        //Animations & Keyboard Triggers 
+        //Idle
+        if (Input.GetAxis("Horizontal") == 0)
         {
-            anim.SetInteger("State", 2);
+            anim.SetBool("isIdle", true);
         }
 
-        if(Input.GetKey (KeyCode.A))
+        else
         {
-            anim.SetInteger("State", 1);
+            anim.SetBool("isIdle", false);
         }
+
+        //Run
+        if(Input.GetAxis("Run") > 0)
+        {
+            isRunning = true;
+        }
+
+        else
+        {
+            isRunning = false;
+        }
+
+        if(isRunning == true)
+        {
+            anim.SetBool("isRunning", true);
+            anim.SetBool("isWalkingLeft", false);
+            anim.SetBool("isWalkingRight", false);
+            movementSpeed = 2f;
+            jumpForce = 250;
+        }
+
+        if(isRunning == false)
+        {
+            anim.SetBool("isRunning", false);
+            movementSpeed = 0.8f;
+            jumpForce = 200;
+        }
+
+        //WalkingRight
+        if(Input.GetAxis("Horizontal") > 0)
+        {
+            isWalkingRight = true;
+            anim.SetTrigger("isLookingRight");
+        }
+
+        else
+        {
+            isWalkingRight = false;
+        }
+
+        if(isWalkingRight == true)
+        {
+            anim.SetBool("isWalkingRight", true);
+        }
+
+        if (isWalkingRight == false)
+        {
+            anim.SetBool("isWalkingRight", false);
+        }
+
+        //WalkingLeft 
+        if(Input.GetAxis("Horizontal") < 0)
+        {
+            isWalkingLeft = true;
+            anim.SetTrigger("isLookingLeft");
+        }
+        else
+        {
+            isWalkingLeft = false;
+        }
+
+        if(isWalkingLeft == true)
+        {
+            anim.SetBool("isWalkingLeft", true);
+        }
+
+        if (isWalkingLeft == false)
+        {
+            anim.SetBool("isWalkingLeft", false);
+
+        }
+
+
     }
 
-    // Update is called once per frame
+
     void FixedUpdate()
     {
         float horizontal = Input.GetAxis("Horizontal");
@@ -58,6 +155,7 @@ public class ControllerPlayerScript : MonoBehaviour {
     }
 
 
+    //Left to right movement
     private void HandleMovement(float horizontal)
     {
 
@@ -67,19 +165,29 @@ public class ControllerPlayerScript : MonoBehaviour {
         {
             isGrounded = false;
             myRigidBody.AddForce(new Vector2(0, jumpForce));
+            anim.SetBool("isJumping", true);
+        }
 
+        if(isGrounded)
+        {
+            anim.SetBool("isJumping", false);
         }
     }
 
+    
+
+    //Jump
     private void HandleInput()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetAxis("Jump") >= 1)
         {
             jump = true;
+            anim.SetBool("isIdle", false);
         }
     }
 
-    private bool IsGrounded()
+    //Indication that Ngeru is grounded
+    public bool IsGrounded()
     {
         if (myRigidBody.velocity.y <= 0)
         {
