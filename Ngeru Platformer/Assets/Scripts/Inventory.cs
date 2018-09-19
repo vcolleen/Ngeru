@@ -81,6 +81,7 @@ public class Inventory : MonoBehaviour {
         CreateLayout();
 
         canvasGroup = transform.parent.GetComponent<CanvasGroup>();
+
     }
 
     // Update is called once per frame
@@ -94,16 +95,18 @@ public class Inventory : MonoBehaviour {
             hoverObject.transform.position = canvas.transform.TransformPoint(position);
         }
 
-        if (Input.GetKeyDown(KeyCode.I) && NotInCombat == true)
+        if (Input.GetKeyDown(KeyCode.B) && NotInCombat == true)
         {
             if(canvasGroup.alpha > 0)
             {
                 StartCoroutine("FadeOut");
+                SaveInventory();
             }
 
             else
             {
                 StartCoroutine("FadeIn");
+                LoadInventory();
             }
         }
 
@@ -113,7 +116,7 @@ public class Inventory : MonoBehaviour {
 
     public void TurnbaseLoad()
     {
-            
+
 
            if(canvasGroup.alpha > 0)
             {
@@ -124,7 +127,7 @@ public class Inventory : MonoBehaviour {
             else
             {
                 StartCoroutine("FadeIn");
-            LoadInventory();
+          LoadInventory();
         }
     }
 
@@ -156,8 +159,8 @@ public class Inventory : MonoBehaviour {
         PlayerPrefs.SetFloat("slotPaddingLeft", slotPaddingLeft);
         PlayerPrefs.SetFloat("slotPaddingTop", slotPaddingTop);
         PlayerPrefs.SetFloat("slotSize", slotSize);
-        PlayerPrefs.SetFloat("xPos", inventoryRect.position.x);
-        PlayerPrefs.SetFloat("yPos", inventoryRect.position.y);
+      //  PlayerPrefs.SetFloat("xPos", inventoryRect.position.x);
+      //  PlayerPrefs.SetFloat("yPos", inventoryRect.position.y);
 
 
         PlayerPrefs.Save();
@@ -172,7 +175,7 @@ public class Inventory : MonoBehaviour {
          slotPaddingTop = PlayerPrefs.GetFloat("slotPaddingTop", slotPaddingTop);
         slotSize =  PlayerPrefs.GetFloat("slotSize", slotSize);
 
-        inventoryRect.position = new Vector3(PlayerPrefs.GetFloat("xPos"), PlayerPrefs.GetFloat("yPos"), inventoryRect.position.z);
+        //inventoryRect.position = new Vector3(PlayerPrefs.GetFloat("xPos"), PlayerPrefs.GetFloat("yPos"), inventoryRect.position.z);
 
         CreateLayout();
 
@@ -187,9 +190,9 @@ public class Inventory : MonoBehaviour {
 
             int index = System.Int32.Parse(splitValues[0]); //Reads the slot value.
 
-            
-          
-            
+
+
+
 
             ItemType type = (ItemType)System.Enum.Parse(typeof(ItemType), splitValues[1]); //Reads the item type information.
 
@@ -233,7 +236,7 @@ public class Inventory : MonoBehaviour {
         }
 
 
-        allSlots = new List<GameObject>(); 
+        allSlots = new List<GameObject>();
 
         inventoryWidth = (slots / rows) * (slotSize + slotPaddingLeft) + slotPaddingLeft;
 
@@ -415,6 +418,7 @@ public class Inventory : MonoBehaviour {
                 yield return null;
             }
             canvasGroup.alpha = 1;
+            GetComponent<CanvasGroup>().blocksRaycasts = true;
             fadingIn = false;
         }
     }

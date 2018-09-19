@@ -446,7 +446,7 @@ RectTransform:
   m_Children:
   - {fileID: 230540136}
   m_Father: {fileID: 1741936457}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -635,7 +635,7 @@ GameObject:
   - component: {fileID: 521791976}
   - component: {fileID: 521791975}
   m_Layer: 5
-  m_Name: Inventory
+  m_Name: InventoryButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -653,11 +653,11 @@ RectTransform:
   m_Children:
   - {fileID: 2059080134}
   m_Father: {fileID: 1741936457}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 340, y: 0}
+  m_AnchoredPosition: {x: 339.99994, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &521791975
@@ -720,7 +720,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &521791976
@@ -1316,12 +1316,12 @@ Prefab:
     - target: {fileID: 224127625848717670, guid: 3c9c9786c4bbc0f4583e361b4fdf00bc,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 13.049927
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224127625848717670, guid: 3c9c9786c4bbc0f4583e361b4fdf00bc,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -16.050049
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224127625848717670, guid: 3c9c9786c4bbc0f4583e361b4fdf00bc,
         type: 2}
@@ -1555,11 +1555,11 @@ GameObject:
   m_Component:
   - component: {fileID: 947139035}
   - component: {fileID: 947139034}
+  - component: {fileID: 947139036}
   - component: {fileID: 947139033}
   - component: {fileID: 947139032}
-  - component: {fileID: 947139036}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: CanvasGrouped
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1611,7 +1611,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -2009,7 +2009,7 @@ GameObject:
   - component: {fileID: 1537808125}
   - component: {fileID: 1537808124}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2122,7 +2122,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1741936457}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2197,9 +2197,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 521791973}
   - {fileID: 1601434372}
   - {fileID: 516615749}
-  - {fileID: 521791973}
   m_Father: {fileID: 1537808127}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
