@@ -11,12 +11,25 @@ public class PlayerHealth : MonoBehaviour {
 
     public int startingHealth;
     public int attackDamage;
+    public int critDamage;
     public float currentHealth;
     public Image healthImage;
     public GameObject button;
 
+    //[SerializedField]
     GameObject enemy;
     EnemyMoveScript enemyScript;
+
+    public GameObject hitArea;
+    public GameObject hitIndicator;
+
+    public Transform hitStart;
+    public Transform hitEnd;
+
+    public float speed = 2.0f;
+    private float timetoReach;
+    private float length;
+
 
     void Start () {
         turnSystem = GameObject.Find("TurnBasedSystem").GetComponent<TurnSystemScript>();
@@ -30,21 +43,39 @@ public class PlayerHealth : MonoBehaviour {
         enemy = GameObject.FindGameObjectWithTag("Enemy");
         enemyScript = enemy.GetComponent<EnemyMoveScript>();
         button.SetActive(false);
-        
+   
+
     }
 
     public void Strike() {
-        if(isTurn)
+        if (isTurn)
         {
-            transform.position += Vector3.left;
-            Attack();
-            isTurn = false;
-            turnClass.isTurn = isTurn;
-            turnClass.wasTurnPrev = true;
-            Debug.Log("Hit Enemy");
-
+            
+            HitLight();
         }
     }
+
+public void HitLight()
+    {
+        transform.position += Vector3.left;
+        Attack();
+        isTurn = false;
+        turnClass.isTurn = isTurn;
+        turnClass.wasTurnPrev = true;
+        Debug.Log("Hit Enemy");
+    }
+
+    public void HitHeavy()
+    {
+        transform.position += Vector3.left;
+        AttackHeavy();
+        isTurn = false;
+        turnClass.isTurn = isTurn;
+        turnClass.wasTurnPrev = true;
+        Debug.Log("Hit Enemy");
+    }
+    
+
 	
     void Update () {
 
@@ -71,6 +102,11 @@ public class PlayerHealth : MonoBehaviour {
     void Attack()
     {
         enemyScript.TakeDamage(attackDamage);
+    }
+
+    void AttackHeavy()
+    {
+        enemyScript.TakeDamage(critDamage);
     }
 
     public void TakeDamage (int amount) {

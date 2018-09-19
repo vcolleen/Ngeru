@@ -12,6 +12,8 @@ public class EnemyMoveScript : MonoBehaviour {
     public int attackDamage;
     public int currentHealth;
     public GameObject winMessage;
+    public Image enemyHP;
+
 
     GameObject player;
     PlayerHealth playerHealth;
@@ -41,6 +43,7 @@ public class EnemyMoveScript : MonoBehaviour {
         {
             StartCoroutine("WaitAndMove");
         }
+     
     }
 
     IEnumerator WaitAndMove()
@@ -52,18 +55,20 @@ public class EnemyMoveScript : MonoBehaviour {
         turnClass.isTurn = isTurn;
         turnClass.wasTurnPrev = true;
         Debug.Log("Hit Player");
-
+        ResetEnemyHP();
         StopCoroutine("WaitAndMove");
     }
 
     void Attack ()
     {
         playerHealth.TakeDamage(attackDamage);
+        enemyHP.fillAmount = (currentHealth / 100);
     }
 
     public void TakeDamage (int amount)
     {
         currentHealth -= amount;
+        enemyHP.fillAmount = (currentHealth / 100);
 
         if (currentHealth <= 0)
         {
@@ -75,6 +80,11 @@ public class EnemyMoveScript : MonoBehaviour {
     {
         Destroy(gameObject);
         winMessage.SetActive(true);
+    }
+
+    public void ResetEnemyHP()
+    {
+        enemyHP.fillAmount = (currentHealth / 100);
     }
 
 }
