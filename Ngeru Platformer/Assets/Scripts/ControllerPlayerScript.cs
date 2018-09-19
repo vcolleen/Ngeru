@@ -17,13 +17,13 @@ public class ControllerPlayerScript : MonoBehaviour {
     public LayerMask whatIsGround;
 
     //Movement Variables 
-    public bool isIdle;
-    public bool isWalkingRight;
-    public bool isWalkingLeft;
-    public bool isTurningRight;
-    public bool isTurningLeft;
-    public bool isJumping;
-    public bool isRunning;
+    private bool isIdle;
+    private bool isWalkingRight;
+    private bool isWalkingLeft;
+    private bool isTurningRight;
+    private bool isTurningLeft;
+    private bool isJumping;
+    private bool isRunning;
 
 
     //calling the animator
@@ -52,9 +52,6 @@ public class ControllerPlayerScript : MonoBehaviour {
     {
         //Jump-Movement 
         HandleInput();
-
-        Debug.Log(Input.GetAxis("Jump"));
-
 
         //Animations & Keyboard Triggers 
         //Idle

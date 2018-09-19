@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: ea9e99dc35ffd7a41a3bf50823d935c1
   - enabled: 1
-    path: Assets/Scenes/Ngeru 1st level blueprint build.unity
-    guid: 0230dd27eda335543b84bcf7a573984e
+    path: Assets/Scenes/Lounge.unity
+    guid: 9da89574c840de54a902eda7996d2dcb
+  - enabled: 1
+    path: Assets/Scenes/AlleyJumpingPuzzle.unity
+    guid: d31ed7571b6c680479b6dc512e6cc5b2
+  - enabled: 1
+    path: Assets/Tree Level Schtuff/Tree Level.unity
+    guid: 7bd8a3afb599ae842a144f53b6427e7e
   m_configObjects: {}

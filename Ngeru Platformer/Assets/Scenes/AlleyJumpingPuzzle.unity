@@ -991,7 +991,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1431071404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.021, y: -0.419, z: 0.19677734}
+  m_LocalPosition: {x: -0.021, y: -0.308, z: 0.19677734}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1673354470}
@@ -1019,7 +1019,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1441633769}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.27, y: -0.437, z: 0.19677734}
+  m_LocalPosition: {x: 0.222, y: -0.3, z: 0.19677734}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1673354470}
@@ -1038,6 +1038,7 @@ GameObject:
   - component: {fileID: 1673354472}
   - component: {fileID: 1673354471}
   - component: {fileID: 1673354474}
+  - component: {fileID: 1673354475}
   m_Layer: 0
   m_Name: Ngeru
   m_TagString: Player
@@ -1162,16 +1163,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 769affade33283c47b36a02f499cd77a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 1
-  groundPoints:
-  - {fileID: 1441633770}
-  - {fileID: 1840765632}
-  - {fileID: 1431071405}
-  groundRadius: 0.2
-  jumpForce: 175
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!95 &1673354474
 Animator:
   serializedVersion: 3
@@ -1181,7 +1172,7 @@ Animator:
   m_GameObject: {fileID: 1673354468}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0fd432435f535b3469b56fb7048440e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6048ee78541081244adf75ee930fa990, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1190,6 +1181,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1673354475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1673354468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 807f6a047d512844da3e74d3f4dd8bad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 0.2
+  groundPoints: []
+  groundRadius: 10
+  jumpForce: 200
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  isIdle: 0
+  isWalkingRight: 0
+  isWalkingLeft: 0
+  isTurningRight: 0
+  isTurningLeft: 0
+  isJumping: 0
+  isRunning: 0
 --- !u!1 &1840765631
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,7 +1228,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1840765631}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.27, y: -0.413, z: 0.19677734}
+  m_LocalPosition: {x: -0.328, y: -0.307, z: 0.19677734}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1673354470}
