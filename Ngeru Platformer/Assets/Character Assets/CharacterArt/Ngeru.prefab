@@ -22,11 +22,12 @@ GameObject:
   - component: {fileID: 212061351685904490}
   - component: {fileID: 61355969063772492}
   - component: {fileID: 114729910516772766}
+  - component: {fileID: 114239186962056858}
   - component: {fileID: 50614098671917176}
   - component: {fileID: 95020698944163120}
   m_Layer: 0
   m_Name: Ngeru
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,7 +123,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1214849551073648}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9850821, y: -0.7579671, z: 0}
+  m_LocalPosition: {x: -1.8858927, y: -0.62204766, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4576833924409230}
@@ -185,7 +186,7 @@ Animator:
   m_GameObject: {fileID: 1214849551073648}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0fd432435f535b3469b56fb7048440e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6048ee78541081244adf75ee930fa990, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -194,6 +195,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114239186962056858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1214849551073648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2101e5c493ce557499eef270e37c5caf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
 --- !u!114 &114729910516772766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -215,6 +228,13 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 4294967295
+  isIdle: 0
+  isWalkingRight: 0
+  isWalkingLeft: 0
+  isTurningRight: 0
+  isTurningLeft: 0
+  isJumping: 0
+  isRunning: 0
 --- !u!212 &212061351685904490
 SpriteRenderer:
   m_ObjectHideFlags: 1

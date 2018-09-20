@@ -6,8 +6,6 @@ public class UIScript : MonoBehaviour {
 
     public GameObject objective;
     public GameObject inv;
-    public GameObject close;
-    public GameObject shade;
 
 
 	// Use this for initialization
@@ -34,14 +32,10 @@ public class UIScript : MonoBehaviour {
             if (inv.activeSelf == false)
             {
                 inv.SetActive(true);
-                close.SetActive(true);
-                shade.SetActive(true);
             }
             else
             {
                 inv.SetActive(false);
-                close.SetActive(false);
-                shade.SetActive(false);
             }
         }
 	}
@@ -58,27 +52,23 @@ public class UIScript : MonoBehaviour {
         }
     }
 
-    public void OpenInv()
+   /* public void OpenInv()
     {
         if (inv.activeSelf == false)
         {
             inv.SetActive(true);
-            close.SetActive(true);
-            shade.SetActive(true);
         }
         else
         {
             return;
         }
-    }
+    }*/
 
     public void CloseInv()
     {
         if (inv.activeSelf == true)
         {
             inv.SetActive(false);
-            close.SetActive(false);
-            shade.SetActive(false);
         }
         else
         {
