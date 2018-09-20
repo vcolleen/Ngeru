@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControllerPlayerScript : MonoBehaviour {
+public class ControllerPlayerScript : MonoBehaviour
+{
 
     //Player Variables 
     private Rigidbody2D myRigidBody;
@@ -25,9 +26,12 @@ public class ControllerPlayerScript : MonoBehaviour {
     public bool isJumping;
     public bool isRunning;
 
-
     //calling the animator
     Animator anim;
+
+    //AI Variables 
+    public bool isHiding;
+    public GameObject hidingController;
 
     void Start()
     {
@@ -53,7 +57,7 @@ public class ControllerPlayerScript : MonoBehaviour {
         //Jump-Movement 
         HandleInput();
 
-        //Debug.Log(Input.GetAxis("Jump"));
+        Debug.Log(Input.GetAxis("Jump"));
 
 
         //Animations & Keyboard Triggers 
@@ -69,7 +73,7 @@ public class ControllerPlayerScript : MonoBehaviour {
         }
 
         //Run
-        if(Input.GetAxis("Run") > 0)
+        if (Input.GetAxis("Run") > 0)
         {
             isRunning = true;
         }
@@ -79,7 +83,7 @@ public class ControllerPlayerScript : MonoBehaviour {
             isRunning = false;
         }
 
-        if(isRunning == true)
+        if (isRunning == true)
         {
             anim.SetBool("isRunning", true);
             anim.SetBool("isWalkingLeft", false);
@@ -88,7 +92,7 @@ public class ControllerPlayerScript : MonoBehaviour {
             jumpForce = 250;
         }
 
-        if(isRunning == false)
+        if (isRunning == false)
         {
             anim.SetBool("isRunning", false);
             movementSpeed = 0.8f;
@@ -96,7 +100,7 @@ public class ControllerPlayerScript : MonoBehaviour {
         }
 
         //WalkingRight
-        if(Input.GetAxis("Horizontal") > 0)
+        if (Input.GetAxis("Horizontal") > 0)
         {
             isWalkingRight = true;
             anim.SetTrigger("isLookingRight");
@@ -107,7 +111,7 @@ public class ControllerPlayerScript : MonoBehaviour {
             isWalkingRight = false;
         }
 
-        if(isWalkingRight == true)
+        if (isWalkingRight == true)
         {
             anim.SetBool("isWalkingRight", true);
         }
@@ -118,7 +122,7 @@ public class ControllerPlayerScript : MonoBehaviour {
         }
 
         //WalkingLeft 
-        if(Input.GetAxis("Horizontal") < 0)
+        if (Input.GetAxis("Horizontal") < 0)
         {
             isWalkingLeft = true;
             anim.SetTrigger("isLookingLeft");
@@ -128,7 +132,7 @@ public class ControllerPlayerScript : MonoBehaviour {
             isWalkingLeft = false;
         }
 
-        if(isWalkingLeft == true)
+        if (isWalkingLeft == true)
         {
             anim.SetBool("isWalkingLeft", true);
         }
@@ -168,13 +172,13 @@ public class ControllerPlayerScript : MonoBehaviour {
             anim.SetBool("isJumping", true);
         }
 
-        if(isGrounded)
+        if (isGrounded)
         {
             anim.SetBool("isJumping", false);
         }
     }
 
-    
+
 
     //Jump
     private void HandleInput()
@@ -184,6 +188,7 @@ public class ControllerPlayerScript : MonoBehaviour {
             jump = true;
             anim.SetBool("isIdle", false);
         }
+        Hiding();
     }
 
     //Indication that Ngeru is grounded
@@ -203,9 +208,9 @@ public class ControllerPlayerScript : MonoBehaviour {
                     }
 
                 }
-                
+
             }
-            
+
         }
         return false;
     }
@@ -215,5 +220,25 @@ public class ControllerPlayerScript : MonoBehaviour {
         jump = false;
     }
 
-   
+    private void Hiding()
+    {
+        if (Input.GetAxis("Hide") == 1)
+        {
+            hidingController.GetComponent<HiddenArrayScript>().CheckHiding();
+            if (hidingController.GetComponent<HiddenArrayScript>().canHideObject.GetComponent<HiddenObjectScript>().isOverlaping == true)
+            {
+                gameObject.layer = 2;
+                isHiding = true;
+                gameObject.transform.position = hidingController.GetComponent<HiddenArrayScript>().canHideObject.transform.position;
+            }
+        }
+        if (Input.GetAxis("Hide") == 0)
+        {
+            gameObject.layer = 10;
+            isHiding = false;
+        }
+    }
+
+
+
 }
