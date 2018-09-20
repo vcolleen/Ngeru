@@ -25,6 +25,11 @@ public class ControllerPlayerScript : MonoBehaviour {
     public bool isJumping;
     public bool isRunning;
 
+    //laying down timing
+    bool isWaitingForIdle;
+    public float timeBeforeLayDown = 3;
+    float startIdle = 3;
+
 
     //calling the animator
     Animator anim;
@@ -138,6 +143,46 @@ public class ControllerPlayerScript : MonoBehaviour {
             anim.SetBool("isWalkingLeft", false);
 
         }
+
+
+        //Laying down
+        if (isWalkingLeft == false)
+        {
+            if (isWalkingRight == false)
+            {
+                isIdle = true;
+                
+            }
+        }
+        
+        if (isWalkingLeft)
+        {
+            isIdle = false;
+            isWaitingForIdle = true;
+            anim.SetBool("isLayingDown", false);
+        }
+        if (isWalkingRight)
+        {
+            isIdle = false;
+            isWaitingForIdle = true;
+            anim.SetBool("isLayingDown", false);
+        }
+
+        if (isIdle)
+        {
+            if (isWaitingForIdle)
+            {
+                startIdle = (Time.time + timeBeforeLayDown);
+                isWaitingForIdle = false;
+            }
+            if (Time.time > startIdle)
+            {
+                anim.SetBool("isLayingDown", true);
+            }
+        }
+    
+
+
 
 
     }
