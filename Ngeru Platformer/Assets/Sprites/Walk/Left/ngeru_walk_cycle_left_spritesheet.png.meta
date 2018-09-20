@@ -1,23 +1,17 @@
 fileFormatVersion: 2
-guid: 837a760c9bba84c4289e892736629813
+guid: 5dcfbf3971bee5b4094a4790b61c2bb2
 TextureImporter:
   fileIDToRecycleName:
-    21300000: ngeru_idle_left_spritesheet_0
-    21300002: ngeru_idle_left_spritesheet_1
-    21300004: ngeru_idle_left_spritesheet_2
-    21300006: ngeru_idle_left_spritesheet_3
-    21300008: ngeru_idle_left_spritesheet_4
-    21300010: ngeru_idle_left_spritesheet_5
-    21300012: ngeru_idle_left_spritesheet_6
-    21300014: ngeru_idle_left_spritesheet_7
-    21300016: ngeru_idle_left_spritesheet_8
-    21300018: ngeru_idle_left_spritesheet_9
-    21300020: ngeru_idle_left_spritesheet_10
-    21300022: ngeru_idle_left_spritesheet_11
-    21300024: ngeru_idle_left_spritesheet_12
-    21300026: ngeru_idle_left_spritesheet_13
-    21300028: ngeru_idle_left_spritesheet_14
-    21300030: ngeru_idle_left_spritesheet_15
+    21300000: ngeru_walk_cycle_left_spritesheet_0
+    21300002: ngeru_walk_cycle_left_spritesheet_1
+    21300004: ngeru_walk_cycle_left_spritesheet_2
+    21300006: ngeru_walk_cycle_left_spritesheet_3
+    21300008: ngeru_walk_cycle_left_spritesheet_4
+    21300010: ngeru_walk_cycle_left_spritesheet_5
+    21300012: ngeru_walk_cycle_left_spritesheet_6
+    21300014: ngeru_walk_cycle_left_spritesheet_7
+    21300016: ngeru_walk_cycle_left_spritesheet_8
+    21300018: ngeru_walk_cycle_left_spritesheet_9
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -98,12 +92,32 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ngeru_idle_left_spritesheet_0
+      name: ngeru_walk_cycle_left_spritesheet_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 130
+        x: 36
+        y: 127
         width: 64
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ea5e5741511b44983eedfec698ca34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_walk_cycle_left_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 127
+        width: 68
         height: 58
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -112,38 +126,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 174551801ae44d1409415d04610baa41
+      spriteID: 19f7a5d0ef8508040b2f7e6290de8dc5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ngeru_idle_left_spritesheet_1
+      name: ngeru_walk_cycle_left_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 125
-        y: 130
-        width: 66
-        height: 59
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27bf249cb0b3cd1469bf2e383bdc3883
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ngeru_idle_left_spritesheet_2
-      rect:
-        serializedVersion: 2
-        x: 245
-        y: 130
-        width: 68
+        x: 276
+        y: 127
+        width: 69
         height: 60
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -152,18 +146,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba4932aa01c881543a94cbc2433e58a1
+      spriteID: c5f772498e8943049ac7b264c24053d5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ngeru_idle_left_spritesheet_3
+      name: ngeru_walk_cycle_left_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 365
-        y: 130
-        width: 66
+        x: 396
+        y: 127
+        width: 76
         height: 60
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -172,19 +166,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a710c57d75b892c46859cb23ddb3da16
+      spriteID: 3325b7ceb4df05243b95be94bb91c28c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ngeru_idle_left_spritesheet_4
+      name: ngeru_walk_cycle_left_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 485
-        y: 130
-        width: 64
-        height: 59
+        x: 516
+        y: 126
+        width: 77
+        height: 60
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,18 +186,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fe04bcfc543a5442ac9a87cb8a497be
+      spriteID: c6d35bb0b18ce7b4eaa4e23079097f69
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ngeru_idle_left_spritesheet_5
+      name: ngeru_walk_cycle_left_spritesheet_5
       rect:
         serializedVersion: 2
-        x: 4
-        y: 66
-        width: 64
+        x: 36
+        y: 16
+        width: 73
         height: 58
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -212,98 +206,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea5baba9c7a1f2844af6831caf81b071
+      spriteID: ae8e3073b4afabc4da439ea6177a210a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ngeru_idle_left_spritesheet_6
+      name: ngeru_walk_cycle_left_spritesheet_6
       rect:
         serializedVersion: 2
-        x: 125
-        y: 66
-        width: 66
-        height: 59
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4fa7744362cd824fbf504ec17ede6a4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ngeru_idle_left_spritesheet_7
-      rect:
-        serializedVersion: 2
-        x: 245
-        y: 66
-        width: 68
-        height: 60
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42ceb6fcbe03fbe4ca6157665ff184a0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ngeru_idle_left_spritesheet_8
-      rect:
-        serializedVersion: 2
-        x: 365
-        y: 66
-        width: 66
-        height: 60
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c9a6eb0d49a5b34db564ebea21ae053
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ngeru_idle_left_spritesheet_9
-      rect:
-        serializedVersion: 2
-        x: 485
-        y: 66
-        width: 64
-        height: 59
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e1b1fb68546e3940a60d69695f694cb
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ngeru_idle_left_spritesheet_10
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 2
-        width: 64
+        x: 156
+        y: 16
+        width: 75
         height: 58
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -312,18 +226,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22f1351d0c260ac4a9d1b172665cde85
+      spriteID: c5fe53df47a5c204d82034665d039ef5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ngeru_idle_left_spritesheet_11
+      name: ngeru_walk_cycle_left_spritesheet_7
       rect:
         serializedVersion: 2
-        x: 125
-        y: 2
-        width: 66
+        x: 276
+        y: 16
+        width: 75
         height: 59
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -332,19 +246,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d42c72f71e7f21409840240af8ad248
+      spriteID: eb605880648f7e646b2bc72b87fb572b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ngeru_idle_left_spritesheet_12
+      name: ngeru_walk_cycle_left_spritesheet_8
       rect:
         serializedVersion: 2
-        x: 245
-        y: 2
-        width: 68
-        height: 60
+        x: 396
+        y: 16
+        width: 72
+        height: 58
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,19 +266,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c6bc5f73604106439debb1eac477daf
+      spriteID: 3aee3b4b3634ead4cac16ca88c595696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ngeru_idle_left_spritesheet_13
+      name: ngeru_walk_cycle_left_spritesheet_9
       rect:
         serializedVersion: 2
-        x: 365
-        y: 2
+        x: 516
+        y: 15
         width: 66
-        height: 60
+        height: 58
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -372,47 +286,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 476645e883d4ef84693fee7754ebe723
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ngeru_idle_left_spritesheet_14
-      rect:
-        serializedVersion: 2
-        x: 485
-        y: 2
-        width: 64
-        height: 59
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: beb710f907774734dab696415c240c18
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ngeru_idle_left_spritesheet_15
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 600
-        height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 380864bf8f4e43b4f9dedf1236474759
+      spriteID: da9400d959c1ea246a8b6cd650c92063
       vertices: []
       indices: 
       edges: []
@@ -420,7 +294,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 15d69a9f5d68ca0449d5b8fbf2700d80
+    spriteID: 9326dd4973e76994a9086c47080c111b
     vertices: []
     indices: 
     edges: []
