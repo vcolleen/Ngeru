@@ -20,12 +20,6 @@ public class PlayerHealth : MonoBehaviour {
     GameObject enemy;
     EnemyMoveScript enemyScript;
 
-    public GameObject hitArea;
-    public GameObject hitIndicator;
-
-    public Transform hitStart;
-    public Transform hitEnd;
-
     public float speed = 2.0f;
     private float timetoReach;
     private float length;

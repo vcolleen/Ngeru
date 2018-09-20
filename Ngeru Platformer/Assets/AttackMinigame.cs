@@ -5,13 +5,19 @@ using UnityEngine.UI;
 
 public class AttackMinigame : MonoBehaviour
 {
-     public Image powerMeterBar;
+    // public Image AttackMeter; Original attack method.
+    public Slider AttackMeter;
+
+    //public Image missSpace;
+    //public Image hitSpace;
+   // public Image critSpace;
+
     public bool isTime = false;
 
     public int sign = 1;
 
     [SerializeField]
-    private float percentage;
+    private float AttackPercent;
     [SerializeField]
     private float currentAmount;
     [SerializeField]
@@ -29,14 +35,17 @@ public class AttackMinigame : MonoBehaviour
     private float maxCritPercent;
 
 
+
+
     public PlayerHealth attackAccess;
 
     void Start()
     {
        attackAccess = GameObject.FindObjectOfType(typeof(PlayerHealth)) as PlayerHealth;
-        if (powerMeterBar != null)
+        if (AttackMeter != null)
         {
-            percentage = powerMeterBar.fillAmount * 100;
+            //AttackPercent = AttackMeter.fillAmount * 100;
+            AttackPercent = AttackMeter.value * 100;
         }
     }
 
@@ -60,21 +69,22 @@ public class AttackMinigame : MonoBehaviour
 
     public void Update()
     {
-        if (powerMeterBar != null)
+        if (AttackMeter != null)
         {
-            powerMeterBar.fillAmount = percentage / 100;
+            // AttackMeter.fillAmount = AttackPercent / 100;
+            AttackMeter.value = AttackPercent / 100;
         }
 
 
         if (isTime == true)
         {
-            percentage += sign;
-            Debug.Log(percentage);
+            AttackPercent += sign;
+            //Debug.Log(AttackPercent);
 
-            if (percentage >= 100 || percentage <= 0)
+            if (AttackPercent >= 100 || AttackPercent <= 0)
             {
                 sign *= -1;
-                percentage = ((percentage <= 0) ? 0 : 100);
+                AttackPercent = ((AttackPercent <= 0) ? 0 : 100);
 
                  
             }
@@ -82,6 +92,7 @@ public class AttackMinigame : MonoBehaviour
 
         if (Input.anyKey && isTime == true)
         {
+
             CalculateHit();
             isTime = false;
             
@@ -90,24 +101,24 @@ public class AttackMinigame : MonoBehaviour
 
         }
 
-        ColourRecoder();
+        //ColourRecoder();
 
     }
 
     public void CalculateHit()
     {
-        if (percentage > minHitPercent & percentage < maxHitPercent)
+        if (AttackPercent > minHitPercent & AttackPercent < maxHitPercent)
         {
             //Use light strike here.
           
 
-            if (percentage > minCritPercent & percentage < maxCritPercent)
+            if (AttackPercent > minCritPercent & AttackPercent < maxCritPercent)
             {
                 //use heavy strike function here.
 
                 Debug.Log("YouCrit");
                 attackAccess.HitHeavy();
-                percentage = 0;
+                AttackPercent = 0;
 
             }
 
@@ -115,43 +126,46 @@ public class AttackMinigame : MonoBehaviour
             {
                 Debug.Log("YouHit");
                 attackAccess.HitLight();
-                percentage = 0;
+                AttackPercent = 0;
             }
 
         }
 
         
 
-        if (percentage < minHitPercent || percentage > maxHitPercent)
+        if (AttackPercent < minHitPercent || AttackPercent > maxHitPercent)
         {
                 Debug.Log("Youmiss");
             attackAccess.SkipTurn();
-            percentage = 0;
+            AttackPercent = 0;
 
 
         }
     }
 
+
+    /*
     void ColourRecoder()
     {
-        if (percentage > minHitPercent & percentage < maxHitPercent)
+        if (AttackPercent > minHitPercent & AttackPercent < maxHitPercent)
         {
-            powerMeterBar.color = Color.green;
+            AttackMeter.color = Color.green;
 
         }
 
-        if (percentage > minCritPercent & percentage < maxCritPercent)
+        if (AttackPercent > minCritPercent & AttackPercent < maxCritPercent)
         {
-            powerMeterBar.color = Color.blue;
+            AttackMeter.color = Color.blue;
 
         }
 
-        if (percentage < minHitPercent || percentage > maxHitPercent)
+        if (AttackPercent < minHitPercent || AttackPercent > maxHitPercent)
         {
-            powerMeterBar.color = Color.yellow;
+            AttackMeter.color = Color.yellow;
 
         }
     }
+    */
 
 }
 

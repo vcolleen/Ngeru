@@ -8,11 +8,31 @@ public class EnemyMoveScript : MonoBehaviour {
     public TurnSystemScript turnSystem;
     public TurnSystemScript.TurnClass turnClass;
     public bool isTurn = false;
-    public int startingHealth;
+
+    //public int startingEnemyHealth;
     public int attackDamage;
-    public int currentHealth;
+   // public int currentEnemyHealth;
     public GameObject winMessage;
+
     public Image enemyHP;
+
+    [SerializeField]
+    private float startingEnemyHealth;
+    [SerializeField]
+    private float enemyPercentage;
+    [SerializeField]
+    private float currentEnemyHealth;
+
+    [SerializeField]
+    private float enemyCrit;
+    [SerializeField]
+    private float hitChance;
+    [SerializeField]
+    private int critDamage;
+    [SerializeField]
+    private float enemyMissHit;
+    [SerializeField]
+    private bool hasAttacked;
 
 
     GameObject player;
@@ -29,17 +49,28 @@ public class EnemyMoveScript : MonoBehaviour {
             if (tc.playerGameObject.name == gameObject.name) turnClass = tc;
         }
 
-        currentHealth = startingHealth;
+        currentEnemyHealth = startingEnemyHealth;
         player = GameObject.FindGameObjectWithTag("Player");
         playerHealth = player.GetComponent<PlayerHealth>();
         winMessage.SetActive(false);
+
+        if (enemyHP != null)
+        {
+            enemyPercentage = enemyHP.fillAmount * 100;
+        }
+
     }
 
     void Update() {
 
-        isTurn = turnClass.isTurn; 
+        isTurn = turnClass.isTurn;
+        if (enemyHP != null)
+        {
+            enemyPercentage = currentEnemyHealth;
+            enemyHP.fillAmount = enemyPercentage / 100;
+        }
 
-        if(isTurn)
+        if (isTurn)
         {
             StartCoroutine("WaitAndMove");
         }
@@ -54,23 +85,53 @@ public class EnemyMoveScript : MonoBehaviour {
         isTurn = false;
         turnClass.isTurn = isTurn;
         turnClass.wasTurnPrev = true;
-        Debug.Log("Hit Player");
+        Debug.Log("Attacks Player");
         ResetEnemyHP();
+        hasAttacked = false;
         StopCoroutine("WaitAndMove");
     }
 
     void Attack ()
     {
-        playerHealth.TakeDamage(attackDamage);
-        enemyHP.fillAmount = (currentHealth / 100);
+        hitChance = Random.Range(0f, 100f);
+
+        if (hitChance >= enemyCrit & hasAttacked == false)
+        {
+            playerHealth.TakeDamage(critDamage);
+            Debug.Log("Enemy Crits!!!");
+            hasAttacked = true;
+        }
+
+        if(hitChance <= enemyMissHit & hasAttacked == false)
+        {
+            EnemySkipTurn();
+            Debug.Log("Enemy misses?!");
+            hasAttacked = true;
+        }
+
+        else
+        {
+            if (hasAttacked == false)
+            {
+                playerHealth.TakeDamage(attackDamage);
+                Debug.Log("Enemy hits.");
+                hasAttacked = true;
+            }
+        }
+
+
+
+
+
+        //enemyHP.fillAmount = (currentEnemyHealth / 100);
     }
 
     public void TakeDamage (int amount)
     {
-        currentHealth -= amount;
-        enemyHP.fillAmount = (currentHealth / 100);
+        currentEnemyHealth -= amount;
+        enemyHP.fillAmount = (currentEnemyHealth / 100);
 
-        if (currentHealth <= 0)
+        if (currentEnemyHealth <= 0)
         {
             Death();
         }
@@ -84,7 +145,14 @@ public class EnemyMoveScript : MonoBehaviour {
 
     public void ResetEnemyHP()
     {
-        enemyHP.fillAmount = (currentHealth / 100);
+        enemyHP.fillAmount = (currentEnemyHealth / 100);
+    }
+
+    private void EnemySkipTurn()
+    {
+        isTurn = false;
+        turnClass.isTurn = isTurn;
+        turnClass.wasTurnPrev = true;
     }
 
 }
