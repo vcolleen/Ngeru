@@ -26,15 +26,12 @@ public class ControllerPlayerScript : MonoBehaviour
     public bool isJumping;
     public bool isRunning;
 
-<<<<<<< HEAD
     //laying down timing
     bool isWaitingForIdle;
     public float timeBeforeLayDown = 3;
     float startIdle = 3;
 
 
-=======
->>>>>>> fc4e3607cf3b82d99a2b197278412e2dd9c45b56
     //calling the animator
     Animator anim;
 
