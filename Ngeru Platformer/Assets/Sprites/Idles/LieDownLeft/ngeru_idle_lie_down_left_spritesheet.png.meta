@@ -1,0 +1,1103 @@
+fileFormatVersion: 2
+guid: 33b5966bff20eb04681193763ef8191e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ngeru_idle_lie_down_left_spritesheet_0
+    21300002: ngeru_idle_lie_down_left_spritesheet_1
+    21300004: ngeru_idle_lie_down_left_spritesheet_2
+    21300006: ngeru_idle_lie_down_left_spritesheet_3
+    21300008: ngeru_idle_lie_down_left_spritesheet_4
+    21300010: ngeru_idle_lie_down_left_spritesheet_5
+    21300012: ngeru_idle_lie_down_left_spritesheet_6
+    21300014: ngeru_idle_lie_down_left_spritesheet_7
+    21300016: ngeru_idle_lie_down_left_spritesheet_8
+    21300018: ngeru_idle_lie_down_left_spritesheet_9
+    21300020: ngeru_idle_lie_down_left_spritesheet_10
+    21300022: ngeru_idle_lie_down_left_spritesheet_11
+    21300024: ngeru_idle_lie_down_left_spritesheet_12
+    21300026: ngeru_idle_lie_down_left_spritesheet_13
+    21300028: ngeru_idle_lie_down_left_spritesheet_14
+    21300030: ngeru_idle_lie_down_left_spritesheet_15
+    21300032: ngeru_idle_lie_down_left_spritesheet_16
+    21300034: ngeru_idle_lie_down_left_spritesheet_17
+    21300036: ngeru_idle_lie_down_left_spritesheet_18
+    21300038: ngeru_idle_lie_down_left_spritesheet_19
+    21300040: ngeru_idle_lie_down_left_spritesheet_20
+    21300042: ngeru_idle_lie_down_left_spritesheet_21
+    21300044: ngeru_idle_lie_down_left_spritesheet_22
+    21300046: ngeru_idle_lie_down_left_spritesheet_23
+    21300048: ngeru_idle_lie_down_left_spritesheet_24
+    21300050: ngeru_idle_lie_down_left_spritesheet_25
+    21300052: ngeru_idle_lie_down_left_spritesheet_26
+    21300054: ngeru_idle_lie_down_left_spritesheet_27
+    21300056: ngeru_idle_lie_down_left_spritesheet_28
+    21300058: ngeru_idle_lie_down_left_spritesheet_29
+    21300060: ngeru_idle_lie_down_left_spritesheet_30
+    21300062: ngeru_idle_lie_down_left_spritesheet_31
+    21300064: ngeru_idle_lie_down_left_spritesheet_32
+    21300066: ngeru_idle_lie_down_left_spritesheet_33
+    21300068: ngeru_idle_lie_down_left_spritesheet_34
+    21300070: ngeru_idle_lie_down_left_spritesheet_35
+    21300072: ngeru_idle_lie_down_left_spritesheet_36
+    21300074: ngeru_idle_lie_down_left_spritesheet_37
+    21300076: ngeru_idle_lie_down_left_spritesheet_38
+    21300078: ngeru_idle_lie_down_left_spritesheet_39
+    21300080: ngeru_idle_lie_down_left_spritesheet_40
+    21300082: ngeru_idle_lie_down_left_spritesheet_41
+    21300084: ngeru_idle_lie_down_left_spritesheet_42
+    21300086: ngeru_idle_lie_down_left_spritesheet_43
+    21300088: ngeru_idle_lie_down_left_spritesheet_44
+    21300090: ngeru_idle_lie_down_left_spritesheet_45
+    21300092: ngeru_idle_lie_down_left_spritesheet_46
+    21300094: ngeru_idle_lie_down_left_spritesheet_47
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 799
+        width: 70
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a155fa53ded92249a7dd30fd2cb3b8b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 799
+        width: 62
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f62eaa7e4cde5f489ecbfbed0886008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 795
+        width: 58
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3881a4d60635d4eb4b92ce9664ec75
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 797
+        width: 63
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65d949190843d348bbe3b0c91349439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 798
+        width: 68
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affdec624a459444698e6c9db28f3a2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 798
+        width: 68
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c70f6037e2cb55846848093738c61064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 686
+        width: 68
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42027e729ffc9f747a12a51f56e52171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 686
+        width: 69
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f2cd29298eb6242b7f572a548817d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 680
+        width: 63
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4df30697a86ee45b93269fe9e2a029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 673
+        width: 50
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8257a3a7b1cde7048abc7e81c0044470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 673
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392b29ee9c1539643b7e49b0a398ead4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 673
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738ef4585c35e7b4ba3e7d66003aef65
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 561
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b64b395d1d3594ca71fbdf01693a92
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 561
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820e913fbfe3eab4dbb5264dcd9b683b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 561
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50361aa906493344b50fb2cbe102765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 561
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667a40e97350ab049874a488cc40ce73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 561
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af4077bfc205464b9524f934630f408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 561
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7285f6634ea89844b2f0ae0f0fcb813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 449
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f61a68d9797e547b5145ffa9208396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 449
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5a1908efb8c594fab4b49fe453c855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 449
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d6f92f54034c5044b9e893aea9c16d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 449
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 867ceb5d18c4ac64cadd4ebace6849c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 449
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510b2c4317c73aa4b8d38a73725111e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 449
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1e02079b6843c4c97c4dcc0ed22b3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 337
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abfcccdb2a1c8384db5210fbc291a96f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 337
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73375c510d358664ca22b4480d8bb0d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 337
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c3a0aba8172244093ac0adc605a028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 337
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a7a22efe92a6c47abae69097abb5a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 337
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4ef77dcbb8fd9498fb9b34e8e17c99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 337
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7582bf73f1f55f4fb885aab0a4eda8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 225
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2377f91a2e62f554d92a9d472b39352f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 225
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e19d5936adac994e91aed96e8b6613d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 225
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b903c2302be3624cb8636806ddd9dad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 225
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6930bf0e6aa724f86c64489ad1035d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 225
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6d1f03b8e42a046ba164cadd91e518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 225
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e647d789a2f70940941a1aee9271fb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 113
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12065afbbdea1cd4991e826142dec173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 113
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b593b57fcc0bb748aad6da538c99ca4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 113
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71318328eb40a824e879effad461d056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 113
+        width: 53
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0505f2f53f366449045dcb41ba511e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 113
+        width: 50
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6afc9d7d082a8664aa3423e11e63ed08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 128
+        width: 63
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050bc89c5d61cbf4ba1b91b97be64d50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 14
+        width: 69
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fff4b42ba371894882a7cb506c05243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 14
+        width: 68
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c98091aef225ed48a0cd8c3a088a0ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 13
+        width: 63
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12155270e339a34db0b8261b5099293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 11
+        width: 58
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48340aed066151a4fab08186a55ff4bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 15
+        width: 62
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d7fd99804a13f4f8947dc57e096d0b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_lie_down_left_spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 15
+        width: 70
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9cd674f54e82024db0bddbba24c3f02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f53477d2587696344b6ca6c659d8f994
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

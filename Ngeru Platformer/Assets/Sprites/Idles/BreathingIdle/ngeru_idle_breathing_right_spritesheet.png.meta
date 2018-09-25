@@ -1,0 +1,1019 @@
+fileFormatVersion: 2
+guid: 2a24ccef004ac734c8e5a84f3d9f5b67
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ngeru_idle_breathing_right_spritesheet_0
+    21300002: ngeru_idle_breathing_right_spritesheet_1
+    21300004: ngeru_idle_breathing_right_spritesheet_2
+    21300006: ngeru_idle_breathing_right_spritesheet_3
+    21300008: ngeru_idle_breathing_right_spritesheet_4
+    21300010: ngeru_idle_breathing_right_spritesheet_5
+    21300012: ngeru_idle_breathing_right_spritesheet_6
+    21300014: ngeru_idle_breathing_right_spritesheet_7
+    21300016: ngeru_idle_breathing_right_spritesheet_8
+    21300018: ngeru_idle_breathing_right_spritesheet_9
+    21300020: ngeru_idle_breathing_right_spritesheet_10
+    21300022: ngeru_idle_breathing_right_spritesheet_11
+    21300024: ngeru_idle_breathing_right_spritesheet_12
+    21300026: ngeru_idle_breathing_right_spritesheet_13
+    21300028: ngeru_idle_breathing_right_spritesheet_14
+    21300030: ngeru_idle_breathing_right_spritesheet_15
+    21300032: ngeru_idle_breathing_right_spritesheet_16
+    21300034: ngeru_idle_breathing_right_spritesheet_17
+    21300036: ngeru_idle_breathing_right_spritesheet_18
+    21300038: ngeru_idle_breathing_right_spritesheet_19
+    21300040: ngeru_idle_breathing_right_spritesheet_20
+    21300042: ngeru_idle_breathing_right_spritesheet_21
+    21300044: ngeru_idle_breathing_right_spritesheet_22
+    21300046: ngeru_idle_breathing_right_spritesheet_23
+    21300048: ngeru_idle_breathing_right_spritesheet_24
+    21300050: ngeru_idle_breathing_right_spritesheet_25
+    21300052: ngeru_idle_breathing_right_spritesheet_26
+    21300054: ngeru_idle_breathing_right_spritesheet_27
+    21300056: ngeru_idle_breathing_right_spritesheet_28
+    21300058: ngeru_idle_breathing_right_spritesheet_29
+    21300060: ngeru_idle_breathing_right_spritesheet_30
+    21300062: ngeru_idle_breathing_right_spritesheet_31
+    21300064: ngeru_idle_breathing_right_spritesheet_32
+    21300066: ngeru_idle_breathing_right_spritesheet_33
+    21300068: ngeru_idle_breathing_right_spritesheet_34
+    21300070: ngeru_idle_breathing_right_spritesheet_35
+    21300072: ngeru_idle_breathing_right_spritesheet_36
+    21300074: ngeru_idle_breathing_right_spritesheet_37
+    21300076: ngeru_idle_breathing_right_spritesheet_38
+    21300078: ngeru_idle_breathing_right_spritesheet_39
+    21300080: ngeru_idle_breathing_right_spritesheet_40
+    21300082: ngeru_idle_breathing_right_spritesheet_41
+    21300084: ngeru_idle_breathing_right_spritesheet_42
+    21300086: ngeru_idle_breathing_right_spritesheet_43
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 799
+        width: 70
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11590d8ea0c4e1e4696474d435d34f8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 799
+        width: 64
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b459fe3fe8d2e24d9bc3ac312d009b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 799
+        width: 50
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127b2fa57651fd44f8e425c9aa12995c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 799
+        width: 45
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d726f25610ed643448d0ed4b60584096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 799
+        width: 45
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387c3476cb3b1684d9c438b56c4df709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 799
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9adacc9b4969db14ebf6c8f0d4c1509a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 687
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677ba949427fe4948b8634aa113ea442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 687
+        width: 43
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b55e14af7ed0f3a49aff0d435f2e2e36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 687
+        width: 43
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ead5655af88874b9d3550a9220302b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 687
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a499bb8ba73471b44bb0d40f2076e12a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 687
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2ea227398c1ee48b1acd914a9b7994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 687
+        width: 45
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c83ea76d86d84545872dfb3d1ad02eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 575
+        width: 45
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832a1daebd9571644a4893add3376eaf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 575
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9588dd9292f6fe741992a27fbe03c84f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 575
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9015cf01191a5de4fad7353a13bc2706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 575
+        width: 43
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 810e789e12c2e274aad6a2561d7b04de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 575
+        width: 43
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5620e9af6770f464abb0c80187f23b38
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 575
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11d26b3fffc4d243bee5708a431ec5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 463
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821ec640e21d68a449bd02712b5a01b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 463
+        width: 45
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72b262f380b32244b504bc7fc89e72c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 463
+        width: 45
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e7c6da376996949a31ab80ac3cc8ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 463
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746d4dc5fc0bac44396900714e1467b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 463
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc71ed6720de7141affa7619d5fcbf1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 463
+        width: 43
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968b0be040ce3684b8d59b2f11c0e3fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 351
+        width: 43
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341ebac5292cc714da557d057e7204a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 351
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ccfeab5090a604a9b4b5f1371d3415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 351
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f98ed3a74b08ba4da321792bcaff4f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 351
+        width: 45
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3af8fa07fa5ce64bbb8aa2e1b16b6c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 351
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9c171bfe3f1f54a9c3046fc3385120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 351
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa644a9ce25ad6d4a92add270fe475a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 239
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508d16fa77c80c644bc65d0f5189b773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 239
+        width: 50
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216c4ad643f3b964e9ded18dcc173142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 239
+        width: 50
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570b394b24b25714890431270851d78d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 239
+        width: 45
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d660968db9548419499208a0822532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 239
+        width: 45
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51568afbaca6f7498b3a21b7c892fe2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 239
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc82430f1f7d9540b3dc5ab9b717813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 127
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6372863113792cf409c911a17e51f5cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 127
+        width: 43
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9790761b5fcae2d40b9f3a4f87f74001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 127
+        width: 43
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bccafd42ebb40a94b806627b038d510f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 127
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3062a0b009cdf4ba6d90f44611ec89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 127
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4787b491ef6425048a059e28d172f8d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 127
+        width: 50
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea4f5702761ca147bac9f06b9b99443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 7
+        width: 64
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535212b7bea4ea84786ae614f1a0ceff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ngeru_idle_breathing_right_spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 7
+        width: 70
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43d5c514c31a2b4ab8ce065634cef8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 06b62893822afe143aedd8d2a55951ab
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

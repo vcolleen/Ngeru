@@ -18,13 +18,13 @@ public class ControllerPlayerScript : MonoBehaviour
     public LayerMask whatIsGround;
 
     //Movement Variables 
-    public bool isIdle;
-    public bool isWalkingRight;
-    public bool isWalkingLeft;
-    public bool isTurningRight;
-    public bool isTurningLeft;
-    public bool isJumping;
-    public bool isRunning;
+    private bool isIdle;
+    private bool isWalkingRight;
+    private bool isWalkingLeft;
+    private bool isTurningRight;
+    private bool isTurningLeft;
+    private bool isJumping;
+    private bool isRunning;
 
     //laying down timing
     bool isWaitingForIdle;
@@ -35,9 +35,10 @@ public class ControllerPlayerScript : MonoBehaviour
     //calling the animator
     Animator anim;
 
-    //AI Variables 
+    /*AI Variables 
     public bool isHiding;
     public GameObject hidingController;
+    */
 
     void Start()
     {
@@ -95,14 +96,14 @@ public class ControllerPlayerScript : MonoBehaviour
             anim.SetBool("isWalkingLeft", false);
             anim.SetBool("isWalkingRight", false);
             movementSpeed = 2f;
-            jumpForce = 250;
+            jumpForce = 150;
         }
 
         if (isRunning == false)
         {
             anim.SetBool("isRunning", false);
             movementSpeed = 0.8f;
-            jumpForce = 200;
+            jumpForce = 100;
         }
 
         //WalkingRight
@@ -234,7 +235,7 @@ public class ControllerPlayerScript : MonoBehaviour
             jump = true;
             anim.SetBool("isIdle", false);
         }
-        Hiding();
+        //Hiding();
     }
 
     //Indication that Ngeru is grounded
@@ -266,7 +267,7 @@ public class ControllerPlayerScript : MonoBehaviour
         jump = false;
     }
 
-    private void Hiding()
+    /*private void Hiding()
     {
         if (Input.GetAxis("Hide") == 1)
         {
@@ -284,7 +285,7 @@ public class ControllerPlayerScript : MonoBehaviour
             isHiding = false;
         }
     }
-
+    */
 
 
 }
