@@ -284,7 +284,7 @@ public class ControllerPlayerScript : MonoBehaviour
             gameObject.layer = 10;
             isHiding = false;
         }
-    */}
+    }*/
 
 
 
