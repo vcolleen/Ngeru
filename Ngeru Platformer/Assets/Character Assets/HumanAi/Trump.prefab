@@ -145,7 +145,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 0.75
-  lineOfSight: {fileID: 0}
+  lineOfSight: {fileID: 120367558342705606, guid: ad2965b98580b314f808f6de668d4192,
+    type: 2}
   redColor:
     serializedVersion: 2
     key0: {r: 1, g: 0, b: 0, a: 1}
@@ -236,8 +237,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1720491189
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2edd069c7c2a65648b04573a7f84d55f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
