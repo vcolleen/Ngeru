@@ -35,9 +35,10 @@ public class ControllerPlayerScript : MonoBehaviour
     //calling the animator
     Animator anim;
 
-    //AI Variables 
+   /* //AI Variables 
     public bool isHiding;
     public GameObject hidingController;
+    */
 
     void Start()
     {
@@ -234,7 +235,7 @@ public class ControllerPlayerScript : MonoBehaviour
             jump = true;
             anim.SetBool("isIdle", false);
         }
-        Hiding();
+        //Hiding();
     }
 
     //Indication that Ngeru is grounded
@@ -266,7 +267,7 @@ public class ControllerPlayerScript : MonoBehaviour
         jump = false;
     }
 
-    private void Hiding()
+    /*private void Hiding()
     {
         if (Input.GetAxis("Hide") == 1)
         {
@@ -283,7 +284,7 @@ public class ControllerPlayerScript : MonoBehaviour
             gameObject.layer = 10;
             isHiding = false;
         }
-    }
+    */}
 
 
 
