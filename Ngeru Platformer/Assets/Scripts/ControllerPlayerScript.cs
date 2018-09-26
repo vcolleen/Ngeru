@@ -10,12 +10,13 @@ public class ControllerPlayerScript : MonoBehaviour
     public float movementSpeed;
     public Transform[] groundPoints;
     public float groundRadius;
-
+   
     //Jumping Variables
     private bool isGrounded;
     private bool jump;
     public float jumpForce;
     public LayerMask whatIsGround;
+    
 
     //Movement Variables 
     public bool isIdle;
@@ -42,7 +43,7 @@ public class ControllerPlayerScript : MonoBehaviour
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
-
+        
         anim = GetComponent<Animator>();
 
         anim.SetTrigger("isLookingRight");
@@ -185,12 +186,9 @@ public class ControllerPlayerScript : MonoBehaviour
                 anim.SetBool("isLayingDown", true);
             }
         }
-    
 
-
-
-
-    }
+        
+}
 
 
     void FixedUpdate()
@@ -203,8 +201,7 @@ public class ControllerPlayerScript : MonoBehaviour
 
         ResetValues();
     }
-
-
+   
     //Left to right movement
     private void HandleMovement(float horizontal)
     {
