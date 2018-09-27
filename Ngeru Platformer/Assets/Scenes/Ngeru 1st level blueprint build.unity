@@ -262,6 +262,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!4 &58082519 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4277681633364280, guid: 065d7e822d31f974a946fee44f0fb792,
+    type: 2}
+  m_PrefabInternal: {fileID: 894365949}
 --- !u!1 &159286037
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,7 +750,7 @@ Transform:
   - {fileID: 1752149759}
   - {fileID: 1423045284}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &711121923
 GameObject:
@@ -1044,6 +1049,59 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &894365949
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4996163579822234, guid: 065d7e822d31f974a946fee44f0fb792, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.79735893
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996163579822234, guid: 065d7e822d31f974a946fee44f0fb792, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.56232303
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996163579822234, guid: 065d7e822d31f974a946fee44f0fb792, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996163579822234, guid: 065d7e822d31f974a946fee44f0fb792, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996163579822234, guid: 065d7e822d31f974a946fee44f0fb792, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996163579822234, guid: 065d7e822d31f974a946fee44f0fb792, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996163579822234, guid: 065d7e822d31f974a946fee44f0fb792, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996163579822234, guid: 065d7e822d31f974a946fee44f0fb792, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997738358955790, guid: 065d7e822d31f974a946fee44f0fb792,
+        type: 2}
+      propertyPath: dialogueAnchor
+      value: 
+      objectReference: {fileID: 58082519}
+    - target: {fileID: 114997738358955790, guid: 065d7e822d31f974a946fee44f0fb792,
+        type: 2}
+      propertyPath: battleChoice
+      value: 
+      objectReference: {fileID: 1618620226066658, guid: 31e4efd4b41ae15438fff050398b3bc4,
+        type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 065d7e822d31f974a946fee44f0fb792, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &985863177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,7 +1237,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1050855272
 GameObject:
@@ -1434,7 +1492,7 @@ Transform:
   - {fileID: 711121924}
   - {fileID: 23993047}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1189734905
 GameObject:
@@ -1477,7 +1535,7 @@ Transform:
   - {fileID: 1341918720}
   - {fileID: 1234124844}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1234124843
 GameObject:
@@ -1643,7 +1701,7 @@ Transform:
   m_Children:
   - {fileID: 176715238}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1277055663
 MonoBehaviour:
@@ -2165,7 +2223,7 @@ Transform:
   m_LocalScale: {x: 14.918314, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2130148721
 GameObject:

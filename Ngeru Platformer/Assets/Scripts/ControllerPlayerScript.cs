@@ -63,7 +63,7 @@ public class ControllerPlayerScript : MonoBehaviour
         //Jump-Movement 
         HandleInput();
 
-        Debug.Log(Input.GetAxis("Jump"));
+        //Debug.Log(Input.GetAxis("Jump"));
 
 
         //Animations & Keyboard Triggers 
@@ -234,7 +234,7 @@ public class ControllerPlayerScript : MonoBehaviour
             jump = true;
             anim.SetBool("isIdle", false);
         }
-        Hiding();
+       // Hiding();
     }
 
     //Indication that Ngeru is grounded
@@ -266,24 +266,24 @@ public class ControllerPlayerScript : MonoBehaviour
         jump = false;
     }
 
-    private void Hiding()
-    {
-        if (Input.GetAxis("Hide") == 1)
-        {
-            hidingController.GetComponent<HiddenArrayScript>().CheckHiding();
-            if (hidingController.GetComponent<HiddenArrayScript>().canHideObject.GetComponent<HiddenObjectScript>().isOverlaping == true)
-            {
-                gameObject.layer = 2;
-                isHiding = true;
-                gameObject.transform.position = hidingController.GetComponent<HiddenArrayScript>().canHideObject.transform.position;
-            }
-        }
-        if (Input.GetAxis("Hide") == 0)
-        {
-            gameObject.layer = 10;
-            isHiding = false;
-        }
-    }
+   // private void Hiding()
+   // {
+   //     if (Input.GetAxis("Hide") == 1)
+   //     {
+   //         hidingController.GetComponent<HiddenArrayScript>().CheckHiding();
+   //         if (hidingController.GetComponent<HiddenArrayScript>().canHideObject.GetComponent<HiddenObjectScript>().isOverlaping == true)
+   //         {
+   //             gameObject.layer = 2;
+   //             isHiding = true;
+   //             gameObject.transform.position = hidingController.GetComponent<HiddenArrayScript>().canHideObject.transform.position;
+  //          }
+  //      }
+  //      if (Input.GetAxis("Hide") == 0)
+  //      {
+  //          gameObject.layer = 10;
+  //          isHiding = false;
+      //  }
+   // }
 
 
 
