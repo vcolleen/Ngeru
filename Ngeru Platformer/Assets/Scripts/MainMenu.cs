@@ -15,4 +15,10 @@ public class MainMenu : MonoBehaviour {
 		Debug.Log ("Game Quit");
 		Application.Quit ();
 	}
+
+    public void Load()
+    {
+        PlayerPrefs.GetFloat("PlayerX");
+        SceneManager.LoadScene(PlayerPrefs.GetInt("currentscenesave"));
+    }
 }
