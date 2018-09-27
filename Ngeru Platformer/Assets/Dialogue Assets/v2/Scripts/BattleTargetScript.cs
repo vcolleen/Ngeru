@@ -16,7 +16,7 @@ public class BattleTargetScript : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("start");
+        
     }
 
     void Update()
