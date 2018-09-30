@@ -225,6 +225,8 @@ public class ControllerPlayerScript : MonoBehaviour
             isGrounded = false;
             myRigidBody.AddForce(new Vector2(0, jumpForce));
             anim.SetBool("isJumping", true);
+            anim.SetBool("isIdle", false);
+            anim.SetBool("isLayingDown", false);
         }
 
         if (isGrounded)
@@ -241,7 +243,6 @@ public class ControllerPlayerScript : MonoBehaviour
         if (Input.GetAxis("Jump") >= 1)
         {
             jump = true;
-            anim.SetBool("isIdle", false);
         }
         //Hiding();
     }
