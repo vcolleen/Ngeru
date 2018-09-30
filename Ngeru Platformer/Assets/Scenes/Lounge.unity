@@ -3479,6 +3479,11 @@ Prefab:
       propertyPath: whatIsGround.m_Bits
       value: 4096
       objectReference: {fileID: 0}
+    - target: {fileID: 114419812427285856, guid: 7f235fb191b772e49bf9009ceeb9e1a1,
+        type: 2}
+      propertyPath: timeBeforeLayDown
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7f235fb191b772e49bf9009ceeb9e1a1, type: 2}
   m_IsPrefabParent: 0
