@@ -64,7 +64,7 @@ public class ControllerPlayerScript : MonoBehaviour
         //Jump-Movement 
         HandleInput();
 
-        Debug.Log(Input.GetAxis("Jump"));
+        //Debug.Log(Input.GetAxis("Jump"));
 
 
         //Animations & Keyboard Triggers 
@@ -109,8 +109,12 @@ public class ControllerPlayerScript : MonoBehaviour
         //WalkingRight
         if (Input.GetAxis("Horizontal") > 0)
         {
+            if (isWalkingRight == false)
+            {
+                anim.SetTrigger("isLookingRight");
+            }
             isWalkingRight = true;
-            anim.SetTrigger("isLookingRight");
+            isWalkingLeft = false;
         }
 
         else
@@ -131,8 +135,12 @@ public class ControllerPlayerScript : MonoBehaviour
         //WalkingLeft 
         if (Input.GetAxis("Horizontal") < 0)
         {
+            if (isWalkingLeft == false)
+            {
+                anim.SetTrigger("isLookingLeft");
+            }
             isWalkingLeft = true;
-            anim.SetTrigger("isLookingLeft");
+            isWalkingRight = false;
         }
         else
         {
