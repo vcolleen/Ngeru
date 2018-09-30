@@ -545,9 +545,6 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: isLookingLeft
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
     m_ConditionEvent: isJumping
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
@@ -1505,7 +1502,7 @@ AnimatorStateMachine:
     m_Position: {x: 456, y: 204, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102090879017709830}
-    m_Position: {x: 300, y: 204, z: 0}
+    m_Position: {x: 168, y: 192, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102463085398484060}
     m_Position: {x: 252, y: -84, z: 0}
