@@ -103,7 +103,7 @@ TextureImporter:
         serializedVersion: 2
         x: 4
         y: 130
-        width: 64
+        width: 68
         height: 58
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -123,7 +123,7 @@ TextureImporter:
         serializedVersion: 2
         x: 125
         y: 130
-        width: 66
+        width: 68
         height: 59
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -163,7 +163,7 @@ TextureImporter:
         serializedVersion: 2
         x: 365
         y: 130
-        width: 66
+        width: 68
         height: 60
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -183,7 +183,7 @@ TextureImporter:
         serializedVersion: 2
         x: 485
         y: 130
-        width: 64
+        width: 68
         height: 59
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -203,7 +203,7 @@ TextureImporter:
         serializedVersion: 2
         x: 4
         y: 66
-        width: 64
+        width: 68
         height: 58
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -223,7 +223,7 @@ TextureImporter:
         serializedVersion: 2
         x: 125
         y: 66
-        width: 66
+        width: 68
         height: 59
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -263,7 +263,7 @@ TextureImporter:
         serializedVersion: 2
         x: 365
         y: 66
-        width: 66
+        width: 68
         height: 60
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -283,7 +283,7 @@ TextureImporter:
         serializedVersion: 2
         x: 485
         y: 66
-        width: 64
+        width: 68
         height: 59
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -303,7 +303,7 @@ TextureImporter:
         serializedVersion: 2
         x: 4
         y: 2
-        width: 64
+        width: 68
         height: 58
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -323,7 +323,7 @@ TextureImporter:
         serializedVersion: 2
         x: 125
         y: 2
-        width: 66
+        width: 68
         height: 59
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -363,7 +363,7 @@ TextureImporter:
         serializedVersion: 2
         x: 365
         y: 2
-        width: 66
+        width: 68
         height: 60
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -383,7 +383,7 @@ TextureImporter:
         serializedVersion: 2
         x: 485
         y: 2
-        width: 64
+        width: 68
         height: 59
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -406,7 +406,7 @@ TextureImporter:
         width: 600
         height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
