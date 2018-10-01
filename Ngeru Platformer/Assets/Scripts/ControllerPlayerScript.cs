@@ -176,6 +176,7 @@ public class ControllerPlayerScript : MonoBehaviour
             anim.SetBool("isLayingDown", false);
         }
 
+        //Idle
         if (isIdle)
         {
             if (isWaitingForIdle)
@@ -185,7 +186,13 @@ public class ControllerPlayerScript : MonoBehaviour
             }
             if (Time.time > startIdle)
             {
+                IdleLayer();
                 anim.SetBool("isLayingDown", true);
+            }
+
+            else
+            {
+                anim.SetLayerWeight(3, 0);
             }
         }
     
@@ -290,6 +297,13 @@ public class ControllerPlayerScript : MonoBehaviour
             anim.SetLayerWeight(1, 1);
         }
     }
+
+    private void IdleLayer()
+    {
+        anim.SetLayerWeight(3, 1);
+    }
+
+   
 
     /*private void Hiding()
     {
