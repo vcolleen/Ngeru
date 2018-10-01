@@ -493,8 +493,8 @@ TextureImporter:
       name: ngeru_idle_lie_down_left_spritesheet_18
       rect:
         serializedVersion: 2
-        x: 38
-        y: 447
+        x: 40
+        y: 449
         width: 53
         height: 40
       alignment: 7
@@ -514,7 +514,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 451
+        y: 449
         width: 53
         height: 40
       alignment: 7
@@ -813,7 +813,7 @@ TextureImporter:
       name: ngeru_idle_lie_down_left_spritesheet_34
       rect:
         serializedVersion: 2
-        x: 518
+        x: 520
         y: 225
         width: 53
         height: 40
