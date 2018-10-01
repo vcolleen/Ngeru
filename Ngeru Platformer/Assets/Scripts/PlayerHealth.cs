@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour {
 
@@ -9,12 +10,16 @@ public class PlayerHealth : MonoBehaviour {
     public TurnSystemScript.TurnClass turnClass;
     public bool isTurn = false;
 
-    public int startingHealth;
+    public float startingHealth;
+
+    public float MaxHP;
+    public float DeadHold;
+
     public int attackDamage;
     public int critDamage;
     public float currentHealth;
     public Image healthImage;
-    public GameObject button;
+    public GameObject buttonArea;
 
     //[SerializedField]
     GameObject enemy;
@@ -23,6 +28,8 @@ public class PlayerHealth : MonoBehaviour {
     public float speed = 2.0f;
     private float timetoReach;
     private float length;
+
+    public GameObject yaDed;
 
 
     void Start () {
@@ -33,10 +40,12 @@ public class PlayerHealth : MonoBehaviour {
             if (tc.playerGameObject.name == gameObject.name) turnClass = tc;
         }
 
+        MaxHP = startingHealth;
         currentHealth = startingHealth;
         enemy = GameObject.FindGameObjectWithTag("Enemy");
         enemyScript = enemy.GetComponent<EnemyMoveScript>();
-        button.SetActive(false);
+        buttonArea.SetActive(false);
+        yaDed.SetActive(false);
    
 
     }
@@ -72,16 +81,26 @@ public void HitLight()
 
 	
     void Update () {
+        
 
         isTurn = turnClass.isTurn;
         if(isTurn)
         {
-            button.SetActive(true);
+            buttonArea.SetActive(true);
         }
 
         else
         {
-            button.SetActive(false);
+            buttonArea.SetActive(false);
+        }
+
+        if(currentHealth > MaxHP)
+        {
+            currentHealth = MaxHP;
+        }
+        if (currentHealth <= DeadHold)
+        {
+            PlayerDead();
         }
 
     }
@@ -106,11 +125,25 @@ public void HitLight()
     public void TakeDamage (int amount) {
         currentHealth -= amount;
         healthImage.fillAmount = (currentHealth / 100);
+
     }
 
     public void HPReset()
     {
         healthImage.fillAmount = (currentHealth / 100);
+    }
+
+    public void PlayerDead()
+    {
+        buttonArea.SetActive(false);
+        yaDed.SetActive(true);
+
+
+        if (Input.anyKey)
+        {
+            SceneManager.LoadScene(2);
+        }
+
     }
 
 }

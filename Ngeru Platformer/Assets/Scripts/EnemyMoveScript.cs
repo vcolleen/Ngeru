@@ -74,7 +74,11 @@ public class EnemyMoveScript : MonoBehaviour {
         {
             StartCoroutine("WaitAndMove");
         }
-     
+        if (currentEnemyHealth <= 0)
+        {
+            Death();
+        }
+
     }
 
     IEnumerator WaitAndMove()
