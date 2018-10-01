@@ -23,8 +23,10 @@ public class ControllerPlayerScript : MonoBehaviour
     private bool isWalkingLeft;
     private bool isTurningRight;
     private bool isTurningLeft;
-    private bool isJumping;
     private bool isRunning;
+    private bool CanTurnLeft;
+    private bool CanTurnRight;
+    private bool landing;
 
     //laying down timing
     bool isWaitingForIdle;
@@ -45,16 +47,7 @@ public class ControllerPlayerScript : MonoBehaviour
         myRigidBody = GetComponent<Rigidbody2D>();
 
         anim = GetComponent<Animator>();
-
-        anim.SetTrigger("isLookingRight");
-
-        isIdle = true;
-        isWalkingRight = false;
-        isWalkingLeft = false;
-        isTurningRight = false;
-        isTurningLeft = false;
-        isJumping = false;
-        isRunning = false;
+        anim.SetBool("isWalkingRight", true);
     }
 
 
@@ -96,25 +89,24 @@ public class ControllerPlayerScript : MonoBehaviour
             anim.SetBool("isWalkingLeft", false);
             anim.SetBool("isWalkingRight", false);
             movementSpeed = 2f;
-            jumpForce = 200;
+            jumpForce = 250;
         }
 
         if (isRunning == false)
         {
             anim.SetBool("isRunning", false);
             movementSpeed = 0.8f;
-            jumpForce = 150;
+            jumpForce = 220;
         }
+
+        Debug.Log(Input.GetAxis("Horizontal"));
 
         //WalkingRight
         if (Input.GetAxis("Horizontal") > 0)
         {
-            if (isWalkingRight == false)
-            {
-                anim.SetTrigger("isLookingRight");
-            }
             isWalkingRight = true;
             isWalkingLeft = false;
+            anim.SetTrigger("Turn");
         }
 
         else
@@ -125,22 +117,22 @@ public class ControllerPlayerScript : MonoBehaviour
         if (isWalkingRight == true)
         {
             anim.SetBool("isWalkingRight", true);
+            anim.SetBool("CanTurnRight", true);
+            anim.SetBool("CanTurnLeft", false);
         }
 
         if (isWalkingRight == false)
         {
             anim.SetBool("isWalkingRight", false);
+           
         }
 
         //WalkingLeft 
         if (Input.GetAxis("Horizontal") < 0)
         {
-            if (isWalkingLeft == false)
-            {
-                anim.SetTrigger("isLookingLeft");
-            }
             isWalkingLeft = true;
             isWalkingRight = false;
+            anim.SetTrigger("Turn");
         }
         else
         {
@@ -150,11 +142,13 @@ public class ControllerPlayerScript : MonoBehaviour
         if (isWalkingLeft == true)
         {
             anim.SetBool("isWalkingLeft", true);
+            anim.SetBool("CanTurnLeft", true);
+            anim.SetBool("CanTurnRight", false);
         }
 
         if (isWalkingLeft == false)
         {
-            anim.SetBool("isWalkingLeft", false);
+            anim.SetBool("isWalkingLeft", false); 
 
         }
 
@@ -210,6 +204,8 @@ public class ControllerPlayerScript : MonoBehaviour
 
         HandleMovement(horizontal);
 
+        HandleLayers();
+
         ResetValues();
     }
 
@@ -217,6 +213,12 @@ public class ControllerPlayerScript : MonoBehaviour
     //Left to right movement
     private void HandleMovement(float horizontal)
     {
+        if(myRigidBody.velocity.y < 0)
+        {
+            landing = true;
+            anim.SetBool("Landing", true);
+
+        }
 
         myRigidBody.velocity = new Vector2(horizontal * movementSpeed, myRigidBody.velocity.y);
 
@@ -224,14 +226,9 @@ public class ControllerPlayerScript : MonoBehaviour
         {
             isGrounded = false;
             myRigidBody.AddForce(new Vector2(0, jumpForce));
-            anim.SetBool("isJumping", true);
             anim.SetBool("isIdle", false);
             anim.SetBool("isLayingDown", false);
-        }
-
-        if (isGrounded)
-        {
-            anim.SetBool("isJumping", false);
+            anim.SetTrigger("Jump");
         }
     }
 
@@ -260,6 +257,8 @@ public class ControllerPlayerScript : MonoBehaviour
                 {
                     if (colliders[i].gameObject != gameObject)
                     {
+                        anim.ResetTrigger("Jump");
+                        anim.SetBool("Landing", false);
                         return true;
                     }
 
@@ -274,6 +273,22 @@ public class ControllerPlayerScript : MonoBehaviour
     private void ResetValues()
     {
         jump = false;
+    }
+
+    //Animation Layers for Jump
+    private void HandleLayers()
+    {
+        if (!isGrounded)
+        {
+            anim.SetLayerWeight(2, 1);
+            anim.SetLayerWeight(1, 0);
+        }
+
+        else
+        {
+            anim.SetLayerWeight(2, 0);
+            anim.SetLayerWeight(1, 1);
+        }
     }
 
     /*private void Hiding()
