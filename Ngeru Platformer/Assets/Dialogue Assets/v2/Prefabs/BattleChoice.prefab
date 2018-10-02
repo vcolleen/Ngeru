@@ -313,6 +313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3b275ca5081432469a23ac5c0f7dc39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textField: {fileID: 114220309090775686}
 --- !u!114 &114581533942279754
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -586,10 +587,10 @@ RectTransform:
   m_Father: {fileID: 224069420484475788}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -40, y: -22.5}
-  m_SizeDelta: {x: -90, y: -55}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -60, y: -22.5}
+  m_SizeDelta: {x: 118, y: 37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224066604687010070
 RectTransform:
@@ -608,7 +609,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 10}
-  m_SizeDelta: {x: -700, y: -320}
+  m_SizeDelta: {x: -500, y: -320}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224069420484475788
 RectTransform:
@@ -663,10 +664,10 @@ RectTransform:
   m_Father: {fileID: 224069420484475788}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 20}
-  m_SizeDelta: {x: -10, y: -50}
+  m_SizeDelta: {x: 238, y: 42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224383769322383378
 RectTransform:
@@ -682,10 +683,10 @@ RectTransform:
   m_Father: {fileID: 224069420484475788}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 40, y: -22.5}
-  m_SizeDelta: {x: -90, y: -55}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 60, y: -22.5}
+  m_SizeDelta: {x: 118, y: 37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224633198709553500
 RectTransform:

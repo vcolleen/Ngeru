@@ -36,8 +36,12 @@ public class NPCDialogueScript : MonoBehaviour {
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        Prompt();
-        playerInCollider = true;
+        if (collision.GetComponent<Transform>().CompareTag("Player"))
+        {
+            Prompt();
+            playerInCollider = true;
+        }
+
     }
 
     public void OnTriggerExit2D(Collider2D collision)

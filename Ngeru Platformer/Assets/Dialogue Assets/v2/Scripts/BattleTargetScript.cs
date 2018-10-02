@@ -12,6 +12,7 @@ public class BattleTargetScript : MonoBehaviour
     public GameObject prompt;
     public Transform dialogueAnchor;
     public GameObject battleChoice;
+    public string objectName;
     // add reference to battle scene here
 
     void Start()
@@ -26,8 +27,12 @@ public class BattleTargetScript : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        playerInCollider = true;
-        Prompt();
+        if (collision.GetComponent<Transform>().CompareTag("Player"))
+        {
+            playerInCollider = true;
+            Prompt();
+        }
+
     }
 
     public void OnTriggerExit2D(Collider2D collision)

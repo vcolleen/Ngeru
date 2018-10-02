@@ -1,12 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BattleChoiceScript : MonoBehaviour {
 
+    string storedName;
+
+    public Text textField;
+
 	// Use this for initialization
 	void Start () {
-		
+        storedName = GetComponentInParent<BattleTargetScript>().objectName;
+        textField.text = ("Fight " + storedName + "?");
 	}
 	
 	// Update is called once per frame

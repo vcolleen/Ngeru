@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 114861424152117934}
   - component: {fileID: 61869197080187746}
   m_Layer: 0
-  m_Name: TestNPC
+  m_Name: DialogueBounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
