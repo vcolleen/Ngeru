@@ -30,8 +30,12 @@ public class ControllerPlayerScript : MonoBehaviour
 
     //laying down timing
     bool isWaitingForIdle;
+    bool isWaitingForSuperIdle;
     public float timeBeforeLayDown = 3;
-    float startIdle = 3;
+    public float timeBeforeSitDown = 3;
+    float startIdle = 5f;
+    float startSitting = 10f;
+    bool isSitting = false;
 
 
     //calling the animator
@@ -48,7 +52,13 @@ public class ControllerPlayerScript : MonoBehaviour
 
         anim = GetComponent<Animator>();
         anim.SetBool("isWalkingRight", true);
+
+        isWaitingForSuperIdle = true;
+        isWaitingForIdle = true;
+        isIdle = true;
+        CanTurnRight = true;
     }
+
 
 
 
@@ -166,14 +176,18 @@ public class ControllerPlayerScript : MonoBehaviour
         if (isWalkingLeft)
         {
             isIdle = false;
+            isSitting = false;
             isWaitingForIdle = true;
             anim.SetBool("isLayingDown", false);
+            anim.SetBool("isSuperIdle", false);
         }
         if (isWalkingRight)
         {
             isIdle = false;
+            isSitting = false;
             isWaitingForIdle = true;
             anim.SetBool("isLayingDown", false);
+            anim.SetBool("isSuperIdle", false);
         }
 
         //Idle
@@ -181,13 +195,23 @@ public class ControllerPlayerScript : MonoBehaviour
         {
             if (isWaitingForIdle)
             {
-                startIdle = (Time.time + timeBeforeLayDown);
+                startIdle = (Time.time + timeBeforeSitDown);
                 isWaitingForIdle = false;
+            }
+            if (isWaitingForSuperIdle)
+            {
+                startSitting = (Time.time + timeBeforeLayDown);
+                isWaitingForSuperIdle = false;
             }
             if (Time.time > startIdle)
             {
                 IdleLayer();
                 anim.SetBool("isLayingDown", true);
+                isSitting = true;
+            }
+            if (Time.time > startSitting)
+            {
+                anim.SetBool("isSuperIdle", true);
             }
 
             else
@@ -235,6 +259,7 @@ public class ControllerPlayerScript : MonoBehaviour
             myRigidBody.AddForce(new Vector2(0, jumpForce));
             anim.SetBool("isIdle", false);
             anim.SetBool("isLayingDown", false);
+            anim.SetBool("isSuperIdle", false);
             anim.SetTrigger("Jump");
         }
     }
