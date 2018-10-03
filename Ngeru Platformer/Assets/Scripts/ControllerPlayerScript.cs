@@ -205,18 +205,13 @@ public class ControllerPlayerScript : MonoBehaviour
             }
             if (Time.time > startIdle)
             {
-                IdleLayer();
+                anim.SetLayerWeight(3, 1);
                 anim.SetBool("isLayingDown", true);
                 isSitting = true;
             }
             if (Time.time > startSitting)
             {
                 anim.SetBool("isSuperIdle", true);
-            }
-
-            else
-            {
-                anim.SetLayerWeight(3, 0);
             }
         }
     
@@ -272,6 +267,9 @@ public class ControllerPlayerScript : MonoBehaviour
         if (Input.GetAxis("Jump") >= 1)
         {
             jump = true;
+            isIdle = false;
+            isSitting = false;
+            isWaitingForIdle = true;
         }
         //Hiding();
     }
@@ -314,6 +312,7 @@ public class ControllerPlayerScript : MonoBehaviour
         {
             anim.SetLayerWeight(2, 1);
             anim.SetLayerWeight(1, 0);
+            anim.SetLayerWeight(3, 0);
         }
 
         else
@@ -321,11 +320,6 @@ public class ControllerPlayerScript : MonoBehaviour
             anim.SetLayerWeight(2, 0);
             anim.SetLayerWeight(1, 1);
         }
-    }
-
-    private void IdleLayer()
-    {
-        anim.SetLayerWeight(3, 1);
     }
 
    
