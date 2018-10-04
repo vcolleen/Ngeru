@@ -3368,6 +3368,11 @@ Prefab:
       propertyPath: timeBeforeSitDown
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114419812427285856, guid: 7f235fb191b772e49bf9009ceeb9e1a1,
+        type: 2}
+      propertyPath: timeBetweenJumps
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 61054928837657854, guid: 7f235fb191b772e49bf9009ceeb9e1a1, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7f235fb191b772e49bf9009ceeb9e1a1, type: 2}

@@ -17,6 +17,9 @@ public class ControllerPlayerScript : MonoBehaviour
     public float jumpForce;
     public LayerMask whatIsGround;
 
+    public float timeBetweenJumps;
+    float nextJump;
+
     //Movement Variables 
     private bool isIdle;
     private bool isWalkingRight;
@@ -264,12 +267,13 @@ public class ControllerPlayerScript : MonoBehaviour
     //Jump
     private void HandleInput()
     {
-        if (Input.GetAxis("Jump") >= 1)
+        if (Input.GetAxis("Jump") >= 1 && Time.time > nextJump)
         {
             jump = true;
             isIdle = false;
             isSitting = false;
             isWaitingForIdle = true;
+            nextJump = (Time.time + timeBetweenJumps);
         }
         //Hiding();
     }
