@@ -21,9 +21,9 @@ public class Patrol : MonoBehaviour
     void Awake()
     {
 
-        rEntranceScript = GameObject.Find("AIController").GetComponent<RandomEntranceScript>();
-        spawnTime = Time.time;
-        timeAlive = 0f;
+        //rEntranceScript = GameObject.Find("AIController").GetComponent<RandomEntranceScript>();
+        //spawnTime = Time.time;
+        //timeAlive = 0f;
 
     }
 
