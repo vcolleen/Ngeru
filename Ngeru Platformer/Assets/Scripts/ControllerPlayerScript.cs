@@ -206,7 +206,7 @@ public class ControllerPlayerScript : MonoBehaviour
             }
             if (Time.time > startIdle)
             {
-                anim.SetLayerWeight(3, 1);
+                anim.SetLayerWeight(2, 1);
                 anim.SetBool("isLayingDown", true);
                 isSitting = true;
             }
@@ -234,6 +234,8 @@ public class ControllerPlayerScript : MonoBehaviour
         HandleLayers();
 
         ResetValues();
+
+        Debug.Log(Input.GetAxis("Jump"));
     }
 
 
@@ -312,15 +314,15 @@ public class ControllerPlayerScript : MonoBehaviour
     {
         if (!isGrounded)
         {
-            anim.SetLayerWeight(2, 1);
-            anim.SetLayerWeight(1, 0);
-            anim.SetLayerWeight(3, 0);
+            anim.SetLayerWeight(1, 1);
+            anim.SetLayerWeight(0, 0);
+            anim.SetLayerWeight(2, 0);
         }
 
         else
         {
-            anim.SetLayerWeight(2, 0);
-            anim.SetLayerWeight(1, 1);
+            anim.SetLayerWeight(1, 0);
+            anim.SetLayerWeight(0, 1);
         }
     }
 
