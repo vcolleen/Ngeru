@@ -234,8 +234,6 @@ public class ControllerPlayerScript : MonoBehaviour
         HandleLayers();
 
         ResetValues();
-
-        Debug.Log(Input.GetAxis("Jump"));
     }
 
 
