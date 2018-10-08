@@ -2563,9 +2563,9 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1123025583}
---- !u!1 &1124973692 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1642617815067650, guid: 98dd3075223de0f40bf143776ea9fc4b,
+--- !u!4 &1124973699 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4418954574844752, guid: 98dd3075223de0f40bf143776ea9fc4b,
     type: 2}
   m_PrefabInternal: {fileID: 1408075822}
 --- !u!1 &1211133586
@@ -2772,7 +2772,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e76dac1df8b085449f14ace79908e81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1124973692}
+  target: {fileID: 1124973699}
+  smoothTime: 0.15
+  YMaxEnabled: 1
+  YMaxValue: 0
+  XMaxEnabled: 1
+  XMaxValue: -0.99
+  YMinEnabled: 1
+  YMinValue: 0.08
+  XMinEnabled: 1
+  XMinValue: -1.25
 --- !u!1001 &1286458580
 Prefab:
   m_ObjectHideFlags: 0
@@ -3282,7 +3291,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4418954574844752, guid: 98dd3075223de0f40bf143776ea9fc4b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.438
+      value: -2.706
       objectReference: {fileID: 0}
     - target: {fileID: 4418954574844752, guid: 98dd3075223de0f40bf143776ea9fc4b, type: 2}
       propertyPath: m_LocalPosition.y
