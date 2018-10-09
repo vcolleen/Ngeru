@@ -13,21 +13,29 @@ public class BattleTargetScript : MonoBehaviour
     public Transform dialogueAnchor;
     public GameObject battleChoice;
     public string objectName;
+    public GameObject objectiveMarker;
+    public bool leadsToBattle;
+    public bool isBroken;
+    bool waitForBroken;
     // add reference to battle scene here
 
     void Start()
     {
-        
+        waitForBroken = true;
     }
 
     void Update()
     {
-
+        if (isBroken && waitForBroken)
+        {
+            //set animation to broken
+            waitForBroken = false;
+        }
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<Transform>().CompareTag("Player"))
+        if (collision.GetComponent<Transform>().CompareTag("Player") && isBroken == false)
         {
             playerInCollider = true;
             Prompt();
@@ -52,7 +60,21 @@ public class BattleTargetScript : MonoBehaviour
 
     public void Yes()
     {
-        //Link to battle scene here
+        GetComponentInChildren<BattleChoiceScript>().Die();
+        if (leadsToBattle)
+        {
+            //link to battle scene here
+        }
+        else
+        {
+            isBroken = true;
+        }
+        if (playerInCollider)
+        {
+            //Prompt();
+        }
+        objectiveMarker.SetActive(true);
+
     }
 
     public void No()
