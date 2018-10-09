@@ -15,6 +15,7 @@ public class PlayerHealth : MonoBehaviour {
     public Image healthImage;
     public GameObject button;
 
+    public Animator animRef;
     GameObject enemy;
     EnemyMoveScript enemyScript;
 

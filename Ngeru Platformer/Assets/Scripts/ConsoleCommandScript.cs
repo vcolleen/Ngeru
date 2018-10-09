@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ConsoleCommandScript : MonoBehaviour {
     public InputField inputRef;
@@ -34,12 +35,12 @@ public class ConsoleCommandScript : MonoBehaviour {
         }
         if (fieldString == "selectlevel")
         {
-            textRef.text = (textRef.text + "\n use [selectlevel x] where x is \n [1] \n [2] \n [3]");
+            textRef.text = (textRef.text + "\n use [selectlevel x] where x is \n [lounge] \n [alley] \n [tree]");
             selectingLevel = true;
         }
         if (fieldString == "mainmenu")
         {
-            textRef.text = (textRef.text + "\n Send to Main Menu");
+            SceneManager.LoadScene(0);
         }
         if (fieldString == "close")
         {
@@ -50,20 +51,19 @@ public class ConsoleCommandScript : MonoBehaviour {
             textRef.text = (textRef.text + "\n use [additem x] where x is \n [healthpotion] \n [manapotion] \n [storyitem1] \n [storyitem2]");
         }
             Debug.Log("selectstage");
-            if (fieldString == "selectlevel 1")
+            if (fieldString == "selectlevel alley")
             {
-                textRef.text = (textRef.text + "\n Level 1");
-                Debug.Log("printstage");
+                SceneManager.LoadScene(2);
             }
-            if (fieldString == "selectlevel 2")
+            if (fieldString == "selectlevel lounge")
             {
-                textRef.text = (textRef.text + "\n Level 2");
+                SceneManager.LoadScene(1);
             }
-            if (fieldString == "selectlevel 3")
+        if (fieldString == "selectlevel tree")
             {
-                textRef.text = (textRef.text + "\n Level 3");
+                SceneManager.LoadScene(3);
             }
-            selectingLevel = false;
+        selectingLevel = false;
 
 
 
