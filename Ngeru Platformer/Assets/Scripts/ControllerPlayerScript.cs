@@ -44,10 +44,10 @@ public class ControllerPlayerScript : MonoBehaviour
     //calling the animator
     Animator anim;
 
-    /*AI Variables 
+    //AI Variables 
     public bool isHiding;
-    public GameObject hidingController;
-    */
+    private bool isOverlaping = false;
+
 
     void Start()
     {
@@ -273,7 +273,7 @@ public class ControllerPlayerScript : MonoBehaviour
             isWaitingForIdle = true;
             nextJump = (Time.time + timeBetweenJumps);
         }
-        //Hiding();
+        Hiding();
     }
 
     //Indication that Ngeru is grounded
@@ -324,18 +324,16 @@ public class ControllerPlayerScript : MonoBehaviour
         }
     }
 
-   
 
-    /*private void Hiding()
+    void Hiding()
     {
         if (Input.GetAxis("Hide") == 1)
         {
-            hidingController.GetComponent<HiddenArrayScript>().CheckHiding();
-            if (hidingController.GetComponent<HiddenArrayScript>().canHideObject.GetComponent<HiddenObjectScript>().isOverlaping == true)
+            if (isOverlaping == true)
             {
                 gameObject.layer = 2;
                 isHiding = true;
-                gameObject.transform.position = hidingController.GetComponent<HiddenArrayScript>().canHideObject.transform.position;
+                gameObject.transform.position = GameObject.Find("HidingCouch").transform.position;
             }
         }
         if (Input.GetAxis("Hide") == 0)
@@ -344,7 +342,27 @@ public class ControllerPlayerScript : MonoBehaviour
             isHiding = false;
         }
     }
-    */
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+
+        if (other.gameObject.name == "HidingCouch")
+        {
+            Debug.Log("CanHide");
+            isOverlaping = true;
+            Debug.Log(isOverlaping);
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.name == "HidingCouch")
+        {
+            Debug.Log("triggerExit");
+
+            isOverlaping = false;
+        }
+    }
 
 
 }
