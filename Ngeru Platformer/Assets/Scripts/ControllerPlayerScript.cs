@@ -102,14 +102,14 @@ public class ControllerPlayerScript : MonoBehaviour
             anim.SetBool("isWalkingLeft", false);
             anim.SetBool("isWalkingRight", false);
             movementSpeed = 2f;
-            jumpForce = 250;
+            jumpForce = 200;
         }
 
         if (isRunning == false)
         {
             anim.SetBool("isRunning", false);
             movementSpeed = 0.8f;
-            jumpForce = 220;
+            jumpForce = 150;
         }
 
         //WalkingRight
@@ -234,8 +234,6 @@ public class ControllerPlayerScript : MonoBehaviour
         HandleLayers();
 
         ResetValues();
-
-        Debug.Log(Input.GetAxis("Jump"));
     }
 
 
