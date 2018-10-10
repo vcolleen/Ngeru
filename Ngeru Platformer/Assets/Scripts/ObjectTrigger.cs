@@ -14,10 +14,12 @@ public class ObjectTrigger : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        Debug.Log(Input.GetAxis("Trigger"));
+
         if (inside == true)
         {
             anim.SetBool("inside", true);
-            if (Input.GetKeyDown("e"))
+            if (Input.GetAxis("Trigger") == 1)
             {
                 anim.SetTrigger("play");
             }
