@@ -17,10 +17,15 @@ public class ObjectTrigger : MonoBehaviour {
         if (inside == true)
         {
             anim.SetBool("inside", true);
-            if(Input.GetKeyDown("e"))
+            if (Input.GetKeyDown("e"))
             {
                 anim.SetTrigger("play");
             }
+        }
+
+        if (inside == false)
+        {
+            anim.SetBool("inside", false);
         }
         
     }
@@ -28,6 +33,11 @@ public class ObjectTrigger : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other)
     {
         inside = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        inside = false;
     }
 
 
