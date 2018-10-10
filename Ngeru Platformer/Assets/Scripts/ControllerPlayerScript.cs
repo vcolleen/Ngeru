@@ -109,7 +109,7 @@ public class ControllerPlayerScript : MonoBehaviour
         {
             anim.SetBool("isRunning", false);
             movementSpeed = 0.8f;
-            jumpForce = 150;
+            jumpForce = 190;
         }
 
         //WalkingRight

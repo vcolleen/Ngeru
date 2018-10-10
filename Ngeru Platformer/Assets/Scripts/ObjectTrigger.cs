@@ -6,6 +6,8 @@ public class ObjectTrigger : MonoBehaviour {
 
     Animator anim;
     public bool inside;
+    public GameObject item;
+    public GameObject tick;
 
     // Use this for initialization
     void Start() {
@@ -22,6 +24,7 @@ public class ObjectTrigger : MonoBehaviour {
             if (Input.GetAxis("Trigger") == 1)
             {
                 anim.SetTrigger("play");
+                tick.SetActive(true);
             }
         }
 
