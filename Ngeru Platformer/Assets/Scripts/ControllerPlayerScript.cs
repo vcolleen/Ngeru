@@ -53,7 +53,7 @@ public class ControllerPlayerScript : MonoBehaviour {
         //Jump-Movement 
         HandleInput();
 
-//        Debug.Log(Input.GetAxis("Jump"));
+        Debug.Log(Input.GetAxis("Jump"));
 
 
         //Animations & Keyboard Triggers 
