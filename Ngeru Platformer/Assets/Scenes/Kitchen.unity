@@ -626,6 +626,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inside: 0
+  item: {fileID: 1980396660}
+  tick: {fileID: 175944213}
 --- !u!95 &206962624
 Animator:
   serializedVersion: 3
@@ -1860,8 +1862,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afd625e36afbf5f4a9216f74bdb10633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 1995395389}
-  tick: {fileID: 0}
 --- !u!23 &1151509521
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2768,6 +2768,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inside: 0
+  item: {fileID: 1519404530}
+  tick: {fileID: 558809772}
 --- !u!1 &1917209476
 GameObject:
   m_ObjectHideFlags: 0
@@ -3360,6 +3362,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inside: 0
+  item: {fileID: 1995395389}
+  tick: {fileID: 1283076576}
 --- !u!61 &2051920897
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3552,6 +3556,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inside: 0
+  item: {fileID: 87135586}
+  tick: {fileID: 552753556}
 --- !u!95 &2072024681
 Animator:
   serializedVersion: 3
