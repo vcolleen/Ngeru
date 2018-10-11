@@ -55,7 +55,7 @@ public class Inventory : MonoBehaviour {
 
     private List<GameObject> allSlots;
 
-    private static int emptySlot = 30;
+    private static int emptySlot = 10;
 
     private static GameObject clicked;
     private static GameObject hoverObject;
@@ -100,13 +100,13 @@ public class Inventory : MonoBehaviour {
             if(canvasGroup.alpha > 0)
             {
                 StartCoroutine("FadeOut");
-                SaveInventory();
+                //SaveInventory();
             }
 
             else
             {
                 StartCoroutine("FadeIn");
-                LoadInventory();
+               // LoadInventory();
             }
         }
 
