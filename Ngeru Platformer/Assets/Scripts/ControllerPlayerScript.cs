@@ -335,8 +335,8 @@ public class ControllerPlayerScript : MonoBehaviour
         }
         if (Input.GetAxis("Hide") == 0)
         {
-            gameObject.layer = 10;
             isHiding = false;
+            gameObject.layer = 10;
             Debug.Log("isn'tHiding");
         }
     }

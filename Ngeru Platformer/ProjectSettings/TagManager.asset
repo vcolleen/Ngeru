@@ -7,6 +7,7 @@ TagManager:
   - Item
   - Transition
   - Hideable
+  - hideable
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Enemy
   - Platforms
   - Hideable
-  - 
+  - Physics
   - 
   - 
   - 
