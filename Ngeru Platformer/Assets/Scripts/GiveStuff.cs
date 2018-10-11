@@ -34,7 +34,6 @@ public class GiveStuff : MonoBehaviour {
 
 
       private void OnTriggerEnter2D (Collider2D other) {
-      Debug.Log("gen-trigger detected");
        if (other.tag == "Item")
         {
             Debug.Log("Try to add item.");
