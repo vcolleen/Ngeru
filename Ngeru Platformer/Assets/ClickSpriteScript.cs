@@ -20,7 +20,7 @@ public class ClickSpriteScript : MonoBehaviour {
 	void Update ()
     {
         timer -= Time.deltaTime;
-
+   
         if (timer <= 0)
         {
             if (this.gameObject.GetComponent<SpriteRenderer>().sprite == One)
