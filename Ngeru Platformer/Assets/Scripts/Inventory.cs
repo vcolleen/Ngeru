@@ -55,13 +55,14 @@ public class Inventory : MonoBehaviour {
 
     private List<GameObject> allSlots;
 
-    private static int emptySlot = 10;
+    private static int emptySlot = 24;
 
     private static GameObject clicked;
     private static GameObject hoverObject;
 
     public bool NotInCombat;
 
+    public Image Background;
 
     public GameObject mana;
     /// This is used when loading a saved inventory. Add more to this as you gain more types of consumables.
@@ -81,6 +82,7 @@ public class Inventory : MonoBehaviour {
         CreateLayout();
 
         canvasGroup = transform.parent.GetComponent<CanvasGroup>();
+        
 
     }
 
@@ -110,7 +112,7 @@ public class Inventory : MonoBehaviour {
             }
         }
 
-
+        
 
     }
 
@@ -385,11 +387,14 @@ public class Inventory : MonoBehaviour {
             {
                 canvasGroup.alpha = Mathf.Lerp(startAlpha, 0, progress);
 
+               // Background.alpha = Mathf.Lerp(startAlpha, 0, progress);
+
                 progress += rate * Time.deltaTime;
 
                 yield return null;
             }
             canvasGroup.alpha = 0;
+           // Background.Color.alpha = 0;
             GetComponent<CanvasGroup>().blocksRaycasts = false;
             fadingOut = false;
         }
@@ -412,12 +417,14 @@ public class Inventory : MonoBehaviour {
             while (progress < 1.0)
             {
                 canvasGroup.alpha = Mathf.Lerp(startAlpha, 1, progress);
+               // Background.alpha = Mathf.Lerp(startAlpha, 1, progress);
 
                 progress += rate * Time.deltaTime;
 
                 yield return null;
             }
             canvasGroup.alpha = 1;
+           // Background.alpha = 1;
             GetComponent<CanvasGroup>().blocksRaycasts = true;
             fadingIn = false;
         }
