@@ -20,6 +20,7 @@ public class PlayerHealth : MonoBehaviour {
     public float currentHealth;
     public Image healthImage;
     public GameObject buttonArea;
+    public GameObject inventory;
 
     //[SerializedField]
     GameObject enemy;
@@ -30,6 +31,9 @@ public class PlayerHealth : MonoBehaviour {
     private float length;
 
     public GameObject yaDed;
+
+    public bool Idle;
+    Animator anim;
 
 
     void Start () {
@@ -46,8 +50,8 @@ public class PlayerHealth : MonoBehaviour {
         enemyScript = enemy.GetComponent<EnemyMoveScript>();
         buttonArea.SetActive(false);
         yaDed.SetActive(false);
-   
 
+        anim.SetBool("Idle", true);
     }
 
     public void Strike() {
@@ -61,6 +65,8 @@ public class PlayerHealth : MonoBehaviour {
 public void HitLight()
     {
         Attack();
+        anim.SetBool("Idle", false);
+        anim.SetTrigger("Scratch");
         isTurn = false;
         turnClass.isTurn = isTurn;
         turnClass.wasTurnPrev = true;
@@ -70,6 +76,8 @@ public void HitLight()
     public void HitHeavy()
     {
         AttackHeavy();
+        anim.SetBool("Idle", false);
+        anim.SetTrigger("Bite");
         isTurn = false;
         turnClass.isTurn = isTurn;
         turnClass.wasTurnPrev = true;
@@ -85,11 +93,15 @@ public void HitLight()
         if(isTurn)
         {
             buttonArea.SetActive(true);
+            inventory.SetActive(true);
         }
 
         else
         {
             buttonArea.SetActive(false);
+            inventory.SetActive(false);
+            anim.ResetTrigger("Bite");
+            anim.ResetTrigger("Scratch");
         }
 
         if(currentHealth > MaxHP)
