@@ -324,7 +324,17 @@ public class ControllerPlayerScript : MonoBehaviour
         }
     }
 
-   
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.name.Equals("MovingCloud"))
+            this.transform.parent = col.transform;
+    }
+
+    void OnCollisionExit2D(Collision2D col)
+    {
+        if (col.gameObject.name.Equals("MovingCloud"))
+            this.transform.parent = null;
+    }
 
     /*private void Hiding()
     {
