@@ -60,7 +60,6 @@ public class PlayerHealth : MonoBehaviour {
 
 public void HitLight()
     {
-        transform.position += Vector3.left;
         Attack();
         isTurn = false;
         turnClass.isTurn = isTurn;
@@ -70,7 +69,6 @@ public void HitLight()
 
     public void HitHeavy()
     {
-        transform.position += Vector3.left;
         AttackHeavy();
         isTurn = false;
         turnClass.isTurn = isTurn;

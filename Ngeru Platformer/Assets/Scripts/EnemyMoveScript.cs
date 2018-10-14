@@ -84,7 +84,6 @@ public class EnemyMoveScript : MonoBehaviour {
     IEnumerator WaitAndMove()
     {
         yield return new WaitForSeconds(2f);
-        transform.position += Vector3.right;
         Attack();
         isTurn = false;
         turnClass.isTurn = isTurn;
