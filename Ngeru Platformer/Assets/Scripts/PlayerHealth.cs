@@ -32,11 +32,16 @@ public class PlayerHealth : MonoBehaviour {
 
     public GameObject yaDed;
 
-    public bool Idle;
     Animator anim;
+    public bool Idle;
 
 
     void Start () {
+
+        anim = GetComponent<Animator>();
+
+        anim.SetBool("Idle", true);
+
         turnSystem = GameObject.Find("TurnBasedSystem").GetComponent<TurnSystemScript>();
 
         foreach(TurnSystemScript.TurnClass tc in turnSystem.playersGroup)
@@ -50,14 +55,11 @@ public class PlayerHealth : MonoBehaviour {
         enemyScript = enemy.GetComponent<EnemyMoveScript>();
         buttonArea.SetActive(false);
         yaDed.SetActive(false);
-
-        anim.SetBool("Idle", true);
     }
 
     public void Strike() {
         if (isTurn)
         {
-            
             HitLight();
         }
     }
@@ -65,23 +67,21 @@ public class PlayerHealth : MonoBehaviour {
 public void HitLight()
     {
         Attack();
+        anim.SetBool("Scratch", true);
         anim.SetBool("Idle", false);
-        anim.SetTrigger("Scratch");
         isTurn = false;
         turnClass.isTurn = isTurn;
         turnClass.wasTurnPrev = true;
-        Debug.Log("Hit Enemy");
     }
 
     public void HitHeavy()
     {
         AttackHeavy();
+        anim.SetBool("Scratch", true);
         anim.SetBool("Idle", false);
-        anim.SetTrigger("Bite");
         isTurn = false;
         turnClass.isTurn = isTurn;
         turnClass.wasTurnPrev = true;
-        Debug.Log("Hit Enemy");
     }
     
 
@@ -100,8 +100,6 @@ public void HitLight()
         {
             buttonArea.SetActive(false);
             inventory.SetActive(false);
-            anim.ResetTrigger("Bite");
-            anim.ResetTrigger("Scratch");
         }
 
         if(currentHealth > MaxHP)
