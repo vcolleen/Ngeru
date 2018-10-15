@@ -5,7 +5,7 @@ using UnityEngine;
 public class ControllerPlayerScript : MonoBehaviour
 {
 
-    //Player Variables 
+    //Player Variables
     private Rigidbody2D myRigidBody;
     public float movementSpeed;
     public Transform[] groundPoints;
@@ -20,7 +20,7 @@ public class ControllerPlayerScript : MonoBehaviour
     public float timeBetweenJumps;
     float nextJump;
 
-    //Movement Variables 
+    //Movement Variables
     private bool isIdle;
     private bool isWalkingRight;
     private bool isWalkingLeft;
@@ -44,7 +44,7 @@ public class ControllerPlayerScript : MonoBehaviour
     //calling the animator
     Animator anim;
 
-    //AI Variables 
+    //AI Variables
     public bool isHiding;
     private bool isOverlaping = false;
 
@@ -66,11 +66,11 @@ public class ControllerPlayerScript : MonoBehaviour
 
     void Update()
     {
-        //Jump-Movement 
+        //Jump-Movement
         HandleInput();
 
 
-        //Animations & Keyboard Triggers 
+        //Animations & Keyboard Triggers
         //Idle
         if (Input.GetAxis("Horizontal") == 0)
         {
@@ -132,10 +132,10 @@ public class ControllerPlayerScript : MonoBehaviour
         if (isWalkingRight == false)
         {
             anim.SetBool("isWalkingRight", false);
-           
+
         }
 
-        //WalkingLeft 
+        //WalkingLeft
         if (Input.GetAxis("Horizontal") < 0)
         {
             isWalkingLeft = true;
@@ -156,7 +156,7 @@ public class ControllerPlayerScript : MonoBehaviour
 
         if (isWalkingLeft == false)
         {
-            anim.SetBool("isWalkingLeft", false); 
+            anim.SetBool("isWalkingLeft", false);
 
         }
 
@@ -167,10 +167,10 @@ public class ControllerPlayerScript : MonoBehaviour
             if (isWalkingRight == false)
             {
                 isIdle = true;
-                
+
             }
         }
-        
+
         if (isWalkingLeft)
         {
             isIdle = false;
@@ -212,7 +212,7 @@ public class ControllerPlayerScript : MonoBehaviour
                 anim.SetBool("isSuperIdle", true);
             }
         }
-    
+
 
 
 
@@ -330,14 +330,14 @@ public class ControllerPlayerScript : MonoBehaviour
                 gameObject.layer = 2;
                 isHiding = true;
                 gameObject.transform.position = GameObject.Find("HidingCouch").transform.position;
-                Debug.Log("isHiding");
+                //Debug.Log("isHiding");
             }
         }
         if (Input.GetAxis("Hide") == 0)
         {
             gameObject.layer = 10;
             isHiding = false;
-            Debug.Log("isn'tHiding");
+            //Debug.Log("isn'tHiding");
         }
     }
 
