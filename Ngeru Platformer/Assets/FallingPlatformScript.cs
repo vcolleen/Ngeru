@@ -9,6 +9,9 @@ public class FallingPlatformScript : MonoBehaviour
     Vector2 initialPosition;
     bool platformMovingBack;
 
+    public float fallingPlatform = 3f;
+    float startFalling = 5f;
+
     // Use this for initialization
     void Start()
     {
@@ -29,6 +32,7 @@ public class FallingPlatformScript : MonoBehaviour
     {
         if (col.gameObject.name.Equals("Ngeru") && !platformMovingBack)
         {
+            startFalling = (Time.time + fallingPlatform);
             Invoke("DropPlatform", 0.5f);
         }
     }
