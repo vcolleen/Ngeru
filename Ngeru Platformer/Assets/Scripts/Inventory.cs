@@ -55,37 +55,18 @@ public class Inventory : MonoBehaviour {
 
     private List<GameObject> allSlots;
 
-    private static int emptySlot = 24;
+    private static int emptySlot = 30;
 
     private static GameObject clicked;
     private static GameObject hoverObject;
 
     public bool NotInCombat;
 
-    public Image Background;
 
     public GameObject mana;
     /// This is used when loading a saved inventory. Add more to this as you gain more types of consumables.
     public GameObject health;
-    public GameObject healthmed;
-    public GameObject whywouldthisfixanything;
 
-    public GameObject tooltipObject;
-    private static GameObject tooltip;
-
-
-    public Sprite health1sp;
-
-    public Sprite health2sp;
-
-    public Sprite health3sp;
-
-
-    private static bool IsHealth1;
-
-    private static bool IsHealth2;
-
-    private static bool IsHealth3;
 
     public static int EmptySlots
     {
@@ -97,19 +78,14 @@ public class Inventory : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-        tooltip = tooltipObject;
-       // itemCard = itemCardObject;
         CreateLayout();
 
         canvasGroup = transform.parent.GetComponent<CanvasGroup>();
 
-        LoadInventory();
-       
     }
 
     // Update is called once per frame
     void Update() {
-       
 
         if (hoverObject != null)
         {
@@ -134,70 +110,7 @@ public class Inventory : MonoBehaviour {
             }
         }
 
-        if (IsHealth1 == true)
-        {
-           // Debug.Log("CHANGE IT PLS");
-            tooltip.GetComponent<UnityEngine.UI.Image>().overrideSprite = health1sp;
 
-        }
-        if (IsHealth2 == true)
-        {
-            //Debug.Log("CHANGE IT PLS");
-            tooltip.GetComponent<UnityEngine.UI.Image>().overrideSprite = health2sp;
-
-        }
-        if (IsHealth3 == true)
-        {
-            //Debug.Log("CHANGE IT PLS");
-            tooltip.GetComponent<UnityEngine.UI.Image>().overrideSprite = health3sp;
-
-        }
-
-    }
-
-    public void ShowToolTip(GameObject slot)
-    {
-        Slot tmpSlot = slot.GetComponent<Slot>();
-
-
-        if (!tmpSlot.IsEmpty && hoverObject == null)
-        {
-            // health1Name = tmpSlot.CurrentItem.GetTooltip();
-           // Slot tmp = slot.GetComponent<Slot>();
-
-            tooltip.SetActive(true);
-            if (tmpSlot.CurrentItem.type == ItemType.HEALTH )
-            {
-                IsHealth1 = true;
-                Debug.Log("ACTIVATE DAMN YOU");
-                tooltip.GetComponent<UnityEngine.UI.Image>().overrideSprite = health1sp;
-              
-               
-            }
-            if (tmpSlot.CurrentItem.type == ItemType.HEALTHMED)
-            {
-                IsHealth2 = true;
-                Debug.Log("ACTIVATE DAMN YOU");
-                tooltip.GetComponent<UnityEngine.UI.Image>().overrideSprite = health2sp;
-
-
-            }
-            if (tmpSlot.CurrentItem.type == ItemType.HEALTHBIG)
-            {
-                IsHealth3 = true;
-                Debug.Log("ACTIVATE DAMN YOU");
-                tooltip.GetComponent<UnityEngine.UI.Image>().overrideSprite = health3sp;
-
-
-            }
-        }
-    }
-    public void HideToolTip()
-    {
-        tooltip.SetActive(false);
-        IsHealth1 = false;
-        IsHealth2 = false;
-        IsHealth3 = false;
 
     }
 
@@ -289,18 +202,13 @@ public class Inventory : MonoBehaviour {
             {
                 switch (type)   //Item Type Library declared, any items added, must go here. Must first declare them as public game objects to be hooked into the script.
                 {
+                    case ItemType.MANA:
+                        allSlots[index].GetComponent<Slot>().AddItem(mana.GetComponent<Item>());
+                        break;
+
                     case ItemType.HEALTH:
                         allSlots[index].GetComponent<Slot>().AddItem(health.GetComponent<Item>());
                         break;
-
-                    case ItemType.HEALTHMED:
-                        allSlots[index].GetComponent<Slot>().AddItem(healthmed.GetComponent<Item>());
-                        break;
-
-                    case ItemType.HEALTHBIG:
-                        allSlots[index].GetComponent<Slot>().AddItem(whywouldthisfixanything.GetComponent<Item>());
-                        break;
-                        
                 }
             }
 
@@ -477,14 +385,11 @@ public class Inventory : MonoBehaviour {
             {
                 canvasGroup.alpha = Mathf.Lerp(startAlpha, 0, progress);
 
-               // Background.alpha = Mathf.Lerp(startAlpha, 0, progress);
-
                 progress += rate * Time.deltaTime;
 
                 yield return null;
             }
             canvasGroup.alpha = 0;
-           // Background.Color.alpha = 0;
             GetComponent<CanvasGroup>().blocksRaycasts = false;
             fadingOut = false;
         }
@@ -507,21 +412,15 @@ public class Inventory : MonoBehaviour {
             while (progress < 1.0)
             {
                 canvasGroup.alpha = Mathf.Lerp(startAlpha, 1, progress);
-               // Background.alpha = Mathf.Lerp(startAlpha, 1, progress);
 
                 progress += rate * Time.deltaTime;
 
                 yield return null;
             }
             canvasGroup.alpha = 1;
-           // Background.alpha = 1;
             GetComponent<CanvasGroup>().blocksRaycasts = true;
             fadingIn = false;
         }
-    }
-    public void OnMouseOver()
-    {
-        Debug.Log("over");
     }
 
 }
