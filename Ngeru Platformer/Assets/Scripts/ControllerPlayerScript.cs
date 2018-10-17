@@ -77,7 +77,7 @@ public class ControllerPlayerScript : MonoBehaviour
 
         //Animations & Keyboard Triggers 
         //Idle
-        if (Input.GetAxis("Horizontal") == 0)
+        if ((Input.GetAxis("Horizontal") == 0))
         {
             anim.SetBool("isIdle", true);
         }
@@ -338,8 +338,14 @@ public class ControllerPlayerScript : MonoBehaviour
                 gameObject.layer = 2;
                 isHiding = true;
                 gameObject.transform.position = GameObject.Find("HidingCouch").transform.position;
-                //previousPosition = gameObject.transform.position;
+                previousPosition = gameObject.transform.position;
                 Debug.Log("isHiding");
+            }
+
+            if (isHiding == true)
+            {
+                anim.SetBool("isHiding", true);
+                anim.SetBool("isIdle", false);
             }
         }
         if (Input.GetAxis("Hide") == 0)
@@ -348,6 +354,12 @@ public class ControllerPlayerScript : MonoBehaviour
             previousPosition = player.transform.position;
             gameObject.layer = 10;
             Debug.Log("isn'tHiding");
+        }
+
+        if (isHiding == false)
+        {
+            anim.SetBool("isHiding", false);
+            anim.SetBool("isIdle", true);
         }
     }
 
