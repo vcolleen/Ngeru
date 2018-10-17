@@ -8,11 +8,11 @@ public class GiveStuff : MonoBehaviour {
 
     public Inventory inventory;
 
-  
 
-	// Use this for initialization
-	void Start () {
-		
+  
+    // Use this for initialization
+    void Start () {
+        inventory = GameObject.FindObjectOfType<Inventory>();
 	}
 	
 	// Update is called once per frame

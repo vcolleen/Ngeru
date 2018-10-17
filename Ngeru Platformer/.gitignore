@@ -17,8 +17,6 @@ Assets/AssetStoreTools*
 *.swp
 *_Trashes
 
-*.pldb.meta
-*.pdb.meta 
 
 sysinfo.txt 
 
