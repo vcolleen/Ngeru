@@ -1,0 +1,328 @@
+fileFormatVersion: 2
+guid: e4e426819b2dec64f875642f9fc6a39a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: COL PIX IDDLE SPRTIRE_0
+    21300002: COL PIX IDDLE SPRTIRE_1
+    21300004: COL PIX IDDLE SPRTIRE_2
+    21300006: COL PIX IDDLE SPRTIRE_3
+    21300008: COL PIX IDDLE SPRTIRE_4
+    21300010: COL PIX IDDLE SPRTIRE_5
+    21300012: COL PIX IDDLE SPRTIRE_6
+    21300014: COL PIX IDDLE SPRTIRE_7
+    21300016: COL PIX IDDLE SPRTIRE_8
+    21300018: COL PIX IDDLE SPRTIRE_9
+    21300020: COL PIX IDDLE SPRTIRE_10
+    21300022: COL PIX IDDLE SPRTIRE_11
+    21300024: COL PIX IDDLE SPRTIRE_12
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 199
+        width: 43
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d6c94be12dd5e4899bb91b27c903b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 199
+        width: 38
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd89a615fd8f7b142825c2cc2abf9d10
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_3
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 199
+        width: 38
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df880a76ed943764fa19f0636b1c9468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 199
+        width: 38
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fdfb4697bf94b645a4ab0d9aa739819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_5
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 135
+        width: 38
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827536e58645d6f42bd63e3fed7d05f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_6
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 135
+        width: 37
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9c517fbf1bc014091175cc424318de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_7
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 135
+        width: 38
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e075d09b7e9a2cf46abf19f2f211da64
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_8
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 135
+        width: 38
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75bf8e3de0c86a4f84440af1b3f2879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_9
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 71
+        width: 38
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f1d674977819141a29411593c09b21
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_10
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 71
+        width: 38
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e88b1730812b074e8dcbc23d049085f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_12
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 71
+        width: 43
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527fb5925bc7ace40abf220cc2f6c30c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 18861e5e40ea66c4791c17c67b11af5e
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
