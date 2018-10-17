@@ -301,10 +301,10 @@ InputManager:
     positiveButton: e
     altNegativeButton: 
     altPositiveButton: 
-    gravity: 1000
+    gravity: 10
     dead: 0.001
-    sensitivity: 1000
-    snap: 0
+    sensitivity: 10
+    snap: 1
     invert: 0
     type: 0
     axis: 0

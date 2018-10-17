@@ -48,6 +48,9 @@ public class ControllerPlayerScript : MonoBehaviour
     public bool isHiding;
     private bool isOverlaping = false;
 
+    public Vector2 previousPosition;
+    private Transform player;
+
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
@@ -59,6 +62,8 @@ public class ControllerPlayerScript : MonoBehaviour
         isWaitingForIdle = true;
         isIdle = true;
         CanTurnRight = true;
+
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
 
@@ -270,7 +275,10 @@ public class ControllerPlayerScript : MonoBehaviour
             isWaitingForIdle = true;
             nextJump = (Time.time + timeBetweenJumps);
         }
-        Hiding();
+
+        if (Input.GetAxis("Trigger") == 0) {
+            Hiding();
+        }
     }
 
     //Indication that Ngeru is grounded
@@ -330,12 +338,14 @@ public class ControllerPlayerScript : MonoBehaviour
                 gameObject.layer = 2;
                 isHiding = true;
                 gameObject.transform.position = GameObject.Find("HidingCouch").transform.position;
+                //previousPosition = gameObject.transform.position;
                 Debug.Log("isHiding");
             }
         }
         if (Input.GetAxis("Hide") == 0)
         {
             isHiding = false;
+            previousPosition = player.transform.position;
             gameObject.layer = 10;
             Debug.Log("isn'tHiding");
         }
@@ -357,6 +367,5 @@ public class ControllerPlayerScript : MonoBehaviour
             isOverlaping = false;
         }
     }
-
 
 }

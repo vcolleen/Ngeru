@@ -8,7 +8,11 @@ public class ObjectTrigger : MonoBehaviour {
     public bool inside;
     public GameObject item;
     public GameObject tick;
-    public Rigidbody2D m_Rigidbody;
+    public Rigidbody2D m_Rigidbody; 
+
+
+    public GameObject a, b, c, d, e, f, g;
+    public bool gotItems; 
 
     // Use this for initialization
     void Start() {
@@ -24,6 +28,7 @@ public class ObjectTrigger : MonoBehaviour {
             if (Input.GetAxis("Trigger") == 1)
             {
                 anim.SetTrigger("play");
+                tick.SetActive(true);
                 m_Rigidbody = GetComponent<Rigidbody2D>();
                 try
                 {
@@ -31,17 +36,19 @@ public class ObjectTrigger : MonoBehaviour {
                 }
                 catch (MissingComponentException)
                 {
-                    Debug.Log("Object has no rigidody2d");
+                    Debug.Log("Object has no rigibody2d");
                 }
-                tick.SetActive(true);
-                
-                
+
             }
         }
 
         if (inside == false)
         {
             anim.SetBool("inside", false);
+        }
+
+        if (e.activeInHierarchy) {
+            Debug.Log("Gotta catch em all");
         }
         
     }
