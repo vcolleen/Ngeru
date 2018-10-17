@@ -20,7 +20,7 @@ public class Item : MonoBehaviour {
 
     public Sprite ChangeTo;
 
-    public PlayerHealth heals;
+    private static PlayerHealth heals;
 
     public PlayerHealth moreheals;
     public Slot ItemCheck;
@@ -54,8 +54,9 @@ public class Item : MonoBehaviour {
                 break;
 
             case ItemType.HEALTHBIG:
-                moreheals.currentHealth += 50;
+                //moreheals.currentHealth += 50;
                 heals.currentHealth += 50;
+                heals.HPReset();
                 Debug.Log("big health");
                 //Tie into attributes once the framework exists.
               //  heals.currentHealth += 40;
