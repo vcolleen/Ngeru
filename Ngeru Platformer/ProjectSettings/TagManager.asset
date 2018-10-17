@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Item
+  - Transition
+  - Hideable
+  - hideable
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Background
+  - Foreground
+  - Player
+  - Enemy
+  - Platforms
+  - Hideable
+  - Physics
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2949057007
+    locked: 0
+  - name: Player
+    uniqueID: 308915501
+    locked: 0
+  - name: Foreground
+    uniqueID: 1720491189
+    locked: 0
+  - name: Midground
+    uniqueID: 2096666567
+    locked: 0
