@@ -104,7 +104,7 @@ public class ControllerPlayerScript : MonoBehaviour
             anim.SetBool("isWalkingLeft", false);
             anim.SetBool("isWalkingRight", false);
             movementSpeed = 2f;
-            jumpForce = 200;
+            jumpForce = 300;
         }
 
         if (isRunning == false)
