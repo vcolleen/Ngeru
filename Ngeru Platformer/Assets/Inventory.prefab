@@ -44,17 +44,24 @@ MonoBehaviour:
   eventSystem: {fileID: 114482572065566918, guid: 47854eefa40d8b24c83b4a053ea33c3f,
     type: 2}
   fadeTime: 0.3
-  slots: 24
-  rows: 6
-  slotPaddingLeft: 0.04
-  slotPaddingTop: 0.04
-  slotSize: 0.2
+  slots: 20
+  rows: 5
+  slotPaddingLeft: 0.05
+  slotPaddingTop: 0.05
+  slotSize: 0.17
   slotPrefab: {fileID: 1084722602945958, guid: 2b8b5b1339e96fa468fa653a94108733, type: 2}
   iconPrefab: {fileID: 0}
   NotInCombat: 1
   Background: {fileID: 0}
   mana: {fileID: 0}
-  health: {fileID: 0}
+  health: {fileID: 1714510046430152, guid: 2eef2e2889f992a44b6be61415dba30d, type: 2}
+  healthmed: {fileID: 1095015192795298, guid: 9f882a9c58c1c5049b0ab11463604a95, type: 2}
+  whywouldthisfixanything: {fileID: 1950542166810020, guid: 3a0bad2b68cc5c74da914c5c433d4954,
+    type: 2}
+  tooltipObject: {fileID: 0}
+  health1sp: {fileID: 21300000, guid: 8742fb253f9a5ce41b40dd63f2bd4d79, type: 3}
+  health2sp: {fileID: 21300000, guid: 9f098335a22a420409dbf8923b564048, type: 3}
+  health3sp: {fileID: 21300000, guid: d73bdb2f7a1239d46a8397b4b7b44674, type: 3}
 --- !u!114 &114940057207985014
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -96,13 +103,13 @@ RectTransform:
   m_GameObject: {fileID: 1855237293328990}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9000001, y: 0.75796854, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 2.779, y: -0.924}
+  m_AnchoredPosition: {x: 2.712, y: -1.019}
   m_SizeDelta: {x: 0.9867, y: 1.5075}
   m_Pivot: {x: 0.00000012572855, y: 1.0000002}

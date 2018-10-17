@@ -15,6 +15,13 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
     public PlayerHealth ItemTurn;
     public Inventory GetInventory;
 
+    public Sprite PlsWork;
+
+
+    public Sprite hp1sprite;
+
+    public Image DescBox;
+
     public Stack<Item> Items
     {
         get { return items; }
@@ -101,7 +108,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
     }
 
 
-    private void ChangeSprite(Sprite neutral, Sprite highlight)
+    public void ChangeSprite(Sprite neutral, Sprite highlight)
     {
         GetComponent<Image>().sprite = neutral;
         SpriteState st = new SpriteState();
@@ -121,7 +128,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
             items.Pop().Use();
             
 
-            stackText.text = items.Count > 1 ? items.Count.ToString() : string.Empty;
+           // stackText.text = items.Count > 1 ? items.Count.ToString() : string.Empty;
             //this checks stackText, finds the number of items then routes the count to empty if quantity below 1.
 
             if (IsEmpty)
@@ -148,6 +155,12 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
 
             
         }
+        if (eventData.button == PointerEventData.InputButton.Left && Inventory.CanvasGroup.alpha > 0)
+        {
+            
+       
+        }
+
     }
 
     public void ClearSlot()
@@ -156,4 +169,5 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
         ChangeSprite(slotEmpty, slotHighlight);
         stackText.text = string.Empty;
     }
+
 }

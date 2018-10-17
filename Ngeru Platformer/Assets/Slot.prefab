@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114038409530223994}
   - component: {fileID: 114256231213965142}
   - component: {fileID: 114727101427483546}
+  - component: {fileID: 114814817829956354}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -158,6 +159,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: WhitePicture
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114727101427483546
@@ -177,6 +189,58 @@ MonoBehaviour:
   ItemTurn: {fileID: 0}
   GetInventory: {fileID: 114577125225025016, guid: bce4ef2e6655e894ca17e65036b33356,
     type: 2}
+  PlsWork: {fileID: 0}
+  hp1sprite: {fileID: 21300000, guid: 5d9ba4e7d0964044ea54abe409d81dfd, type: 3}
+  DescBox: {fileID: 0}
+--- !u!114 &114814817829956354
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1084722602945958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114577125225025016, guid: bce4ef2e6655e894ca17e65036b33356,
+            type: 2}
+          m_MethodName: ShowToolTip
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1084722602945958}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114577125225025016, guid: bce4ef2e6655e894ca17e65036b33356,
+            type: 2}
+          m_MethodName: HideToolTip
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!222 &222265946902802084
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -205,8 +269,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 2.81, y: -0.924}
-  m_SizeDelta: {x: 0.1748, y: 0.2113}
+  m_AnchoredPosition: {x: 48.533, y: -50.28997}
+  m_SizeDelta: {x: 0.4087, y: 0.4087}
   m_Pivot: {x: -0.00000011175871, y: 1.0000001}
 --- !u!224 &224574325504460924
 RectTransform:
