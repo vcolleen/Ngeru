@@ -9,6 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: ea9e99dc35ffd7a41a3bf50823d935c1
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/LoungeCS.unity
     guid: b63a63ca1685999479a5b7d2bf25843b
   - enabled: 1
@@ -20,4 +21,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Tree Level Schtuff/Tree Level.unity
     guid: 7bd8a3afb599ae842a144f53b6427e7e
+=======
+    path: Assets/Scenes/Ngeru 1st level blueprint build.unity
+    guid: 0230dd27eda335543b84bcf7a573984e
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+>>>>>>> parent of 9be2bfd... Merge
   m_configObjects: {}
