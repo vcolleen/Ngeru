@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: 5f29533182e65504384224a14020cf41
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: lucas_spritesheet_0
+    21300002: lucas_spritesheet_1
+    21300004: lucas_spritesheet_2
+    21300006: lucas_spritesheet_3
+    21300008: lucas_spritesheet_4
+    21300010: lucas_spritesheet_5
+    21300012: lucas_spritesheet_6
+    21300014: lucas_spritesheet_7
+    21300016: lucas_spritesheet_8
+    21300018: lucas_spritesheet_9
+    21300020: lucas_spritesheet_10
+    21300022: lucas_spritesheet_11
+    21300024: lucas_spritesheet_12
+    21300026: lucas_spritesheet_13
+    21300028: lucas_spritesheet_14
+    21300030: lucas_spritesheet_15
+    21300032: lucas_spritesheet_16
+    21300034: lucas_spritesheet_17
+    21300036: lucas_spritesheet_18
+    21300038: lucas_spritesheet_19
+    21300040: lucas_spritesheet_20
+    21300042: lucas_spritesheet_21
+    21300044: lucas_spritesheet_22
+    21300046: lucas_spritesheet_23
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -38,7 +62,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -67,9 +91,500 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: lucas_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 197
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c46c4813a9eb04f938f5b05f6a9af8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 197
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a526aa34dba8434da6e1c76713a9c2d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 197
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ce8c577b82e4642a2a0368cf83d7c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 195
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc29c9ad7d2fc9458296a0ee3a277d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 197
+        width: 54
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42cf6a7f22ba460459e863800b2ec272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 197
+        width: 53
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed11f8ab00b02647b9eddf77000724a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 197
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b965910a1c0a79f488ef9260d7460aca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 197
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424ca37f695a36144bae82113988f93e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 133
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8d2429ecf5e5e48ab0cb2e6c89a811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 131
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d921bf090da78a5438c7e0130f414d9f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 133
+        width: 54
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefc76d682acb7d4aa503aba2d97bbe6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 133
+        width: 53
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7ac9b09f281064cbea86041a6221a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 133
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14448e8ff7c6f548b77e4096c496742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 133
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28bad3cd8d4ed342a03e0eef9a90955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 133
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1f0fdcb9c5d8f4e857c9b217f7efef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 131
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2e40a2592607b4c86b819f052763be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 69
+        width: 54
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e00f13e9c8d1b4da7d1a64ee6f2d21
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 69
+        width: 53
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f269d0ce1177c664db38b5de7ee0a0cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 69
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921e2cbd4c0cd544883c6a888c7285d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 69
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d2108680d6b704fa3697dbd5f3180c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 69
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4282db4126d610d4588cc9e8513b2ce1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 67
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b3b5e6e8d462845b54de99e2090adf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 69
+        width: 54
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ef5decd7781384e8ccb90f66111e5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucas_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 69
+        width: 53
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d53f3692f988e4789750cd0c4b2928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

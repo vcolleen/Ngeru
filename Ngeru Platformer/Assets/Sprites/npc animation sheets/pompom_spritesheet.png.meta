@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: 7fc2d1d2723b3d749a7f3e2e4f305694
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: pompom_spritesheet_0
+    21300002: pompom_spritesheet_1
+    21300004: pompom_spritesheet_2
+    21300006: pompom_spritesheet_3
+    21300008: pompom_spritesheet_4
+    21300010: pompom_spritesheet_5
+    21300012: pompom_spritesheet_6
+    21300014: pompom_spritesheet_7
+    21300016: pompom_spritesheet_8
+    21300018: pompom_spritesheet_9
+    21300020: pompom_spritesheet_10
+    21300022: pompom_spritesheet_11
+    21300024: pompom_spritesheet_12
+    21300026: pompom_spritesheet_13
+    21300028: pompom_spritesheet_14
+    21300030: pompom_spritesheet_15
+    21300032: pompom_spritesheet_16
+    21300034: pompom_spritesheet_17
+    21300036: pompom_spritesheet_18
+    21300038: pompom_spritesheet_19
+    21300040: pompom_spritesheet_20
+    21300042: pompom_spritesheet_21
+    21300044: pompom_spritesheet_22
+    21300046: pompom_spritesheet_23
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -38,7 +62,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -67,9 +91,500 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: pompom_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 408
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e55d4786a673cf49be27c68372441e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 408
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e54a0af51341343a1da553d704e876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 408
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17dc029498479524582339a28cf9b041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 408
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36bbd890cdc71ec4d9ed3412b3d7f31a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 408
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60953cab5a5f136489b205788cf9d245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 408
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9845e5fe20d41b4d92379be03adb44d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 408
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47dde829f17cfba4aa779780d954f890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 408
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017b009f02c5c5c49ad967264eec683b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4435ee0015d6f664e9da0dd19a98d0ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 304
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154b7ad157e3d384ebaf21476a48bc56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 304
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357825b174200eb47952dc463505fa61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 304
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4760da548c660c6498c748f042d9f4eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 304
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30abe6a4490e5541a9ddaed47ed43bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 304
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e26d62e0c51da542b9f5231b4fc8e4d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 304
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3089680e756688c48960a0e9f5a24af3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 304
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25b0e3af69f9f44a836dee8fbade64e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd0755160c3bcc438aa0918b2e94a28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 200
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52197c4a7a26224d81badcd0b42cf4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 200
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51278cd57fc7c104892f8038c474daf3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 200
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0661857953ab03845b4a86f91062927d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 200
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56554638e1d8c0468f4aa9a464567f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 200
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2939318258bfb794f96432a7b57824d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 200
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e74a3e3aac50d43a0419177d234a6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pompom_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 200
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7668d827f963542b93a3217543b453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
