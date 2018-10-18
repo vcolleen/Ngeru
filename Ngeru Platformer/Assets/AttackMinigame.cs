@@ -133,11 +133,12 @@ public class AttackMinigame : MonoBehaviour
 
         
 
-        if (AttackPercent < minHitPercent || AttackPercent > maxHitPercent)
+        else //(AttackPercent < minHitPercent || AttackPercent > maxHitPercent)
         {
-                Debug.Log("Youmiss");
+
             attackAccess.SkipTurn();
             AttackPercent = 0;
+            Debug.Log("Youmiss");
 
 
         }

@@ -1560,8 +1560,8 @@ MonoBehaviour:
   AttackPercent: 0
   currentAmount: 0
   speed: 40
-  minHitPercent: 34.3
-  maxHitPercent: 65.3
+  minHitPercent: 35.1
+  maxHitPercent: 66.4
   minCritPercent: 46.7
   maxCritPercent: 52.1
   attackAccess: {fileID: 0}
