@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4252607733458990}
   - component: {fileID: 61107681751406086}
-  - component: {fileID: 114593176821240514}
+  - component: {fileID: 114329452101525762}
   m_Layer: 0
   m_Name: InteractionPrompt 1
   m_TagString: Untagged
@@ -235,6 +235,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: E
+--- !u!114 &114329452101525762
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1014819942400142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8db87d3240e44a54d86c7ff57fd8538b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114410898592567058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -289,17 +300,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114593176821240514
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1014819942400142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0d472d111a112e46ab0da7efbbc0818, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114716694562388708
 MonoBehaviour:
   m_ObjectHideFlags: 1

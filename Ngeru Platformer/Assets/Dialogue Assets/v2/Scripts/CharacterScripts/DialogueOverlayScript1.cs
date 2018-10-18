@@ -42,7 +42,7 @@ public class DialogueOverlayScript1 : MonoBehaviour {
         }
         else
         {
-            GetComponentInParent<NPCDialogueScript>().Prompt();
+            GetComponentInParent<NPCDialogueScript1>().Prompt();
             DestroySelf();
         }
     }

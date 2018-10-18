@@ -56,7 +56,7 @@ public class DialogueOverlayScript2 : MonoBehaviour {
         }
         else
         {
-            GetComponentInParent<NPCDialogueScript>().Prompt();
+            GetComponentInParent<NPCDialogueScript1>().Prompt();
             DestroySelf();
         }
     }

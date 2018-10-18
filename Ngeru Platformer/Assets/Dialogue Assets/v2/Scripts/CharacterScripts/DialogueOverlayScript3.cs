@@ -73,19 +73,19 @@ public class DialogueOverlayScript3 : MonoBehaviour {
             }
             if (currentImage == 2)
             {
-                GetComponentInParent<NPCDialogueScript>().Prompt();
+                GetComponentInParent<NPCDialogueScript1>().Prompt();
                 DestroySelf();
             }
             if (currentImage == 3)
             {
-                GetComponentInParent<NPCDialogueScript>().Prompt();
+                GetComponentInParent<NPCDialogueScript1>().Prompt();
                 DestroySelf();
             }
             
         }
         else
         {
-            GetComponentInParent<NPCDialogueScript>().Prompt();
+            GetComponentInParent<NPCDialogueScript1>().Prompt();
             DestroySelf();
         }
     }
