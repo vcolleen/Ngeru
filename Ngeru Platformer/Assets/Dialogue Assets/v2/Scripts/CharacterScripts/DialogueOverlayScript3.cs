@@ -15,12 +15,17 @@ public class DialogueOverlayScript3 : MonoBehaviour {
     public Image portrait;
     int currentImage;
     int totalImages;
+
+    public Button yes;
+    public Button no;
     //References
 
 	void Start () {
 
         portrait.sprite = image0;
         totalImages = 2;
+        yes.enabled = false;
+        no.enabled = false;
 	}
 	
 	void Update () {
@@ -36,23 +41,47 @@ public class DialogueOverlayScript3 : MonoBehaviour {
         Destroy(gameObject);
     }
 
+    public void Yes()
+    {
+        portrait.sprite = image2;
+        Buttons();
+        currentImage = 2;
+    }
+
+    public void No()
+    {
+        portrait.sprite = image3;
+        Buttons();
+        currentImage = 3;
+    }
+
+    void Buttons()
+    {
+        yes.enabled = (!yes.enabled);
+        no.enabled = (!no.enabled);
+    }
+
     public void ButtonInteract()
     {
         if (currentImage <= totalImages)
         {
             if (currentImage == 0)
             {
+                currentImage = 1;
                 portrait.sprite = image1;
-            }
-            if (currentImage == 1)
-            {
-                portrait.sprite = image2;
+                Buttons();
             }
             if (currentImage == 2)
             {
-                portrait.sprite = image3;
+                GetComponentInParent<NPCDialogueScript>().Prompt();
+                DestroySelf();
             }
-            currentImage += 1;
+            if (currentImage == 3)
+            {
+                GetComponentInParent<NPCDialogueScript>().Prompt();
+                DestroySelf();
+            }
+            
         }
         else
         {

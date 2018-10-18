@@ -38,8 +38,9 @@ public class NPCDialogueScript : MonoBehaviour {
     {
         if (collision.GetComponent<Transform>().CompareTag("Player"))
         {
-            Prompt();
+            
             playerInCollider = true;
+            Prompt();
         }
 
     }
@@ -71,7 +72,11 @@ public class NPCDialogueScript : MonoBehaviour {
 
     public void Prompt ()
     {
-        Instantiate(promtPrefab, dialogueAnchor, false);
+        if (playerInCollider)
+        {
+            Instantiate(promtPrefab, dialogueAnchor, false);
+        }
+        
 
     }
 
