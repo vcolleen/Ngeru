@@ -5,48 +5,50 @@ using UnityEngine;
 public class FountainCollision : MonoBehaviour {
 
 	public Animator anim;
-	bool onFountain = false;
+	public bool onFountain = false;
+
+	float timerStartTime;
+	public float delayTime;
+	bool fountainOn;
+
+	public Rigidbody2D ngeru;
 
 	// Use this for initialization
 	void Start () {
-		StartCoroutine(WaterStuff());
+		//StartCoroutine(WaterStuff());
 	}
 
 	// Update is called once per frame
 	void Update () {
-
-	}
-
-	void OnCollisionEnter2D (Collision2D col) {
-		onFountain = true;
-		Debug.Log("Hiilsdfgjhsdk;g;ksdjghsidhglksdgjljasdhgkljadshlgkjasdg");
-	}
-
-	void OnCollisionExit2D (Collision2D col) {
-		onFountain = false;
-	}
-
-	IEnumerator WaterStuff() {
-		if (anim.GetBool("WaterOff") == true && onFountain == true) {
-			gameObject.GetComponent<BoxCollider2D>().enabled = false;
-			yield return new WaitForSeconds(5);
-			StartCoroutine(WaterStuff());
-		} else if (anim.GetBool("WaterOn") == true && onFountain == false) {
+		if (fountainOn == false && onFountain == false && (Time.time >= (timerStartTime + delayTime))){
 			gameObject.GetComponent<BoxCollider2D>().enabled = true;
-			yield return new WaitForSeconds(5);
-			anim.SetBool("WaterOn", false);
-			anim.SetBool("WaterOff", true);
-			StartCoroutine(WaterStuff());
-		} else if (anim.GetBool("WaterOff") == true && onFountain == false) {
-			gameObject.GetComponent<BoxCollider2D>().enabled = false;
-			yield return new WaitForSeconds(5);
-			anim.SetBool("WaterOn", true);
+			fountainOn = true;
 			anim.SetBool("WaterOff", false);
-			StartCoroutine(WaterStuff());
-		} else {
-			yield return new WaitForSeconds(1);
-			StartCoroutine(WaterStuff());
+			anim.SetBool("WaterOn", true);
+			timerStartTime = Time.time;
 		}
+
+		if (fountainOn == true && (Time.time >= (timerStartTime + delayTime))){
+			gameObject.GetComponent<BoxCollider2D>().enabled = false;
+			fountainOn = false;
+			anim.SetBool("WaterOff", true);
+			anim.SetBool("WaterOn", false);
+			timerStartTime = Time.time;
+		}
+	}
+
+	public void OnTriggerEnter2D (Collider2D col) {
+		onFountain = true;
+		Debug.Log("You're on the fountain");
+	}
+
+	public void OnTriggerExit2D (Collider2D col) {
+		onFountain = false;
+		Debug.Log("You're not on the fountain");
+	}
+
+	public void OnCollisionEnter2D (Collision2D col) {
+		ngeru.AddForce(new Vector2(-2000, 200), ForceMode2D.Force);
 	}
 
 }
