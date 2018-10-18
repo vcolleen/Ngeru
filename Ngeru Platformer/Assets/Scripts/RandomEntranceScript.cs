@@ -36,14 +36,14 @@ public class RandomEntranceScript : MonoBehaviour
             lineRenderer.GetComponent<LineRenderer>().enabled = false;
             if ((randomTime - Time.time) <= 5f)
             {
-                hideUI.GetComponent<Text>().enabled = true;
+                //hideUI.GetComponent<Text>().enabled = true;
             }
 
         }
         else
         {
             //lineRenderer.GetComponent<LineRenderer>().enabled = true;
-            hideUI.GetComponent<Text>().enabled = false;
+            //hideUI.GetComponent<Text>().enabled = false;
 
         }
 

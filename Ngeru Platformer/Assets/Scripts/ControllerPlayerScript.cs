@@ -2,14 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-<<<<<<< HEAD
 public class ControllerPlayerScript : MonoBehaviour
 {
-=======
-public class ControllerPlayerScript : MonoBehaviour {
->>>>>>> parent of 9be2bfd... Merge
 
-    //Player Variables 
+    //Player Variables
     private Rigidbody2D myRigidBody;
     public float movementSpeed;
     public Transform[] groundPoints;
@@ -21,11 +17,10 @@ public class ControllerPlayerScript : MonoBehaviour {
     public float jumpForce;
     public LayerMask whatIsGround;
 
-<<<<<<< HEAD
     public float timeBetweenJumps;
     float nextJump;
 
-    //Movement Variables 
+    //Movement Variables
     private bool isIdle;
     private bool isWalkingRight;
     private bool isWalkingLeft;
@@ -44,83 +39,40 @@ public class ControllerPlayerScript : MonoBehaviour {
     float startIdle = 5f;
     float startSitting = 10f;
     bool isSitting = false;
-=======
-    //Movement Variables 
-    public bool isIdle;
-    public bool isWalkingRight;
-    public bool isWalkingLeft;
-    public bool isTurningRight;
-    public bool isTurningLeft;
-    public bool isJumping;
-    public bool isRunning;
->>>>>>> parent of 9be2bfd... Merge
 
 
     //calling the animator
     Animator anim;
 
-<<<<<<< HEAD
-    //AI Variables 
+    //AI Variables
     public bool isHiding;
     private bool isOverlaping = false;
 
-    public Vector2 previousPosition;
-    private Transform player;
-
-=======
->>>>>>> parent of 9be2bfd... Merge
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
 
         anim = GetComponent<Animator>();
-<<<<<<< HEAD
         anim.SetBool("isWalkingRight", true);
 
         isWaitingForSuperIdle = true;
         isWaitingForIdle = true;
         isIdle = true;
         CanTurnRight = true;
-
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-=======
-
-        anim.SetTrigger("isLookingRight");
-
-        isIdle = true;
-        isWalkingRight = false;
-        isWalkingLeft = false;
-        isTurningRight = false;
-        isTurningLeft = false;
-        isJumping = false;
-        isRunning = false;
->>>>>>> parent of 9be2bfd... Merge
     }
 
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> parent of 9be2bfd... Merge
     void Update()
     {
-        //Jump-Movement 
+        //Jump-Movement
         HandleInput();
 
-<<<<<<< HEAD
 
-        //Animations & Keyboard Triggers 
-        //Idle
-        if ((Input.GetAxis("Horizontal") == 0))
-=======
-//        Debug.Log(Input.GetAxis("Jump"));
-
-
-        //Animations & Keyboard Triggers 
+        //Animations & Keyboard Triggers
         //Idle
         if (Input.GetAxis("Horizontal") == 0)
->>>>>>> parent of 9be2bfd... Merge
         {
             anim.SetBool("isIdle", true);
         }
@@ -131,11 +83,7 @@ public class ControllerPlayerScript : MonoBehaviour {
         }
 
         //Run
-<<<<<<< HEAD
         if (Input.GetAxis("Run") > 0)
-=======
-        if(Input.GetAxis("Run") > 0)
->>>>>>> parent of 9be2bfd... Merge
         {
             isRunning = true;
         }
@@ -145,18 +93,13 @@ public class ControllerPlayerScript : MonoBehaviour {
             isRunning = false;
         }
 
-<<<<<<< HEAD
         if (isRunning == true)
-=======
-        if(isRunning == true)
->>>>>>> parent of 9be2bfd... Merge
         {
             anim.SetBool("isRunning", true);
             anim.SetBool("isWalkingLeft", false);
             anim.SetBool("isWalkingRight", false);
             movementSpeed = 2f;
-<<<<<<< HEAD
-            jumpForce = 300;
+            jumpForce = 200;
         }
 
         if (isRunning == false)
@@ -172,23 +115,6 @@ public class ControllerPlayerScript : MonoBehaviour {
             isWalkingRight = true;
             isWalkingLeft = false;
             anim.SetTrigger("Turn");
-=======
-            jumpForce = 250;
-        }
-
-        if(isRunning == false)
-        {
-            anim.SetBool("isRunning", false);
-            movementSpeed = 0.8f;
-            jumpForce = 200;
-        }
-
-        //WalkingRight
-        if(Input.GetAxis("Horizontal") > 0)
-        {
-            isWalkingRight = true;
-            anim.SetTrigger("isLookingRight");
->>>>>>> parent of 9be2bfd... Merge
         }
 
         else
@@ -196,64 +122,41 @@ public class ControllerPlayerScript : MonoBehaviour {
             isWalkingRight = false;
         }
 
-<<<<<<< HEAD
         if (isWalkingRight == true)
         {
             anim.SetBool("isWalkingRight", true);
             anim.SetBool("CanTurnRight", true);
             anim.SetBool("CanTurnLeft", false);
-=======
-        if(isWalkingRight == true)
-        {
-            anim.SetBool("isWalkingRight", true);
->>>>>>> parent of 9be2bfd... Merge
         }
 
         if (isWalkingRight == false)
         {
             anim.SetBool("isWalkingRight", false);
-<<<<<<< HEAD
-           
+
         }
 
-        //WalkingLeft 
+        //WalkingLeft
         if (Input.GetAxis("Horizontal") < 0)
         {
             isWalkingLeft = true;
             isWalkingRight = false;
             anim.SetTrigger("Turn");
-=======
-        }
-
-        //WalkingLeft 
-        if(Input.GetAxis("Horizontal") < 0)
-        {
-            isWalkingLeft = true;
-            anim.SetTrigger("isLookingLeft");
->>>>>>> parent of 9be2bfd... Merge
         }
         else
         {
             isWalkingLeft = false;
         }
 
-<<<<<<< HEAD
         if (isWalkingLeft == true)
         {
             anim.SetBool("isWalkingLeft", true);
             anim.SetBool("CanTurnLeft", true);
             anim.SetBool("CanTurnRight", false);
-=======
-        if(isWalkingLeft == true)
-        {
-            anim.SetBool("isWalkingLeft", true);
->>>>>>> parent of 9be2bfd... Merge
         }
 
         if (isWalkingLeft == false)
         {
-<<<<<<< HEAD
-            anim.SetBool("isWalkingLeft", false); 
+            anim.SetBool("isWalkingLeft", false);
 
         }
 
@@ -264,10 +167,10 @@ public class ControllerPlayerScript : MonoBehaviour {
             if (isWalkingRight == false)
             {
                 isIdle = true;
-                
+
             }
         }
-        
+
         if (isWalkingLeft)
         {
             isIdle = false;
@@ -309,14 +212,9 @@ public class ControllerPlayerScript : MonoBehaviour {
                 anim.SetBool("isSuperIdle", true);
             }
         }
-    
 
 
-=======
-            anim.SetBool("isWalkingLeft", false);
 
-        }
->>>>>>> parent of 9be2bfd... Merge
 
 
     }
@@ -330,11 +228,8 @@ public class ControllerPlayerScript : MonoBehaviour {
 
         HandleMovement(horizontal);
 
-<<<<<<< HEAD
         HandleLayers();
 
-=======
->>>>>>> parent of 9be2bfd... Merge
         ResetValues();
     }
 
@@ -342,15 +237,12 @@ public class ControllerPlayerScript : MonoBehaviour {
     //Left to right movement
     private void HandleMovement(float horizontal)
     {
-<<<<<<< HEAD
-        if(myRigidBody.velocity.y < 0)
+        if (myRigidBody.velocity.y < 0)
         {
             landing = true;
             anim.SetBool("Landing", true);
 
         }
-=======
->>>>>>> parent of 9be2bfd... Merge
 
         myRigidBody.velocity = new Vector2(horizontal * movementSpeed, myRigidBody.velocity.y);
 
@@ -358,7 +250,6 @@ public class ControllerPlayerScript : MonoBehaviour {
         {
             isGrounded = false;
             myRigidBody.AddForce(new Vector2(0, jumpForce));
-<<<<<<< HEAD
             anim.SetBool("isIdle", false);
             anim.SetBool("isLayingDown", false);
             anim.SetBool("isSuperIdle", false);
@@ -367,23 +258,10 @@ public class ControllerPlayerScript : MonoBehaviour {
     }
 
 
-=======
-            anim.SetBool("isJumping", true);
-        }
-
-        if(isGrounded)
-        {
-            anim.SetBool("isJumping", false);
-        }
-    }
-
-    
->>>>>>> parent of 9be2bfd... Merge
 
     //Jump
     private void HandleInput()
     {
-<<<<<<< HEAD
         if (Input.GetAxis("Jump") >= 1 && Time.time > nextJump)
         {
             jump = true;
@@ -392,16 +270,7 @@ public class ControllerPlayerScript : MonoBehaviour {
             isWaitingForIdle = true;
             nextJump = (Time.time + timeBetweenJumps);
         }
-
-        if (Input.GetAxis("Trigger") == 0) {
-            Hiding();
-=======
-        if (Input.GetAxis("Jump") >= 1)
-        {
-            jump = true;
-            anim.SetBool("isIdle", false);
->>>>>>> parent of 9be2bfd... Merge
-        }
+        Hiding();
     }
 
     //Indication that Ngeru is grounded
@@ -417,24 +286,15 @@ public class ControllerPlayerScript : MonoBehaviour {
                 {
                     if (colliders[i].gameObject != gameObject)
                     {
-<<<<<<< HEAD
                         anim.ResetTrigger("Jump");
                         anim.SetBool("Landing", false);
-=======
->>>>>>> parent of 9be2bfd... Merge
                         return true;
                     }
 
                 }
-<<<<<<< HEAD
 
             }
 
-=======
-                
-            }
-            
->>>>>>> parent of 9be2bfd... Merge
         }
         return false;
     }
@@ -444,7 +304,6 @@ public class ControllerPlayerScript : MonoBehaviour {
         jump = false;
     }
 
-<<<<<<< HEAD
     //Animation Layers for Jump
     private void HandleLayers()
     {
@@ -471,28 +330,14 @@ public class ControllerPlayerScript : MonoBehaviour {
                 gameObject.layer = 2;
                 isHiding = true;
                 gameObject.transform.position = GameObject.Find("HidingCouch").transform.position;
-                previousPosition = gameObject.transform.position;
-                Debug.Log("isHiding");
-            }
-
-            if (isHiding == true)
-            {
-                anim.SetBool("isHiding", true);
-                anim.SetBool("isIdle", false);
+                //Debug.Log("isHiding");
             }
         }
         if (Input.GetAxis("Hide") == 0)
         {
-            isHiding = false;
-            previousPosition = player.transform.position;
             gameObject.layer = 10;
-            Debug.Log("isn'tHiding");
-        }
-
-        if (isHiding == false)
-        {
-            anim.SetBool("isHiding", false);
-            anim.SetBool("isIdle", true);
+            isHiding = false;
+            //Debug.Log("isn'tHiding");
         }
     }
 
@@ -513,7 +358,5 @@ public class ControllerPlayerScript : MonoBehaviour {
         }
     }
 
-=======
-   
->>>>>>> parent of 9be2bfd... Merge
+
 }

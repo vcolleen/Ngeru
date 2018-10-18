@@ -43,7 +43,7 @@ public class Patrol : MonoBehaviour
         {
             if (moving == true)
             {
-                anim.SetBool("WalkRight", true);
+                //anim.SetBool("WalkRight", true);
                 transform.eulerAngles = new Vector3(0, -180, 0);
                 moving = false;
 
