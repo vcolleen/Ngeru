@@ -99,8 +99,8 @@ TextureImporter:
         y: 227
         width: 117
         height: 126
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -119,8 +119,8 @@ TextureImporter:
         y: 226
         width: 117
         height: 126
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,8 +139,8 @@ TextureImporter:
         y: 227
         width: 117
         height: 126
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -159,8 +159,8 @@ TextureImporter:
         y: 226
         width: 117
         height: 126
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,8 +179,8 @@ TextureImporter:
         y: 227
         width: 117
         height: 126
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,11 +196,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 30
-        y: 374
+        y: 361
         width: 117
         height: 126
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -216,11 +216,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 204
-        y: 374
+        y: 364
         width: 117
         height: 126
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -235,12 +235,12 @@ TextureImporter:
       name: water_animation_turn_on_spritesheet_7
       rect:
         serializedVersion: 2
-        x: 380
-        y: 374
+        x: 379
+        y: 371
         width: 117
         height: 126
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -259,8 +259,8 @@ TextureImporter:
         y: 374
         width: 117
         height: 126
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -279,8 +279,8 @@ TextureImporter:
         y: 373
         width: 117
         height: 126
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
