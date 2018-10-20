@@ -1,7 +1,20 @@
 fileFormatVersion: 2
 guid: 7f4d23961c72a6e4fb11c4167450a58c
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: COL PIX IDDLE SPRTIRE_0
+    21300002: COL PIX IDDLE SPRTIRE_1
+    21300004: COL PIX IDDLE SPRTIRE_2
+    21300006: COL PIX IDDLE SPRTIRE_3
+    21300008: COL PIX IDDLE SPRTIRE_4
+    21300010: COL PIX IDDLE SPRTIRE_5
+    21300012: COL PIX IDDLE SPRTIRE_6
+    21300014: COL PIX IDDLE SPRTIRE_7
+    21300016: COL PIX IDDLE SPRTIRE_8
+    21300018: COL PIX IDDLE SPRTIRE_9
+    21300020: COL PIX IDDLE SPRTIRE_10
+    21300022: COL PIX IDDLE SPRTIRE_11
+    21300024: COL PIX IDDLE SPRTIRE_12
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -38,7 +51,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -67,9 +80,240 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 199
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ebad97b4a40f2440af90e627f16708e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 199
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d27f4a09ab47834e89cc5476f44d040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_3
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 199
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190611fd0f59d9a40812e704e580e08e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 199
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba9e7db645d80c48b6096f8b48c2cfc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_5
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 135
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb77bd2af6d3384e8106fc78f74c210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_6
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 135
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc58acf4d3d8b84a86897af8ea9d455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_7
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 135
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab70df8384c4de4997f5d687359b4a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_8
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 135
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b8d1ef9f1338a44a9f930dac3bb75c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_9
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 71
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50a44e8e96b863b47a239faac1d8f0a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_10
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 71
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554fc99201da7a14fbfcb74a3b01c628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COL PIX IDDLE SPRTIRE_12
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 71
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9354f2fee3e57fe46bbe2e38ad021e13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

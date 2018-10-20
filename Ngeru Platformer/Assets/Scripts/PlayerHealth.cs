@@ -40,8 +40,6 @@ public class PlayerHealth : MonoBehaviour {
 
         anim = GetComponent<Animator>();
 
-        anim.SetBool("Idle", true);
-
         turnSystem = GameObject.Find("TurnBasedSystem").GetComponent<TurnSystemScript>();
 
         foreach(TurnSystemScript.TurnClass tc in turnSystem.playersGroup)
@@ -67,8 +65,6 @@ public class PlayerHealth : MonoBehaviour {
 public void HitLight()
     {
         Attack();
-        anim.SetBool("Scratch", true);
-        anim.SetBool("Idle", false);
         isTurn = false;
         turnClass.isTurn = isTurn;
         turnClass.wasTurnPrev = true;
@@ -77,8 +73,6 @@ public void HitLight()
     public void HitHeavy()
     {
         AttackHeavy();
-        anim.SetBool("Scratch", true);
-        anim.SetBool("Idle", false);
         isTurn = false;
         turnClass.isTurn = isTurn;
         turnClass.wasTurnPrev = true;
@@ -109,6 +103,11 @@ public void HitLight()
         if (currentHealth <= DeadHold)
         {
             PlayerDead();
+        }
+
+        if(isTurn == false)
+        {
+            anim.SetBool("Idle", true);
         }
 
     }
