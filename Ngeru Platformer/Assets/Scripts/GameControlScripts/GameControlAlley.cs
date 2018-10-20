@@ -8,8 +8,12 @@ public class GameControlAlley : MonoBehaviour {
 	public GameObject fallL2;
 	public GameObject fallObject;
 
-	private float spawnRange;
+	private float spawnRangeX;
 	private float spawnPosX;
+
+	private float spawnRangeY;
+	private float spawnPosY;
+
 	private Vector2 spawnPos;
 
 	private float spawnTime;
@@ -17,7 +21,8 @@ public class GameControlAlley : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		spawnRange = fallL2.transform.position.x - fallL1.transform.position.x;
+		spawnRangeX = fallL2.transform.position.x - fallL1.transform.position.x;
+		spawnRangeY = fallL2.transform.position.y - fallL1.transform.position.y;
 
 
 	}
@@ -34,9 +39,12 @@ public class GameControlAlley : MonoBehaviour {
 	void SpawnFalling () {
 
 
-		spawnPosX = Random.Range(fallL1.transform.position.x, (fallL1.transform.position.x + spawnRange));
-		spawnPos = new Vector2 (spawnPosX, fallL1.transform.position.y);
+		spawnPosX = Random.Range(fallL1.transform.position.x, (fallL1.transform.position.x + spawnRangeX));
+		spawnPosY = Random.Range(fallL1.transform.position.y, (fallL1.transform.position.y + spawnRangeY));
+
+		spawnPos = new Vector2 (spawnPosX, spawnPosY);
 		Instantiate (fallObject, spawnPos, Quaternion.identity);
+
 		spawnTime = Time.time + 2;
 
 	}
