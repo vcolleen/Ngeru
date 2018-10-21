@@ -11,8 +11,6 @@ public class FountainCollision : MonoBehaviour {
 	public float delayTime;
 	bool fountainOn;
 
-	public Rigidbody2D ngeru;
-
 	// Use this for initialization
 	void Start () {
 		//StartCoroutine(WaterStuff());
@@ -45,10 +43,6 @@ public class FountainCollision : MonoBehaviour {
 	public void OnTriggerExit2D (Collider2D col) {
 		onFountain = false;
 		Debug.Log("You're not on the fountain");
-	}
-
-	public void OnCollisionEnter2D (Collision2D col) {
-		ngeru.AddForce(new Vector2(-2000, 200), ForceMode2D.Force);
 	}
 
 }

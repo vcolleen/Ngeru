@@ -529,6 +529,11 @@ Prefab:
       propertyPath: m_Size.x
       value: 0.15732956
       objectReference: {fileID: 0}
+    - target: {fileID: 95429757034485044, guid: 98dd3075223de0f40bf143776ea9fc4b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 98dd3075223de0f40bf143776ea9fc4b, type: 2}
   m_IsPrefabParent: 0
@@ -635,6 +640,7 @@ GameObject:
   - component: {fileID: 1012520691}
   - component: {fileID: 1012520690}
   - component: {fileID: 1012520689}
+  - component: {fileID: 1012520692}
   m_Layer: 0
   m_Name: Puddle1
   m_TagString: Untagged
@@ -654,7 +660,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0012331009, y: -0.2648933}
+  m_Offset: {x: 0.03080082, y: -0.2648933}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -665,7 +671,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0080776, y: 0.80567217}
+  m_Size: {x: 1.840971, y: 0.80567217}
   m_EdgeRadius: 0
 --- !u!212 &1012520690
 SpriteRenderer:
@@ -725,6 +731,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1012520692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1012520688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bee130f5ac6fab418f72174e5787378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rgbd: {fileID: 1743591039}
+  ngeru: {fileID: 1743591035}
 --- !u!1 &1193080131
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,6 +756,7 @@ GameObject:
   - component: {fileID: 1193080135}
   - component: {fileID: 1193080134}
   - component: {fileID: 1193080137}
+  - component: {fileID: 1193080136}
   m_Layer: 0
   m_Name: Fountain
   m_TagString: Untagged
@@ -819,7 +839,6 @@ MonoBehaviour:
   anim: {fileID: 847821449}
   onFountain: 0
   delayTime: 5
-  ngeru: {fileID: 1743591039}
 --- !u!61 &1193080135
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -845,6 +864,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.7547405, y: 3.1827412}
   m_EdgeRadius: 0
+--- !u!114 &1193080136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1193080131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bee130f5ac6fab418f72174e5787378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rgbd: {fileID: 1743591039}
+  ngeru: {fileID: 1743591035}
 --- !u!70 &1193080137
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -870,6 +902,7 @@ GameObject:
   - component: {fileID: 1194874267}
   - component: {fileID: 1194874266}
   - component: {fileID: 1194874268}
+  - component: {fileID: 1194874269}
   m_Layer: 0
   m_Name: Puddle2
   m_TagString: Untagged
@@ -947,7 +980,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0074050426, y: -0.24026799}
+  m_Offset: {x: 0.10155892, y: -0.22007847}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -958,8 +991,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7260761, y: 0.8115487}
+  m_Size: {x: 1.5262399, y: 0.85192776}
   m_EdgeRadius: 0
+--- !u!114 &1194874269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1194874265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bee130f5ac6fab418f72174e5787378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rgbd: {fileID: 1743591039}
+  ngeru: {fileID: 1743591035}
 --- !u!1 &1313470672
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,6 +1266,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.61037064, y: 0.57}
   m_EdgeRadius: 0
+--- !u!111 &1743591045
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1743591035}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 6e2654abd5d15164cb0de356d306cd63, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 6e2654abd5d15164cb0de356d306cd63, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1821004511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1230,6 +1291,7 @@ GameObject:
   - component: {fileID: 1821004513}
   - component: {fileID: 1821004512}
   - component: {fileID: 1821004514}
+  - component: {fileID: 1821004515}
   m_Layer: 0
   m_Name: Puddle3
   m_TagString: Untagged
@@ -1307,7 +1369,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.008639216, y: -0.24063408}
+  m_Offset: {x: -0.000101566315, y: -0.18821049}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1318,8 +1380,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9489243, y: 0.83696437}
+  m_Size: {x: 1.5957439, y: 0.94181156}
   m_EdgeRadius: 0
+--- !u!114 &1821004515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1821004511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bee130f5ac6fab418f72174e5787378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rgbd: {fileID: 1743591039}
+  ngeru: {fileID: 1743591035}
 --- !u!1 &2006594901
 GameObject:
   m_ObjectHideFlags: 0

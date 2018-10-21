@@ -22,8 +22,8 @@ public class ControllerPlayerScript : MonoBehaviour
 
     //Movement Variables
     private bool isIdle;
-    private bool isWalkingRight;
-    private bool isWalkingLeft;
+    public bool isWalkingRight;
+    public bool isWalkingLeft;
     private bool isTurningRight;
     private bool isTurningLeft;
     private bool isRunning;
