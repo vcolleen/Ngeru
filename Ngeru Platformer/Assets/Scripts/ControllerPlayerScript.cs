@@ -164,7 +164,7 @@ public class ControllerPlayerScript : MonoBehaviour
         //Laying down
         if (isWalkingLeft == false)
         {
-            if (isWalkingRight == false)
+            if (isWalkingRight == false && isHiding == false)
             {
                 isIdle = true;
 
@@ -321,6 +321,7 @@ public class ControllerPlayerScript : MonoBehaviour
         }
     }
 
+    // Hiding under couch
     void Hiding()
     {
         if (Input.GetAxis("Hide") == 1)
@@ -329,8 +330,10 @@ public class ControllerPlayerScript : MonoBehaviour
             {
                 gameObject.layer = 2;
                 isHiding = true;
+                isIdle = false;
                 gameObject.transform.position = GameObject.Find("HidingCouch").transform.position;
                 //Debug.Log("isHiding");
+                anim.SetBool("isHiding", true);
             }
         }
         if (Input.GetAxis("Hide") == 0)
@@ -338,6 +341,7 @@ public class ControllerPlayerScript : MonoBehaviour
             gameObject.layer = 10;
             isHiding = false;
             //Debug.Log("isn'tHiding");
+            anim.SetBool("isHiding", false);
         }
     }
 
