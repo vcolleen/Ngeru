@@ -331,6 +331,11 @@ public class ControllerPlayerScript : MonoBehaviour
                 gameObject.layer = 2;
                 isHiding = true;
                 isIdle = false;
+                anim.SetBool("isIdle", false);
+                anim.SetBool("isSuperIdle", false);
+                anim.SetLayerWeight(0, 1);
+                anim.SetLayerWeight(1, 0);
+                anim.SetLayerWeight(2, 0);
                 gameObject.transform.position = GameObject.Find("HidingCouch").transform.position;
                 //Debug.Log("isHiding");
                 anim.SetBool("isHiding", true);
@@ -344,6 +349,9 @@ public class ControllerPlayerScript : MonoBehaviour
             //Debug.Log("isn'tHiding");
             anim.SetBool("isHiding", false);
             anim.SetBool("AlreadyHiding", false);
+            isIdle = false;
+            anim.SetBool("isIdle", false);
+            anim.SetBool("isSuperIdle", false);
         }
     }
 
