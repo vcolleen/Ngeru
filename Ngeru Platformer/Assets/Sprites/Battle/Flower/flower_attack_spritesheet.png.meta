@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: acb5980347cd46248a286b9956310682
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: flower_attack_spritesheet_0
+    21300002: flower_attack_spritesheet_1
+    21300004: flower_attack_spritesheet_2
+    21300006: flower_attack_spritesheet_3
+    21300008: flower_attack_spritesheet_4
+    21300010: flower_attack_spritesheet_5
+    21300012: flower_attack_spritesheet_6
+    21300014: flower_attack_spritesheet_7
+    21300016: flower_attack_spritesheet_8
+    21300018: flower_attack_spritesheet_9
+    21300020: flower_attack_spritesheet_10
+    21300022: flower_attack_spritesheet_11
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -80,7 +92,247 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: flower_attack_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 188
+        width: 61
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6f6bc1ecfa1e44c8924ee762c2794f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flower_attack_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 188
+        width: 61
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3ce462101dfd540937d89617e6479b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flower_attack_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 188
+        width: 61
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f1289bb9c77cd4aa53869e5225b1e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flower_attack_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 188
+        width: 61
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e40f9ff68580cf46962d018d6aed0a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flower_attack_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 116
+        width: 61
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7b3afb8f6a0a94ebc703a07ff9dacb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flower_attack_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 116
+        width: 61
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b70fa8db8439b0468053becc6da35eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flower_attack_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 116
+        width: 61
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06087f58ddf2fc049bf1049a17fc70ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flower_attack_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 116
+        width: 61
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65592e9c411968243a6ac16391277ceb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flower_attack_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 44
+        width: 61
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64856a23331bc8741b9261fca9f703e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flower_attack_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 44
+        width: 61
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7fe0e6a6aac1a445a0719b4fedae0d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flower_attack_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 44
+        width: 61
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379cfa1edd04c5a4eae237ee05093961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flower_attack_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 44
+        width: 61
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0e6a8cec91a3d46ac13d0b6f72fab8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

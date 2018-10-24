@@ -103,18 +103,18 @@ TextureImporter:
       name: flower_death_spritesheet_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 188
-        width: 55
+        x: 24
+        y: 190
+        width: 59
         height: 60
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ce4307d549f273479e844ae7c15b84e
+      spriteID: 59055ba866582874c828d5cafedd30ef
       vertices: []
       indices: 
       edges: []
@@ -123,18 +123,18 @@ TextureImporter:
       name: flower_death_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 72
-        y: 188
-        width: 55
+        x: 88
+        y: 190
+        width: 59
         height: 60
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ec47740fc98af44da0dd3ee8ecbfba2
+      spriteID: 4a907a19ae94d544fafca75daaf6186a
       vertices: []
       indices: 
       edges: []
@@ -143,18 +143,18 @@ TextureImporter:
       name: flower_death_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 138
-        y: 188
-        width: 55
+        x: 152
+        y: 190
+        width: 59
         height: 60
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f04037c6cf260844a7f4728a8c6314a
+      spriteID: fa1fa74a1b6d60a47b031b0f329c066f
       vertices: []
       indices: 
       edges: []
@@ -163,18 +163,18 @@ TextureImporter:
       name: flower_death_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 207
-        y: 188
-        width: 55
+        x: 215
+        y: 190
+        width: 59
         height: 60
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f4451e2048f64643943c6b9d00f8751
+      spriteID: eb52d4b0cea66df46920e6a5a75ba4b4
       vertices: []
       indices: 
       edges: []
@@ -183,18 +183,18 @@ TextureImporter:
       name: flower_death_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 273
-        y: 188
-        width: 55
+        x: 279
+        y: 190
+        width: 59
         height: 60
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6de8978160404314abfb15d8e98fba4d
+      spriteID: 41bae094f41412a459a36401ba5fd229
       vertices: []
       indices: 
       edges: []
@@ -203,18 +203,18 @@ TextureImporter:
       name: flower_death_spritesheet_5
       rect:
         serializedVersion: 2
-        x: 340
-        y: 188
-        width: 55
+        x: 344
+        y: 190
+        width: 59
         height: 60
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ab663e106ccbe04ba1201a2ad5d3247
+      spriteID: a4be991d644fd6947a6bbe7e8808789f
       vertices: []
       indices: 
       edges: []
@@ -223,18 +223,18 @@ TextureImporter:
       name: flower_death_spritesheet_6
       rect:
         serializedVersion: 2
-        x: 409
-        y: 188
-        width: 55
+        x: 408
+        y: 190
+        width: 59
         height: 60
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68bc1a2ef0a5600469b5c2fdb57950ad
+      spriteID: c8098702f47ecc74b86d09ac106c7f62
       vertices: []
       indices: 
       edges: []
@@ -243,18 +243,18 @@ TextureImporter:
       name: flower_death_spritesheet_7
       rect:
         serializedVersion: 2
-        x: 474
-        y: 188
-        width: 38
+        x: 473
+        y: 190
+        width: 59
         height: 60
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 287127a77c82a89458b0aab579cd948e
+      spriteID: 5d131e50f2e3b8c43bfcb66791f83f1f
       vertices: []
       indices: 
       edges: []
@@ -263,18 +263,18 @@ TextureImporter:
       name: flower_death_spritesheet_8
       rect:
         serializedVersion: 2
-        x: 26
-        y: 116
-        width: 55
+        x: 24
+        y: 118
+        width: 59
         height: 60
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a3266df34a6a4c42bd4ea4342b55b00
+      spriteID: 5622e42a6c5fb0f42899fe5ac58a8743
       vertices: []
       indices: 
       edges: []
@@ -283,18 +283,18 @@ TextureImporter:
       name: flower_death_spritesheet_9
       rect:
         serializedVersion: 2
-        x: 90
-        y: 116
-        width: 55
+        x: 88
+        y: 118
+        width: 59
         height: 60
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22c6d9b9575779a42aaf7b05c067e1a4
+      spriteID: f9399b2b827cd9c439e5534f31538387
       vertices: []
       indices: 
       edges: []
@@ -303,18 +303,18 @@ TextureImporter:
       name: flower_death_spritesheet_10
       rect:
         serializedVersion: 2
-        x: 154
-        y: 116
-        width: 55
+        x: 152
+        y: 118
+        width: 59
         height: 60
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d81b5b3f27f6734999d046ae5ed240a
+      spriteID: 5c274803c0bf96b4ea03aaded23f2d16
       vertices: []
       indices: 
       edges: []
@@ -323,18 +323,18 @@ TextureImporter:
       name: flower_death_spritesheet_11
       rect:
         serializedVersion: 2
-        x: 218
-        y: 116
-        width: 55
+        x: 215
+        y: 118
+        width: 59
         height: 60
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a563695998dd8a34a952b91787b3e0ec
+      spriteID: c0c8b03915bd5674386c0fdcb75273a1
       vertices: []
       indices: 
       edges: []
@@ -343,18 +343,18 @@ TextureImporter:
       name: flower_death_spritesheet_12
       rect:
         serializedVersion: 2
-        x: 282
-        y: 116
-        width: 55
+        x: 279
+        y: 118
+        width: 59
         height: 60
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb4b960f6bd647d4191120c8ca23b511
+      spriteID: 31a3303cdccb5a544877253cce750530
       vertices: []
       indices: 
       edges: []
@@ -364,17 +364,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 344
-        y: 116
-        width: 55
+        y: 118
+        width: 59
         height: 60
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9990693e50605894b950cc14fbf9010c
+      spriteID: 0c7b6c0002c619e4c9c1c12cd5e1d8b9
       vertices: []
       indices: 
       edges: []
@@ -384,17 +384,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 408
-        y: 116
-        width: 55
+        y: 118
+        width: 59
         height: 60
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 012d6ac2a1520594b8c7857bb4bcac98
+      spriteID: ab3d04815c829494786f823395713c2c
       vertices: []
       indices: 
       edges: []
@@ -403,18 +403,18 @@ TextureImporter:
       name: flower_death_spritesheet_15
       rect:
         serializedVersion: 2
-        x: 471
-        y: 116
-        width: 41
+        x: 473
+        y: 118
+        width: 59
         height: 60
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fded48c53642b342890a7c7c5bec6c0
+      spriteID: 5c09a791142ec0645b9d70434eb76787
       vertices: []
       indices: 
       edges: []
@@ -423,18 +423,18 @@ TextureImporter:
       name: flower_death_spritesheet_16
       rect:
         serializedVersion: 2
-        x: 16
-        y: 44
-        width: 55
+        x: 24
+        y: 46
+        width: 59
         height: 60
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 116fe6be46ade5d4a95c37447e5cad2c
+      spriteID: 5884f0c97ecf2234e83600b0c3c3b75a
       vertices: []
       indices: 
       edges: []
@@ -443,18 +443,18 @@ TextureImporter:
       name: flower_death_spritesheet_17
       rect:
         serializedVersion: 2
-        x: 85
-        y: 44
-        width: 55
+        x: 88
+        y: 46
+        width: 59
         height: 60
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3aa4984113676c4086cf2c27625bf4b
+      spriteID: 58ace47a45efe3149b6008a4dfbc7f7b
       vertices: []
       indices: 
       edges: []
