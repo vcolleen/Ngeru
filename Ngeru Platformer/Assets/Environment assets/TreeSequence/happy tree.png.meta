@@ -1,13 +1,12 @@
 fileFormatVersion: 2
-guid: c3dba7816989a004498f7791439ab1ad
+guid: 68886148c2db90e469a7ab1a9b5d8c80
 TextureImporter:
   fileIDToRecycleName:
-    21300000: sad (got hit)_0
-    21300002: sad (got hit)_1
-    21300004: sad (got hit)_2
-    21300006: sad (got hit)_3
-    21300008: sad (got hit)_4
-    21300010: sad (got hit)_5
+    21300000: happy tree_0
+    21300002: happy tree_1
+    21300004: happy tree_2
+    21300006: happy tree_3
+    21300008: happy tree_4
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -88,7 +87,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sad (got hit)_0
+      name: happy tree_0
       rect:
         serializedVersion: 2
         x: 0
@@ -102,13 +101,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccfe346df537708428a0c8cf1912f0c2
+      spriteID: cfaabb4dff184324dbc5989ce4d7ec8c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sad (got hit)_1
+      name: happy tree_1
       rect:
         serializedVersion: 2
         x: 434
@@ -122,13 +121,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf703f009757d8e40870b5c080a09bf8
+      spriteID: f0d7b5590d353194caca1354a92406a4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sad (got hit)_2
+      name: happy tree_2
       rect:
         serializedVersion: 2
         x: 868
@@ -142,13 +141,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6aa0e90181af7f64584b41e75049ad80
+      spriteID: cbfc190d1c44c0f44b66389faaee74fc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sad (got hit)_3
+      name: happy tree_3
       rect:
         serializedVersion: 2
         x: 1302
@@ -162,13 +161,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4b631c87c803e24486441cb5b163e46
+      spriteID: 5802c6cefac798f428a2a426d78aa9c0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sad (got hit)_4
+      name: happy tree_4
       rect:
         serializedVersion: 2
         x: 0
@@ -182,27 +181,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12415d59d5e6f6d4eb0deb5434eda6ee
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sad (got hit)_5
-      rect:
-        serializedVersion: 2
-        x: 434
-        y: 124
-        width: 434
-        height: 450
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a9ad380e85d4e4740a512e0ed93a1409
+      spriteID: 2a9b8d09decc8934c92a8b8c8b754268
       vertices: []
       indices: 
       edges: []
@@ -210,7 +189,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 15a514918040a0d4188b982c87b1d149
+    spriteID: ca9cb6dac57db934499ef70ef04874bd
     vertices: []
     indices: 
     edges: []

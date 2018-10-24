@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 1a82213733cb14344a84a6d767471c67
+guid: 36b4bdb75d8a30442986adc21f546ac5
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Happy (hit ngeru)_0
-    21300002: Happy (hit ngeru)_1
-    21300004: Happy (hit ngeru)_2
-    21300006: Happy (hit ngeru)_3
-    21300008: Happy (hit ngeru)_4
-    21300010: Happy (hit ngeru)_5
+    21300000: sad tree_0
+    21300002: sad tree_1
+    21300004: sad tree_2
+    21300006: sad tree_3
+    21300008: sad tree_4
+    21300010: sad tree_5
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -88,7 +88,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Happy (hit ngeru)_0
+      name: sad tree_0
       rect:
         serializedVersion: 2
         x: 0
@@ -102,13 +102,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c821f293ccc4e884b986b1419d8356b2
+      spriteID: ff4385355f8b762419191923be0cb66c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Happy (hit ngeru)_1
+      name: sad tree_1
       rect:
         serializedVersion: 2
         x: 434
@@ -122,13 +122,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 082fbed1b6df38e44982c4cba268814b
+      spriteID: f0e0afbcda3dd6b4aa8ec1a6685c187d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Happy (hit ngeru)_2
+      name: sad tree_2
       rect:
         serializedVersion: 2
         x: 868
@@ -142,13 +142,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c47f16246112b14c81ee60cc3685519
+      spriteID: 45c3dcf70be6a3445809021954e85a55
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Happy (hit ngeru)_3
+      name: sad tree_3
       rect:
         serializedVersion: 2
         x: 1302
@@ -162,13 +162,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fa3ecdbed295d64f8c0ae445c54e189
+      spriteID: edddcbc08216ddf458d9948abc2763da
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Happy (hit ngeru)_4
+      name: sad tree_4
       rect:
         serializedVersion: 2
         x: 0
@@ -182,13 +182,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c814634561973c94f8bd5a6a7a25b1ee
+      spriteID: be4e35c25e6e9e44d9f7a1c72b315847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Happy (hit ngeru)_5
+      name: sad tree_5
       rect:
         serializedVersion: 2
         x: 434
@@ -202,7 +202,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5a24caf7cb11ab4993ecf74ef182649
+      spriteID: a5ab5a8f0c7bbbd4abaf6f7c3c68a0cd
       vertices: []
       indices: 
       edges: []
@@ -210,7 +210,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e7db4322d7ed7904ca37f998cfb1ac41
+    spriteID: d83a3d6b66a67054685f4c3196654ccc
     vertices: []
     indices: 
     edges: []

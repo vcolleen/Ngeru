@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: 84a09601b1eae9344bfa6e132b577f24
+guid: 37045c9d2e385154890e7328e0ffe4f8
 TextureImporter:
   fileIDToRecycleName:
-    21300000: ttee death_0
-    21300002: ttee death_1
-    21300004: ttee death_2
-    21300006: ttee death_3
-    21300008: ttee death_4
-    21300010: ttee death_5
-    21300012: ttee death_6
+    21300000: death_0
+    21300002: death_1
+    21300004: death_2
+    21300006: death_3
+    21300008: death_4
+    21300010: death_5
+    21300012: death_6
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -89,7 +89,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ttee death_0
+      name: death_0
       rect:
         serializedVersion: 2
         x: 0
@@ -103,13 +103,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 641e7287ab25ecc48b60553de236156d
+      spriteID: 9187e086338cda6429300072149fa914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ttee death_1
+      name: death_1
       rect:
         serializedVersion: 2
         x: 434
@@ -123,13 +123,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e32e2a078ae0fe419f321d8290ade92
+      spriteID: 73943d6e87b0d5c40b12d56b00969020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ttee death_2
+      name: death_2
       rect:
         serializedVersion: 2
         x: 868
@@ -143,13 +143,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10d61caa15863d84fb3f8269c8aaca24
+      spriteID: b0c2afab48768f94a9db596a4c5bfd58
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ttee death_3
+      name: death_3
       rect:
         serializedVersion: 2
         x: 1302
@@ -163,13 +163,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04ad6a91115f76d40b037ba2ecd75860
+      spriteID: e59cf992b2529a749b44a6d0a267842c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ttee death_4
+      name: death_4
       rect:
         serializedVersion: 2
         x: 0
@@ -183,13 +183,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f22c4bf65a5672441be117387a56c486
+      spriteID: 781d7c9f8d246ca4da75cff20043adce
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ttee death_5
+      name: death_5
       rect:
         serializedVersion: 2
         x: 434
@@ -203,13 +203,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4df29d8fbebef5744a13aa4b571f5439
+      spriteID: 7292b8a5caf57e5428c737f2691868f0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ttee death_6
+      name: death_6
       rect:
         serializedVersion: 2
         x: 868
@@ -223,7 +223,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea88bec13c755c64db4e2f41c1a4ebef
+      spriteID: a9f5b5b8ea7b2964f93aa432630aa16a
       vertices: []
       indices: 
       edges: []
@@ -231,7 +231,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a5b375f1b048fde409df4504a4e80630
+    spriteID: 6469b3cb2d75fab419dc6bb96b4fa3cd
     vertices: []
     indices: 
     edges: []
