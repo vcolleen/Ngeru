@@ -20,8 +20,8 @@ public class RandomEntranceScript : MonoBehaviour
     public GameObject hideUI;
     public Image fadePanel;
 
-    float executeTime;
-    bool waiting;
+    public float executeTime;
+    public bool waiting;
 
     void start()
     {
@@ -37,7 +37,7 @@ public class RandomEntranceScript : MonoBehaviour
         SpawnTimer();
         AITimer();
 
-        if (waiting)
+        if (waiting  == true)
         {
             if (Time.time < executeTime)
             {
@@ -45,8 +45,9 @@ public class RandomEntranceScript : MonoBehaviour
                 fadePanel.GetComponent<Animator>().SetBool("FadeOut", true);
             }
 
-            else
+            else if (Time.time > executeTime)
             {
+                Debug.Log("toosoon");
                 fadePanel.GetComponent<Animator>().SetBool("FadeIn", true);
                 fadePanel.GetComponent<Animator>().SetBool("FadeOut", false);
                 waiting = false;
@@ -74,9 +75,10 @@ public class RandomEntranceScript : MonoBehaviour
 
     public void Caught()
     {
-        Destroy(gameObject);
-        executeTime = Time.time;
+        //Destroy(gameObject);
+        executeTime = (Time.time + 5f);
         waiting = true;
+        Debug.Log("AAAAAA");
     }
 
 

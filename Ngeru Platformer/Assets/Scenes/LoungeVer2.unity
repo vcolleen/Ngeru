@@ -1998,6 +1998,8 @@ MonoBehaviour:
   lineRenderer: {fileID: 0}
   hideUI: {fileID: 0}
   fadePanel: {fileID: 1533165325}
+  executeTime: 0
+  waiting: 0
 --- !u!4 &895969846
 Transform:
   m_ObjectHideFlags: 0
@@ -3192,7 +3194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
