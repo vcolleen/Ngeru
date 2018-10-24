@@ -1283,6 +1283,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 61704353601825206, guid: 98dd3075223de0f40bf143776ea9fc4b,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: eaf4bfee3ab1bd246bd3496f6f785caf, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 98dd3075223de0f40bf143776ea9fc4b, type: 2}
   m_IsPrefabParent: 0
@@ -1998,8 +2003,10 @@ MonoBehaviour:
   lineRenderer: {fileID: 0}
   hideUI: {fileID: 0}
   fadePanel: {fileID: 1533165325}
+  Player: {fileID: 1600314290}
   executeTime: 0
   waiting: 0
+  playerSpawnPos: {x: 0, y: 0}
 --- !u!4 &895969846
 Transform:
   m_ObjectHideFlags: 0
@@ -3347,6 +3354,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1600314290 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1642617815067650, guid: 98dd3075223de0f40bf143776ea9fc4b,
+    type: 2}
+  m_PrefabInternal: {fileID: 702173560}
 --- !u!1 &1603075855
 GameObject:
   m_ObjectHideFlags: 0
