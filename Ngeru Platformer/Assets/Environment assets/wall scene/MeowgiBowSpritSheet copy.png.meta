@@ -1,0 +1,935 @@
+fileFormatVersion: 2
+guid: 5e0b2527092257048af0b3eb92538170
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MeowgiBowSpritSheet copy_0
+    21300002: MeowgiBowSpritSheet copy_1
+    21300004: MeowgiBowSpritSheet copy_2
+    21300006: MeowgiBowSpritSheet copy_3
+    21300008: MeowgiBowSpritSheet copy_4
+    21300010: MeowgiBowSpritSheet copy_5
+    21300012: MeowgiBowSpritSheet copy_6
+    21300014: MeowgiBowSpritSheet copy_7
+    21300016: MeowgiBowSpritSheet copy_8
+    21300018: MeowgiBowSpritSheet copy_9
+    21300020: MeowgiBowSpritSheet copy_10
+    21300022: MeowgiBowSpritSheet copy_11
+    21300024: MeowgiBowSpritSheet copy_12
+    21300026: MeowgiBowSpritSheet copy_13
+    21300028: MeowgiBowSpritSheet copy_14
+    21300030: MeowgiBowSpritSheet copy_15
+    21300032: MeowgiBowSpritSheet copy_16
+    21300034: MeowgiBowSpritSheet copy_17
+    21300036: MeowgiBowSpritSheet copy_18
+    21300038: MeowgiBowSpritSheet copy_19
+    21300040: MeowgiBowSpritSheet copy_20
+    21300042: MeowgiBowSpritSheet copy_21
+    21300044: MeowgiBowSpritSheet copy_22
+    21300046: MeowgiBowSpritSheet copy_23
+    21300048: MeowgiBowSpritSheet copy_24
+    21300050: MeowgiBowSpritSheet copy_25
+    21300052: MeowgiBowSpritSheet copy_26
+    21300054: MeowgiBowSpritSheet copy_27
+    21300056: MeowgiBowSpritSheet copy_28
+    21300058: MeowgiBowSpritSheet copy_29
+    21300060: MeowgiBowSpritSheet copy_30
+    21300062: MeowgiBowSpritSheet copy_31
+    21300064: MeowgiBowSpritSheet copy_32
+    21300066: MeowgiBowSpritSheet copy_33
+    21300068: MeowgiBowSpritSheet copy_34
+    21300070: MeowgiBowSpritSheet copy_35
+    21300072: MeowgiBowSpritSheet copy_36
+    21300074: MeowgiBowSpritSheet copy_37
+    21300076: MeowgiBowSpritSheet copy_38
+    21300078: MeowgiBowSpritSheet copy_39
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 451
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b688c0b40b113b048b8f162df986c3ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 451
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f838885cc7b84254396ef9c8f5af57a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_2
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 451
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fac521ef52fc1548a172ad0e06f26f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_3
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 451
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91bce4b1465c58547ad7f057c025f4fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_4
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 451
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6094bb06394e6a544b48922786f1dc1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_5
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 451
+        width: 73
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49090590bce8e624aae07e0b98927da5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 387
+        width: 73
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4b20b46152c394797e24c5b62835f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_7
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 387
+        width: 73
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d0c2dbefd9cfd4f8fb6807bbbbe0fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_8
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 387
+        width: 73
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e33ba9d51abaf41be5dce10ef92444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_9
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 387
+        width: 73
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a371342ea1860458e074a4da5cc8ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_10
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 387
+        width: 73
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a57232afcc3baee4da801065691e4378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_11
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 387
+        width: 73
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b21ff29a059764ea5e67ea4b7ca3c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 323
+        width: 73
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de64ad12df28c6a4aa9f25c8d6d17be0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_13
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 323
+        width: 73
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96654983bf624f648932df5e2a513203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_14
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 323
+        width: 73
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b882a2630e31fd04a98312d4522664e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_15
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 323
+        width: 73
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff4c15cfbf4ac0940bbd873e553cc662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_16
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 323
+        width: 73
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb4cab0d51e6812499d85b6d7d0f630c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_17
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 323
+        width: 73
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d997e43095c49ff41b03623618e7094b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 259
+        width: 73
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe90c6060fbb2047b6578770aad21b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_19
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 259
+        width: 73
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe60751cb63a6e46bba4305e8e23826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_20
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 259
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8374bfaaf9b59e64e85b96f5cf2252d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_21
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 259
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac06998ba697d94cb5ce95c62fa1b31
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_22
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 259
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7f458fa7f45b0438ad339d6737c3ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_23
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 259
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614cedb1b4762b945a69496300ca105f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 195
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd288005e29ddff49a6c8a46cfaa2fb5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_25
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 195
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b17940d7c5b26340a3001a3cd01d359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_26
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 195
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099d7b41faa6c8b4f97ac1f187a69079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_27
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 195
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2988ac06a9c20ca4cb0b8acd9fa0b8b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_28
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 195
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82a24b6692d3b84fb014160d9a62787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_29
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 195
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0532922b6f03c554fa81abca3efd2b91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_30
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 131
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c709b8dc00e3943a082495edd53165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_31
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 131
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055996a89f905c5438879ec1e30b4c94
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_32
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 131
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1726aa88e85e1d4183ec059c44ac964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_33
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 131
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c289296a24eb69d47ba67500716de203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_34
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 131
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749d9d5658d79594cbf7b13db30a81c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_35
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 131
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0f182d934d1b242b07dc0457066320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_36
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 67
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300b8c0ecee82744a85bd55a0f578351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_37
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 67
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d3a533c1757fba408b05601605fe608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_38
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 67
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8217a893b6f929a40b97e490e418576b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeowgiBowSpritSheet copy_39
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 67
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7aa05885099b240966a3ad18a73e64
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 71fa99e44a7fc0d4ebcc843e38278500
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
