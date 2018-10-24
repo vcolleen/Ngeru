@@ -28,7 +28,6 @@ public class AttackMinigame : MonoBehaviour
     [SerializeField]
     private float maxHitPercent;
 
-
     [SerializeField]
     private float minCritPercent;
     [SerializeField]

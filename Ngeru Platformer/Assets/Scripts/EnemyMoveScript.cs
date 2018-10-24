@@ -12,7 +12,6 @@ public class EnemyMoveScript : MonoBehaviour {
     //public int startingEnemyHealth;
     public int attackDamage;
    // public int currentEnemyHealth;
-    public GameObject winMessage;
 
     public Image enemyHP;
 
@@ -52,7 +51,6 @@ public class EnemyMoveScript : MonoBehaviour {
         currentEnemyHealth = startingEnemyHealth;
         player = GameObject.FindGameObjectWithTag("Player");
         playerHealth = player.GetComponent<PlayerHealth>();
-        winMessage.SetActive(false);
 
         if (enemyHP != null)
         {
@@ -143,7 +141,6 @@ public class EnemyMoveScript : MonoBehaviour {
     void Death()
     {
         Destroy(gameObject);
-        winMessage.SetActive(true);
     }
 
     public void ResetEnemyHP()

@@ -30,10 +30,10 @@ public class PlayerHealth : MonoBehaviour {
     private float timetoReach;
     private float length;
 
-    public GameObject yaDed;
-
     Animator anim;
-    public bool Idle;
+
+    public bool scratch;
+    public bool bite;
 
 
     void Start () {
@@ -52,7 +52,6 @@ public class PlayerHealth : MonoBehaviour {
         enemy = GameObject.FindGameObjectWithTag("Enemy");
         enemyScript = enemy.GetComponent<EnemyMoveScript>();
         buttonArea.SetActive(false);
-        yaDed.SetActive(false);
     }
 
     public void Strike() {
@@ -62,7 +61,7 @@ public class PlayerHealth : MonoBehaviour {
         }
     }
 
-public void HitLight()
+    public void HitLight()
     {
         Attack();
         isTurn = false;
@@ -81,7 +80,6 @@ public void HitLight()
 
 	
     void Update () {
-        
 
         isTurn = turnClass.isTurn;
         if(isTurn)
@@ -105,10 +103,16 @@ public void HitLight()
             PlayerDead();
         }
 
-        if(isTurn == false)
+        if(scratch == true)
         {
-            anim.SetBool("Idle", true);
+            anim.SetTrigger("Scratcho");
         }
+
+        if (bite == true)
+        {
+            anim.SetBool("Bite", true);
+        }
+
 
     }
 
@@ -121,11 +125,13 @@ public void HitLight()
 
     void Attack()
     {
+        scratch = true; 
         enemyScript.TakeDamage(attackDamage);
     }
 
     void AttackHeavy()
     {
+        bite = true;
         enemyScript.TakeDamage(critDamage);
     }
 
@@ -143,9 +149,6 @@ public void HitLight()
     public void PlayerDead()
     {
         buttonArea.SetActive(false);
-        yaDed.SetActive(true);
-
-
         if (Input.anyKey)
         {
             SceneManager.LoadScene(2);
