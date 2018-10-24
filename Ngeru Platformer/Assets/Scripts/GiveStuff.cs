@@ -8,11 +8,11 @@ public class GiveStuff : MonoBehaviour {
 
     public Inventory inventory;
 
-  
 
-	// Use this for initialization
-	void Start () {
-		
+  
+    // Use this for initialization
+    void Start () {
+        inventory = GameObject.FindObjectOfType<Inventory>();
 	}
 	
 	// Update is called once per frame
@@ -34,6 +34,7 @@ public class GiveStuff : MonoBehaviour {
 
 
       private void OnTriggerEnter2D (Collider2D other) {
+      Debug.Log("gen-trigger detected");
        if (other.tag == "Item")
         {
             Debug.Log("Try to add item.");
