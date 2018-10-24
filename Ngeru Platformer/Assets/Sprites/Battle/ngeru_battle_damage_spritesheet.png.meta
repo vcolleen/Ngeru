@@ -90,18 +90,18 @@ TextureImporter:
       name: ngeru_battle_damage_spritesheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 88
-        width: 125
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 15
+        y: 91
+        width: 68
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61b66e38955c00244ace21b2e899fc31
+      spriteID: ba425277943591a4ab55b0f7bb7a31e7
       vertices: []
       indices: 
       edges: []
@@ -110,18 +110,18 @@ TextureImporter:
       name: ngeru_battle_damage_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 125
-        y: 88
-        width: 125
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 141
+        y: 91
+        width: 61
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc2d58fe608b2e9409d80a28b5897f60
+      spriteID: 33b5832a6b0f90849864508487c8754f
       vertices: []
       indices: 
       edges: []
@@ -130,18 +130,18 @@ TextureImporter:
       name: ngeru_battle_damage_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 250
-        y: 88
-        width: 125
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 266
+        y: 91
+        width: 59
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f90517df3dd960344ae599c221ca04ba
+      spriteID: 45343d929c8263c4d8e6e5be39dec8d9
       vertices: []
       indices: 
       edges: []
@@ -150,18 +150,18 @@ TextureImporter:
       name: ngeru_battle_damage_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 375
-        y: 88
-        width: 125
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 387
+        y: 91
+        width: 70
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25a653de311240d4099e8f4953788292
+      spriteID: 5b50253fe3e096742bc57030f677726c
       vertices: []
       indices: 
       edges: []
@@ -170,18 +170,18 @@ TextureImporter:
       name: ngeru_battle_damage_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 125
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 15
+        y: 3
+        width: 68
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c796bdc8b5bd8494493b67b6bc12e83b
+      spriteID: 247ca60c3a133ff4b867ba3f3aab34e7
       vertices: []
       indices: 
       edges: []
