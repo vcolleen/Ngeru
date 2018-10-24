@@ -24,6 +24,7 @@ public class RandomEntranceScript : MonoBehaviour
     public float executeTime;
     public bool waiting;
     public Vector2 playerSpawnPos;
+    public GameObject aiRef;
 
     void Start()
     {
@@ -43,8 +44,11 @@ public class RandomEntranceScript : MonoBehaviour
         {
             if (Time.time < executeTime)
             {
+                Debug.Log("aeiou!!!");
+
                 fadePanel.GetComponent<Animator>().SetBool("FadeIn", false);
                 fadePanel.GetComponent<Animator>().SetBool("FadeOut", true);
+                Player.GetComponent<ControllerPlayerScript>().enabled = false;
                 //Disable Player Movement
             }
 
@@ -53,13 +57,18 @@ public class RandomEntranceScript : MonoBehaviour
                 Debug.Log("toosoon");
                 fadePanel.GetComponent<Animator>().SetBool("FadeIn", true);
                 fadePanel.GetComponent<Animator>().SetBool("FadeOut", false);
-                waiting = false;
-                
+
+                //isSpawned = false;
+                Destroy(aiRef);
+                randomTime = (rsTimer + randomNumber);
+                isSpawned = false;
                 Player.GetComponent<Transform>().position = playerSpawnPos;
+                Player.GetComponent<ControllerPlayerScript>().enabled = true;
                 //Reset UI
                 //Reset Objects
                 //ResetAI
                 //Enable Player Movement
+                waiting = false;
             }
         }
 
@@ -105,7 +114,7 @@ public class RandomEntranceScript : MonoBehaviour
     void SpawnTimer()
     {
 
-        if (Time.time >= randomTime)
+        if (Time.time >= randomTime && waiting == false)
         {
             SpawnAI();
 
@@ -115,7 +124,7 @@ public class RandomEntranceScript : MonoBehaviour
     void SpawnAI()
     {
 
-        if (isSpawned == false)
+        if (isSpawned == false && waiting == false)
         {
             float tileWidth = background.GetComponent<SpriteRenderer>().bounds.size.x;
             spawnPos = new Vector3((tileWidth / 2f) - 1.2f, transform.position.y, transform.position.z);
@@ -123,7 +132,7 @@ public class RandomEntranceScript : MonoBehaviour
             isSpawned = true;
             randomNumber = Random.Range(minRange, maxRange);
             Debug.Log("Spawn");
-
+            aiRef = GameObject.Find("Human(Clone)");
         }
     }
 }

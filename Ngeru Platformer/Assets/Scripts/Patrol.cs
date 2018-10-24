@@ -64,7 +64,7 @@ public class Patrol : MonoBehaviour
         {
             //Destroy(collider.gameObject);
             rEntranceScript.Caught();
-            Destroy(gameObject);
+            
         }
     }
 
@@ -76,13 +76,19 @@ public class Patrol : MonoBehaviour
         //if (transform.position.x >= rEntranceScript.spawnPos.x && timeAlive >= 2)
         if (transform.position.x >= rEntranceScript.spawnPos.x && timeAlive >= rEntranceScript.randomNumber)
             {
+            Die();
 
-            Debug.Log("Die");
-            rEntranceScript.isSpawned = false;
-            rEntranceScript.randomTime = (rEntranceScript.rsTimer + rEntranceScript.randomNumber);
-            Destroy(gameObject);
         }
 
+    }
+
+    public void Die()
+    {
+        
+        rEntranceScript.isSpawned = false;
+        rEntranceScript.randomTime = (rEntranceScript.rsTimer + rEntranceScript.randomNumber);
+        Destroy(gameObject);
+        Debug.Log("Die");
     }
 
 }
