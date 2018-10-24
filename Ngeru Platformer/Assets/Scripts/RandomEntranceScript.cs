@@ -25,6 +25,7 @@ public class RandomEntranceScript : MonoBehaviour
     public bool waiting;
     public Vector2 playerSpawnPos;
     public GameObject aiRef;
+    public GameObject caughtCanvas;
 
     void Start()
     {
@@ -44,11 +45,13 @@ public class RandomEntranceScript : MonoBehaviour
         {
             if (Time.time < executeTime)
             {
-                Debug.Log("aeiou!!!");
+
 
                 fadePanel.GetComponent<Animator>().SetBool("FadeIn", false);
                 fadePanel.GetComponent<Animator>().SetBool("FadeOut", true);
                 Player.GetComponent<ControllerPlayerScript>().enabled = false;
+                caughtCanvas.SetActive(true);
+                Debug.Log("aeiou!!!");
                 //Disable Player Movement
             }
 
@@ -64,21 +67,19 @@ public class RandomEntranceScript : MonoBehaviour
                 isSpawned = false;
                 Player.GetComponent<Transform>().position = playerSpawnPos;
                 Player.GetComponent<ControllerPlayerScript>().enabled = true;
-                //Reset UI
-                //Reset Objects
-                //ResetAI
-                //Enable Player Movement
+                caughtCanvas.SetActive(false);
                 waiting = false;
             }
         }
 
         if (isSpawned == false)
         {
-
+            hideUI.SetActive(false);
             //lineRenderer.GetComponent<LineRenderer>().enabled = false;
-            if ((randomTime - Time.time) <= 5f)
+            if ((randomTime - Time.time) <= 3f)
             {
                 //hideUI.GetComponent<Text>().enabled = true;
+                hideUI.SetActive(true);
             }
 
         }
@@ -97,6 +98,7 @@ public class RandomEntranceScript : MonoBehaviour
         executeTime = (Time.time + 5f);
         waiting = true;
         Debug.Log("AAAAAA");
+        hideUI.SetActive(false);
     }
 
 
