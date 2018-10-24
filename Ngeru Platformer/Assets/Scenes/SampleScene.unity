@@ -1804,7 +1804,6 @@ MonoBehaviour:
     wasTurnPrev: 0
   isTurn: 0
   attackDamage: 25
-  winMessage: {fileID: 0}
   enemyHP: {fileID: 1789104706}
   startingEnemyHealth: 100
   enemyPercentage: 0
@@ -2091,7 +2090,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1318142628}
-  - component: {fileID: 1318142629}
   m_Layer: 5
   m_Name: InventoryGroup
   m_TagString: Untagged
@@ -2123,17 +2121,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.082, y: 0.03}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1318142629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1318142627}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8069d54f851048f4db101bae17cb3465, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1527742659
 Prefab:
   m_ObjectHideFlags: 0
@@ -2378,7 +2365,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1318142629}
+      - m_Target: {fileID: 0}
         m_MethodName: WhitePicture
         m_Mode: 1
         m_Arguments:
@@ -2794,7 +2781,7 @@ SpriteRenderer:
   m_Size: {x: 0.43, y: 0.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!4 &1596935370
 Transform:
@@ -3711,8 +3698,8 @@ MonoBehaviour:
   buttonArea: {fileID: 1537808123}
   inventory: {fileID: 1318142627}
   speed: 2
-  yaDed: {fileID: 0}
-  Idle: 0
+  scratch: 0
+  bite: 0
 --- !u!1 &2030721737
 GameObject:
   m_ObjectHideFlags: 0

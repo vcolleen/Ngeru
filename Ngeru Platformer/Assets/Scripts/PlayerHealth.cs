@@ -101,17 +101,24 @@ public class PlayerHealth : MonoBehaviour {
         if (currentHealth <= DeadHold)
         {
             PlayerDead();
+        }  
+       
+
+        if(anim.GetCurrentAnimatorStateInfo(0).IsName("Scratch"))
+        {
+            anim.SetBool("Scratch", false);
         }
 
-        if(scratch == true)
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Bite"))
         {
-            anim.SetTrigger("Scratcho");
+            anim.SetBool("Bite", false);
         }
 
-        if (bite == true)
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("NgeruBattleDamage"))
         {
-            anim.SetBool("Bite", true);
+            anim.SetBool("Ouch", false);
         }
+
 
 
     }
@@ -125,17 +132,18 @@ public class PlayerHealth : MonoBehaviour {
 
     void Attack()
     {
-        scratch = true; 
+        anim.SetBool("Scratch", true); 
         enemyScript.TakeDamage(attackDamage);
     }
 
     void AttackHeavy()
     {
-        bite = true;
+        anim.SetBool("Bite", true);
         enemyScript.TakeDamage(critDamage);
     }
 
     public void TakeDamage (int amount) {
+        anim.SetBool("Ouch", true);
         currentHealth -= amount;
         healthImage.fillAmount = (currentHealth / 100);
 
