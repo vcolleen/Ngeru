@@ -12,7 +12,8 @@ public class ObjectTrigger : MonoBehaviour {
 
 
     public GameObject a, b, c, d, e, f, g;
-    public bool gotItems; 
+    public bool gotItems;
+    public bool combat;
 
     // Use this for initialization
     void Start() {
@@ -27,6 +28,10 @@ public class ObjectTrigger : MonoBehaviour {
             anim.SetBool("inside", true);
             if (Input.GetAxis("Trigger") == 1)
             {
+                if (combat)
+                {
+                    //Start Combat Here
+                }
                 anim.SetTrigger("play");
                 tick.SetActive(true);
                 m_Rigidbody = GetComponent<Rigidbody2D>();
@@ -55,12 +60,19 @@ public class ObjectTrigger : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        inside = true;
+        if (other.GetComponent<Transform>().CompareTag("Player"))
+        {
+            inside = true;
+        }
+
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        inside = false;
+        if (other.GetComponent<Transform>().CompareTag("Player"))
+        {
+            inside = false;
+        }
     }
 
 

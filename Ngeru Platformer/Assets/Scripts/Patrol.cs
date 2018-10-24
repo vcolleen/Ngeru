@@ -58,20 +58,37 @@ public class Patrol : MonoBehaviour
 
     }
 
+    public void OnTriggerEnter2D (Collider2D collider)
+    {
+        if (collider.GetComponent<Transform>().CompareTag("Player"))
+        {
+            //Destroy(collider.gameObject);
+            rEntranceScript.Caught();
+            
+        }
+    }
+
     void LifeCycle()
     {
 
         timeAlive = (Time.time - spawnTime);
 
-        if (transform.position.x >= rEntranceScript.spawnPos.x && timeAlive >= 2)
-        {
-
-            Destroy(gameObject);
-            rEntranceScript.isSpawned = false;
-            rEntranceScript.randomTime = (rEntranceScript.rsTimer + rEntranceScript.randomNumber);
+        //if (transform.position.x >= rEntranceScript.spawnPos.x && timeAlive >= 2)
+        if (transform.position.x >= rEntranceScript.spawnPos.x && timeAlive >= rEntranceScript.randomNumber)
+            {
+            Die();
 
         }
 
+    }
+
+    public void Die()
+    {
+        
+        rEntranceScript.isSpawned = false;
+        rEntranceScript.randomTime = (rEntranceScript.rsTimer + rEntranceScript.randomNumber);
+        Destroy(gameObject);
+        Debug.Log("Die");
     }
 
 }
