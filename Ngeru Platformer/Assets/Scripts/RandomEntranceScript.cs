@@ -21,6 +21,7 @@ public class RandomEntranceScript : MonoBehaviour
     public Image fadePanel;
 
     float executeTime;
+    bool waiting;
 
     void start()
     {
@@ -35,7 +36,22 @@ public class RandomEntranceScript : MonoBehaviour
         Debug.Log("Random Time " + randomTime);
         SpawnTimer();
         AITimer();
-        
+
+        if (waiting)
+        {
+            if (Time.time < executeTime)
+            {
+                fadePanel.GetComponent<Animator>().SetBool("FadeIn", false);
+                fadePanel.GetComponent<Animator>().SetBool("FadeOut", true);
+            }
+
+            else
+            {
+                fadePanel.GetComponent<Animator>().SetBool("FadeIn", true);
+                fadePanel.GetComponent<Animator>().SetBool("FadeOut", false);
+                waiting = false;
+            }
+        }
 
         if (isSpawned == false)
         {
@@ -59,16 +75,8 @@ public class RandomEntranceScript : MonoBehaviour
     public void Caught()
     {
         Destroy(gameObject);
-        fadePanel.GetComponent<Animator>().SetBool("FadeIn", false);
-        fadePanel.GetComponent<Animator>().SetBool("FadeOut", true);
         executeTime = Time.time;
-        for (float i = 0; i< 5; i = (Time.time - executeTime))
-        {
-            Debug.Log(i);
-        }
-
-        fadePanel.GetComponent<Animator>().SetBool("FadeIn", true);
-        fadePanel.GetComponent<Animator>().SetBool("FadeOut", false);
+        waiting = true;
     }
 
 
