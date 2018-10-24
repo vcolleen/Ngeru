@@ -8,8 +8,8 @@ public class RandomEntranceScript : MonoBehaviour
 
     public int rsTimer;
     public bool isSpawned;
-    public float randomNumber;
-    public float randomTime;
+    public float randomNumber = 10f;
+    public float randomTime = 10f;
     public float minRange;
     public float maxRange;
     public Vector3 spawnPos;
@@ -18,22 +18,29 @@ public class RandomEntranceScript : MonoBehaviour
     public GameObject humanAI;
     public GameObject lineRenderer;
     public GameObject hideUI;
+    public Image fadePanel;
+
+    float executeTime;
 
     void start()
     {
+        randomTime = 10f;
+        Debug.Log("Random Time " + randomTime);
+
         hideUI.GetComponent<Text>().enabled = false;
     }
 
     void Update()
     {
-
-        AITimer();
+        Debug.Log("Random Time " + randomTime);
         SpawnTimer();
+        AITimer();
+        
 
         if (isSpawned == false)
         {
 
-            lineRenderer.GetComponent<LineRenderer>().enabled = false;
+            //lineRenderer.GetComponent<LineRenderer>().enabled = false;
             if ((randomTime - Time.time) <= 5f)
             {
                 //hideUI.GetComponent<Text>().enabled = true;
@@ -48,6 +55,22 @@ public class RandomEntranceScript : MonoBehaviour
         }
 
     }
+
+    public void Caught()
+    {
+        Destroy(gameObject);
+        fadePanel.GetComponent<Animator>().SetBool("FadeIn", false);
+        fadePanel.GetComponent<Animator>().SetBool("FadeOut", true);
+        executeTime = Time.time;
+        for (float i = 0; i< 5; i = (Time.time - executeTime))
+        {
+            Debug.Log(i);
+        }
+
+        fadePanel.GetComponent<Animator>().SetBool("FadeIn", true);
+        fadePanel.GetComponent<Animator>().SetBool("FadeOut", false);
+    }
+
 
     void AITimer()
     {
@@ -65,7 +88,6 @@ public class RandomEntranceScript : MonoBehaviour
 
         if (Time.time >= randomTime)
         {
-
             SpawnAI();
 
         }
@@ -77,10 +99,11 @@ public class RandomEntranceScript : MonoBehaviour
         if (isSpawned == false)
         {
             float tileWidth = background.GetComponent<SpriteRenderer>().bounds.size.x;
-            spawnPos = new Vector3(tileWidth / 2 + 0, transform.position.y, transform.position.z);
+            spawnPos = new Vector3((tileWidth / 2f) - 1.2f, transform.position.y, transform.position.z);
             Instantiate(humanAI, spawnPos, Quaternion.identity);
             isSpawned = true;
             randomNumber = Random.Range(minRange, maxRange);
+            Debug.Log("Spawn");
 
         }
     }

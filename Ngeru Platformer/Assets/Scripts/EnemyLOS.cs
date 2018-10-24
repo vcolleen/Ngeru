@@ -20,7 +20,7 @@ public class EnemyLOS : MonoBehaviour
     void Awake()
     {
 
-        lineOfSight = GameObject.Find("LineOfSight").GetComponent<LineRenderer>();
+        //lineOfSight = GameObject.Find("LineOfSight").GetComponent<LineRenderer>();
 
     }
 
