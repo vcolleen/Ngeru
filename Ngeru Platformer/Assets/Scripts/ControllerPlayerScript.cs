@@ -189,7 +189,7 @@ public class ControllerPlayerScript : MonoBehaviour
         }
 
         //Idle
-        if (isIdle)
+        if (isIdle && !isHiding)
         {
             if (isWaitingForIdle)
             {
