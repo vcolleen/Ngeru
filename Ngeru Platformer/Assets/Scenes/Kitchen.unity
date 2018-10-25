@@ -630,7 +630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inside: 0
   item: {fileID: 0}
-  tick: {fileID: 0}
+  tick: {fileID: 175944213}
   m_Rigidbody: {fileID: 0}
   a: {fileID: 0}
   b: {fileID: 0}
@@ -640,6 +640,7 @@ MonoBehaviour:
   f: {fileID: 0}
   g: {fileID: 0}
   gotItems: 0
+  combat: 0
 --- !u!95 &206962624
 Animator:
   serializedVersion: 3
@@ -2921,7 +2922,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inside: 0
   item: {fileID: 0}
-  tick: {fileID: 0}
+  tick: {fileID: 558809772}
   m_Rigidbody: {fileID: 0}
   a: {fileID: 0}
   b: {fileID: 0}
@@ -2931,6 +2932,7 @@ MonoBehaviour:
   f: {fileID: 0}
   g: {fileID: 0}
   gotItems: 0
+  combat: 0
 --- !u!1 &1917209476
 GameObject:
   m_ObjectHideFlags: 0
@@ -3527,7 +3529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inside: 0
   item: {fileID: 0}
-  tick: {fileID: 0}
+  tick: {fileID: 1283076576}
   m_Rigidbody: {fileID: 2051920901}
   a: {fileID: 0}
   b: {fileID: 0}
@@ -3537,6 +3539,7 @@ MonoBehaviour:
   f: {fileID: 0}
   g: {fileID: 0}
   gotItems: 0
+  combat: 0
 --- !u!61 &2051920897
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3758,7 +3761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inside: 0
   item: {fileID: 0}
-  tick: {fileID: 0}
+  tick: {fileID: 552753556}
   m_Rigidbody: {fileID: 0}
   a: {fileID: 0}
   b: {fileID: 0}
@@ -3768,6 +3771,7 @@ MonoBehaviour:
   f: {fileID: 0}
   g: {fileID: 0}
   gotItems: 0
+  combat: 0
 --- !u!95 &2072024681
 Animator:
   serializedVersion: 3
