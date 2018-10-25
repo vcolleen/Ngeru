@@ -7,7 +7,6 @@ public class DialogueOverlayScript5 : MonoBehaviour {
     //lion test script
 
     //Variables
-    public GameObject bigCat;
     public Sprite storedPortrait;
     public Sprite image0;
     public Sprite image1;
@@ -59,22 +58,22 @@ public class DialogueOverlayScript5 : MonoBehaviour {
 
     public List<Sprite> imageList = new List<Sprite>();
 
-    public GameObject pink;
-    public GameObject purple;
-    public GameObject blue;
-    public GameObject black;
+    public Button pink;
+    public Button purple;
+    public Button blue;
+    public Button black;
     //References
 
 	void Start () {
 
         
         totalImages = 53;
-        pink.SetActive(false);
-        purple.SetActive(false);
-        blue.SetActive(false);
-        black.SetActive(false);
+        pink.enabled = false;
+        purple.enabled = false;
+        blue.enabled = false;
+        black.enabled = false;
 
-        currentImage = 0;
+        currentImage = 1;
 
         imageList.Add(image0);
 
@@ -121,7 +120,7 @@ public class DialogueOverlayScript5 : MonoBehaviour {
         imageList.Add(image41);
         imageList.Add(image42);
 
-        portrait.sprite = imageList[0];
+        portrait.sprite = imageList[1];
     }
 	
 	void Update () {
@@ -137,129 +136,153 @@ public class DialogueOverlayScript5 : MonoBehaviour {
         Destroy(gameObject);
     }
 
-    public void Pink()
+    public void Yes()
     {
+        portrait.sprite = imageList[32];
         Buttons();
-        currentImage = 21;
-        portrait.sprite = imageList[currentImage];
+        currentImage = 32;
     }
 
-    public void Purple()
+    public void No()
     {
+        portrait.sprite = imageList[29];
         Buttons();
-        currentImage = 24;
-        portrait.sprite = imageList[currentImage];
-    }
-
-    public void Black()
-    {
-        Buttons();
-        currentImage = 17;
-        portrait.sprite = imageList[currentImage];
-    }
-
-    public void Blue()
-    {
-        Buttons();
-        currentImage = 19;
-        portrait.sprite = imageList[currentImage];
+        currentImage = 29;
     }
 
     void Buttons()
     {
-        purple.SetActive(!purple.activeInHierarchy);
-        pink.SetActive(!pink.activeInHierarchy);
-        blue.SetActive(!blue.activeInHierarchy);
-        black.SetActive(!black.activeInHierarchy);
+        purple.enabled = (!purple.enabled);
+        pink.enabled = (!pink.enabled);
+        blue.enabled = (!blue.enabled);
+        black.enabled = (!black.enabled);
     }
 
-    public void Fade()
+    public void PlayMusic()
     {
-
+        //Play Music here <<<-----------------------------------------------------------
+    }
+    public void TakeItem()
+    {
+        //Take Item here <<<-----------------------------------------------------------
     }
 
     public void ButtonInteract()
     {
         //pre question
-        if (currentImage <= 14)
+        if (currentImage <= 16)
         {
             currentImage += 1;
             portrait.sprite = imageList[currentImage];
         }
 
         // pose question
-        else if (currentImage == 15)
+        if (currentImage == 17)
         {
-            currentImage += 1;
-            portrait.sprite = imageList[currentImage];
-            Buttons();
+            //Give Choice
         }
 
         //picked black
-        else if (currentImage == 17)
+        if (currentImage == 18)
         {
-            currentImage = 18;
+            currentImage = 19;
             portrait.sprite = imageList[currentImage];
         }
 
-        else if (currentImage == 18)
+        if (currentImage == 19)
         {
-            Debug.Log("poo");
-            currentImage = 16;
+            currentImage = 17;
             portrait.sprite = imageList[currentImage];
-            Buttons();
         }
 
         //picked blue
-        else if (currentImage == 19)
+        if (currentImage == 20)
         {
-            currentImage = 20;
+            currentImage = 21;
             portrait.sprite = imageList[currentImage];
         }
 
-        else if (currentImage == 20)
+        if (currentImage == 21)
         {
-            currentImage = 16;
+            currentImage = 17;
             portrait.sprite = imageList[currentImage];
-            Buttons();
         }
 
         //picked pink
-        else if (currentImage == 21)
-        {
-            currentImage = 22;
-            portrait.sprite = imageList[currentImage];
-        }
-
-        else if (currentImage == 22)
+        if (currentImage == 22)
         {
             currentImage = 23;
             portrait.sprite = imageList[currentImage];
         }
 
-        else if (currentImage == 23)
+        if (currentImage == 23)
         {
-            currentImage = 16;
+            currentImage = 24;
             portrait.sprite = imageList[currentImage];
-            Buttons();
+        }
+
+        if (currentImage == 24)
+        {
+            currentImage = 17;
+            portrait.sprite = imageList[currentImage];
         }
 
         //picked pruple
-        else if (currentImage >= 24 && currentImage <= 41)
+        if (currentImage >= 25 && currentImage <= 41)
         {
             currentImage += 1;
             portrait.sprite = imageList[currentImage];
         }
 
-        else if (currentImage == 42)
+        if (currentImage == 42)
         {
-            Destroy(gameObject);
             //fade
         }
 
 
 
-
+        if (currentImage <= 26)
+            {
+                currentImage += 1;
+                portrait.sprite = imageList[currentImage];
+            }
+            else if (currentImage == 27)
+            {
+                Buttons();
+                currentImage += 1;
+                portrait.sprite = imageList[currentImage];
+            }
+            else if (currentImage >= 29 && currentImage <=30)
+            {
+                currentImage += 1;
+                portrait.sprite = imageList[currentImage];
+            }
+            else if (currentImage >= 32 && currentImage <= 43)
+        {
+            currentImage += 1;
+            portrait.sprite = imageList[currentImage];
+        }
+            else if (currentImage == 44)
+        {
+            PlayMusic();
+            currentImage += 1;
+            portrait.sprite = imageList[currentImage];
+        }
+            else if (currentImage >= 45 && currentImage <= 51)
+        {
+            currentImage += 1;
+            portrait.sprite = imageList[currentImage];
+        }
+            else if (currentImage == 31)
+            {
+                GetComponentInParent<NPCDialogueScript1>().Prompt();
+                DestroySelf();
+            }
+            else if (currentImage == 52)
+        {
+            GetComponentInParent<NPCDialogueScript1>().Prompt();
+            DestroySelf();
+        }
             
     }
 }
