@@ -37,6 +37,8 @@ public class EnemyMoveScript : MonoBehaviour {
     GameObject player;
     PlayerHealth playerHealth;
 
+    Animator anim;
+
 
 
     void Start()
@@ -57,6 +59,8 @@ public class EnemyMoveScript : MonoBehaviour {
             enemyPercentage = enemyHP.fillAmount * 100;
         }
 
+        anim = GetComponent<Animator>();
+
     }
 
     void Update() {
@@ -75,6 +79,21 @@ public class EnemyMoveScript : MonoBehaviour {
         if (currentEnemyHealth <= 0)
         {
             Death();
+        }
+
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("FlowerDeath"))
+        {
+            anim.SetBool("Death", false);
+        }
+
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("FlowerAttack"))
+        {
+            anim.SetBool("Attack", false);
+        }
+
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("FlowerTakeDamage"))
+        {
+            anim.SetBool("TakeDamage", false);
         }
 
     }
@@ -98,6 +117,7 @@ public class EnemyMoveScript : MonoBehaviour {
 
         if (hitChance >= enemyCrit & hasAttacked == false)
         {
+            anim.SetBool("Attack", true);
             playerHealth.TakeDamage(critDamage);
             Debug.Log("Enemy Crits!!!");
             hasAttacked = true;
@@ -114,6 +134,7 @@ public class EnemyMoveScript : MonoBehaviour {
         {
             if (hasAttacked == false)
             {
+                anim.SetBool("Attack", true);
                 playerHealth.TakeDamage(attackDamage);
                 Debug.Log("Enemy hits.");
                 hasAttacked = true;
@@ -129,6 +150,7 @@ public class EnemyMoveScript : MonoBehaviour {
 
     public void TakeDamage (int amount)
     {
+        anim.SetBool("TakeDamage", true);
         currentEnemyHealth -= amount;
         enemyHP.fillAmount = (currentEnemyHealth / 100);
 
@@ -140,7 +162,7 @@ public class EnemyMoveScript : MonoBehaviour {
 
     void Death()
     {
-        Destroy(gameObject);
+        anim.SetBool("Death", true);
     }
 
     public void ResetEnemyHP()
