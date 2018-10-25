@@ -400,7 +400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movTexture: {fileID: 15200000, guid: 26a6f8a0b6c2cff47b86addcbd0051c6, type: 3}
-  sceneName: Cutscene01
+  sceneName: Credits
 --- !u!114 &1351463530
 MonoBehaviour:
   m_ObjectHideFlags: 0
