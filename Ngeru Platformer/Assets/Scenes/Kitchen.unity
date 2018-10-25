@@ -3304,7 +3304,7 @@ MonoBehaviour:
   inside: 0
   tick: {fileID: 1344768114}
   m_Rigidbody: {fileID: 0}
-  cat: {fileID: 0}
+  cat: {fileID: 503687005}
   gotItems: 0
   combat: 0
 --- !u!61 &1984465467
