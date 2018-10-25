@@ -38,6 +38,7 @@ public class EnemyMoveScript : MonoBehaviour {
     PlayerHealth playerHealth;
 
     Animator anim;
+    Animation scratch;
 
 
 
@@ -60,10 +61,11 @@ public class EnemyMoveScript : MonoBehaviour {
         }
 
         anim = GetComponent<Animator>();
+        scratch = GetComponent<Animation>();
 
     }
 
-    void Update() {
+    void FixedUpdate() {
 
         isTurn = turnClass.isTurn;
         if (enemyHP != null)
@@ -96,6 +98,11 @@ public class EnemyMoveScript : MonoBehaviour {
             anim.SetBool("TakeDamage", false);
         }
 
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("ScratchMark"))
+        {
+            anim.SetBool("TakeDamage", false);
+        }
+
     }
 
     IEnumerator WaitAndMove()
@@ -105,7 +112,6 @@ public class EnemyMoveScript : MonoBehaviour {
         isTurn = false;
         turnClass.isTurn = isTurn;
         turnClass.wasTurnPrev = true;
-        Debug.Log("Attacks Player");
         ResetEnemyHP();
         hasAttacked = false;
         StopCoroutine("WaitAndMove");
@@ -135,17 +141,13 @@ public class EnemyMoveScript : MonoBehaviour {
             if (hasAttacked == false)
             {
                 anim.SetBool("Attack", true);
+                scratch.Play("scratch");
                 playerHealth.TakeDamage(attackDamage);
                 Debug.Log("Enemy hits.");
                 hasAttacked = true;
             }
         }
 
-
-
-
-
-        //enemyHP.fillAmount = (currentEnemyHealth / 100);
     }
 
     public void TakeDamage (int amount)

@@ -35,6 +35,9 @@ public class PlayerHealth : MonoBehaviour {
     public bool scratch;
     public bool bite;
 
+    public float wait = 1;
+    public float waiter = 0.5f;
+
 
     void Start () {
 
@@ -76,20 +79,27 @@ public class PlayerHealth : MonoBehaviour {
         turnClass.isTurn = isTurn;
         turnClass.wasTurnPrev = true;
     }
+
+    IEnumerator Timer()
+    {
+        yield return new WaitForSeconds(1);
+        buttonArea.SetActive(true);
+        inventory.SetActive(true);
+    }
     
 
 	
     void Update () {
 
         isTurn = turnClass.isTurn;
-        if(isTurn)
+        if (isTurn == true)
         {
-            buttonArea.SetActive(true);
-            inventory.SetActive(true);
+            StartCoroutine(Timer());
         }
 
-        else
+        if (isTurn == false) 
         {
+            StopCoroutine(Timer());
             buttonArea.SetActive(false);
             inventory.SetActive(false);
         }
