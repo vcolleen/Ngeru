@@ -35,6 +35,15 @@ public class PlayerHealth : MonoBehaviour {
     public bool scratch;
     public bool bite;
 
+    public float wait = 1;
+    public float waiter = 0.5f;
+
+    public GameObject missText;
+    public GameObject hitText;
+    public GameObject critText;
+
+    public AudioSource catAttack;
+
 
     void Start () {
 
@@ -76,20 +85,27 @@ public class PlayerHealth : MonoBehaviour {
         turnClass.isTurn = isTurn;
         turnClass.wasTurnPrev = true;
     }
+
+    IEnumerator Timer()
+    {
+        yield return new WaitForSeconds(1);
+        buttonArea.SetActive(true);
+        inventory.SetActive(true);
+    }
     
 
 	
     void Update () {
 
         isTurn = turnClass.isTurn;
-        if(isTurn)
+        if (isTurn == true)
         {
-            buttonArea.SetActive(true);
-            inventory.SetActive(true);
+            StartCoroutine(Timer());
         }
 
-        else
+        if (isTurn == false) 
         {
+            StopCoroutine(Timer());
             buttonArea.SetActive(false);
             inventory.SetActive(false);
         }
@@ -126,20 +142,29 @@ public class PlayerHealth : MonoBehaviour {
     public void SkipTurn()
     {
         isTurn = false;
+        catAttack.Play();
         turnClass.isTurn = isTurn;
         turnClass.wasTurnPrev = true;
+        missText.SetActive(true);
+        StartCoroutine(TextDelay());
     }
 
     void Attack()
     {
-        anim.SetBool("Scratch", true); 
+        anim.SetBool("Scratch", true);
+        catAttack.Play();
         enemyScript.TakeDamage(attackDamage);
+        hitText.SetActive(true);
+        StartCoroutine(TextDelay());
     }
 
     void AttackHeavy()
     {
         anim.SetBool("Bite", true);
+        catAttack.Play();
         enemyScript.TakeDamage(critDamage);
+        critText.SetActive(true);
+        StartCoroutine(TextDelay());
     }
 
     public void TakeDamage (int amount) {
@@ -162,6 +187,14 @@ public class PlayerHealth : MonoBehaviour {
             SceneManager.LoadScene(2);
         }
 
+    }
+
+    IEnumerator TextDelay ()
+    {
+        yield return new WaitForSeconds(1);
+        missText.SetActive(false);
+        hitText.SetActive(false);
+        critText.SetActive(false);
     }
 
 }
