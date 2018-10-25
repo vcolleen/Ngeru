@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlinkingPlatformManager : MonoBehaviour
+public class DapperCat : MonoBehaviour
 {
 
     [SerializeField]
@@ -13,7 +13,7 @@ public class BlinkingPlatformManager : MonoBehaviour
     int toggleTime;
 
     
-    float cycleTime = 2f;
+    float cycleTime = 4f;
 
     // Use this for initialization
     void Start()
@@ -44,7 +44,7 @@ public class BlinkingPlatformManager : MonoBehaviour
             platform.SetActive(true);
             yield return new WaitForSeconds(cycleTime);
             platform.SetActive(false);
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(2);
         }
     }
 
