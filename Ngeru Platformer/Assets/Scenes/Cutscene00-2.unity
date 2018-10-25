@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movTexture: {fileID: 15200000, guid: eefc353f192ff134eb18374fa3b17786, type: 3}
-  sceneName: Cutscene01
+  sceneName: Sphynx
 --- !u!114 &9462730
 MonoBehaviour:
   m_ObjectHideFlags: 0
