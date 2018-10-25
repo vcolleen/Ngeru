@@ -1445,7 +1445,7 @@ Prefab:
         type: 2}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: e33fea5d7cd3f1744afbfae9a362be36, type: 2}
+      objectReference: {fileID: 9100000, guid: b5f032dee34fe854abbba5393da9541d, type: 2}
     - target: {fileID: 50109640490704760, guid: 180c5774d9bd87046a0267817fc2603c,
         type: 2}
       propertyPath: m_Material
@@ -2713,6 +2713,12 @@ Prefab:
       propertyPath: m_Size.x
       value: 1.8855362
       objectReference: {fileID: 0}
+    - target: {fileID: 114610165090523314, guid: 065e39fb3c31a3c4bb91801910737c47,
+        type: 2}
+      propertyPath: overlay
+      value: 
+      objectReference: {fileID: 1711242975537968, guid: f70a328bb27197949ba3ed8dc5f82bf9,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 065e39fb3c31a3c4bb91801910737c47, type: 2}
   m_IsPrefabParent: 0
