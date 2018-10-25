@@ -7,8 +7,13 @@ public class TreeSchtuff : MonoBehaviour {
 
     public GameObject pressE;
     public GameObject ngeru;
-    public GameObject winner;
+    public Animator bossTree;
     private int i = 0;
+    public bool teleport = false;
+
+    public GameObject tVine1;
+    public GameObject tVine2;
+    public GameObject tVine3;
 
     // Use this for initialization
     void Start () {
@@ -19,18 +24,53 @@ public class TreeSchtuff : MonoBehaviour {
 	void Update () {
 		if (pressE.activeSelf == true && Input.GetKeyDown(KeyCode.E))
         {
-            ngeru.transform.position = new Vector3(-1.934f, -0.99f, 0);
-            i++;
+            if (i == 0)
+            {
+                ngeru.GetComponent<ControllerPlayerScript>().enabled = false;
+                teleport = true;
+                ngeru.GetComponent<Animator>().SetLayerWeight(4, 1);
+                ngeru.GetComponent<Animator>().SetLayerWeight(0, 0);
+                ngeru.GetComponent<Animator>().SetLayerWeight(1, 0);
+                ngeru.GetComponent<Animator>().SetLayerWeight(2, 0);
+                ngeru.GetComponent<Animator>().SetLayerWeight(3, 0);
+                ngeru.GetComponent<Animator>().SetBool("Attack", true);
+                i++;
+                tVine1.SetActive(false);
+                StartCoroutine(NgeruTeleports());
+            } else if (i == 1)
+            {
+                ngeru.GetComponent<ControllerPlayerScript>().enabled = false;
+                teleport = true;
+                bossTree.SetBool("Sad", true);
+                ngeru.GetComponent<Animator>().SetLayerWeight(4, 1);
+                ngeru.GetComponent<Animator>().SetLayerWeight(0, 0);
+                ngeru.GetComponent<Animator>().SetLayerWeight(1, 0);
+                ngeru.GetComponent<Animator>().SetLayerWeight(2, 0);
+                ngeru.GetComponent<Animator>().SetLayerWeight(3, 0);
+                ngeru.GetComponent<Animator>().SetBool("Attack", true);
+                i++;
+                tVine2.SetActive(false);
+                StartCoroutine(NgeruTeleports());
+            } else if (i == 2)
+            {
+                ngeru.GetComponent<ControllerPlayerScript>().enabled = false;
+                teleport = true;
+                bossTree.SetBool("Death", true);
+                ngeru.GetComponent<Animator>().SetLayerWeight(4, 1);
+                ngeru.GetComponent<Animator>().SetLayerWeight(0, 0);
+                ngeru.GetComponent<Animator>().SetLayerWeight(1, 0);
+                ngeru.GetComponent<Animator>().SetLayerWeight(2, 0);
+                ngeru.GetComponent<Animator>().SetLayerWeight(3, 0);
+                ngeru.GetComponent<Animator>().SetBool("Attack", true);
+                i++;
+                tVine3.SetActive(false);
+                StartCoroutine(NgeruTeleports());
+            }
         }
 
-        if (i == 3)
-        {
-            winner.SetActive(true);
-            ngeru.transform.position = new Vector3(-1.934f, -0.99f, 0);
-        }
-	}
+    }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (ngeru.GetComponent<Rigidbody2D>().velocity.y == 0)
         {
@@ -38,8 +78,27 @@ public class TreeSchtuff : MonoBehaviour {
         }
     }
 
-    void OnCollisionExit2D(Collision2D collision)
+    void OnTriggerExit2D(Collider2D collision)
     {
         pressE.SetActive(false);
+    }
+
+    IEnumerator NgeruTeleports()
+    {
+        yield return new WaitForSeconds(1);
+
+        if (i == 3)
+        {
+            //LoadScene
+        } else
+        {
+            ngeru.transform.position = new Vector3(-9.95f, -1.22f, 0);
+            ngeru.GetComponent<Animator>().SetBool("Attack", false);
+            teleport = false;
+            ngeru.GetComponent<ControllerPlayerScript>().enabled = true;
+            ngeru.GetComponent<Animator>().SetLayerWeight(4, 0);
+            ngeru.GetComponent<Animator>().SetLayerWeight(0, 1);
+        }
+        
     }
 }

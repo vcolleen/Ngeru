@@ -37,7 +37,18 @@ public class EnemyMoveScript : MonoBehaviour {
     GameObject player;
     PlayerHealth playerHealth;
 
+    public GameObject missText;
+    public GameObject hitText;
+    public GameObject critText;
+    Animator text;
+
+    public AudioSource flowerAttack;
+
+    public GameObject otherGameObject;
+    Animator scratch;
+
     Animator anim;
+
 
 
 
@@ -60,10 +71,10 @@ public class EnemyMoveScript : MonoBehaviour {
         }
 
         anim = GetComponent<Animator>();
-
+        scratch = otherGameObject.GetComponent<Animator>();
     }
 
-    void Update() {
+    void FixedUpdate() {
 
         isTurn = turnClass.isTurn;
         if (enemyHP != null)
@@ -91,11 +102,22 @@ public class EnemyMoveScript : MonoBehaviour {
             anim.SetBool("Attack", false);
         }
 
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("MouseAttack"))
+        {
+            anim.SetBool("Attack", false);
+        }
+
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("MouseTakeDamage"))
+        {
+            anim.SetBool("TakeDamage", false);
+            scratch.SetBool("Scratch", false);
+        }
+
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("FlowerTakeDamage"))
         {
             anim.SetBool("TakeDamage", false);
+            scratch.SetBool("Scratch", false);
         }
-
     }
 
     IEnumerator WaitAndMove()
@@ -105,7 +127,6 @@ public class EnemyMoveScript : MonoBehaviour {
         isTurn = false;
         turnClass.isTurn = isTurn;
         turnClass.wasTurnPrev = true;
-        Debug.Log("Attacks Player");
         ResetEnemyHP();
         hasAttacked = false;
         StopCoroutine("WaitAndMove");
@@ -118,16 +139,22 @@ public class EnemyMoveScript : MonoBehaviour {
         if (hitChance >= enemyCrit & hasAttacked == false)
         {
             anim.SetBool("Attack", true);
+            flowerAttack.Play();
+            critText.SetActive(true);
             playerHealth.TakeDamage(critDamage);
             Debug.Log("Enemy Crits!!!");
             hasAttacked = true;
+            StartCoroutine(TextDelay());
         }
 
         if(hitChance <= enemyMissHit & hasAttacked == false)
         {
             EnemySkipTurn();
+            flowerAttack.Play();
+            missText.SetActive(true);
             Debug.Log("Enemy misses?!");
             hasAttacked = true;
+            StartCoroutine(TextDelay());
         }
 
         else
@@ -135,22 +162,21 @@ public class EnemyMoveScript : MonoBehaviour {
             if (hasAttacked == false)
             {
                 anim.SetBool("Attack", true);
+                flowerAttack.Play();
+                hitText.SetActive(true);
                 playerHealth.TakeDamage(attackDamage);
                 Debug.Log("Enemy hits.");
                 hasAttacked = true;
+                StartCoroutine(TextDelay());
             }
         }
 
-
-
-
-
-        //enemyHP.fillAmount = (currentEnemyHealth / 100);
     }
 
     public void TakeDamage (int amount)
     {
         anim.SetBool("TakeDamage", true);
+        scratch.SetBool("Scratch", true); 
         currentEnemyHealth -= amount;
         enemyHP.fillAmount = (currentEnemyHealth / 100);
 
@@ -175,6 +201,15 @@ public class EnemyMoveScript : MonoBehaviour {
         isTurn = false;
         turnClass.isTurn = isTurn;
         turnClass.wasTurnPrev = true;
+        
+    }
+
+    IEnumerator TextDelay()
+    {
+        yield return new WaitForSeconds(1);
+        missText.SetActive(false);
+        hitText.SetActive(false);
+        critText.SetActive(false);
     }
 
 }

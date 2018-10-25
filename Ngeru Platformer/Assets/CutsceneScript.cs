@@ -13,7 +13,7 @@ public class CutsceneScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//GetComponent<Renderer>().material.mainTexture = movTexture;
-    movTexture.Play();
+        movTexture.Play();
 	}
 
 	// Update is called once per frame

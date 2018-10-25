@@ -38,8 +38,9 @@ public class NPCDialogueScript : MonoBehaviour {
     {
         if (collision.GetComponent<Transform>().CompareTag("Player"))
         {
-            Prompt();
+            
             playerInCollider = true;
+            Prompt();
         }
 
     }
@@ -54,8 +55,8 @@ public class NPCDialogueScript : MonoBehaviour {
         if (useOverlay)
         {
             Instantiate(overlay, gameObject.GetComponent<Transform>().position, new Quaternion(0,0,0,0) ,gameObject.GetComponent<Transform>());
-            GetComponentInChildren<DialogueOverlayScript>().storedText = textFile1.text;
-            GetComponentInChildren<DialogueOverlayScript>().storedPortrait = portrait;
+            //GetComponentInChildren<DialogueOverlayScript>().storedText = textFile1.text;
+            //GetComponentInChildren<DialogueOverlayScript>().storedPortrait = portrait;
             if (isCombatNPC)
             {
                 ButtonStateSwap();
@@ -71,7 +72,11 @@ public class NPCDialogueScript : MonoBehaviour {
 
     public void Prompt ()
     {
-        Instantiate(promtPrefab, dialogueAnchor, false);
+        if (playerInCollider)
+        {
+            Instantiate(promtPrefab, dialogueAnchor, false);
+        }
+        
 
     }
 
