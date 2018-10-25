@@ -336,7 +336,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 68bc055bc480aa54ca6ec85d733c3a51, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -432,7 +432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movTexture: {fileID: 15200000, guid: 68bc055bc480aa54ca6ec85d733c3a51, type: 3}
-  sceneName: Cutscene02
+  sceneName: LoungeVer2
 --- !u!114 &1032860121
 MonoBehaviour:
   m_ObjectHideFlags: 0

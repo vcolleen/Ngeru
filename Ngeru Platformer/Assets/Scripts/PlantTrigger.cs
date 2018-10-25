@@ -31,7 +31,7 @@ public class PlantTrigger : MonoBehaviour
             if (Input.GetAxis("Trigger") == 1)
             {
 
-                //SceneManager.LoadScene("VS1");
+                SceneManager.LoadScene("VS1");
 
             }
         }

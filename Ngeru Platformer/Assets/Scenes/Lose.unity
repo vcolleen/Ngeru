@@ -494,7 +494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movTexture: {fileID: 15200000, guid: 50e73040b4096424187f3d63b7e979d4, type: 3}
-  sceneName: VS1
+  sceneName: SampleScene
 --- !u!114 &2016902542
 MonoBehaviour:
   m_ObjectHideFlags: 0

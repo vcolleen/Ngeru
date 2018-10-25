@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TreeSchtuff : MonoBehaviour {
 
@@ -14,6 +15,8 @@ public class TreeSchtuff : MonoBehaviour {
     public GameObject tVine1;
     public GameObject tVine2;
     public GameObject tVine3;
+
+    public AudioSource attackSound;
 
     // Use this for initialization
     void Start () {
@@ -28,12 +31,14 @@ public class TreeSchtuff : MonoBehaviour {
             {
                 ngeru.GetComponent<ControllerPlayerScript>().enabled = false;
                 teleport = true;
-                ngeru.GetComponent<Animator>().SetLayerWeight(4, 1);
+                ngeru.GetComponent<Animator>().SetLayerWeight(5, 1);
                 ngeru.GetComponent<Animator>().SetLayerWeight(0, 0);
                 ngeru.GetComponent<Animator>().SetLayerWeight(1, 0);
                 ngeru.GetComponent<Animator>().SetLayerWeight(2, 0);
                 ngeru.GetComponent<Animator>().SetLayerWeight(3, 0);
+                ngeru.GetComponent<Animator>().SetLayerWeight(4, 0);
                 ngeru.GetComponent<Animator>().SetBool("Attack", true);
+                attackSound.Play();
                 i++;
                 tVine1.SetActive(false);
                 StartCoroutine(NgeruTeleports());
@@ -42,12 +47,14 @@ public class TreeSchtuff : MonoBehaviour {
                 ngeru.GetComponent<ControllerPlayerScript>().enabled = false;
                 teleport = true;
                 bossTree.SetBool("Sad", true);
-                ngeru.GetComponent<Animator>().SetLayerWeight(4, 1);
+                ngeru.GetComponent<Animator>().SetLayerWeight(5, 1);
                 ngeru.GetComponent<Animator>().SetLayerWeight(0, 0);
                 ngeru.GetComponent<Animator>().SetLayerWeight(1, 0);
                 ngeru.GetComponent<Animator>().SetLayerWeight(2, 0);
                 ngeru.GetComponent<Animator>().SetLayerWeight(3, 0);
+                ngeru.GetComponent<Animator>().SetLayerWeight(4, 0);
                 ngeru.GetComponent<Animator>().SetBool("Attack", true);
+                attackSound.Play();
                 i++;
                 tVine2.SetActive(false);
                 StartCoroutine(NgeruTeleports());
@@ -56,12 +63,14 @@ public class TreeSchtuff : MonoBehaviour {
                 ngeru.GetComponent<ControllerPlayerScript>().enabled = false;
                 teleport = true;
                 bossTree.SetBool("Death", true);
-                ngeru.GetComponent<Animator>().SetLayerWeight(4, 1);
+                ngeru.GetComponent<Animator>().SetLayerWeight(5, 1);
                 ngeru.GetComponent<Animator>().SetLayerWeight(0, 0);
                 ngeru.GetComponent<Animator>().SetLayerWeight(1, 0);
                 ngeru.GetComponent<Animator>().SetLayerWeight(2, 0);
                 ngeru.GetComponent<Animator>().SetLayerWeight(3, 0);
+                ngeru.GetComponent<Animator>().SetLayerWeight(4, 0);
                 ngeru.GetComponent<Animator>().SetBool("Attack", true);
+                attackSound.Play();
                 i++;
                 tVine3.SetActive(false);
                 StartCoroutine(NgeruTeleports());
@@ -72,10 +81,7 @@ public class TreeSchtuff : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (ngeru.GetComponent<Rigidbody2D>().velocity.y == 0)
-        {
-            pressE.SetActive(true);
-        }
+        pressE.SetActive(true);
     }
 
     void OnTriggerExit2D(Collider2D collision)
@@ -89,14 +95,14 @@ public class TreeSchtuff : MonoBehaviour {
 
         if (i == 3)
         {
-            //LoadScene
+            SceneManager.LoadScene("Victory3");
         } else
         {
             ngeru.transform.position = new Vector3(-9.95f, -1.22f, 0);
             ngeru.GetComponent<Animator>().SetBool("Attack", false);
             teleport = false;
             ngeru.GetComponent<ControllerPlayerScript>().enabled = true;
-            ngeru.GetComponent<Animator>().SetLayerWeight(4, 0);
+            ngeru.GetComponent<Animator>().SetLayerWeight(5, 0);
             ngeru.GetComponent<Animator>().SetLayerWeight(0, 1);
         }
         

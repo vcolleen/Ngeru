@@ -44,6 +44,9 @@ public class PlayerHealth : MonoBehaviour {
 
     public AudioSource catAttack;
 
+    [SerializeField]
+    private string sceneName;
+
 
     void Start () {
 
@@ -187,6 +190,7 @@ public class PlayerHealth : MonoBehaviour {
     public void PlayerDead()
     {
         anim.SetBool("Death", true);
+        StartCoroutine(TransitionDelay());
     }
 
     IEnumerator TextDelay ()
@@ -195,6 +199,12 @@ public class PlayerHealth : MonoBehaviour {
         missText.SetActive(false);
         hitText.SetActive(false);
         critText.SetActive(false);
+    }
+
+    IEnumerator TransitionDelay()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(sceneName);
     }
 
 }

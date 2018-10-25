@@ -10,6 +10,8 @@ public class Knockback : MonoBehaviour {
     bool Frozen;
     float FreezeTime;
 
+    public AudioSource knockbackSound;
+
     // Use this for initialization
     void Start () {
 
@@ -42,6 +44,7 @@ public class Knockback : MonoBehaviour {
     public void OnCollisionEnter2D(Collision2D col)
     {
         //ngeru.GetComponent<Animation>().Play("Knockback");
+        knockbackSound.Play();
         ngeru.GetComponent<Animator>().SetLayerWeight(3, 1);
         ngeru.GetComponent<Animator>().SetLayerWeight(0, 0);
         ngeru.GetComponent<Animator>().SetLayerWeight(1, 0);
