@@ -1446,10 +1446,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playersGroup:
-  - playerGameObject: {fileID: 1950104330}
+  - playerGameObject: {fileID: 900318506}
     isTurn: 0
     wasTurnPrev: 0
-  - playerGameObject: {fileID: 900318506}
+  - playerGameObject: {fileID: 1950104330}
     isTurn: 0
     wasTurnPrev: 0
 --- !u!4 &827620107

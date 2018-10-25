@@ -91,17 +91,6 @@ public class EnemyMoveScript : MonoBehaviour {
             anim.SetBool("Attack", false);
         }
 
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("MouseAttack"))
-        {
-            anim.SetBool("Attack", false);
-        }
-
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("MouseTakeDamage"))
-        {
-            anim.SetBool("TakeDamage", false);
-            scratch.SetBool("Scratch", false);
-        }
-
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("FlowerTakeDamage"))
         {
             anim.SetBool("TakeDamage", false);

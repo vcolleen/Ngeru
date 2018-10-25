@@ -13,7 +13,7 @@ public class ObjectTrigger : MonoBehaviour {
     public GameObject cat;
     Animator ngeru;
 
-    public AudioSource kapowSound;
+
 
     //public GameObject a, b, c, d, e, f, g;
     public bool gotItems;
@@ -33,7 +33,6 @@ public class ObjectTrigger : MonoBehaviour {
             anim.SetBool("inside", true);
             if (Input.GetAxis("Trigger") == 1)
             {
-                kapowSound.Play();
                 if (combat)
                 {
                     //Start Combat Here

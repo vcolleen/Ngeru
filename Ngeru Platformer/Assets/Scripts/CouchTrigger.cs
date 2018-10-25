@@ -13,7 +13,7 @@ public class CouchTrigger : MonoBehaviour {
     public GameObject cat;
     Animator ngeru;
 
-    public AudioSource kapowSound;
+
 
     //public GameObject a, b, c, d, e, f, g;
     public bool gotItems;
@@ -33,7 +33,6 @@ public class CouchTrigger : MonoBehaviour {
             anim.SetBool("inside", true);
             if (Input.GetAxis("Trigger") == 1)
             {
-                StartCoroutine(HealSound());
                 if (combat)
                 {
                     //Start Combat Here
@@ -87,9 +86,5 @@ public class CouchTrigger : MonoBehaviour {
         }
     }
 
-    IEnumerator HealSound ()
-    {
-        yield return new WaitForSeconds(0.5f);
-        kapowSound.Play();
-    }
+
 }
