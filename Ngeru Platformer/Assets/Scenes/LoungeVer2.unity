@@ -1195,16 +1195,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inside: 0
-  item: {fileID: 589915201}
   tick: {fileID: 15791022}
   m_Rigidbody: {fileID: 0}
-  a: {fileID: 0}
-  b: {fileID: 0}
-  c: {fileID: 0}
-  d: {fileID: 0}
-  e: {fileID: 0}
-  f: {fileID: 0}
-  g: {fileID: 0}
+  cat: {fileID: 1197536649}
   gotItems: 0
   combat: 0
 --- !u!61 &589915205
@@ -1880,16 +1873,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inside: 0
-  item: {fileID: 722098779}
   tick: {fileID: 903652271}
   m_Rigidbody: {fileID: 0}
-  a: {fileID: 15791022}
-  b: {fileID: 1356981190}
-  c: {fileID: 618222922}
-  d: {fileID: 1603075855}
-  e: {fileID: 903652271}
-  f: {fileID: 167749241}
-  g: {fileID: 1695799227}
+  cat: {fileID: 1197536649}
   gotItems: 0
   combat: 0
 --- !u!95 &722098781
@@ -2567,16 +2553,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inside: 0
-  item: {fileID: 902164150}
   tick: {fileID: 1356981190}
   m_Rigidbody: {fileID: 0}
-  a: {fileID: 0}
-  b: {fileID: 0}
-  c: {fileID: 0}
-  d: {fileID: 0}
-  e: {fileID: 0}
-  f: {fileID: 0}
-  g: {fileID: 0}
+  cat: {fileID: 1197536649}
   gotItems: 0
   combat: 0
 --- !u!95 &902164153
@@ -3070,6 +3049,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1123025583}
+--- !u!1 &1197536649 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1170125960373032, guid: 180c5774d9bd87046a0267817fc2603c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1015769615}
 --- !u!1 &1211133586
 GameObject:
   m_ObjectHideFlags: 0
@@ -3205,16 +3189,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inside: 0
-  item: {fileID: 1212558836}
   tick: {fileID: 167749241}
   m_Rigidbody: {fileID: 0}
-  a: {fileID: 0}
-  b: {fileID: 0}
-  c: {fileID: 0}
-  d: {fileID: 0}
-  e: {fileID: 0}
-  f: {fileID: 0}
-  g: {fileID: 0}
+  cat: {fileID: 0}
   gotItems: 0
   combat: 1
 --- !u!61 &1212558840
@@ -3931,12 +3908,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1381058581}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.03, y: 0.036, z: 0}
+  m_LocalPosition: {x: -0.03, y: -0.001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1777128600}
+  m_Children: []
   m_Father: {fileID: 2101328921}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1402549840
 RectTransform:
@@ -5011,7 +4987,7 @@ Transform:
   m_Children:
   - {fileID: 1212558837}
   m_Father: {fileID: 2101328921}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1759926106
 MonoBehaviour:
@@ -5025,16 +5001,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inside: 0
-  item: {fileID: 0}
   tick: {fileID: 0}
   m_Rigidbody: {fileID: 0}
-  a: {fileID: 0}
-  b: {fileID: 0}
-  c: {fileID: 0}
-  d: {fileID: 0}
-  e: {fileID: 0}
-  f: {fileID: 0}
-  g: {fileID: 0}
+  cat: {fileID: 0}
   gotItems: 0
   combat: 0
 --- !u!1 &1765781377
@@ -5170,12 +5139,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1777128599}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.266, y: 0.818, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.236, y: 0.81700003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1381058583}
-  m_RootOrder: 0
+  m_Father: {fileID: 2101328921}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1777128601
 MonoBehaviour:
@@ -5189,16 +5158,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inside: 0
-  item: {fileID: 1777128599}
   tick: {fileID: 1695799227}
   m_Rigidbody: {fileID: 0}
-  a: {fileID: 0}
-  b: {fileID: 0}
-  c: {fileID: 0}
-  d: {fileID: 0}
-  e: {fileID: 0}
-  f: {fileID: 0}
-  g: {fileID: 0}
+  cat: {fileID: 1197536649}
   gotItems: 0
   combat: 0
 --- !u!95 &1777128602
@@ -5426,16 +5388,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inside: 0
-  item: {fileID: 1806313953}
   tick: {fileID: 1603075855}
   m_Rigidbody: {fileID: 0}
-  a: {fileID: 0}
-  b: {fileID: 0}
-  c: {fileID: 0}
-  d: {fileID: 0}
-  e: {fileID: 0}
-  f: {fileID: 0}
-  g: {fileID: 0}
+  cat: {fileID: 1197536649}
   gotItems: 0
   combat: 0
 --- !u!61 &1806313957
@@ -5877,7 +5832,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2101328921}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1937458349
 GameObject:
@@ -6337,16 +6292,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inside: 0
-  item: {fileID: 2083106524}
   tick: {fileID: 618222922}
   m_Rigidbody: {fileID: 0}
-  a: {fileID: 0}
-  b: {fileID: 0}
-  c: {fileID: 0}
-  d: {fileID: 0}
-  e: {fileID: 0}
-  f: {fileID: 0}
-  g: {fileID: 0}
+  cat: {fileID: 1197536649}
   gotItems: 0
   combat: 0
 --- !u!61 &2083106528
@@ -6520,6 +6468,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1211133589}
+  - {fileID: 1777128600}
   - {fileID: 1381058583}
   - {fileID: 1907588360}
   - {fileID: 1759926105}
