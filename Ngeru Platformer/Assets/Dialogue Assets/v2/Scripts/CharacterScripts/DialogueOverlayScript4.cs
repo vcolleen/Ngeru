@@ -69,6 +69,7 @@ public class DialogueOverlayScript4 : MonoBehaviour {
 
     public Button yes;
     public Button no;
+    public GameObject music;
     //References
 
 	void Start () {
@@ -173,7 +174,8 @@ public class DialogueOverlayScript4 : MonoBehaviour {
 
     public void PlayMusic()
     {
-        //Play Music here <<<-----------------------------------------------------------
+        music = GameObject.Find("LucasMusic");
+        music.GetComponent<AudioSource>().Play();
     }
     public void TakeItem()
     {
