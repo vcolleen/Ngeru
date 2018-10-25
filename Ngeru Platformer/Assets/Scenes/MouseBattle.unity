@@ -2378,7 +2378,6 @@ GameObject:
   m_Component:
   - component: {fileID: 900318510}
   - component: {fileID: 900318511}
-  - component: {fileID: 900318512}
   - component: {fileID: 900318508}
   - component: {fileID: 900318507}
   m_Layer: 0
@@ -2397,7 +2396,7 @@ Animator:
   m_GameObject: {fileID: 900318506}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 08a74d6e29858ac408ea8435a8b0ecac, type: 2}
+  m_Controller: {fileID: 9100000, guid: a601119e0a65e3248a2c697e89f20194, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2441,9 +2440,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 372e79a3939391c48abd5eb4e6d20020, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1dba3216991aca049b0b397e916001d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.55, y: 0.63}
@@ -2483,48 +2482,21 @@ MonoBehaviour:
     isTurn: 0
     wasTurnPrev: 0
   isTurn: 0
-  attackDamage: 10
+  attackDamage: 20
   enemyHP: {fileID: 1789104706}
   startingEnemyHealth: 100
   enemyPercentage: 0
   currentEnemyHealth: 0
-  enemyCrit: 95
+  enemyCrit: 80
   hitChance: 0
-  critDamage: 20
-  enemyMissHit: 70
+  critDamage: 30
+  enemyMissHit: 50
   hasAttacked: 0
   missText: {fileID: 17489658}
   hitText: {fileID: 2140091066}
   critText: {fileID: 2140640185}
   flowerAttack: {fileID: 527407511}
   otherGameObject: {fileID: 1787541850}
---- !u!114 &900318512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 900318506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: add2c58168b823f49afebb4bd121a083, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useOverlay: 1
-  isCombatNPC: 1
-  playerInCollider: 0
-  dialogueManager: {fileID: 0}
-  promtPrefab: {fileID: 1014819942400142, guid: 2129acf889fe59642b2719a885b02493,
-    type: 2}
-  overlay: {fileID: 1780965799774064, guid: 3e188914f6f7442468074a97bcb50e96, type: 2}
-  bubble: {fileID: 1115552781467944, guid: 6fc71abe13348144ab8ffacf13c2e975, type: 2}
-  dialogueAnchor: {fileID: 1149305657}
-  button: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 09c44db87a383354fb1f41486e82fee9, type: 3}
-  textFile1: {fileID: 4900000, guid: 2453ce2710774e640b738f6ed9a3570d, type: 3}
-  textFile2: {fileID: 4900000, guid: f7179f0c061dd6b47b0059563c14a680, type: 3}
-  textFile3: {fileID: 0}
-  textFile4: {fileID: 0}
-  textFile5: {fileID: 0}
 --- !u!1 &1014016690
 GameObject:
   m_ObjectHideFlags: 0
@@ -2879,7 +2851,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 10942a0ebffd0bf489689ed4c0d2ba45, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0fd86b3167b4b30439e03af7ed105b3c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
