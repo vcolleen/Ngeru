@@ -12,7 +12,7 @@ public class BlinkingPlatformManager : MonoBehaviour
 
     int toggleTime;
 
-    [SerializeField]
+    
     float cycleTime = 2f;
 
     // Use this for initialization
@@ -44,7 +44,7 @@ public class BlinkingPlatformManager : MonoBehaviour
             platform.SetActive(true);
             yield return new WaitForSeconds(cycleTime);
             platform.SetActive(false);
-            yield return new WaitForSeconds(toggleTime * cycleTime);
+            yield return new WaitForSeconds(6);
         }
     }
 
