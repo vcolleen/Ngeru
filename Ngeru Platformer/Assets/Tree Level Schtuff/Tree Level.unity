@@ -1098,7 +1098,7 @@ MonoBehaviour:
   YMinEnabled: 1
   YMinValue: -0.03
   XMinEnabled: 1
-  XMinValue: -5.913
+  XMinValue: -8.517638
 --- !u!1 &1292441430
 GameObject:
   m_ObjectHideFlags: 0
