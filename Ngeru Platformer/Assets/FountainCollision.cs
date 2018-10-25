@@ -11,6 +11,8 @@ public class FountainCollision : MonoBehaviour {
 	public float delayTime;
 	bool fountainOn;
 
+    public AudioSource fountainSound;
+
 	// Use this for initialization
 	void Start () {
 		//StartCoroutine(WaterStuff());
@@ -21,13 +23,15 @@ public class FountainCollision : MonoBehaviour {
 		if (fountainOn == false && onFountain == false && (Time.time >= (timerStartTime + delayTime))){
 			gameObject.GetComponent<BoxCollider2D>().enabled = true;
 			fountainOn = true;
-			anim.SetBool("WaterOff", false);
+            fountainSound.Play();
+            anim.SetBool("WaterOff", false);
 			anim.SetBool("WaterOn", true);
 			timerStartTime = Time.time;
 		}
 
 		if (fountainOn == true && (Time.time >= (timerStartTime + delayTime))){
-			gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            fountainSound.Stop();
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
 			fountainOn = false;
 			anim.SetBool("WaterOff", true);
 			anim.SetBool("WaterOn", false);

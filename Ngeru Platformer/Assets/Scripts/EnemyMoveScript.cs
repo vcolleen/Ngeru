@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EnemyMoveScript : MonoBehaviour {
 
@@ -49,7 +50,8 @@ public class EnemyMoveScript : MonoBehaviour {
 
     Animator anim;
 
-
+    [SerializeField]
+    private string sceneName;
 
 
     void Start()
@@ -189,6 +191,7 @@ public class EnemyMoveScript : MonoBehaviour {
     void Death()
     {
         anim.SetBool("Death", true);
+        StartCoroutine(TransitionDelay());
     }
 
     public void ResetEnemyHP()
@@ -210,6 +213,12 @@ public class EnemyMoveScript : MonoBehaviour {
         missText.SetActive(false);
         hitText.SetActive(false);
         critText.SetActive(false);
+    }
+
+    IEnumerator TransitionDelay ()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(sceneName);
     }
 
 }

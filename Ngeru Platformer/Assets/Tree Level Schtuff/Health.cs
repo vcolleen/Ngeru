@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour {
 
@@ -23,7 +24,7 @@ public class Health : MonoBehaviour {
 		if (health == 0)
         {
             hp1.SetActive(false);
-            transform.position = new Vector3(-9.95f, -1.22f, 0);
+            StartCoroutine(TransitionDelay());
         } else if (health == 4)
         {
             hp5.SetActive(false);
@@ -48,5 +49,11 @@ public class Health : MonoBehaviour {
         {
             health--;
         }
+    }
+
+    IEnumerator TransitionDelay ()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("Lose3");
     }
 }

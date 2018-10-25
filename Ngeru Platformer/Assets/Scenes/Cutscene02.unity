@@ -319,7 +319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movTexture: {fileID: 15200000, guid: 86faa60946cece84aa7dd17e2190e159, type: 3}
-  sceneName: Cutscene03
+  sceneName: Kitchen
 --- !u!114 &1128139529
 MonoBehaviour:
   m_ObjectHideFlags: 0

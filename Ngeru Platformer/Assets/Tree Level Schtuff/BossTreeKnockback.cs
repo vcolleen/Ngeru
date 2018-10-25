@@ -12,6 +12,8 @@ public class BossTreeKnockback : MonoBehaviour
     bool Frozen;
     float FreezeTime;
 
+    public AudioSource knockbackSound;
+
     // Use this for initialization
     void Start()
     {
@@ -49,6 +51,7 @@ public class BossTreeKnockback : MonoBehaviour
     {
         //ngeru.GetComponent<Animation>().Play("Knockback");
         ngeru.GetComponent<Health>().TakeDamage();
+        knockbackSound.Play();
         ngeru.GetComponent<Animator>().SetLayerWeight(3, 1);
         ngeru.GetComponent<Animator>().SetLayerWeight(0, 0);
         ngeru.GetComponent<Animator>().SetLayerWeight(1, 0);
