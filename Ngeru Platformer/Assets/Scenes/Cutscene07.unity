@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movTexture: {fileID: 15200000, guid: 9047d933e0aa9874aa6b156f025e89a4, type: 3}
-  sceneName: Cutscene08
+  sceneName: Wall
 --- !u!114 &396127141
 MonoBehaviour:
   m_ObjectHideFlags: 0
