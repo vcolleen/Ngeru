@@ -37,8 +37,11 @@ public class EnemyMoveScript : MonoBehaviour {
     GameObject player;
     PlayerHealth playerHealth;
 
+    public GameObject otherGameObject;
+    Animator scratch;
+
     Animator anim;
-    Animation scratch;
+
 
 
 
@@ -61,8 +64,7 @@ public class EnemyMoveScript : MonoBehaviour {
         }
 
         anim = GetComponent<Animator>();
-        scratch = GetComponent<Animation>();
-
+        scratch = otherGameObject.GetComponent<Animator>();
     }
 
     void FixedUpdate() {
@@ -96,13 +98,8 @@ public class EnemyMoveScript : MonoBehaviour {
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("FlowerTakeDamage"))
         {
             anim.SetBool("TakeDamage", false);
+            scratch.SetBool("Scratch", false);
         }
-
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("ScratchMark"))
-        {
-            anim.SetBool("TakeDamage", false);
-        }
-
     }
 
     IEnumerator WaitAndMove()
@@ -141,7 +138,6 @@ public class EnemyMoveScript : MonoBehaviour {
             if (hasAttacked == false)
             {
                 anim.SetBool("Attack", true);
-                scratch.Play("scratch");
                 playerHealth.TakeDamage(attackDamage);
                 Debug.Log("Enemy hits.");
                 hasAttacked = true;
@@ -153,6 +149,7 @@ public class EnemyMoveScript : MonoBehaviour {
     public void TakeDamage (int amount)
     {
         anim.SetBool("TakeDamage", true);
+        scratch.SetBool("Scratch", true); 
         currentEnemyHealth -= amount;
         enemyHP.fillAmount = (currentEnemyHealth / 100);
 
