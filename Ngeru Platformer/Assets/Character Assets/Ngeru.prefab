@@ -123,7 +123,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1170125960373032}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.7227397, y: -3.0478399, z: 0}
+  m_LocalPosition: {x: -6.499957, y: -2.9229228, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4155189831227340}
@@ -186,7 +186,7 @@ Animator:
   m_GameObject: {fileID: 1170125960373032}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6048ee78541081244adf75ee930fa990, type: 2}
+  m_Controller: {fileID: 9100000, guid: e33fea5d7cd3f1744afbfae9a362be36, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -229,8 +229,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   timeBetweenJumps: 1
+  isWalkingRight: 0
+  isWalkingLeft: 0
   timeBeforeLayDown: 10
   timeBeforeSitDown: 5
+  isHiding: 0
 --- !u!212 &212428897568747316
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -263,8 +266,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 308915501
-  m_SortingLayer: 2
+  m_SortingLayerID: 1720491189
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5580039c8a67ebd40b64147796e88b48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

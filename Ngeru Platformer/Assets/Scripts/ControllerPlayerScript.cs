@@ -30,6 +30,7 @@ public class ControllerPlayerScript : MonoBehaviour
     private bool CanTurnLeft;
     private bool CanTurnRight;
     private bool landing;
+    
 
     //laying down timing
     bool isWaitingForIdle;
@@ -51,6 +52,8 @@ public class ControllerPlayerScript : MonoBehaviour
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
+
+       
 
         anim = GetComponent<Animator>();
         anim.SetBool("isWalkingRight", true);
@@ -97,7 +100,7 @@ public class ControllerPlayerScript : MonoBehaviour
           anim.SetBool("isWalkingLeft", false);
           anim.SetBool("isWalkingRight", false);
           movementSpeed = 2f;
-          jumpForce = 200;
+          jumpForce = 230;
       }
 
       if (isRunning == false)
@@ -360,5 +363,5 @@ public class ControllerPlayerScript : MonoBehaviour
         }
     }
 
-
+    
 }
