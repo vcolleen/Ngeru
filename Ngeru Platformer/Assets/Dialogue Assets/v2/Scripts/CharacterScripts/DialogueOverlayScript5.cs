@@ -141,8 +141,9 @@ public class DialogueOverlayScript5 : MonoBehaviour {
     {
         //Destroy(gameObject);
 
-        //Play anim
+        sphynxRef.GetComponent<Animator>().SetTrigger("Fade");
         colliderRef.enabled = false;
+        Destroy(gameObject);
     }
 
     public void Purple()
@@ -150,7 +151,7 @@ public class DialogueOverlayScript5 : MonoBehaviour {
         currentImage = 24;
         portrait.sprite = imageList[currentImage];
         Buttons();
-        
+        sphynxRef.GetComponent<Animator>().SetTrigger("Correct");
     }
 
     public void Pink()
@@ -158,18 +159,21 @@ public class DialogueOverlayScript5 : MonoBehaviour {
         currentImage = 21;
         portrait.sprite = imageList[currentImage];
         Buttons();
+        //sphynxRef.GetComponent<Animator>().SetTrigger("Wrong");
     }
     public void Blue()
     {
         currentImage = 19;
         portrait.sprite = imageList[currentImage];
         Buttons();
+        //sphynxRef.GetComponent<Animator>().SetTrigger("Wrong");
     }
     public void Black()
     {
         currentImage = 17;
         portrait.sprite = imageList[currentImage];
         Buttons();
+        //sphynxRef.GetComponent<Animator>().SetTrigger("Wrong");
     }
 
     void Buttons()
@@ -218,6 +222,7 @@ public class DialogueOverlayScript5 : MonoBehaviour {
             currentImage = 16;
             portrait.sprite = imageList[currentImage];
             Buttons();
+            sphynxRef.GetComponent<Animator>().SetTrigger("Back");
         }
 
         //picked blue
@@ -232,6 +237,7 @@ public class DialogueOverlayScript5 : MonoBehaviour {
             currentImage = 16;
             portrait.sprite = imageList[currentImage];
             Buttons();
+            sphynxRef.GetComponent<Animator>().SetTrigger("Back");
         }
 
         //picked pink
@@ -252,6 +258,7 @@ public class DialogueOverlayScript5 : MonoBehaviour {
             currentImage = 16;
             portrait.sprite = imageList[currentImage];
             Buttons();
+            sphynxRef.GetComponent<Animator>().SetTrigger("Back");
         }
 
         //picked pruple

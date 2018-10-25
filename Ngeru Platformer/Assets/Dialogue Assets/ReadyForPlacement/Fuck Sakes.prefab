@@ -441,7 +441,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114915720184905644}
-        m_MethodName: Pink
+        m_MethodName: Purple
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
