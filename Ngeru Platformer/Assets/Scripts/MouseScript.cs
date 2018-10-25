@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EnemyMoveScript : MonoBehaviour {
+public class MouseScript : MonoBehaviour {
 
     public TurnSystemScript turnSystem;
     public TurnSystemScript.TurnClass turnClass;
@@ -92,25 +92,9 @@ public class EnemyMoveScript : MonoBehaviour {
             Death();
         }
 
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("FlowerDeath"))
-        {
-            anim.SetBool("Death", false);
-        }
-
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("FlowerAttack"))
-        {
-            anim.SetBool("Attack", false);
-        }
-
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("MouseAttack"))
         {
             anim.SetBool("Attack", false);
-        }
-
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("MouseTakeDamage"))
-        {
-            anim.SetBool("TakeDamage", false);
-            scratch.SetBool("Scratch", false);
         }
 
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("FlowerTakeDamage"))
