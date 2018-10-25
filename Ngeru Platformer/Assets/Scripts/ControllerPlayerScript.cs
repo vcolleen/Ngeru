@@ -41,7 +41,6 @@ public class ControllerPlayerScript : MonoBehaviour
     float startSitting = 10f;
     bool isSitting = false;
 
-
     //calling the animator
     Animator anim;
 
