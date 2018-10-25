@@ -34,6 +34,8 @@ public class AttackMinigame : MonoBehaviour
     private float maxCritPercent;
 
 
+
+
     public PlayerHealth attackAccess;
 
     void Start()
@@ -89,10 +91,16 @@ public class AttackMinigame : MonoBehaviour
 
         if (Input.anyKey && isTime == true)
         {
+
             CalculateHit();
             isTime = false;
+            
+            
+
 
         }
+
+        //ColourRecoder();
 
     }
 
@@ -135,6 +143,29 @@ public class AttackMinigame : MonoBehaviour
         }
     }
 
+
+    /*
+    void ColourRecoder()
+    {
+        if (AttackPercent > minHitPercent & AttackPercent < maxHitPercent)
+        {
+            AttackMeter.color = Color.green;
+
+        }
+
+        if (AttackPercent > minCritPercent & AttackPercent < maxCritPercent)
+        {
+            AttackMeter.color = Color.blue;
+
+        }
+
+        if (AttackPercent < minHitPercent || AttackPercent > maxHitPercent)
+        {
+            AttackMeter.color = Color.yellow;
+
+        }
+    }
+    */
 
 }
 

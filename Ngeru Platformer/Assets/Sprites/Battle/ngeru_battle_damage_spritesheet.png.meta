@@ -7,7 +7,6 @@ TextureImporter:
     21300004: ngeru_battle_damage_spritesheet_2
     21300006: ngeru_battle_damage_spritesheet_3
     21300008: ngeru_battle_damage_spritesheet_4
-    21300010: ngeru_battle_damage_spritesheet_5
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -93,8 +92,8 @@ TextureImporter:
         serializedVersion: 2
         x: 15
         y: 91
-        width: 70
-        height: 63
+        width: 68
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,7 +112,7 @@ TextureImporter:
         serializedVersion: 2
         x: 141
         y: 91
-        width: 70
+        width: 61
         height: 63
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -133,7 +132,7 @@ TextureImporter:
         serializedVersion: 2
         x: 266
         y: 91
-        width: 70
+        width: 59
         height: 63
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -154,7 +153,7 @@ TextureImporter:
         x: 387
         y: 91
         width: 70
-        height: 63
+        height: 53
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,8 +172,8 @@ TextureImporter:
         serializedVersion: 2
         x: 15
         y: 3
-        width: 70
-        height: 63
+        width: 68
+        height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,26 +182,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 247ca60c3a133ff4b867ba3f3aab34e7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ngeru_battle_damage_spritesheet_5
-      rect:
-        serializedVersion: 2
-        x: 114
-        y: 13
-        width: 70
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a56ab9a683403f4d9f0d6a9dc0c7480
       vertices: []
       indices: 
       edges: []

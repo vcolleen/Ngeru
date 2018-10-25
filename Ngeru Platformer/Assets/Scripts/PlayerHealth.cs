@@ -35,15 +35,6 @@ public class PlayerHealth : MonoBehaviour {
     public bool scratch;
     public bool bite;
 
-    public float wait = 1;
-    public float waiter = 0.5f;
-
-    public GameObject missText;
-    public GameObject hitText;
-    public GameObject critText;
-
-    public AudioSource catAttack;
-
 
     void Start () {
 
@@ -85,27 +76,20 @@ public class PlayerHealth : MonoBehaviour {
         turnClass.isTurn = isTurn;
         turnClass.wasTurnPrev = true;
     }
-
-    IEnumerator Timer()
-    {
-        yield return new WaitForSeconds(1);
-        buttonArea.SetActive(true);
-        inventory.SetActive(true);
-    }
     
 
 	
     void Update () {
 
         isTurn = turnClass.isTurn;
-        if (isTurn == true)
+        if(isTurn)
         {
-            StartCoroutine(Timer());
+            buttonArea.SetActive(true);
+            inventory.SetActive(true);
         }
 
-        if (isTurn == false) 
+        else
         {
-            StopCoroutine(Timer());
             buttonArea.SetActive(false);
             inventory.SetActive(false);
         }
@@ -135,11 +119,6 @@ public class PlayerHealth : MonoBehaviour {
             anim.SetBool("Ouch", false);
         }
 
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Death"))
-        {
-            anim.SetBool("Death", false);
-        }
-
 
 
     }
@@ -147,29 +126,20 @@ public class PlayerHealth : MonoBehaviour {
     public void SkipTurn()
     {
         isTurn = false;
-        catAttack.Play();
         turnClass.isTurn = isTurn;
         turnClass.wasTurnPrev = true;
-        missText.SetActive(true);
-        StartCoroutine(TextDelay());
     }
 
     void Attack()
     {
-        anim.SetBool("Scratch", true);
-        catAttack.Play();
+        anim.SetBool("Scratch", true); 
         enemyScript.TakeDamage(attackDamage);
-        hitText.SetActive(true);
-        StartCoroutine(TextDelay());
     }
 
     void AttackHeavy()
     {
         anim.SetBool("Bite", true);
-        catAttack.Play();
         enemyScript.TakeDamage(critDamage);
-        critText.SetActive(true);
-        StartCoroutine(TextDelay());
     }
 
     public void TakeDamage (int amount) {
@@ -186,15 +156,12 @@ public class PlayerHealth : MonoBehaviour {
 
     public void PlayerDead()
     {
-        anim.SetBool("Death", true);
-    }
+        buttonArea.SetActive(false);
+        if (Input.anyKey)
+        {
+            SceneManager.LoadScene(2);
+        }
 
-    IEnumerator TextDelay ()
-    {
-        yield return new WaitForSeconds(1);
-        missText.SetActive(false);
-        hitText.SetActive(false);
-        critText.SetActive(false);
     }
 
 }

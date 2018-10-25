@@ -702,68 +702,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rgbd: {fileID: 921565378}
   ngeru: {fileID: 921565375}
---- !u!1 &1144859594
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1144859597}
-  - component: {fileID: 1144859596}
-  - component: {fileID: 1144859595}
-  m_Layer: 12
-  m_Name: Left Wall
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &1144859595
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1144859594}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!33 &1144859596
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1144859594}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1144859597
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1144859594}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.548, y: -2.21, z: -2.38}
-  m_LocalScale: {x: 1, y: 5, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1193080131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1024,8 +962,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bee130f5ac6fab418f72174e5787378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rgbd: {fileID: 921565378}
-  ngeru: {fileID: 921565375}
+  rgbd: {fileID: 0}
+  ngeru: {fileID: 0}
 --- !u!1 &1313470672
 GameObject:
   m_ObjectHideFlags: 0
@@ -1255,11 +1193,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4768873263223140, guid: 180c5774d9bd87046a0267817fc2603c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -9.95
+      value: -5.7227397
       objectReference: {fileID: 0}
     - target: {fileID: 4768873263223140, guid: 180c5774d9bd87046a0267817fc2603c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.74
+      value: -3.0478399
       objectReference: {fileID: 0}
     - target: {fileID: 4768873263223140, guid: 180c5774d9bd87046a0267817fc2603c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1410,8 +1348,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bee130f5ac6fab418f72174e5787378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rgbd: {fileID: 921565378}
-  ngeru: {fileID: 921565375}
+  rgbd: {fileID: 0}
+  ngeru: {fileID: 0}
 --- !u!1 &2006594901
 GameObject:
   m_ObjectHideFlags: 0
@@ -1592,7 +1530,7 @@ MonoBehaviour:
   YMaxEnabled: 0
   YMaxValue: 0
   XMaxEnabled: 1
-  XMaxValue: 1.05
+  XMaxValue: 1.14
   YMinEnabled: 1
   YMinValue: -2.82
   XMinEnabled: 1
