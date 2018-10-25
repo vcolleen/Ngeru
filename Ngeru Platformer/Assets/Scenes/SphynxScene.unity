@@ -411,6 +411,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114610165090523314, guid: 065e39fb3c31a3c4bb91801910737c47,
+        type: 2}
+      propertyPath: overlay
+      value: 
+      objectReference: {fileID: 1711242975537968, guid: 258f3322a3655934bbcefb7e4e73f65a,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 065e39fb3c31a3c4bb91801910737c47, type: 2}
   m_IsPrefabParent: 0
@@ -576,6 +582,11 @@ Prefab:
     - target: {fileID: 1711242975537968, guid: 258f3322a3655934bbcefb7e4e73f65a, type: 2}
       propertyPath: m_Name
       value: SphynxAHHHH
+      objectReference: {fileID: 0}
+    - target: {fileID: 114624515101051816, guid: 258f3322a3655934bbcefb7e4e73f65a,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Purple
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 258f3322a3655934bbcefb7e4e73f65a, type: 2}

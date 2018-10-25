@@ -62,6 +62,9 @@ public class DialogueOverlayScript5 : MonoBehaviour {
     public GameObject purple;
     public GameObject blue;
     public GameObject black;
+
+    public BoxCollider2D colliderRef;
+    public GameObject sphynxRef;
     //References
 
 	void Start () {
@@ -74,6 +77,9 @@ public class DialogueOverlayScript5 : MonoBehaviour {
         black.SetActive(false);
 
         currentImage = 0;
+        sphynxRef = GameObject.Find("Sphynx");
+        colliderRef = sphynxRef.GetComponent<BoxCollider2D>();
+        colliderRef.enabled = true;
 
         imageList.Add(image0);
 
@@ -133,12 +139,15 @@ public class DialogueOverlayScript5 : MonoBehaviour {
 
     public void DestroySelf()
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
+
+        //Play anim
+        colliderRef.enabled = false;
     }
 
     public void Purple()
     {
-        currentImage = 32;
+        currentImage = 24;
         portrait.sprite = imageList[currentImage];
         Buttons();
         
@@ -146,19 +155,19 @@ public class DialogueOverlayScript5 : MonoBehaviour {
 
     public void Pink()
     {
-        currentImage = 32;
+        currentImage = 21;
         portrait.sprite = imageList[currentImage];
         Buttons();
     }
     public void Blue()
     {
-        currentImage = 32;
+        currentImage = 19;
         portrait.sprite = imageList[currentImage];
         Buttons();
     }
     public void Black()
     {
-        currentImage = 32;
+        currentImage = 17;
         portrait.sprite = imageList[currentImage];
         Buttons();
     }
@@ -200,7 +209,7 @@ public class DialogueOverlayScript5 : MonoBehaviour {
         //picked black
         else if (currentImage == 17)
         {
-            currentImage = 19;
+            currentImage += 1;
             portrait.sprite = imageList[currentImage];
         }
 
@@ -254,7 +263,7 @@ public class DialogueOverlayScript5 : MonoBehaviour {
 
         else if (currentImage == 42)
         {
-            //fade
+            DestroySelf();
         }
 
 

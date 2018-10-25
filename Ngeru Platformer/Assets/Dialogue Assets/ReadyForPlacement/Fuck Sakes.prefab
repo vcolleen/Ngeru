@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 4912337742743982}
   - component: {fileID: 114915720184905644}
   m_Layer: 0
-  m_Name: LionDialogue 1
+  m_Name: Fuck Sakes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -261,12 +261,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1711242975537968}
-        m_MethodName: 
+      - m_Target: {fileID: 114915720184905644}
+        m_MethodName: Pink
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -388,12 +388,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1711242975537968}
-        m_MethodName: 
+      - m_Target: {fileID: 114915720184905644}
+        m_MethodName: Blue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -440,12 +440,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1711242975537968}
-        m_MethodName: 
+      - m_Target: {fileID: 114915720184905644}
+        m_MethodName: Pink
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -492,12 +492,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1711242975537968}
-        m_MethodName: 
+      - m_Target: {fileID: 114915720184905644}
+        m_MethodName: Black
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -626,6 +626,8 @@ MonoBehaviour:
   purple: {fileID: 1333673988354884}
   blue: {fileID: 1321329530345522}
   black: {fileID: 1960437519907206}
+  colliderRef: {fileID: 0}
+  sphynxRef: {fileID: 0}
 --- !u!114 &114922473745617340
 MonoBehaviour:
   m_ObjectHideFlags: 1
