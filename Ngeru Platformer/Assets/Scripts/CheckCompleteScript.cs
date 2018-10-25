@@ -18,6 +18,10 @@ public class CheckCompleteScript : MonoBehaviour {
     public bool five;
     public GameObject paw6;
     public bool six;
+
+    public GameObject plant;
+    public GameObject plantCol;
+
     // Use this for initialization
     void Start () {
 		
@@ -58,6 +62,10 @@ public class CheckCompleteScript : MonoBehaviour {
         if (zero && one && two && three && four && five && six)
         {
             //Enter Cutscene
+        } else if (zero && one && two && three && four && five)
+        {
+            plant.SetActive(true);
+            plantCol.SetActive(true);
         }
     }
 }
