@@ -48,6 +48,8 @@ public class ControllerPlayerScript : MonoBehaviour
     public bool isHiding;
     private bool isOverlaping = false;
 
+    public AudioSource jumpSound;
+
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
@@ -239,6 +241,7 @@ public class ControllerPlayerScript : MonoBehaviour
 
         if (isGrounded && jump)
         {
+            jumpSound.Play();
             isGrounded = false;
             myRigidBody.AddForce(new Vector2(0, jumpForce));
             anim.SetBool("isIdle", false);

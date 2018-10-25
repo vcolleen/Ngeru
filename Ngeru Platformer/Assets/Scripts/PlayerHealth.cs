@@ -119,6 +119,11 @@ public class PlayerHealth : MonoBehaviour {
             anim.SetBool("Ouch", false);
         }
 
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Death"))
+        {
+            anim.SetBool("Death", false);
+        }
+
 
 
     }
@@ -156,12 +161,7 @@ public class PlayerHealth : MonoBehaviour {
 
     public void PlayerDead()
     {
-        buttonArea.SetActive(false);
-        if (Input.anyKey)
-        {
-            SceneManager.LoadScene(2);
-        }
-
+        anim.SetBool("Death", true);
     }
 
 }
