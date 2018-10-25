@@ -58,22 +58,28 @@ public class DialogueOverlayScript5 : MonoBehaviour {
 
     public List<Sprite> imageList = new List<Sprite>();
 
-    public Button pink;
-    public Button purple;
-    public Button blue;
-    public Button black;
+    public GameObject pink;
+    public GameObject purple;
+    public GameObject blue;
+    public GameObject black;
+
+    public BoxCollider2D colliderRef;
+    public GameObject sphynxRef;
     //References
 
 	void Start () {
 
         
-        totalImages = 53;
-        pink.enabled = false;
-        purple.enabled = false;
-        blue.enabled = false;
-        black.enabled = false;
+        //totalImages = 53;
+        pink.SetActive(false);
+        purple.SetActive(false);
+        blue.SetActive(false);
+        black.SetActive(false);
 
-        currentImage = 1;
+        currentImage = 0;
+        sphynxRef = GameObject.Find("Sphynx");
+        colliderRef = sphynxRef.GetComponent<BoxCollider2D>();
+        colliderRef.enabled = true;
 
         imageList.Add(image0);
 
@@ -120,7 +126,7 @@ public class DialogueOverlayScript5 : MonoBehaviour {
         imageList.Add(image41);
         imageList.Add(image42);
 
-        portrait.sprite = imageList[1];
+        portrait.sprite = imageList[0];
     }
 	
 	void Update () {
@@ -133,29 +139,49 @@ public class DialogueOverlayScript5 : MonoBehaviour {
 
     public void DestroySelf()
     {
+        //Destroy(gameObject);
+
+        sphynxRef.GetComponent<Animator>().SetTrigger("Fade");
+        colliderRef.enabled = false;
         Destroy(gameObject);
     }
 
-    public void Yes()
+    public void Purple()
     {
-        portrait.sprite = imageList[32];
+        currentImage = 24;
+        portrait.sprite = imageList[currentImage];
         Buttons();
-        currentImage = 32;
+        sphynxRef.GetComponent<Animator>().SetTrigger("Correct");
     }
 
-    public void No()
+    public void Pink()
     {
-        portrait.sprite = imageList[29];
+        currentImage = 21;
+        portrait.sprite = imageList[currentImage];
         Buttons();
-        currentImage = 29;
+        //sphynxRef.GetComponent<Animator>().SetTrigger("Wrong");
+    }
+    public void Blue()
+    {
+        currentImage = 19;
+        portrait.sprite = imageList[currentImage];
+        Buttons();
+        //sphynxRef.GetComponent<Animator>().SetTrigger("Wrong");
+    }
+    public void Black()
+    {
+        currentImage = 17;
+        portrait.sprite = imageList[currentImage];
+        Buttons();
+        //sphynxRef.GetComponent<Animator>().SetTrigger("Wrong");
     }
 
     void Buttons()
     {
-        purple.enabled = (!purple.enabled);
-        pink.enabled = (!pink.enabled);
-        blue.enabled = (!blue.enabled);
-        black.enabled = (!black.enabled);
+        purple.SetActive(!purple.activeInHierarchy);
+        pink.SetActive(!pink.activeInHierarchy);
+        blue.SetActive(!blue.activeInHierarchy);
+        black.SetActive(!black.activeInHierarchy);
     }
 
     public void PlayMusic()
@@ -170,119 +196,86 @@ public class DialogueOverlayScript5 : MonoBehaviour {
     public void ButtonInteract()
     {
         //pre question
-        if (currentImage <= 16)
+        if (currentImage <= 14)
         {
             currentImage += 1;
             portrait.sprite = imageList[currentImage];
         }
 
         // pose question
-        if (currentImage == 17)
+        else if (currentImage == 15)
         {
-            //Give Choice
+            currentImage += 1;
+            portrait.sprite = imageList[currentImage];
+            Buttons();
         }
 
         //picked black
-        if (currentImage == 18)
+        else if (currentImage == 17)
         {
-            currentImage = 19;
+            currentImage += 1;
             portrait.sprite = imageList[currentImage];
         }
 
-        if (currentImage == 19)
+        else if (currentImage == 18)
         {
-            currentImage = 17;
+            currentImage = 16;
             portrait.sprite = imageList[currentImage];
+            Buttons();
+            sphynxRef.GetComponent<Animator>().SetTrigger("Back");
         }
 
         //picked blue
-        if (currentImage == 20)
+        else if (currentImage == 19)
         {
-            currentImage = 21;
+            currentImage += 1;
             portrait.sprite = imageList[currentImage];
         }
 
-        if (currentImage == 21)
+        else if (currentImage == 20)
         {
-            currentImage = 17;
+            currentImage = 16;
             portrait.sprite = imageList[currentImage];
+            Buttons();
+            sphynxRef.GetComponent<Animator>().SetTrigger("Back");
         }
 
         //picked pink
-        if (currentImage == 22)
+        else if (currentImage == 21)
         {
-            currentImage = 23;
+            currentImage += 1;
             portrait.sprite = imageList[currentImage];
         }
 
-        if (currentImage == 23)
+        else if (currentImage == 22)
         {
-            currentImage = 24;
+            currentImage += 1;
             portrait.sprite = imageList[currentImage];
         }
 
-        if (currentImage == 24)
+        else if (currentImage == 23)
         {
-            currentImage = 17;
+            currentImage = 16;
             portrait.sprite = imageList[currentImage];
+            Buttons();
+            sphynxRef.GetComponent<Animator>().SetTrigger("Back");
         }
 
         //picked pruple
-        if (currentImage >= 25 && currentImage <= 41)
+        else if (currentImage >= 24 && currentImage <= 41)
         {
             currentImage += 1;
             portrait.sprite = imageList[currentImage];
         }
 
-        if (currentImage == 42)
+        else if (currentImage == 42)
         {
-            //fade
-        }
-
-
-
-        if (currentImage <= 26)
-            {
-                currentImage += 1;
-                portrait.sprite = imageList[currentImage];
-            }
-            else if (currentImage == 27)
-            {
-                Buttons();
-                currentImage += 1;
-                portrait.sprite = imageList[currentImage];
-            }
-            else if (currentImage >= 29 && currentImage <=30)
-            {
-                currentImage += 1;
-                portrait.sprite = imageList[currentImage];
-            }
-            else if (currentImage >= 32 && currentImage <= 43)
-        {
-            currentImage += 1;
-            portrait.sprite = imageList[currentImage];
-        }
-            else if (currentImage == 44)
-        {
-            PlayMusic();
-            currentImage += 1;
-            portrait.sprite = imageList[currentImage];
-        }
-            else if (currentImage >= 45 && currentImage <= 51)
-        {
-            currentImage += 1;
-            portrait.sprite = imageList[currentImage];
-        }
-            else if (currentImage == 31)
-            {
-                GetComponentInParent<NPCDialogueScript1>().Prompt();
-                DestroySelf();
-            }
-            else if (currentImage == 52)
-        {
-            GetComponentInParent<NPCDialogueScript1>().Prompt();
             DestroySelf();
         }
+
+
+
+       
             
     }
 }
