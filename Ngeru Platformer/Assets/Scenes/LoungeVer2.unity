@@ -6752,7 +6752,6 @@ GameObject:
   - component: {fileID: 2083106528}
   - component: {fileID: 2083106527}
   - component: {fileID: 2083106526}
-  - component: {fileID: 2083106530}
   m_Layer: 0
   m_Name: Leg
   m_TagString: Untagged
@@ -6879,23 +6878,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
---- !u!114 &2083106530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2083106524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62f65525468ce1145a4093990eafd2c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInCollider: 0
-  promtPrefab: {fileID: 1778357278273622, guid: 7e4e543ffd79eb14ea437dce3a07d12e,
-    type: 2}
-  overlay: {fileID: 0}
-  dialogueAnchor: {fileID: 0}
-  portrait: {fileID: 0}
 --- !u!1 &2089745111
 GameObject:
   m_ObjectHideFlags: 0
