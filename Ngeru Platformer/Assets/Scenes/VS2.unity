@@ -413,7 +413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movTexture: {fileID: 15200000, guid: ab3ab1bc58a7b4f44a2c5bcbddbf2d91, type: 3}
-  sceneName: VS3
+  sceneName: MouseBattle
 --- !u!114 &1604058900
 MonoBehaviour:
   m_ObjectHideFlags: 0
