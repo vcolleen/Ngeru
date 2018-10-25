@@ -73,7 +73,11 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: e7672432ffcdd4c4ea61b984bf3ce3c4
+=======
+    spriteID: c60430bc94f9d0349a06d41d04f5910b
+>>>>>>> parent of 66da181... Dialogue
     vertices: []
     indices: 
     edges: []
