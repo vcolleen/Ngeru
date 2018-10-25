@@ -37,12 +37,12 @@ public class FountainCollision : MonoBehaviour {
 
 	public void OnTriggerEnter2D (Collider2D col) {
 		onFountain = true;
-		Debug.Log("You're on the fountain");
+		//Debug.Log("You're on the fountain");
 	}
 
 	public void OnTriggerExit2D (Collider2D col) {
 		onFountain = false;
-		Debug.Log("You're not on the fountain");
+		//Debug.Log("You're not on the fountain");
 	}
 
 }
