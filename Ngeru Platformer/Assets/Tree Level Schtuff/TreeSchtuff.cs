@@ -11,6 +11,10 @@ public class TreeSchtuff : MonoBehaviour {
     private int i = 0;
     public bool teleport = false;
 
+    public GameObject tVine1;
+    public GameObject tVine2;
+    public GameObject tVine3;
+
     // Use this for initialization
     void Start () {
         
@@ -31,6 +35,7 @@ public class TreeSchtuff : MonoBehaviour {
                 ngeru.GetComponent<Animator>().SetLayerWeight(3, 0);
                 ngeru.GetComponent<Animator>().SetBool("Attack", true);
                 i++;
+                tVine1.SetActive(false);
                 StartCoroutine(NgeruTeleports());
             } else if (i == 1)
             {
@@ -44,6 +49,7 @@ public class TreeSchtuff : MonoBehaviour {
                 ngeru.GetComponent<Animator>().SetLayerWeight(3, 0);
                 ngeru.GetComponent<Animator>().SetBool("Attack", true);
                 i++;
+                tVine2.SetActive(false);
                 StartCoroutine(NgeruTeleports());
             } else if (i == 2)
             {
@@ -57,6 +63,7 @@ public class TreeSchtuff : MonoBehaviour {
                 ngeru.GetComponent<Animator>().SetLayerWeight(3, 0);
                 ngeru.GetComponent<Animator>().SetBool("Attack", true);
                 i++;
+                tVine3.SetActive(false);
                 StartCoroutine(NgeruTeleports());
             }
         }
@@ -78,7 +85,7 @@ public class TreeSchtuff : MonoBehaviour {
 
     IEnumerator NgeruTeleports()
     {
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(1);
 
         if (i == 3)
         {
