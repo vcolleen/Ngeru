@@ -1,0 +1,2006 @@
+fileFormatVersion: 2
+guid: d30ec8c50e5998a44bb6133b9a50224f
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: dappercat night alleyfixed_0
+    21300002: dappercat night alleyfixed_1
+    21300004: dappercat night alleyfixed_2
+    21300006: dappercat night alleyfixed_3
+    21300008: dappercat night alleyfixed_4
+    21300010: dappercat night alleyfixed_5
+    21300012: dappercat night alleyfixed_6
+    21300014: dappercat night alleyfixed_7
+    21300016: dappercat night alleyfixed_8
+    21300018: dappercat night alleyfixed_9
+    21300020: dappercat night alleyfixed_10
+    21300022: dappercat night alleyfixed_11
+    21300024: dappercat night alleyfixed_12
+    21300026: dappercat night alleyfixed_13
+    21300028: dappercat night alleyfixed_14
+    21300030: dappercat night alleyfixed_15
+    21300032: dappercat night alleyfixed_16
+    21300034: dappercat night alleyfixed_17
+    21300036: dappercat night alleyfixed_18
+    21300038: dappercat night alleyfixed_19
+    21300040: dappercat night alleyfixed_20
+    21300042: dappercat night alleyfixed_21
+    21300044: dappercat night alleyfixed_22
+    21300046: dappercat night alleyfixed_23
+    21300048: dappercat night alleyfixed_24
+    21300050: dappercat night alleyfixed_25
+    21300052: dappercat night alleyfixed_26
+    21300054: dappercat night alleyfixed_27
+    21300056: dappercat night alleyfixed_28
+    21300058: dappercat night alleyfixed_29
+    21300060: dappercat night alleyfixed_30
+    21300062: dappercat night alleyfixed_31
+    21300064: dappercat night alleyfixed_32
+    21300066: dappercat night alleyfixed_33
+    21300068: dappercat night alleyfixed_34
+    21300070: dappercat night alleyfixed_35
+    21300072: dappercat night alleyfixed_36
+    21300074: dappercat night alleyfixed_37
+    21300076: dappercat night alleyfixed_38
+    21300078: dappercat night alleyfixed_39
+    21300080: dappercat night alleyfixed_40
+    21300082: dappercat night alleyfixed_41
+    21300084: dappercat night alleyfixed_42
+    21300086: dappercat night alleyfixed_43
+    21300088: dappercat night alleyfixed_44
+    21300090: dappercat night alleyfixed_45
+    21300092: dappercat night alleyfixed_46
+    21300094: dappercat night alleyfixed_47
+    21300096: dappercat night alleyfixed_48
+    21300098: dappercat night alleyfixed_49
+    21300100: dappercat night alleyfixed_50
+    21300102: dappercat night alleyfixed_51
+    21300104: dappercat night alleyfixed_52
+    21300106: dappercat night alleyfixed_53
+    21300108: dappercat night alleyfixed_54
+    21300110: dappercat night alleyfixed_55
+    21300112: dappercat night alleyfixed_56
+    21300114: dappercat night alleyfixed_57
+    21300116: dappercat night alleyfixed_58
+    21300118: dappercat night alleyfixed_59
+    21300120: dappercat night alleyfixed_60
+    21300122: dappercat night alleyfixed_61
+    21300124: dappercat night alleyfixed_62
+    21300126: dappercat night alleyfixed_63
+    21300128: dappercat night alleyfixed_64
+    21300130: dappercat night alleyfixed_65
+    21300132: dappercat night alleyfixed_66
+    21300134: dappercat night alleyfixed_67
+    21300136: dappercat night alleyfixed_68
+    21300138: dappercat night alleyfixed_69
+    21300140: dappercat night alleyfixed_70
+    21300142: dappercat night alleyfixed_71
+    21300144: dappercat night alleyfixed_72
+    21300146: dappercat night alleyfixed_73
+    21300148: dappercat night alleyfixed_74
+    21300150: dappercat night alleyfixed_75
+    21300152: dappercat night alleyfixed_76
+    21300154: dappercat night alleyfixed_77
+    21300156: dappercat night alleyfixed_78
+    21300158: dappercat night alleyfixed_79
+    21300160: dappercat night alleyfixed_80
+    21300162: dappercat night alleyfixed_81
+    21300164: dappercat night alleyfixed_82
+    21300166: dappercat night alleyfixed_83
+    21300168: dappercat night alleyfixed_84
+    21300170: dappercat night alleyfixed_85
+    21300172: dappercat night alleyfixed_86
+    21300174: dappercat night alleyfixed_87
+    21300176: dappercat night alleyfixed_88
+    21300178: dappercat night alleyfixed_89
+    21300180: dappercat night alleyfixed_90
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb9562bf1e1b9f40b87bddbd43aaf0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744845a7191edba418f6034a2e9070e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_2
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c90efa1372713640a997fab62772e36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_3
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f71f972a9877b747bb63bc67f3fa3c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_4
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d7a48c887786c4c8b3c791f072d3fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_5
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adae6a4519075da4880125e74cdd9912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_6
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: accf7985a45285140b7052a0dbe1b916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_7
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac98902fdca52574088ffd9442f1d426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_8
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877ff5e953f569d40ae5b3a0c287ee4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_9
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a34efbdcba1c0429d56bf1eddb5eb1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_10
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48fcb6a2741805f4eb2851f82872f1b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_11
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c5e8d497545d24aa078ce1c8aa39ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_12
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c7b67bd03557a43b2c96ed72144e35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_13
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55006a9f2b7fc64fab36f6e7179d7b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_14
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc0574677a42664fb5841c87e0ebbc1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_15
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e413c539a0ea4c84faa429b3e2b6fd1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_16
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1af62169de8e84fb504ac055f1d784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_17
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0246b72c5f4bc644caa72d33ca318bf3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_18
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4160ec39ba2db4c827c3aa55551be5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_19
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eba4c23051932948a0b034e5bdeec3d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_20
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 904
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c541e6268df95874b895e7ef10724abe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b63f8bad6acff54696c3902244d8327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_22
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ea86cff33ecab45a3f0536cc3ef949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_23
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52bf1cd18fba774e845a1d9876ac1fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_24
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c3c5a6b3294e340a40db24d32cb617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_25
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38c94d96a61e38429ef87607e9d5272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_26
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9312b766c65fe4b418b109ba74c31c63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_27
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0866c6cc03ac0d941b634fc755c8b489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_28
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3af4f62f7750f4c87c6ad58b4db863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_29
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b679fbb1480d9ed46b9931ee527d8fb1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_30
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9902ad25f99fd204a84de986c6ec55c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_31
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24b8dbb1d306ce42aad342c233cad09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_32
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8cd272af444a6445a48e7705ee6e257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_33
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9cb1470a8c40343ab90e0098c7a5b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_34
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66344c41e6af47143b2dda487a6d2af7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_35
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4504311f7e7924741b143dc39bd30f3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_36
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5c121e5d29aa942bf16ffdae298fb0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_37
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5328d2fb8b467084fa680ecaa55d5648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_38
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb32dc1e0dd297f4a95083bcaefd802a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_39
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1955a12a455c7ba4398ed10432afa98c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_40
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34811769d431212438f04cbe4fbbe77d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_41
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 784
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59bae9127eddaa947858957726bfb07f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4ee30383cbc8e41ae5fcd1c4058faf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_43
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e45c83792075444d90f1964f0f5658b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_44
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c383d00f0d1642d4685d2c7d8df5d439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_45
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8010a710328336141b2c7e63d361f7a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_46
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff9f93b518bfed49849b28e30e8a5f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_47
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a92d2ce2b5e664fbda3fbc3d660d04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_48
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b9d111566470d45804370b57f70f5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_49
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f830578932bdfa4697d8161449ae48b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_50
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dfee93cdc15db44d9f1976552330fb2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_51
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4408adc0f0ca639409a3cc891850eb37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_52
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891ec19a07a3ee641b5c444746840fbd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_53
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f842b02716bc74f8a135a555594977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_54
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464199af5bdf7104aa25fe9220f4a616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_55
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8602a5add6f234498850b209f333217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_56
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9792cc2c56416c749b3e200f90cd2406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_57
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db69d8e106054b14a972e215e5536e3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_58
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eac62e6c4d3e6b40971d08a7bcada1c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_59
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76dde8bdcab5ff445b6340b8ad6c5581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_60
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791bc3138124a4348ba5e8b3310ee955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_61
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cf62525f7058348811a91d2e88d8e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_62
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 664
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45741e645ee4a47489f4f2825cc36da8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0263c016e4a924db0fae98ffcedd79
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_64
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20eca9cf0875c9840aedf9cf671e34f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_65
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e95c49ae8354744bed49fd889c7a37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_66
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60720ae4929ba746ba1ea2bd5b125c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_67
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc73f855e4537a4c9537c27be75e90e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_68
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bb0ea2ad9c5e34e8394d182e9581e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_69
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc23c3fffaca31443833ab346c0b2ac1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_70
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b45c79528178c6429772939e61344f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_71
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b7773513bf14347bf0a1417f6894bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_72
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfbc9e514d5cc954f90635fc04b423a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_73
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c48383ec02b4c441a6db1aa60744fa9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_74
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd66b36067ea50642ac668a8a3cf7b3f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_75
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea995befba0b1da4097dcd2fd8bf7302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_76
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b0dd815c5b7c84489b71e7a12bfe26
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_77
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678d05eb7f9f2bc409931a4ee401f861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_78
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b26755012786e240bdb5020a0cb3d53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_79
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c12b9fa53783a34eb76ea9f47ca90f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_80
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ff17443feeed14b969f674fa677f6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_81
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298db76401f0b724494bc33f78a8dd7b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_82
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d627704bad8bfb4889aa78a1e147628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_83
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 544
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40cd1921f78ed3d48bd1ea61cb49a71f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 424
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f559361426d23d24e8e0fafa5d47d1d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_85
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 424
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232064f389bfb9e47b5bfcea5f7e8efe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_86
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 424
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ea8232bf12ee444b6351762f6c7d0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_87
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 424
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f09a95ef7b3f249a3a4eba53acbf4a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_88
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 424
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e89533f4ca45ec4fa7e473d5dd7d059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_89
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 424
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86830f27ee694fa499d116dced0abd56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dappercat night alleyfixed_90
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 424
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deeca705a393f374e951ff311b174e71
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 47f4680c14994fd49be2940075eb2180
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
