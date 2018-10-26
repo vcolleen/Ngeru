@@ -14,6 +14,8 @@ public class Health : MonoBehaviour {
     public GameObject hp4;
     public GameObject hp5;
 
+    //public AudioSource deathSound;
+
     // Use this for initialization
     void Start () {
         
@@ -24,6 +26,7 @@ public class Health : MonoBehaviour {
 		if (health == 0)
         {
             hp1.SetActive(false);
+            //deathSound.Play();
             StartCoroutine(TransitionDelay());
         } else if (health == 4)
         {
@@ -53,7 +56,7 @@ public class Health : MonoBehaviour {
 
     IEnumerator TransitionDelay ()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene("Lose3");
     }
 }

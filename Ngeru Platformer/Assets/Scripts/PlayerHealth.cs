@@ -43,6 +43,7 @@ public class PlayerHealth : MonoBehaviour {
     public GameObject critText;
 
     public AudioSource catAttack;
+    public AudioSource deathSound;
 
     [SerializeField]
     private string sceneName;
@@ -190,6 +191,7 @@ public class PlayerHealth : MonoBehaviour {
     public void PlayerDead()
     {
         anim.SetBool("Death", true);
+        deathSound.Play();
         StartCoroutine(TransitionDelay());
     }
 

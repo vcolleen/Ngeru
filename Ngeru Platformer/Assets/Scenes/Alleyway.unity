@@ -440,7 +440,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 36ec15a5cce3b8c4391cc58062f03ccc, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1281,11 +1281,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4768873263223140, guid: 180c5774d9bd87046a0267817fc2603c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.3481546
+      value: 0.95
       objectReference: {fileID: 0}
     - target: {fileID: 4768873263223140, guid: 180c5774d9bd87046a0267817fc2603c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.72
+      value: -0.908
       objectReference: {fileID: 0}
     - target: {fileID: 4768873263223140, guid: 180c5774d9bd87046a0267817fc2603c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1326,6 +1326,11 @@ Prefab:
       propertyPath: jumpSound
       value: 
       objectReference: {fileID: 217984970}
+    - target: {fileID: 212428897568747316, guid: 180c5774d9bd87046a0267817fc2603c,
+        type: 2}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 180c5774d9bd87046a0267817fc2603c, type: 2}
   m_IsPrefabParent: 0
