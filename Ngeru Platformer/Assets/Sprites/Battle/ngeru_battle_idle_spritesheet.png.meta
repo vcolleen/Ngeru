@@ -97,18 +97,18 @@ TextureImporter:
       name: ngeru_battle_idle_spritesheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 176
-        width: 125
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 16
+        y: 180
+        width: 69
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3734c6e6b39993948bac66c496b9b600
+      spriteID: 044ebc6abb6e7cf4fa7b0cf2762b3308
       vertices: []
       indices: 
       edges: []
@@ -117,18 +117,18 @@ TextureImporter:
       name: ngeru_battle_idle_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 125
-        y: 176
-        width: 125
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 143
+        y: 180
+        width: 67
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f60966d19413b044fae033f55f18c1b7
+      spriteID: ce00b44200fe4b14799d2ab1fcd55cbf
       vertices: []
       indices: 
       edges: []
@@ -137,18 +137,18 @@ TextureImporter:
       name: ngeru_battle_idle_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 250
-        y: 176
-        width: 125
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 270
+        y: 180
+        width: 65
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c3f5557ec6513f48aa31e05588a1f1d
+      spriteID: 7e4985864a50e0341b4b4f2140ad1cc0
       vertices: []
       indices: 
       edges: []
@@ -157,18 +157,18 @@ TextureImporter:
       name: ngeru_battle_idle_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 375
-        y: 176
-        width: 125
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 393
+        y: 180
+        width: 67
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73123e3f38f9d3d4aaca4f8faf891092
+      spriteID: 8a9f5aeebc1a70844b9bf0d056eaf948
       vertices: []
       indices: 
       edges: []
@@ -177,18 +177,18 @@ TextureImporter:
       name: ngeru_battle_idle_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 88
-        width: 125
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 16
+        y: 92
+        width: 69
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5141b2b23faa8c14cadd108972937ed4
+      spriteID: bc1e4edde1cecc14a848941f8c3629c0
       vertices: []
       indices: 
       edges: []
@@ -197,18 +197,18 @@ TextureImporter:
       name: ngeru_battle_idle_spritesheet_5
       rect:
         serializedVersion: 2
-        x: 125
-        y: 88
-        width: 125
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 144
+        y: 92
+        width: 66
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3632925cd3359254cadaa1e102f37aa4
+      spriteID: d39f2b2f0656cb84d8db87a60b11e989
       vertices: []
       indices: 
       edges: []
@@ -217,18 +217,18 @@ TextureImporter:
       name: ngeru_battle_idle_spritesheet_6
       rect:
         serializedVersion: 2
-        x: 250
-        y: 88
-        width: 125
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 266
+        y: 92
+        width: 69
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07f876ce64e9c084db0da4db60b2b8a0
+      spriteID: 131d90c9d7433904dbf5c4c3071c13c4
       vertices: []
       indices: 
       edges: []
@@ -237,18 +237,18 @@ TextureImporter:
       name: ngeru_battle_idle_spritesheet_7
       rect:
         serializedVersion: 2
-        x: 375
-        y: 88
-        width: 125
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 393
+        y: 92
+        width: 67
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d48978fe438edbe4ea636762cb504903
+      spriteID: 7d5e233f8b836134187040e19b88e35f
       vertices: []
       indices: 
       edges: []
@@ -257,18 +257,18 @@ TextureImporter:
       name: ngeru_battle_idle_spritesheet_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 125
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 20
+        y: 4
+        width: 65
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f9ee2de18936e847bbebcfb4350f3be
+      spriteID: cd900962bef4064418da9a0e7c872f30
       vertices: []
       indices: 
       edges: []
@@ -277,18 +277,18 @@ TextureImporter:
       name: ngeru_battle_idle_spritesheet_9
       rect:
         serializedVersion: 2
-        x: 125
-        y: 0
-        width: 125
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 143
+        y: 4
+        width: 67
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19f7f1b6af518454b865253e4cb69adf
+      spriteID: 04c0ed8d510dcff468c58bc3d2a1f487
       vertices: []
       indices: 
       edges: []
@@ -297,18 +297,18 @@ TextureImporter:
       name: ngeru_battle_idle_spritesheet_10
       rect:
         serializedVersion: 2
-        x: 250
-        y: 0
-        width: 125
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 266
+        y: 4
+        width: 69
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec08ebd18fd3f1247b127c3b3a5c85fd
+      spriteID: d531250df3cec03419aceb7326206ecc
       vertices: []
       indices: 
       edges: []
@@ -317,18 +317,18 @@ TextureImporter:
       name: ngeru_battle_idle_spritesheet_11
       rect:
         serializedVersion: 2
-        x: 375
-        y: 0
-        width: 125
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 394
+        y: 4
+        width: 66
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1517885a3db4f584099cc3e67aaf0e19
+      spriteID: 87083809fbaaf6d438016f1ab2875942
       vertices: []
       indices: 
       edges: []

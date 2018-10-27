@@ -43,7 +43,7 @@ public class PlayerHealth : MonoBehaviour {
     public GameObject critText;
 
     public AudioSource catAttack;
-    public AudioSource deathSound;
+    //public AudioSource deathSound;
 
     [SerializeField]
     private string sceneName;
@@ -124,8 +124,12 @@ public class PlayerHealth : MonoBehaviour {
         if (currentHealth <= DeadHold)
         {
             PlayerDead();
-        }  
-       
+        }
+
+        if (currentHealth <= 20)
+        {
+            anim.SetBool("NearDeath", true);
+        }       
 
         if(anim.GetCurrentAnimatorStateInfo(0).IsName("Scratch"))
         {
@@ -194,7 +198,7 @@ public class PlayerHealth : MonoBehaviour {
     public void PlayerDead()
     {
         anim.SetBool("Death", true);
-        deathSound.Play();
+        //deathSound.Play();
         StartCoroutine(TransitionDelay());
     }
 

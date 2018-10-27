@@ -2893,7 +2893,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 54a11fea9c0973b45b4388af700b4384, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4700,7 +4700,7 @@ MonoBehaviour:
   startingHealth: 100
   MaxHP: 100
   DeadHold: 0
-  attackDamage: 15
+  attackDamage: 20
   critDamage: 30
   currentHealth: 0
   healthImage: {fileID: 828898114}
@@ -4715,7 +4715,6 @@ MonoBehaviour:
   hitText: {fileID: 857349406}
   critText: {fileID: 672857686}
   catAttack: {fileID: 672211431}
-  deathSound: {fileID: 1483483420}
   sceneName: Lose2
 --- !u!1 &1998548214
 GameObject:

@@ -4728,7 +4728,7 @@ MonoBehaviour:
   startingHealth: 100
   MaxHP: 100
   DeadHold: 0
-  attackDamage: 15
+  attackDamage: 20
   critDamage: 30
   currentHealth: 0
   healthImage: {fileID: 828898114}
