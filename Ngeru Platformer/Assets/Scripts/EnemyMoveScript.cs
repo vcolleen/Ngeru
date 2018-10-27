@@ -53,6 +53,8 @@ public class EnemyMoveScript : MonoBehaviour {
     [SerializeField]
     private string sceneName;
 
+    public GameObject ngeru;
+
 
     void Start()
     {
@@ -191,6 +193,7 @@ public class EnemyMoveScript : MonoBehaviour {
     void Death()
     {
         anim.SetBool("Death", true);
+        ngeru.GetComponent<Animator>().SetBool("Happy", true);
         StartCoroutine(TransitionDelay());
     }
 

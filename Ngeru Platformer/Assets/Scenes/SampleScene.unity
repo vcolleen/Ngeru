@@ -2499,6 +2499,7 @@ MonoBehaviour:
   flowerAttack: {fileID: 527407511}
   otherGameObject: {fileID: 1787541850}
   sceneName: Victory
+  ngeru: {fileID: 1950104330}
 --- !u!114 &900318512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4743,7 +4744,6 @@ MonoBehaviour:
   hitText: {fileID: 857349406}
   critText: {fileID: 672857686}
   catAttack: {fileID: 672211431}
-  deathSound: {fileID: 1528065517}
   sceneName: Lose
 --- !u!1 &1998548214
 GameObject:
