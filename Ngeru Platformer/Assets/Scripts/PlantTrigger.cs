@@ -14,6 +14,8 @@ public class PlantTrigger : MonoBehaviour
     public GameObject cat;
     Animator ngeru;
 
+    public GameObject eBut;
+
     // Use this for initialization
     void Start()
     {
@@ -47,6 +49,7 @@ public class PlantTrigger : MonoBehaviour
         if (other.GetComponent<Transform>().CompareTag("Player"))
         {
             inside = true;
+            eBut.SetActive(true);
         }
 
     }
@@ -56,6 +59,7 @@ public class PlantTrigger : MonoBehaviour
         if (other.GetComponent<Transform>().CompareTag("Player"))
         {
             inside = false;
+            eBut.SetActive(false);
         }
     }
 

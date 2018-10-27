@@ -19,6 +19,9 @@ public class ObjectTrigger : MonoBehaviour {
     public bool gotItems;
     public bool combat;
 
+    public GameObject eBut;
+    bool eButActive = true;
+
     // Use this for initialization
     void Start() {
         anim = GetComponent<Animator>();
@@ -44,6 +47,7 @@ public class ObjectTrigger : MonoBehaviour {
                 ngeru.SetTrigger("Swipe");
                 anim.SetTrigger("play");
                 tick.SetActive(true);
+                eButActive = false;
                 m_Rigidbody = GetComponent<Rigidbody2D>();
                 try
                 {
@@ -68,6 +72,11 @@ public class ObjectTrigger : MonoBehaviour {
         //    Debug.Log("Gotta catch em all");
         //}
 
+        if (eButActive == false)
+        {
+            eBut.SetActive(false);
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -75,6 +84,10 @@ public class ObjectTrigger : MonoBehaviour {
         if (other.GetComponent<Transform>().CompareTag("Player"))
         {
             inside = true;
+            if (eButActive)
+            {
+                eBut.SetActive(true);
+            }
         }
 
     }
@@ -84,6 +97,10 @@ public class ObjectTrigger : MonoBehaviour {
         if (other.GetComponent<Transform>().CompareTag("Player"))
         {
             inside = false;
+            if (eButActive)
+            {
+                eBut.SetActive(false);
+            }
         }
     }
 
