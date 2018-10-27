@@ -319,7 +319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movTexture: {fileID: 15200000, guid: a873763ca110618419a692f68a048593, type: 3}
-  sceneName: MainMenuNEW
+  sceneName: VS4
 --- !u!114 &663136228
 MonoBehaviour:
   m_ObjectHideFlags: 0

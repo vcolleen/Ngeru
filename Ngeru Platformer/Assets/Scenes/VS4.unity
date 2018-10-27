@@ -494,7 +494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movTexture: {fileID: 15200000, guid: dd4c938cb8b5f8f4a8414ab886f4b426, type: 3}
-  sceneName: Victory
+  sceneName: GrimReaperBattle
 --- !u!114 &1586753683
 MonoBehaviour:
   m_ObjectHideFlags: 0

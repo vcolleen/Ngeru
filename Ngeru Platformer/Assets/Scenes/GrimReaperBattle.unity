@@ -2497,7 +2497,7 @@ MonoBehaviour:
   critText: {fileID: 2140640185}
   flowerAttack: {fileID: 527407511}
   otherGameObject: {fileID: 1787541850}
-  sceneName: Victory2
+  sceneName: Victory4
   ngeru: {fileID: 1950104330}
 --- !u!1 &1014016690
 GameObject:
@@ -4716,7 +4716,7 @@ MonoBehaviour:
   hitText: {fileID: 857349406}
   critText: {fileID: 672857686}
   catAttack: {fileID: 672211431}
-  sceneName: Lose2
+  sceneName: Lose4
 --- !u!1 &1998548214
 GameObject:
   m_ObjectHideFlags: 0
