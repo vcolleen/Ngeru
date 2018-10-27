@@ -96,9 +96,14 @@ public class PlayerHealth : MonoBehaviour {
         buttonArea.SetActive(true);
         inventory.SetActive(true);
     }
-    
 
-	
+    IEnumerator Timer2()
+    {
+        yield return new WaitForSeconds(1);
+        buttonArea.SetActive(false);
+        inventory.SetActive(false);
+    }
+
     void Update () {
 
         isTurn = turnClass.isTurn;
@@ -109,9 +114,7 @@ public class PlayerHealth : MonoBehaviour {
 
         if (isTurn == false) 
         {
-            StopCoroutine(Timer());
-            buttonArea.SetActive(false);
-            inventory.SetActive(false);
+            StartCoroutine(Timer2());
         }
 
         if(currentHealth > MaxHP)
