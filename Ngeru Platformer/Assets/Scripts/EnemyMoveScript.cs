@@ -122,6 +122,22 @@ public class EnemyMoveScript : MonoBehaviour {
             anim.SetBool("TakeDamage", false);
             scratch.SetBool("Scratch", false);
         }
+
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("GrimDeath"))
+        {
+            anim.SetBool("Death", false);
+        }
+
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("GrimAttack"))
+        {
+            anim.SetBool("Attack", false);
+        }
+
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("GrimReaperHit"))
+        {
+            anim.SetBool("TakeDamage", false);
+            scratch.SetBool("Scratch", false);
+        }
     }
 
     IEnumerator WaitAndMove()
@@ -142,8 +158,8 @@ public class EnemyMoveScript : MonoBehaviour {
 
         if (hitChance >= enemyCrit & hasAttacked == false)
         {
-            anim.SetBool("Attack", true);
             flowerAttack.Play();
+            anim.SetBool("Attack", true);
             critText.SetActive(true);
             playerHealth.TakeDamage(critDamage);
             Debug.Log("Enemy Crits!!!");
@@ -153,8 +169,9 @@ public class EnemyMoveScript : MonoBehaviour {
 
         if(hitChance <= enemyMissHit & hasAttacked == false)
         {
-            EnemySkipTurn();
             flowerAttack.Play();
+            EnemySkipTurn();
+            anim.SetBool("Attack", true);
             missText.SetActive(true);
             Debug.Log("Enemy misses?!");
             hasAttacked = true;
@@ -165,8 +182,8 @@ public class EnemyMoveScript : MonoBehaviour {
         {
             if (hasAttacked == false)
             {
-                anim.SetBool("Attack", true);
                 flowerAttack.Play();
+                anim.SetBool("Attack", true);
                 hitText.SetActive(true);
                 playerHealth.TakeDamage(attackDamage);
                 Debug.Log("Enemy hits.");
