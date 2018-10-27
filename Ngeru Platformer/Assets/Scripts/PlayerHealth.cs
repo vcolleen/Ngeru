@@ -157,6 +157,7 @@ public class PlayerHealth : MonoBehaviour {
 
     public void SkipTurn()
     {
+        anim.SetBool("Scratch", true);
         isTurn = false;
         catAttack.Play();
         turnClass.isTurn = isTurn;
