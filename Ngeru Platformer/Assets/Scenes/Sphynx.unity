@@ -113,6 +113,24 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &58422588 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1922503362427172, guid: db928c76035614044ba845c6ac567ba9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1406624029}
+--- !u!114 &58422590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 58422588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62f49f524fe1ec54a8d4f2f85b1dae9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ngeru: {fileID: 925888939}
+  ngeruAnim: 0
 --- !u!1 &395130707
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,9 +141,8 @@ GameObject:
   - component: {fileID: 395130710}
   - component: {fileID: 395130709}
   - component: {fileID: 395130708}
-  - component: {fileID: 395130711}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -214,31 +231,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &395130711
-BoxCollider2D:
+--- !u!1 &678323777 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1620750984193804, guid: db928c76035614044ba845c6ac567ba9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1406624029}
+--- !u!114 &678323782
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 395130707}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 2.0094547, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.8, y: 2.7}
-    newSize: {x: 4.8, y: 2.7}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.78109086, y: 2.7}
-  m_EdgeRadius: 0
+  m_GameObject: {fileID: 678323777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab6da3db29595b542b7577c6c88b4e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ngeru: {fileID: 925888939}
 --- !u!1 &854754912
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,7 +259,7 @@ GameObject:
   - component: {fileID: 854754914}
   - component: {fileID: 854754913}
   m_Layer: 0
-  m_Name: Trigger
+  m_Name: TriggerNextScene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -306,6 +315,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &925888939 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1170125960373032, guid: 180c5774d9bd87046a0267817fc2603c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1514325431}
 --- !u!1 &955186307
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,7 +623,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4768873263223140, guid: 180c5774d9bd87046a0267817fc2603c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.87002146
+      value: -1.126
       objectReference: {fileID: 0}
     - target: {fileID: 4768873263223140, guid: 180c5774d9bd87046a0267817fc2603c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -645,6 +659,11 @@ Prefab:
       propertyPath: jumpSound
       value: 
       objectReference: {fileID: 955186308}
+    - target: {fileID: 50109640490704760, guid: 180c5774d9bd87046a0267817fc2603c,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 0d0f067c96357284f84d77d9667dc22c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 180c5774d9bd87046a0267817fc2603c, type: 2}
   m_IsPrefabParent: 0
