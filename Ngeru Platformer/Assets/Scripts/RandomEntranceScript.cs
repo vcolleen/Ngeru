@@ -129,7 +129,7 @@ public class RandomEntranceScript : MonoBehaviour
         if (isSpawned == false && waiting == false)
         {
             float tileWidth = background.GetComponent<SpriteRenderer>().bounds.size.x;
-            spawnPos = new Vector3((tileWidth / 2f) - 1.2f, transform.position.y, transform.position.z);
+            spawnPos = new Vector3((tileWidth / 2f), transform.position.y, transform.position.z);
             Instantiate(humanAI, spawnPos, Quaternion.identity);
             isSpawned = true;
             randomNumber = Random.Range(minRange, maxRange);

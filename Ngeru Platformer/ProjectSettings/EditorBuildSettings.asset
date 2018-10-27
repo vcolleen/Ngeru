@@ -36,32 +36,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Cutscene07.unity
     guid: 3c15d41e0e900f34fb6af7f22a5bd952
   - enabled: 1
-    path: Assets/Scenes/Sphynx.unity
-    guid: 587875bc2d514774096bab1e7b12baa1
-  - enabled: 1
     path: Assets/Scenes/Cutscene08.unity
     guid: c08b127c5f828714082f0addbe807410
-  - enabled: 1
-    path: Assets/Tree Level Schtuff/Tree Level.unity
-    guid: 7bd8a3afb599ae842a144f53b6427e7e
-  - enabled: 1
-    path: Assets/Scenes/LoungeVer2.unity
-    guid: 2131ed987e7050f40888a11a4e841298
-  - enabled: 1
-    path: Assets/Scenes/Victory.unity
-    guid: 9563893bee26e294ba6895b2da67df96
-  - enabled: 1
-    path: Assets/Scenes/Lose2.unity
-    guid: 313dd276a34a4c948bbd3c5b430144d1
-  - enabled: 1
-    path: Assets/Scenes/Lose3.unity
-    guid: f01947daee952a1409a5ac0e4123ac58
-  - enabled: 1
-    path: Assets/Scenes/Victory3.unity
-    guid: caf5202d92cf78544942b559bfbb0b8e
-  - enabled: 1
-    path: Assets/Scenes/Victory2.unity
-    guid: 736a6123423f5b6469a7d4d696408de2
   - enabled: 1
     path: Assets/Scenes/VS1.unity
     guid: b91cf13a2faedb04293c89b6272c7d71
@@ -72,24 +48,57 @@ EditorBuildSettings:
     path: Assets/Scenes/VS3.unity
     guid: 875fa519db1770e46bb8ad04537525eb
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
     path: Assets/Scenes/VS4.unity
     guid: e5617ad01a6f3a44eb83957f4200866b
   - enabled: 1
-    path: Assets/Scenes/Town.unity
-    guid: 84b41dadfd0e4c34a869fa21ba44627d
+    path: Assets/Scenes/Victory.unity
+    guid: 9563893bee26e294ba6895b2da67df96
   - enabled: 1
-    path: Assets/Scenes/Park.unity
-    guid: c6ae507644714eb458b89353e50796da
+    path: Assets/Scenes/Victory3.unity
+    guid: caf5202d92cf78544942b559bfbb0b8e
+  - enabled: 1
+    path: Assets/Scenes/Victory2.unity
+    guid: 736a6123423f5b6469a7d4d696408de2
   - enabled: 1
     path: Assets/Scenes/Lose.unity
     guid: a3a08c95864bf5e40b76aecec8bbb8d7
   - enabled: 1
-    path: Assets/Scenes/MouseBattle.unity
-    guid: 64a44703cf3620a438c4876fd0e2fc4f
+    path: Assets/Scenes/Lose2.unity
+    guid: 313dd276a34a4c948bbd3c5b430144d1
+  - enabled: 1
+    path: Assets/Scenes/Lose3.unity
+    guid: f01947daee952a1409a5ac0e4123ac58
+  - enabled: 1
+    path: Assets/Scenes/LoungeVer2.unity
+    guid: 2131ed987e7050f40888a11a4e841298
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Kitchen.unity
     guid: 2024edf44d110b04c8ce705386e3d179
+  - enabled: 1
+    path: Assets/Scenes/MouseBattle.unity
+    guid: 64a44703cf3620a438c4876fd0e2fc4f
+  - enabled: 1
+    path: Assets/Scenes/Alleyway.unity
+    guid: a506f498ffbecf243947f4e774f3e540
+  - enabled: 1
+    path: Assets/Scenes/Park.unity
+    guid: c6ae507644714eb458b89353e50796da
+  - enabled: 1
+    path: Assets/Tree Level Schtuff/Tree Level.unity
+    guid: 7bd8a3afb599ae842a144f53b6427e7e
+  - enabled: 1
+    path: Assets/Scenes/Town.unity
+    guid: 84b41dadfd0e4c34a869fa21ba44627d
+  - enabled: 1
+    path: Assets/Scenes/Wall.unity
+    guid: 1d88d8553a2d14a45bbf4ac2486ff6a6
+  - enabled: 1
+    path: Assets/Scenes/Sphynx.unity
+    guid: 587875bc2d514774096bab1e7b12baa1
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 9e09b0edef48a234db4fbd26b969b19a
   m_configObjects: {}
