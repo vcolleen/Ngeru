@@ -2489,8 +2489,8 @@ MonoBehaviour:
   currentEnemyHealth: 0
   enemyCrit: 70
   hitChance: 0
-  critDamage: 45
-  enemyMissHit: 25
+  critDamage: 40
+  enemyMissHit: 35
   hasAttacked: 0
   missText: {fileID: 17489658}
   hitText: {fileID: 2140091066}
@@ -4701,8 +4701,8 @@ MonoBehaviour:
   startingHealth: 100
   MaxHP: 100
   DeadHold: 0
-  attackDamage: 30
-  critDamage: 40
+  attackDamage: 20
+  critDamage: 30
   currentHealth: 0
   healthImage: {fileID: 828898114}
   buttonArea: {fileID: 1537808123}
@@ -4742,7 +4742,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e2bbededc32c5b34f8c609120a4906bf, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 193f530bcbfcab74abebc6f755a6b6ec, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.7
   m_Pitch: 1
