@@ -100,8 +100,8 @@ TextureImporter:
       name: BattleIGrimSpriteSheet_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 92
+        x: 10
+        y: 93
         width: 69
         height: 78
       alignment: 7
@@ -111,7 +111,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ae483db01f133a4bae8ed64a380f0f8
+      spriteID: 0ad0c3bb29b6acc4e805b044af160e9e
       vertices: []
       indices: 
       edges: []
@@ -121,7 +121,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 101
-        y: 92
+        y: 93
         width: 69
         height: 78
       alignment: 7
@@ -131,7 +131,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ff262f91f91de94a9f16e1eecfce6f7
+      spriteID: 42026ed85ce1ebc47be20fae1171254e
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31f2242e345b3fc4f9681d0be6dc7944
+      spriteID: 34f358b30a51da445aa1a3d5e52d05a3
       vertices: []
       indices: 
       edges: []
@@ -160,7 +160,7 @@ TextureImporter:
       name: BattleIGrimSpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 264
+        x: 258
         y: 93
         width: 69
         height: 78
@@ -171,7 +171,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89043c03579f874449f0376f02ffcf57
+      spriteID: aec4c9dd332062b449e69a040e114dab
       vertices: []
       indices: 
       edges: []
@@ -180,7 +180,7 @@ TextureImporter:
       name: BattleIGrimSpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 346
+        x: 343
         y: 93
         width: 69
         height: 78
@@ -191,7 +191,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7e64da74b82e8f4a8922a9c4cfc2252
+      spriteID: 36779dcd278cc5b49b948591f28f5d97
       vertices: []
       indices: 
       edges: []
@@ -200,10 +200,10 @@ TextureImporter:
       name: BattleIGrimSpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 429
-        y: 99
+        x: 426
+        y: 93
         width: 69
-        height: 72
+        height: 78
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,7 +211,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33a4c0521642a174684dce72d2aa4119
+      spriteID: a9ba0cc93bf27fa459679c0d4a9d1f5b
       vertices: []
       indices: 
       edges: []
@@ -220,7 +220,7 @@ TextureImporter:
       name: BattleIGrimSpriteSheet_9
       rect:
         serializedVersion: 2
-        x: 8
+        x: 6
         y: 9
         width: 69
         height: 78
@@ -231,7 +231,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cff6353152751045bed2483f436fabf
+      spriteID: 06e6c336721797f4eb207804fc935dff
       vertices: []
       indices: 
       edges: []
@@ -240,7 +240,7 @@ TextureImporter:
       name: BattleIGrimSpriteSheet_10
       rect:
         serializedVersion: 2
-        x: 97
+        x: 90
         y: 9
         width: 69
         height: 78
@@ -251,7 +251,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e35f0839e24b04419860993b3e87a1b
+      spriteID: 93c76e216364238419c7af13b258a075
       vertices: []
       indices: 
       edges: []
@@ -260,7 +260,7 @@ TextureImporter:
       name: BattleIGrimSpriteSheet_11
       rect:
         serializedVersion: 2
-        x: 180
+        x: 174
         y: 9
         width: 69
         height: 78
@@ -271,7 +271,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b589b40141562e49b0a3cd07cc77b2a
+      spriteID: 7f1a2c1c6a485934fab872d8ca226c39
       vertices: []
       indices: 
       edges: []
@@ -281,7 +281,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 269
-        y: 8
+        y: 9
         width: 69
         height: 78
       alignment: 7
@@ -291,7 +291,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4a66714150182346ae5e3b5f78b0f1a
+      spriteID: b0846874801d3dd4abc74ee84e1959ff
       vertices: []
       indices: 
       edges: []
@@ -301,7 +301,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 351
-        y: 8
+        y: 9
         width: 69
         height: 78
       alignment: 7
@@ -311,7 +311,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d20b87b514d344d4393231107174db18
+      spriteID: 676deab8e1297de4ab449e9bc5c25382
       vertices: []
       indices: 
       edges: []
@@ -320,9 +320,9 @@ TextureImporter:
       name: BattleIGrimSpriteSheet_14
       rect:
         serializedVersion: 2
-        x: 436
+        x: 432
         y: 9
-        width: 66
+        width: 69
         height: 78
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -331,7 +331,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02dff5fa195f11343be9c1be87f1d9b0
+      spriteID: 220b171de6412a9499c5cf0d0e1e5e14
       vertices: []
       indices: 
       edges: []
