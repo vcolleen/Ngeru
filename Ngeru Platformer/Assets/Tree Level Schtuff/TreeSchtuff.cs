@@ -17,6 +17,7 @@ public class TreeSchtuff : MonoBehaviour {
     public GameObject tVine3;
 
     public AudioSource attackSound;
+    public AudioSource vineSound;
 
     // Use this for initialization
     void Start () {
@@ -40,7 +41,7 @@ public class TreeSchtuff : MonoBehaviour {
                 ngeru.GetComponent<Animator>().SetBool("Attack", true);
                 attackSound.Play();
                 i++;
-                tVine1.SetActive(false);
+                StartCoroutine(VineScratch());
                 StartCoroutine(NgeruTeleports());
             } else if (i == 1)
             {
@@ -56,7 +57,7 @@ public class TreeSchtuff : MonoBehaviour {
                 ngeru.GetComponent<Animator>().SetBool("Attack", true);
                 attackSound.Play();
                 i++;
-                tVine2.SetActive(false);
+                StartCoroutine(VineScratch());
                 StartCoroutine(NgeruTeleports());
             } else if (i == 2)
             {
@@ -72,7 +73,7 @@ public class TreeSchtuff : MonoBehaviour {
                 ngeru.GetComponent<Animator>().SetBool("Attack", true);
                 attackSound.Play();
                 i++;
-                tVine3.SetActive(false);
+                StartCoroutine(VineScratch());
                 StartCoroutine(NgeruTeleports());
             }
         }
@@ -106,5 +107,22 @@ public class TreeSchtuff : MonoBehaviour {
             ngeru.GetComponent<Animator>().SetLayerWeight(0, 1);
         }
         
+    }
+
+    IEnumerator VineScratch()
+    {
+        yield return new WaitForSeconds(0.5f);
+        vineSound.Play();
+
+        if (i == 1)
+        {
+            tVine1.SetActive(false);
+        } else if (i == 2)
+        {
+            tVine2.SetActive(false);
+        } else if (i == 3)
+        {
+            tVine3.SetActive(false);
+        }
     }
 }
