@@ -6,6 +6,7 @@ public class Hidehere : MonoBehaviour {
 
     bool on;
     float mark;
+    public GameObject ngeru;
 
 	// Use this for initialization
 	void Start () {
@@ -17,14 +18,19 @@ public class Hidehere : MonoBehaviour {
         if (on && Time.time >= mark)
         {
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            ngeru.GetComponent<Animator>().SetLayerWeight(0, 0);
+            ngeru.GetComponent<Animator>().SetLayerWeight(1, 0);
             mark = Time.time + 0.2f;
             on = false;
+            
         }
         if (!on && Time.time >= mark)
         {
             gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            ngeru.GetComponent<Animator>().SetLayerWeight(1, 0);
             mark = Time.time + 0.2f;
             on = true;
+            
         }
         
 
