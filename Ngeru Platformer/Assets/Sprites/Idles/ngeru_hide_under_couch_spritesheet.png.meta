@@ -97,9 +97,9 @@ TextureImporter:
       name: ngeru_hide_under_couch_spritesheet_0
       rect:
         serializedVersion: 2
-        x: 13
+        x: 67
         y: 207
-        width: 60
+        width: 72
         height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -108,7 +108,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77df67a6872825640b1ee04164565d59
+      spriteID: 3f383bc5bcab91b4faa5e32d54e668f4
       vertices: []
       indices: 
       edges: []
@@ -117,10 +117,10 @@ TextureImporter:
       name: ngeru_hide_under_couch_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 91
+        x: 145
         y: 207
         width: 72
-        height: 46
+        height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,7 +128,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7835cbd5239bf6459bbfaebd3c8a517
+      spriteID: 2c104c2c0ca466043983c4a72db9f930
       vertices: []
       indices: 
       edges: []
@@ -137,10 +137,10 @@ TextureImporter:
       name: ngeru_hide_under_couch_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 191
+        x: 245
         y: 207
-        width: 71
-        height: 46
+        width: 72
+        height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,7 +148,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60d419f1275c44248bee19eef52c344d
+      spriteID: 19e99f81beb927c46840bc1033fe270e
       vertices: []
       indices: 
       edges: []
@@ -157,10 +157,10 @@ TextureImporter:
       name: ngeru_hide_under_couch_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 290
+        x: 344
         y: 207
-        width: 60
-        height: 40
+        width: 72
+        height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,7 +168,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b85eab32ad98c64d859e6005fed8737
+      spriteID: 8433c7c9e8fec6d48b2b4bd88fd31271
       vertices: []
       indices: 
       edges: []
@@ -177,10 +177,10 @@ TextureImporter:
       name: ngeru_hide_under_couch_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 387
-        y: 195
-        width: 51
-        height: 40
+        x: 441
+        y: 208
+        width: 72
+        height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,7 +188,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 519b8be3d9fe3b042ac00a2306e03c0f
+      spriteID: 6906dd80d5932e344b083ed4db9d8e34
       vertices: []
       indices: 
       edges: []
@@ -197,10 +197,10 @@ TextureImporter:
       name: ngeru_hide_under_couch_spritesheet_5
       rect:
         serializedVersion: 2
-        x: 42
-        y: 144
-        width: 44
-        height: 40
+        x: 95
+        y: 155
+        width: 72
+        height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,7 +208,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4eed7c3eefc0dd34baf8e85ea3bdb997
+      spriteID: 9d1e4ef50b2e0b048be511a8f5a089a6
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
       name: ngeru_hide_under_couch_spritesheet_6
       rect:
         serializedVersion: 2
-        x: 130
-        y: 144
-        width: 44
-        height: 40
+        x: 184
+        y: 156
+        width: 72
+        height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,7 +228,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a86976f572bc8b3418a21b9ec74bcf03
+      spriteID: e50641c4af345584caad540b5bb4759d
       vertices: []
       indices: 
       edges: []
@@ -237,10 +237,10 @@ TextureImporter:
       name: ngeru_hide_under_couch_spritesheet_7
       rect:
         serializedVersion: 2
-        x: 218
-        y: 144
-        width: 44
-        height: 40
+        x: 272
+        y: 155
+        width: 72
+        height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,7 +248,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2046d28254c0222479dab5a4b5d2a6a0
+      spriteID: dcf810a08c499e84fbf2784b7bda83e6
       vertices: []
       indices: 
       edges: []
@@ -257,10 +257,10 @@ TextureImporter:
       name: ngeru_hide_under_couch_spritesheet_8
       rect:
         serializedVersion: 2
-        x: 306
-        y: 144
-        width: 44
-        height: 40
+        x: 359
+        y: 155
+        width: 72
+        height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,7 +268,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 058b7afaa5284ca4f948484cff90d830
+      spriteID: 0915c86c2e33509468d9ee2180de64d8
       vertices: []
       indices: 
       edges: []
@@ -277,10 +277,10 @@ TextureImporter:
       name: ngeru_hide_under_couch_spritesheet_9
       rect:
         serializedVersion: 2
-        x: 398
-        y: 144
-        width: 39
-        height: 40
+        x: 452
+        y: 155
+        width: 72
+        height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,7 +288,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d174f4b3fb378794895a0d26c4834bb0
+      spriteID: 3f65747dc6e7f7b4f9a3d7dff5d7263c
       vertices: []
       indices: 
       edges: []
@@ -297,10 +297,10 @@ TextureImporter:
       name: ngeru_hide_under_couch_spritesheet_10
       rect:
         serializedVersion: 2
-        x: 46
-        y: 93
-        width: 39
-        height: 40
+        x: 100
+        y: 105
+        width: 72
+        height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,7 +308,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd51a9965aba16f45a5996e6f642b22f
+      spriteID: e89c50ef718a219409bea67038adf0d8
       vertices: []
       indices: 
       edges: []
@@ -317,10 +317,10 @@ TextureImporter:
       name: ngeru_hide_under_couch_spritesheet_11
       rect:
         serializedVersion: 2
-        x: 134
-        y: 93
-        width: 39
-        height: 40
+        x: 188
+        y: 105
+        width: 72
+        height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,7 +328,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c9b82f5b97a73442bd36953b05aada7
+      spriteID: d5a5c91fdd4da704ea3fe07dcbd2a0c5
       vertices: []
       indices: 
       edges: []

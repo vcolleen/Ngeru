@@ -65,156 +65,159 @@ public class ControllerPlayerScript : MonoBehaviour
         CanTurnRight = true;
     }
 
+    private void Update()
+    {
+        //Jump-Movement
+        HandleInput();
+
+
+        //Animations & Keyboard Triggers
+        //Idle
+        if (Input.GetAxis("Horizontal") == 0)
+        {
+            anim.SetBool("isIdle", true);
+        }
+
+        else
+        {
+            anim.SetBool("isIdle", false);
+        }
+
+        //Run
+        if (Input.GetAxis("Run") > 0)
+        {
+            isRunning = true;
+        }
+
+        else
+        {
+            isRunning = false;
+        }
+
+        if (isRunning == true)
+        {
+            anim.SetBool("isRunning", true);
+            anim.SetBool("isWalkingLeft", false);
+            anim.SetBool("isWalkingRight", false);
+            movementSpeed = 2f;
+            jumpForce = 230;
+        }
+
+        if (isRunning == false)
+        {
+            anim.SetBool("isRunning", false);
+            movementSpeed = 0.8f;
+            jumpForce = 190;
+        }
+
+        //WalkingRight
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            isWalkingRight = true;
+            isWalkingLeft = false;
+            anim.SetTrigger("Turn");
+        }
+
+        else
+        {
+            isWalkingRight = false;
+        }
+
+        if (isWalkingRight == true)
+        {
+            anim.SetBool("isWalkingRight", true);
+            anim.SetBool("CanTurnRight", true);
+            anim.SetBool("CanTurnLeft", false);
+        }
+
+        if (isWalkingRight == false)
+        {
+            anim.SetBool("isWalkingRight", false);
+
+        }
+
+        //WalkingLeft
+        if (Input.GetAxis("Horizontal") < 0)
+        {
+            isWalkingLeft = true;
+            isWalkingRight = false;
+            anim.SetTrigger("Turn");
+        }
+        else
+        {
+            isWalkingLeft = false;
+        }
+
+        if (isWalkingLeft == true)
+        {
+            anim.SetBool("isWalkingLeft", true);
+            anim.SetBool("CanTurnLeft", true);
+            anim.SetBool("CanTurnRight", false);
+        }
+
+        if (isWalkingLeft == false)
+        {
+            anim.SetBool("isWalkingLeft", false);
+
+        }
+
+
+        //Laying down
+        if (isWalkingLeft == false)
+        {
+            if (isWalkingRight == false)
+            {
+                isIdle = true;
+
+            }
+        }
+
+        if (isWalkingLeft)
+        {
+            isIdle = false;
+            isSitting = false;
+            isWaitingForIdle = true;
+            anim.SetBool("isLayingDown", false);
+            anim.SetBool("isSuperIdle", false);
+        }
+        if (isWalkingRight)
+        {
+            isIdle = false;
+            isSitting = false;
+            isWaitingForIdle = true;
+            anim.SetBool("isLayingDown", false);
+            anim.SetBool("isSuperIdle", false);
+        }
+
+        //Idle
+        if (isIdle && !isHiding)
+        {
+            if (isWaitingForIdle)
+            {
+                startIdle = (Time.time + timeBeforeSitDown);
+                isWaitingForIdle = false;
+            }
+            if (isWaitingForSuperIdle)
+            {
+                startSitting = (Time.time + timeBeforeLayDown);
+                isWaitingForSuperIdle = false;
+            }
+            if (Time.time > startIdle)
+            {
+                anim.SetLayerWeight(2, 1);
+                anim.SetBool("isLayingDown", true);
+                isSitting = true;
+            }
+            if (Time.time > startSitting)
+            {
+                anim.SetBool("isSuperIdle", true);
+            }
+        }
+    }
+
 
     void FixedUpdate()
     {
-      //Jump-Movement
-      HandleInput();
-
-
-      //Animations & Keyboard Triggers
-      //Idle
-      if (Input.GetAxis("Horizontal") == 0)
-      {
-          anim.SetBool("isIdle", true);
-      }
-
-      else
-      {
-          anim.SetBool("isIdle", false);
-      }
-
-      //Run
-      if (Input.GetAxis("Run") > 0)
-      {
-          isRunning = true;
-      }
-
-      else
-      {
-          isRunning = false;
-      }
-
-      if (isRunning == true)
-      {
-          anim.SetBool("isRunning", true);
-          anim.SetBool("isWalkingLeft", false);
-          anim.SetBool("isWalkingRight", false);
-          movementSpeed = 2f;
-          jumpForce = 230;
-      }
-
-      if (isRunning == false)
-      {
-          anim.SetBool("isRunning", false);
-          movementSpeed = 0.8f;
-          jumpForce = 190;
-      }
-
-      //WalkingRight
-      if (Input.GetAxis("Horizontal") > 0)
-      {
-          isWalkingRight = true;
-          isWalkingLeft = false;
-          anim.SetTrigger("Turn");
-      }
-
-      else
-      {
-          isWalkingRight = false;
-      }
-
-      if (isWalkingRight == true)
-      {
-          anim.SetBool("isWalkingRight", true);
-          anim.SetBool("CanTurnRight", true);
-          anim.SetBool("CanTurnLeft", false);
-      }
-
-      if (isWalkingRight == false)
-      {
-          anim.SetBool("isWalkingRight", false);
-
-      }
-
-      //WalkingLeft
-      if (Input.GetAxis("Horizontal") < 0)
-      {
-          isWalkingLeft = true;
-          isWalkingRight = false;
-          anim.SetTrigger("Turn");
-      }
-      else
-      {
-          isWalkingLeft = false;
-      }
-
-      if (isWalkingLeft == true)
-      {
-          anim.SetBool("isWalkingLeft", true);
-          anim.SetBool("CanTurnLeft", true);
-          anim.SetBool("CanTurnRight", false);
-      }
-
-      if (isWalkingLeft == false)
-      {
-          anim.SetBool("isWalkingLeft", false);
-
-      }
-
-
-      //Laying down
-      if (isWalkingLeft == false)
-      {
-          if (isWalkingRight == false)
-          {
-              isIdle = true;
-
-          }
-      }
-
-      if (isWalkingLeft)
-      {
-          isIdle = false;
-          isSitting = false;
-          isWaitingForIdle = true;
-          anim.SetBool("isLayingDown", false);
-          anim.SetBool("isSuperIdle", false);
-      }
-      if (isWalkingRight)
-      {
-          isIdle = false;
-          isSitting = false;
-          isWaitingForIdle = true;
-          anim.SetBool("isLayingDown", false);
-          anim.SetBool("isSuperIdle", false);
-      }
-
-      //Idle
-      if (isIdle && !isHiding)
-      {
-          if (isWaitingForIdle)
-          {
-              startIdle = (Time.time + timeBeforeSitDown);
-              isWaitingForIdle = false;
-          }
-          if (isWaitingForSuperIdle)
-          {
-              startSitting = (Time.time + timeBeforeLayDown);
-              isWaitingForSuperIdle = false;
-          }
-          if (Time.time > startIdle)
-          {
-              anim.SetLayerWeight(2, 1);
-              anim.SetBool("isLayingDown", true);
-              isSitting = true;
-          }
-          if (Time.time > startSitting)
-          {
-              anim.SetBool("isSuperIdle", true);
-          }
-      }
-
         float horizontal = Input.GetAxis("Horizontal");
 
         isGrounded = IsGrounded();
@@ -239,7 +242,7 @@ public class ControllerPlayerScript : MonoBehaviour
 
         myRigidBody.velocity = new Vector2(horizontal * movementSpeed, myRigidBody.velocity.y);
 
-        if (isGrounded && jump)
+        if (isGrounded && jump && !isHiding)
         {
             jumpSound.Play();
             isGrounded = false;

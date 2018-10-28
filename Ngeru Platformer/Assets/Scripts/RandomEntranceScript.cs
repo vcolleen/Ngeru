@@ -8,8 +8,8 @@ public class RandomEntranceScript : MonoBehaviour
 
     public int rsTimer;
     public bool isSpawned;
-    public float randomNumber = 10f;
-    public float randomTime = 10f;
+    public float randomNumber = 20f;
+    public float randomTime = 20f;
     public float minRange;
     public float maxRange;
     public Vector3 spawnPos;
