@@ -19,10 +19,18 @@ public class CutsceneScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (movTexture.isPlaying) {
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+
+        if (movTexture.isPlaying) {
 			return;
 		} else {
 			SceneManager.LoadScene(sceneName);
 		}
+
 	}
+
 }

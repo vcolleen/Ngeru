@@ -26,6 +26,7 @@ public class SphynxCollider : MonoBehaviour {
             ngeru.GetComponent<Animator>().SetBool("isWalkingLeft", false);
             ngeru.GetComponent<Animator>().SetBool("isWalkingRight", false);
             ngeru.GetComponent<Animator>().SetBool("isRunning", false);
+            ngeru.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -2);
         }
     }
 

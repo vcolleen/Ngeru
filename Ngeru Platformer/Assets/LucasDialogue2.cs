@@ -27,6 +27,11 @@ public class LucasDialogue2 : MonoBehaviour {
     void Update()
     {
 
+        if (inBox)
+        {
+            ngeru.GetComponent<ControllerPlayerScript>().jump = false;
+        }
+
         if (i == 1 && bass.isPlaying == false)
         {
             e.SetActive(true);

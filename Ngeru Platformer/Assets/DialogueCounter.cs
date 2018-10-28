@@ -19,6 +19,11 @@ public class DialogueCounter : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        if (inBox)
+        {
+            ngeru.GetComponent<ControllerPlayerScript>().jump = false;
+        }
+
         if (inBox && Input.GetKeyDown(KeyCode.E))
         {
             if (i < counter)
