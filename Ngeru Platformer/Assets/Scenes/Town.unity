@@ -4646,6 +4646,7 @@ MonoBehaviour:
   dia3: {fileID: 763373709}
   dia4: {fileID: 1488078421}
   dia5: {fileID: 1897866257}
+  dia6: {fileID: 471687354}
   dia7: {fileID: 1677776312}
 --- !u!1 &1368025700
 GameObject:
