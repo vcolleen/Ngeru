@@ -42,10 +42,10 @@ public class ObjectTrigger : MonoBehaviour {
                     //Start Combat Here
                 }
 
-                ngeru.SetLayerWeight(4, 1);
-                ngeru.SetLayerWeight(2, 0);
                 ngeru.SetTrigger("Swipe");
                 anim.SetTrigger("play");
+                ngeru.SetLayerWeight(4, 1);
+                ngeru.SetLayerWeight(2, 0);
                 tick.SetActive(true);
                 eButActive = false;
                 m_Rigidbody = GetComponent<Rigidbody2D>();
