@@ -1140,7 +1140,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 488225560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.084, y: 0.907, z: 0}
+  m_LocalPosition: {x: -0.084, y: 0.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 612946525}
@@ -1854,7 +1854,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 612946524}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.648, z: 0}
+  m_LocalPosition: {x: -0.01, y: -1.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 488225561}
@@ -1874,7 +1874,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06848884, y: 0.6689123}
+  m_Offset: {x: -0.06848884, y: 0.12910016}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1885,7 +1885,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5387778, y: 0.7428684}
+  m_Size: {x: 1.5387778, y: 0.6083933}
   m_EdgeRadius: 0
 --- !u!114 &612946527
 MonoBehaviour:
@@ -3107,8 +3107,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rsTimer: 0
   isSpawned: 0
-  randomNumber: 10
-  randomTime: 10
+  randomNumber: 20
+  randomTime: 20
   minRange: 10
   maxRange: 20
   spawnPos: {x: 0, y: 0, z: 0}
@@ -4445,8 +4445,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1979592010}
   smoothTime: 0.15
-  YMaxEnabled: 0
-  YMaxValue: 0
+  YMaxEnabled: 1
+  YMaxValue: 1.35
   XMaxEnabled: 1
   XMaxValue: -0.99
   YMinEnabled: 1
@@ -6758,7 +6758,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1868018813
 MonoBehaviour:
   m_ObjectHideFlags: 0

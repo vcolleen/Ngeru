@@ -42,7 +42,7 @@ public class CouchTrigger : MonoBehaviour {
                     //Start Combat Here
                 }
 
-                ngeru.SetLayerWeight(5, 1);
+                ngeru.SetLayerWeight(4, 1);
                 ngeru.SetLayerWeight(2, 0);
                 ngeru.SetTrigger("Pee");
                 anim.SetTrigger("play");
