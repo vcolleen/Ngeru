@@ -2,20 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CouchTrigger : MonoBehaviour {
+public class RugTrigger : MonoBehaviour {
 
     Animator anim;
     public bool inside;
     //public GameObject item;
     public GameObject tick;
-    public Rigidbody2D catBody;
 
     public GameObject cat;
     Animator ngeru;
 
     public AudioSource kapowSound;
 
-    //public GameObject a, b, c, d, e, f, g;
     public bool gotItems;
     public bool combat;
 
@@ -36,12 +34,10 @@ public class CouchTrigger : MonoBehaviour {
 
         if (inside == true)
         {
-            
             anim.SetBool("inside", true);
             if (Input.GetAxis("Trigger") == 1)
             {
-                
-                StartCoroutine(HealSound());
+                kapowSound.Play();
                 if (combat)
                 {
                     //Start Combat Here
@@ -50,11 +46,12 @@ public class CouchTrigger : MonoBehaviour {
                 StartCoroutine(Freeze());
                 ngeru.SetLayerWeight(4, 1);
                 ngeru.SetLayerWeight(2, 0);
-                ngeru.SetTrigger("Pee");
+                ngeru.SetTrigger("SwipeLow");
                 anim.SetTrigger("play");
                 tick.SetActive(true);
                 eButActive = false;
-                gameObject.GetComponent<CouchTrigger>().enabled = false;
+                gameObject.GetComponent<RugTrigger>().enabled = false;
+
             }
         }
 
@@ -76,7 +73,6 @@ public class CouchTrigger : MonoBehaviour {
         yield return new WaitForSeconds(1);
         rigid.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
     }
-
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -103,10 +99,5 @@ public class CouchTrigger : MonoBehaviour {
         }
     }
 
-    IEnumerator HealSound ()
-    {
-        yield return new WaitForSeconds(0.5f);
-        kapowSound.Play();
-    }
 
 }
