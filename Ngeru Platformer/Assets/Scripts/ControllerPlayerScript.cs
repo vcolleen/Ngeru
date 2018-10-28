@@ -242,7 +242,7 @@ public class ControllerPlayerScript : MonoBehaviour
 
         myRigidBody.velocity = new Vector2(horizontal * movementSpeed, myRigidBody.velocity.y);
 
-        if (isGrounded && jump)
+        if (isGrounded && jump && !isHiding)
         {
             jumpSound.Play();
             isGrounded = false;
