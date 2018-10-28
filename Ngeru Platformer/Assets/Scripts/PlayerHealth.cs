@@ -198,9 +198,11 @@ public class PlayerHealth : MonoBehaviour {
 
     public void PlayerDead()
     {
+        StartCoroutine(Timer2());
         anim.SetBool("Death", true);
         //deathSound.Play();
         StartCoroutine(TransitionDelay());
+        
     }
 
     IEnumerator TextDelay ()
