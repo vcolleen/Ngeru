@@ -14,24 +14,18 @@ public class SphynxCollider : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (ngeruAnim)
-        {
 
+        if (Input.GetAxis("Trigger") == 1 && ngeruAnim)
+        {
+            ngeru.GetComponent<ControllerPlayerScript>().enabled = false;
+        }
+
+        if (ngeru.GetComponent<ControllerPlayerScript>().enabled == false)
+        {
             ngeru.GetComponent<Animator>().SetBool("isIdle", true);
-
-            if (ngeru.GetComponent<Animator>().GetBool("isIdle") == true && ngeru.GetComponent<Animator>().GetBool("isWalkingLeft") == false && ngeru.GetComponent<Animator>().GetBool("isWalkingRight") == false)
-            {
-
-                if (Input.GetAxis("Trigger") == 1)
-                {
-                    ngeru.GetComponent<ControllerPlayerScript>().enabled = false;
-                }
-
-            }
-
-        } else
-        {
-            ngeru.GetComponent<ControllerPlayerScript>().enabled = true;
+            ngeru.GetComponent<Animator>().SetBool("isWalkingLeft", false);
+            ngeru.GetComponent<Animator>().SetBool("isWalkingRight", false);
+            ngeru.GetComponent<Animator>().SetBool("isRunning", false);
         }
     }
 

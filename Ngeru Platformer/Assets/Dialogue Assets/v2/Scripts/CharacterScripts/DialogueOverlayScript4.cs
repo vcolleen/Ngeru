@@ -69,7 +69,7 @@ public class DialogueOverlayScript4 : MonoBehaviour {
 
     public Button yes;
     public Button no;
-    public GameObject music;
+    //public GameObject music;
     //References
 
 	void Start () {
@@ -174,7 +174,7 @@ public class DialogueOverlayScript4 : MonoBehaviour {
 
     public void PlayMusic()
     {
-        music.GetComponent<AudioSource>().Play();
+        //music.GetComponent<AudioSource>().Play();
     }
     public void TakeItem()
     {
@@ -207,7 +207,7 @@ public class DialogueOverlayScript4 : MonoBehaviour {
         }
             else if (currentImage == 44)
         {
-            PlayMusic();
+            //PlayMusic();
             currentImage += 1;
             portrait.sprite = imageList[currentImage];
         }

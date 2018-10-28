@@ -12,8 +12,8 @@ public class ControllerPlayerScript : MonoBehaviour
     public float groundRadius;
 
     //Jumping Variables
-    private bool isGrounded;
-    private bool jump;
+    public bool isGrounded;
+    public bool jump;
     public float jumpForce;
     public LayerMask whatIsGround;
 
@@ -29,7 +29,7 @@ public class ControllerPlayerScript : MonoBehaviour
     private bool isRunning;
     private bool CanTurnLeft;
     private bool CanTurnRight;
-    private bool landing;
+    public bool landing;
     
 
     //laying down timing
