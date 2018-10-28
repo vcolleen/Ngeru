@@ -24,7 +24,7 @@ public class Patrol : MonoBehaviour
     void Awake()
     {
 
-        rEntranceScript = GameObject.Find("AIController").GetComponent<RandomEntranceScript>();
+    
         spawnTime = Time.time;
         timeAlive = 0f;
 
@@ -74,7 +74,7 @@ public class Patrol : MonoBehaviour
         timeAlive = (Time.time - spawnTime);
 
         //if (transform.position.x >= rEntranceScript.spawnPos.x && timeAlive >= 2)
-        if (transform.position.x >= rEntranceScript.spawnPos.x && timeAlive >= rEntranceScript.randomNumber)
+    
             {
             Die();
 
