@@ -1633,6 +1633,7 @@ GameObject:
   - component: {fileID: 1523558858}
   - component: {fileID: 1523558857}
   - component: {fileID: 1523558856}
+  - component: {fileID: 1523558860}
   m_Layer: 12
   m_Name: RightWall
   m_TagString: Untagged
@@ -1697,6 +1698,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1523558860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1523558855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41fc1db8e87975c42a96b0649d7daf50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1754367070
 Prefab:
   m_ObjectHideFlags: 0
