@@ -13,7 +13,7 @@ public class PlatformManager : MonoBehaviour
     int toggleTime;
 
     [SerializeField]
-    float cycleTime = 2f;
+    float cycleTime = 5f;
 
     // Use this for initialization
     void Start()
@@ -21,7 +21,7 @@ public class PlatformManager : MonoBehaviour
         numberOfPlatforms = platforms.Length;
 
         if (numberOfPlatforms - 1 == 0)
-            toggleTime = 1;
+            toggleTime = 3;
         else
             toggleTime = numberOfPlatforms - 1;
 
