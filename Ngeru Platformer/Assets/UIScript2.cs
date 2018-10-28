@@ -55,7 +55,7 @@ public class UIScript2 : MonoBehaviour
         }
         else
         {
-            return;
+            inv.SetActive(false);
         }
     }
 
@@ -67,7 +67,7 @@ public class UIScript2 : MonoBehaviour
         }
         else
         {
-            return;
+            inv.SetActive(true);
         }
     }
 

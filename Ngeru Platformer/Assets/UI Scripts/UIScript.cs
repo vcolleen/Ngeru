@@ -78,7 +78,7 @@ public class UIScript : MonoBehaviour {
         }
         else
         {
-            return;
+            inv.SetActive(false);
         }
     }
 
@@ -90,7 +90,7 @@ public class UIScript : MonoBehaviour {
         }
         else
         {
-            return;
+            inv.SetActive(true);
         }
     }
 
