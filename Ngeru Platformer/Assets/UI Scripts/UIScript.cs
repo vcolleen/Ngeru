@@ -6,6 +6,7 @@ public class UIScript : MonoBehaviour {
 
     public GameObject objective;
     public GameObject inv;
+    public GameObject pause;
 
 
 	// Use this for initialization
@@ -38,7 +39,19 @@ public class UIScript : MonoBehaviour {
                 inv.SetActive(false);
             }
         }
-	}
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            if (pause.activeSelf == false)
+            {
+                pause.SetActive(true);
+            }
+            else
+            {
+                pause.SetActive(false);
+            }
+        }
+    }
 
     public void PressHelp()
     {
@@ -52,7 +65,7 @@ public class UIScript : MonoBehaviour {
         }
     }
 
-   /* public void OpenInv()
+    public void OpenInv()
     {
         if (inv.activeSelf == false)
         {
@@ -62,7 +75,7 @@ public class UIScript : MonoBehaviour {
         {
             return;
         }
-    }*/
+    }
 
     public void CloseInv()
     {
@@ -71,6 +84,17 @@ public class UIScript : MonoBehaviour {
             inv.SetActive(false);
         }
         else
+        {
+            return;
+        }
+    }
+
+    public void OpenPause()
+    {
+        if (pause.activeSelf == true)
+        {
+            pause.SetActive(false);
+        } else
         {
             return;
         }
