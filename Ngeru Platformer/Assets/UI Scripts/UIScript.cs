@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIScript : MonoBehaviour {
 
@@ -45,12 +47,15 @@ public class UIScript : MonoBehaviour {
             if (pause.activeSelf == false)
             {
                 pause.SetActive(true);
+                StartCoroutine(PauseGame());
             }
             else
             {
                 pause.SetActive(false);
+                Time.timeScale = 1f;
             }
         }
+
     }
 
     public void PressHelp()
@@ -91,12 +96,37 @@ public class UIScript : MonoBehaviour {
 
     public void OpenPause()
     {
-        if (pause.activeSelf == true)
+        if (pause.activeSelf == false)
         {
-            pause.SetActive(false);
+            pause.SetActive(true);
+            StartCoroutine(PauseGame());
         } else
         {
             return;
         }
+    }
+
+    public void ClosePause()
+    {
+        if (pause.activeSelf == true)
+        {
+            pause.SetActive(false);
+            Time.timeScale = 1f;
+        }
+        else
+        {
+            return;
+        }
+    }
+
+    public IEnumerator PauseGame()
+    {
+        yield return new WaitForSeconds(0.2f);
+        Time.timeScale = 0f;
+    }
+
+    public void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenuNEW");
     }
 }
