@@ -27,6 +27,7 @@ public class DialoguePromptScript1 : MonoBehaviour {
         if (collision.GetComponent<Transform>().CompareTag("Player"))
         {
             Destroy(gameObject);
+            //Debug.Log("PLS");
         }
     }
 }

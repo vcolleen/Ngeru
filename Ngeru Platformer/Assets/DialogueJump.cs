@@ -5,7 +5,7 @@ using UnityEngine;
 public class DialogueJump : MonoBehaviour {
 
     public GameObject dia1;
-    public GameObject dia2;
+    //public GameObject dia2;
     public GameObject dia3;
     public GameObject dia4;
     public GameObject dia5;
@@ -22,7 +22,7 @@ public class DialogueJump : MonoBehaviour {
 		if (gameObject.GetComponent<ControllerPlayerScript>().isGrounded == false)
         {
             dia1.SetActive(false);
-            dia2.SetActive(false);
+            //dia2.SetActive(false);
             dia3.SetActive(false);
             dia4.SetActive(false);
             dia5.SetActive(false);
@@ -31,7 +31,7 @@ public class DialogueJump : MonoBehaviour {
         } else
         {
             dia1.SetActive(true);
-            dia2.SetActive(true);
+            //dia2.SetActive(true);
             dia3.SetActive(true);
             dia4.SetActive(true);
             dia5.SetActive(true);
