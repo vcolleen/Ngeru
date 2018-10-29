@@ -45,7 +45,7 @@ public class GameControlAlley : MonoBehaviour {
 		spawnPos = new Vector2 (spawnPosX, spawnPosY);
 		Instantiate (fallObject, spawnPos, Quaternion.identity);
 
-		spawnTime = Time.time + 3;
+		spawnTime = Time.time + 10;
 
 	}
 }

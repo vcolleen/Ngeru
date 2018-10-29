@@ -3268,7 +3268,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.2659402
+  orthographic size: 1.357594
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3314,11 +3314,11 @@ MonoBehaviour:
   YMaxEnabled: 1
   YMaxValue: 7.52
   XMaxEnabled: 1
-  XMaxValue: 0.13
+  XMaxValue: 0
   YMinEnabled: 1
-  YMinValue: -0.04
+  YMinValue: 0.05
   XMinEnabled: 1
-  XMinValue: -0.15
+  XMinValue: 0
 --- !u!1 &1772449613
 GameObject:
   m_ObjectHideFlags: 0
