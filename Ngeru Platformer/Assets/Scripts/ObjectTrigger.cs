@@ -8,7 +8,6 @@ public class ObjectTrigger : MonoBehaviour {
     public bool inside;
     //public GameObject item;
     public GameObject tick;
-    public Rigidbody2D m_Rigidbody;
 
     public GameObject cat;
     Animator ngeru;
@@ -48,16 +47,6 @@ public class ObjectTrigger : MonoBehaviour {
                 ngeru.SetLayerWeight(2, 0);
                 tick.SetActive(true);
                 eButActive = false;
-                m_Rigidbody = GetComponent<Rigidbody2D>();
-                try
-                {
-                    m_Rigidbody.bodyType = RigidbodyType2D.Dynamic;
-                }
-                catch (MissingComponentException)
-                {
-                    Debug.Log("Object has no rigibody2d");
-                }
-
                 gameObject.GetComponent<ObjectTrigger>().enabled = false;
 
             }

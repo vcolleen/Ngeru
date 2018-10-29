@@ -457,11 +457,11 @@ GameObject:
   - component: {fileID: 206962626}
   - component: {fileID: 206962625}
   - component: {fileID: 206962624}
-  - component: {fileID: 206962623}
   - component: {fileID: 206962627}
   - component: {fileID: 206962628}
   - component: {fileID: 206962629}
   - component: {fileID: 206962630}
+  - component: {fileID: 206962623}
   m_Layer: 14
   m_Name: Can
   m_TagString: Untagged
@@ -477,12 +477,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 206962622}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8308895b62795f54695c979508fb3da7, type: 3}
+  m_Script: {fileID: 11500000, guid: 6125d022f81a99841ba19238e41efbee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inside: 0
-  tick: {fileID: 175944213}
-  m_Rigidbody: {fileID: 206962628}
+  tick: {fileID: 558809772}
+  rigid: {fileID: 206962628}
   cat: {fileID: 503687005}
   kapowSound: {fileID: 1939438873}
   gotItems: 0
@@ -2207,7 +2207,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &944862881
 GameObject:
@@ -2335,7 +2335,7 @@ Transform:
   m_LocalScale: {x: 0.1374995, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1046334769
 Prefab:
@@ -2746,7 +2746,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1236343991
 GameObject:
@@ -2853,7 +2853,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inside: 0
   tick: {fileID: 743497360}
-  m_Rigidbody: {fileID: 0}
   cat: {fileID: 503687005}
   kapowSound: {fileID: 1939438873}
   gotItems: 0
@@ -4353,7 +4352,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inside: 0
   tick: {fileID: 558809772}
-  m_Rigidbody: {fileID: 0}
   cat: {fileID: 503687005}
   kapowSound: {fileID: 1939438873}
   gotItems: 0
@@ -4691,7 +4689,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1951043888
 GameObject:
@@ -4945,7 +4943,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inside: 0
   tick: {fileID: 1344768114}
-  m_Rigidbody: {fileID: 0}
   cat: {fileID: 503687005}
   kapowSound: {fileID: 1939438873}
   gotItems: 0
@@ -5271,10 +5268,10 @@ GameObject:
   - component: {fileID: 2051920899}
   - component: {fileID: 2051920898}
   - component: {fileID: 2051920897}
-  - component: {fileID: 2051920896}
   - component: {fileID: 2051920901}
   - component: {fileID: 2051920903}
   - component: {fileID: 2051920902}
+  - component: {fileID: 2051920896}
   m_Layer: 8
   m_Name: Pan
   m_TagString: Untagged
@@ -5290,12 +5287,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2051920895}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8308895b62795f54695c979508fb3da7, type: 3}
+  m_Script: {fileID: 11500000, guid: 6125d022f81a99841ba19238e41efbee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inside: 0
   tick: {fileID: 1283076576}
-  m_Rigidbody: {fileID: 2051920901}
+  rigid: {fileID: 2051920901}
   cat: {fileID: 503687005}
   kapowSound: {fileID: 1939438873}
   gotItems: 0
@@ -5523,7 +5520,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inside: 0
   tick: {fileID: 552753556}
-  m_Rigidbody: {fileID: 0}
   cat: {fileID: 503687005}
   kapowSound: {fileID: 1939438873}
   gotItems: 0

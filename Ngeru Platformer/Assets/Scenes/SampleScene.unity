@@ -2566,7 +2566,6 @@ GameObject:
   m_Component:
   - component: {fileID: 900318510}
   - component: {fileID: 900318511}
-  - component: {fileID: 900318512}
   - component: {fileID: 900318508}
   - component: {fileID: 900318507}
   m_Layer: 0
@@ -2688,33 +2687,6 @@ MonoBehaviour:
   otherGameObject: {fileID: 1787541850}
   sceneName: Victory
   ngeru: {fileID: 1950104330}
---- !u!114 &900318512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 900318506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: add2c58168b823f49afebb4bd121a083, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useOverlay: 1
-  isCombatNPC: 1
-  playerInCollider: 0
-  dialogueManager: {fileID: 0}
-  promtPrefab: {fileID: 1014819942400142, guid: 2129acf889fe59642b2719a885b02493,
-    type: 2}
-  overlay: {fileID: 1780965799774064, guid: 3e188914f6f7442468074a97bcb50e96, type: 2}
-  bubble: {fileID: 1115552781467944, guid: 6fc71abe13348144ab8ffacf13c2e975, type: 2}
-  dialogueAnchor: {fileID: 1149305657}
-  button: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 09c44db87a383354fb1f41486e82fee9, type: 3}
-  textFile1: {fileID: 4900000, guid: 2453ce2710774e640b738f6ed9a3570d, type: 3}
-  textFile2: {fileID: 4900000, guid: f7179f0c061dd6b47b0059563c14a680, type: 3}
-  textFile3: {fileID: 0}
-  textFile4: {fileID: 0}
-  textFile5: {fileID: 0}
 --- !u!1 &926824972
 GameObject:
   m_ObjectHideFlags: 0

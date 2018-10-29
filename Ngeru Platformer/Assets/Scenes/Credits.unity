@@ -221,7 +221,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a873763ca110618419a692f68a048593, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0084881751ae6d246864b9c22f093f3a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74e2c0a8d2f1daa49885289289f39a0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movTexture: {fileID: 15200000, guid: a873763ca110618419a692f68a048593, type: 3}
+  movTexture: {fileID: 15200000, guid: 0084881751ae6d246864b9c22f093f3a, type: 3}
   sceneName: VS4
 --- !u!114 &663136228
 MonoBehaviour:
@@ -339,7 +339,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 15200000, guid: a873763ca110618419a692f68a048593, type: 3}
+  m_Texture: {fileID: 15200000, guid: 0084881751ae6d246864b9c22f093f3a, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
