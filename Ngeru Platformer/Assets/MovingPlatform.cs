@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovingPlatform : MonoBehaviour
 {
 
-    float dirX, moveSpeed = 1f;
+    float dirX, moveSpeed = 0.5f;
     bool moveRight = true;
 
     // Update is called once per frame

@@ -33,7 +33,7 @@ public class FallingPlatformScript : MonoBehaviour
         if (col.gameObject.name.Equals("Ngeru") && !platformMovingBack)
         {
             startFalling = (Time.time + fallingPlatform);
-            Invoke("DropPlatform", 0.5f);
+            Invoke("DropPlatform", 1f);
         }
     }
 
