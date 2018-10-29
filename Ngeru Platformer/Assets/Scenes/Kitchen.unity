@@ -481,7 +481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inside: 0
-  tick: {fileID: 558809772}
+  tick: {fileID: 175944213}
   rigid: {fileID: 206962628}
   cat: {fileID: 503687005}
   kapowSound: {fileID: 1939438873}

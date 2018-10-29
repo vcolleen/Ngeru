@@ -54,7 +54,7 @@ public class ControllerPlayerScript : MonoBehaviour
     {
         myRigidBody = GetComponent<Rigidbody2D>();
 
-       
+        Time.timeScale = 1f;
 
         anim = GetComponent<Animator>();
         anim.SetBool("isWalkingRight", true);
