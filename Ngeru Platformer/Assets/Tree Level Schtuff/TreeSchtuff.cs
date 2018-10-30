@@ -26,8 +26,20 @@ public class TreeSchtuff : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (pressE.activeSelf == true && Input.GetKeyDown(KeyCode.E))
+
+        if (ngeru.GetComponent<ControllerPlayerScript>().isGrounded == false)
         {
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        } else
+        {
+            gameObject.GetComponent<BoxCollider2D>().enabled = true;
+        }
+
+        if (pressE.activeSelf == true && Input.GetKeyDown(KeyCode.E))
+        {
+
+            ngeru.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -2);
+
             if (i == 0)
             {
                 ngeru.GetComponent<ControllerPlayerScript>().enabled = false;
@@ -82,7 +94,9 @@ public class TreeSchtuff : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+
         pressE.SetActive(true);
+
     }
 
     void OnTriggerExit2D(Collider2D collision)

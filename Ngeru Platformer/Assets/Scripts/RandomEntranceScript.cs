@@ -76,7 +76,7 @@ public class RandomEntranceScript : MonoBehaviour
         {
             hideUI.SetActive(false);
             //lineRenderer.GetComponent<LineRenderer>().enabled = false;
-            if ((randomTime - Time.time) <= 8f)
+            if ((randomTime - Time.time) <= 5f)
             {
                 //hideUI.GetComponent<Text>().enabled = true;
                 hideUI.SetActive(true);
