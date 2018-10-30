@@ -32,6 +32,15 @@ public class RugTrigger : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
+        if (cat.GetComponent<ControllerPlayerScript>().isGrounded == false)
+        {
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        }
+        else
+        {
+            gameObject.GetComponent<BoxCollider2D>().enabled = true;
+        }
+
         if (inside == true)
         {
             anim.SetBool("inside", true);
