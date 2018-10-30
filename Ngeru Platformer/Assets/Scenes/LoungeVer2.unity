@@ -4280,6 +4280,25 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 50109640490704760, guid: 180c5774d9bd87046a0267817fc2603c,
     type: 2}
   m_PrefabInternal: {fileID: 1015769615}
+--- !u!114 &1197536656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1197536649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1244f9a9789fbc448a8af19b8d09c4be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paw0: {fileID: 15791022}
+  paw1: {fileID: 1356981190}
+  paw2: {fileID: 618222922}
+  paw3: {fileID: 1603075855}
+  paw4: {fileID: 903652271}
+  paw5: {fileID: 167749241}
+  plant: {fileID: 1123025583}
+  plantCol: {fileID: 1212558836}
 --- !u!1 &1206728031
 GameObject:
   m_ObjectHideFlags: 0
@@ -6238,7 +6257,6 @@ GameObject:
   - component: {fileID: 1765781381}
   - component: {fileID: 1765781380}
   - component: {fileID: 1765781379}
-  - component: {fileID: 1765781378}
   m_Layer: 5
   m_Name: Objective
   m_TagString: Untagged
@@ -6246,33 +6264,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1765781378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1765781377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1244f9a9789fbc448a8af19b8d09c4be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  paw0: {fileID: 15791022}
-  zero: 0
-  paw1: {fileID: 1356981190}
-  one: 0
-  paw2: {fileID: 618222922}
-  two: 0
-  paw3: {fileID: 1603075855}
-  three: 0
-  paw4: {fileID: 903652271}
-  four: 0
-  paw5: {fileID: 167749241}
-  five: 0
-  paw6: {fileID: 1695799227}
-  six: 0
-  plant: {fileID: 1123025583}
-  plantCol: {fileID: 1212558836}
 --- !u!114 &1765781379
 MonoBehaviour:
   m_ObjectHideFlags: 0
