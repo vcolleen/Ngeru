@@ -17,7 +17,7 @@ public class Hidehere : MonoBehaviour {
 	void Update () {
         if (on && Time.time >= mark)
         {
-            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            gameObject.GetComponent<SpriteRenderer>().enabled = true;
             ngeru.GetComponent<Animator>().SetLayerWeight(0, 0);
             ngeru.GetComponent<Animator>().SetLayerWeight(1, 0);
             mark = Time.time + 0.2f;
@@ -26,7 +26,7 @@ public class Hidehere : MonoBehaviour {
         }
         if (!on && Time.time >= mark)
         {
-            gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
             ngeru.GetComponent<Animator>().SetLayerWeight(1, 0);
             mark = Time.time + 0.2f;
             on = true;
