@@ -21,6 +21,8 @@ public class Patrol : MonoBehaviour
 
     RandomEntranceScript rEntranceScript;
 
+    
+
     void Awake()
     {
 
@@ -75,7 +77,7 @@ public class Patrol : MonoBehaviour
 
         //if (transform.position.x >= rEntranceScript.spawnPos.x && timeAlive >= 2)
         if (transform.position.x >= rEntranceScript.spawnPos.x && timeAlive >= rEntranceScript.randomNumber)
-            {
+        {
             Die();
 
         }
@@ -86,7 +88,10 @@ public class Patrol : MonoBehaviour
     {
         
         rEntranceScript.isSpawned = false;
-        rEntranceScript.randomTime = (rEntranceScript.rsTimer + rEntranceScript.randomNumber);
+        Debug.Log("Die() randomTime before: " + rEntranceScript.randomTime);
+        //rEntranceScript.randomTime = (rEntranceScript.rsTimer + rEntranceScript.randomNumber);
+        Debug.Log("Die()randomTime after: " + rEntranceScript.randomTime);
+        
         Destroy(gameObject);
         Debug.Log("Die");
     }

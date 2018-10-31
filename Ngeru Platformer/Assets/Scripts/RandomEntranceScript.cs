@@ -9,7 +9,7 @@ public class RandomEntranceScript : MonoBehaviour
     public int rsTimer;
     public bool isSpawned;
     public float randomNumber = 20f;
-    public float randomTime = 20f;
+    public float randomTime = 40f;
     public float minRange;
     public float maxRange;
     public Vector3 spawnPos;
@@ -17,7 +17,7 @@ public class RandomEntranceScript : MonoBehaviour
     public GameObject background;
     public GameObject humanAI;
     public GameObject lineRenderer;
-    public GameObject hideUI;
+    public GameObject hideUI; // HireHere 
     public Image fadePanel;
     public GameObject Player;
 
@@ -25,6 +25,7 @@ public class RandomEntranceScript : MonoBehaviour
     public bool waiting;
     public Vector2 playerSpawnPos;
     public GameObject aiRef;
+
     public GameObject caughtCanvas;
 
     void Start()
@@ -35,35 +36,56 @@ public class RandomEntranceScript : MonoBehaviour
         //hideUI.GetComponent<Text>().enabled = false;
     }
 
+    // Only resets the randomNumber to 20f at the moment
+    // TODO: this should be called when initialized, but also after you die
+    private void Init()
+    {
+
+        //rsTimer = 0;
+       // randomNumber = 20f;
+        Debug.Log("randomTime 0 before: " + randomTime);
+        //randomTime = 40f;
+        Debug.Log("randomTime 0 after: " + randomTime);
+    }
+
     void Update()
     {
-        Debug.Log("Random Time " + randomTime);
+        Debug.Log("Random Time 3: " + randomTime);
         SpawnTimer();
         AITimer();
 
         if (waiting  == true)
         {
+
+            // after human ?
             if (Time.time < executeTime)
             {
 
-
+                
                 fadePanel.GetComponent<Animator>().SetBool("FadeIn", false);
                 fadePanel.GetComponent<Animator>().SetBool("FadeOut", true);
                 Player.GetComponent<ControllerPlayerScript>().enabled = false;
                 caughtCanvas.SetActive(true);
-                Debug.Log("aeiou!!!");
+                //Debug.Log("if 1 !!!" + " time: " + Time.time + " executeTime: " + executeTime);
+                
                 //Disable Player Movement
             }
 
+            // Caught, Destroy Human
             else if (Time.time > executeTime)
             {
-                Debug.Log("toosoon");
+                
+                //Debug.Log("if 2 !!!" + " time: " + Time.time + " executeTime: " + executeTime);
                 fadePanel.GetComponent<Animator>().SetBool("FadeIn", true);
                 fadePanel.GetComponent<Animator>().SetBool("FadeOut", false);
 
                 //isSpawned = false;
                 Destroy(aiRef);
-                randomTime = (rsTimer + randomNumber);
+                //print("randomTime 1 before: " + randomTime);
+                //randomTime = (rsTimer + randomNumber);
+                randomTime += 40f;
+
+                //print("randomTime 1 after: " + randomTime);
                 isSpawned = false;
                 Player.GetComponent<Transform>().position = playerSpawnPos;
                 Player.GetComponent<ControllerPlayerScript>().enabled = true;
@@ -72,24 +94,21 @@ public class RandomEntranceScript : MonoBehaviour
             }
         }
 
+        // Exclamation Mark UI
         if (isSpawned == false)
         {
             hideUI.SetActive(false);
             //lineRenderer.GetComponent<LineRenderer>().enabled = false;
             if ((randomTime - Time.time) <= 5f)
             {
-                //hideUI.GetComponent<Text>().enabled = true;
+
+                // show HireHere (exclamation mark)
                 hideUI.SetActive(true);
                 hideUI.GetComponent<SpriteRenderer>().enabled = true;
             }
 
         }
-        else
-        {
-            //lineRenderer.GetComponent<LineRenderer>().enabled = true;
-            //hideUI.GetComponent<Text>().enabled = false;
-
-        }
+       
 
     }
 
@@ -98,8 +117,12 @@ public class RandomEntranceScript : MonoBehaviour
         //Destroy(gameObject);
         executeTime = (Time.time + 5f);
         waiting = true;
-        Debug.Log("AAAAAA");
         hideUI.SetActive(false);
+        Debug.Log("Caught()");
+
+        //TODO: make sure this is called after death, if needed
+        Init();
+
     }
 
 
@@ -110,7 +133,7 @@ public class RandomEntranceScript : MonoBehaviour
         {
 
             rsTimer += 1;
-
+            
         }
     }
 
@@ -120,7 +143,7 @@ public class RandomEntranceScript : MonoBehaviour
         if (Time.time >= randomTime && waiting == false)
         {
             SpawnAI();
-
+           
         }
     }
 
@@ -129,11 +152,13 @@ public class RandomEntranceScript : MonoBehaviour
 
         if (isSpawned == false && waiting == false)
         {
+            
             float tileWidth = background.GetComponent<SpriteRenderer>().bounds.size.x;
             spawnPos = new Vector3((tileWidth / 2f), transform.position.y, transform.position.z);
             Instantiate(humanAI, spawnPos, Quaternion.identity);
             isSpawned = true;
             randomNumber = Random.Range(minRange, maxRange);
+            randomTime += 50f;
             Debug.Log("Spawn");
             aiRef = GameObject.Find("Human(Clone)");
         }

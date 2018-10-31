@@ -3176,7 +3176,7 @@ MonoBehaviour:
   rsTimer: 0
   isSpawned: 0
   randomNumber: 20
-  randomTime: 20
+  randomTime: 40
   minRange: 10
   maxRange: 20
   spawnPos: {x: 0, y: 0, z: 0}
