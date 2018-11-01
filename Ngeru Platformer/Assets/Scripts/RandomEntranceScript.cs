@@ -9,14 +9,14 @@ public class RandomEntranceScript : MonoBehaviour
     public int rsTimer;
     public bool isSpawned;
     public float randomNumber = 20f;
-    public float randomTime = 40f;
+    public float randomTime;
     public float minRange;
     public float maxRange;
     public Vector3 spawnPos;
 
     public GameObject background;
     public GameObject humanAI;
-    public GameObject lineRenderer;
+    //public GameObject lineRenderer;
     public GameObject hideUI; // HireHere 
     public Image fadePanel;
     public GameObject Player;
@@ -34,6 +34,9 @@ public class RandomEntranceScript : MonoBehaviour
         //Debug.Log("Random Time " + randomTime);
         playerSpawnPos = Player.GetComponent<Transform>().position;
         //hideUI.GetComponent<Text>().enabled = false;
+        executeTime = Time.time + 30f;
+        randomTime = Time.time + 30f;
+        Debug.Log(Time.time);
     }
 
     // Only resets the randomNumber to 20f at the moment
